@@ -56,15 +56,16 @@ body.pdf-mode {
   .stat-number { font-size: 18pt; }
   .stat-box { padding: 12px 8px; }
 
-  // Tables: allow horizontal scroll on overflow
+  // Tables: allow text wrap so cells don't force horizontal scroll.
   table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
     font-size: 9pt;
-    -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
+    word-wrap: break-word;
   }
-  th, td { padding: 6px 8px; }
+  th, td {
+    padding: 6px 6px;
+    vertical-align: top;
+  }
 
   // Pull quote less padding
   .pullquote {
