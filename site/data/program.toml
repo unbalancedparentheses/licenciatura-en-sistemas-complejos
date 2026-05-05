@@ -7,5 +7,5 @@ cohort_max = 40
 written_final_exams = 0
 guided_electives = 1
 status = "draft"
-status_label_es = "Borrador · No aprobado"
-status_label_en = "Draft · Not yet approved"
+status_label_es = "Borrador"
+status_label_en = "Draft"
