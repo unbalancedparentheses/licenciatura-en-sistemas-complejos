@@ -1102,3 +1102,20 @@ evaluation_primary = "OD — Defense of analysis of a biological system"
 evaluation_secondaries = [
   "TP — Quantitative analysis with estimates and models",
 ]
+
+[[course]]
+slug = "electiva-guiada"
+title_es = "Electiva Guiada"
+title_en = "Guided Elective"
+year = 3.5
+block = ""
+position = 99
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Una materia electiva en un área de profundización elegida por el estudiante en consulta con el cuerpo docente. El formato, los textos y la evaluación los define el docente supervisor."
+objective_en = "An elective course in an area of deepening chosen by the student in consultation with the faculty. Format, texts, and evaluation defined by the supervising faculty member."
+content_es = ""
+content_en = ""
+texts = []
+references = []
+evaluation_primary = "Defined by supervising faculty"
+evaluation_secondaries = []

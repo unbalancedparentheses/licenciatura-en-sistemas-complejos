@@ -116,6 +116,8 @@
 <div class="toc-entry" lang="en"><span>Appendix B — Evaluation Framework by Course</span><span>48</span></div>
 <div class="toc-entry" lang="es"><span>Apéndice C — Bibliografía completa</span><span>49</span></div>
 <div class="toc-entry" lang="en"><span>Appendix C — Full Bibliography</span><span>49</span></div>
+<div class="toc-entry" lang="es"><span>Apéndice D — Conversación intelectual</span><span>56</span></div>
+<div class="toc-entry" lang="en"><span>Appendix D — Intellectual Conversation</span><span>56</span></div>
 
 {# Section partials — preserved verbatim from legacy for content fidelity #}
 {% include "sections/preface.html" %}
@@ -163,12 +165,17 @@
 
 {# Appendix C — Full Bibliography from data #}
 <div class="page-break" data-views="faculty,authorities"></div>
-<div class="part-label">Appendix C</div>
-<h1>Full Bibliography</h1>
+<div class="part-label" lang="es">Apéndice C</div>
+<div class="part-label" lang="en">Appendix C</div>
+<h1 lang="es">Bibliografía completa</h1>
+<h1 lang="en">Full Bibliography</h1>
 <p style="font-size:9.5pt; line-height:1.6;">
 {% for e in bibliography.entry %}{{ e.text | safe }}{% if not loop.last %}<br><br>{% endif %}
 {% endfor %}
 </p>
+
+{# Appendix D — Intellectual Conversation (publications moved from §2.2) #}
+{% include "sections/appendix-d.html" %}
 
 <div style="margin-top:80px; padding-top:32px; border-top:1px solid #ddd; font-family:'Inter',sans-serif; font-size:8pt; color:#888; text-align:center;">
   Licenciatura en Sistemas Complejos · Bachelor of Systems and Decision Science<br>

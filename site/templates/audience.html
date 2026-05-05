@@ -114,13 +114,16 @@
 {% include 'sections/appendix-b.html' %}
 
 <div class="page-break"></div>
-<div class="part-label">Appendix C</div>
+<div class="part-label" lang="es">Apéndice C</div>
+<div class="part-label" lang="en">Appendix C</div>
 <h1 lang="es">Bibliografía completa</h1>
 <h1 lang="en">Full Bibliography</h1>
 <p style="font-size:9.5pt; line-height:1.6;">
 {% for e in bibliography.entry %}{{ e.text | safe }}{% if not loop.last %}<br><br>{% endif %}
 {% endfor %}
 </p>
+
+{% include 'sections/appendix-d.html' %}
 {% endif %}
 
 <div style="margin-top:80px; padding-top:32px; border-top:1px solid #ddd; font-family:'Inter',sans-serif; font-size:8pt; color:#888; text-align:center;">

@@ -7,8 +7,8 @@
 <h2 lang="es">8.1 El arco de tres años y medio</h2>
 <h2 lang="en">8.1 The Three-and-a-Half Year Arc</h2>
 
-<p lang="es"><strong>Año 1 — Fundamentos.</strong> El Año 1 construye las bases matemáticas, científicas y computacionales sobre las que descansa todo lo demás. Al final del Año 1, los estudiantes pueden razonar formalmente, computar, manejar probabilidad y estadística con rigor, construir y desplegar sistemas de ML, programar a nivel de sistemas, entender biología y física, analizar por qué fallan las instituciones y han completado dos proyectos en equipo.</p>
-<p lang="en"><strong>Año 1 — Fundamentos.</strong> Year 1 builds the mathematical, scientific, and computational foundations on which everything else rests. By the end of Year 1, students can reason formally, compute, handle probability and statistics with rigor, build and deploy ML systems, program at the systems level, understand biology and physics, analyze why institutions fail, and have completed two team projects.</p>
+<p lang="es"><strong>Año 1 — Fundamentos.</strong> El Año 1 construye las bases matemáticas, científicas y computacionales sobre las que descansa todo lo demás. Al final del Año 1, los estudiantes pueden razonar formalmente, computar, manejar probabilidad y estadística con rigor, construir y desplegar sistemas de ML, programar a nivel de sistemas, razonar sobre las restricciones físicas que pesan sobre los sistemas que construyen, analizar por qué fallan las instituciones y han completado dos proyectos en equipo. La biología se incorpora en el Año 3.5 como lente sobre los sistemas adaptativos complejos.</p>
+<p lang="en"><strong>Año 1 — Fundamentos.</strong> Year 1 builds the mathematical, scientific, and computational foundations on which everything else rests. By the end of Year 1, students can reason formally, compute, handle probability and statistics with rigor, build and deploy ML systems, program at the systems level, reason about the physical constraints on the systems they build, analyze why institutions fail, and have completed two team projects. Biology is taken in Año 3.5 as a lens on complex adaptive systems.</p>
 
 <p lang="es"><strong>Año 2 — Sistemas.</strong> El Año 2 construye los sistemas — técnicos, económicos, institucionales, culturales — dentro de los cuales los constructores deben operar. Al final del Año 2, los estudiantes entienden los algoritmos y sus límites, la matemática de la interacción estratégica, la física del riesgo y las colas pesadas, los fundamentos de la computación distribuida, la arquitectura de los sistemas financieros, la economía política de la regulación, la construcción cultural de la legitimidad y los límites epistemológicos de la IA.</p>
 <p lang="en"><strong>Año 2 — Sistemas.</strong> Year 2 builds the systems — technical, economic, institutional, cultural — within which builders must operate. By the end of Year 2, students understand algorithms and their limits, the mathematics of strategic interaction, the physics of risk and fat tails, the foundations of distributed computation, the architecture of financial systems, the political economy of regulation, the cultural construction of legitimacy, and the epistemological limits of AI.</p>
@@ -45,7 +45,7 @@
 <tr><th>Bloque A</th><th>Bloque B</th><th>Bloque C</th><th>Bloque D</th></tr>
 <tr><td>Estrategia, Producto y Salida al Mercado</td><td>Laboratorio de Diseño Institucional</td><td>Sistemas Complejos</td><td>Comportamiento Organizacional y Equipos</td></tr>
 <tr><td>Control, Observabilidad y Medición</td><td>Negociación, Persuasión y Liderazgo</td><td>Teoría de la Decisión</td><td>Información, Señales y Comunicación</td></tr>
-<tr><td>Ética y Responsabilidad bajo Incertidumbre</td><td></td><td>Escritura Avanzada en Español</td><td>Diseño de Producto e Interacción</td></tr>
+<tr><td>Ética y Responsabilidad bajo Incertidumbre</td><td><em lang="es">Bloque más liviano · Studio V intensifica</em><em lang="en">Lighter block · Studio V intensifies</em></td><td>Escritura Avanzada en Español</td><td>Diseño de Producto e Interacción</td></tr>
 <tr><td colspan="2"><em>Studio V — Sistema Crítico bajo Restricciones (A+B)</em></td><td colspan="2"><em>Studio VI — Venture from Zero (C+D)</em></td></tr>
 </table>
 
@@ -61,20 +61,20 @@
 <h2 lang="en">8.3 Program Statistics</h2>
 
 <div class="stats-grid" lang="es">
-  <div class="stat-box"><span class="stat-number">39</span><span class="stat-label">Materias</span></div>
-  <div class="stat-box"><span class="stat-number">6</span><span class="stat-label">Studios</span></div>
-  <div class="stat-box"><span class="stat-number">14</span><span class="stat-label">Bloques</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Materias</span></div>
+  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.years * program.blocks_per_year | int }}</span><span class="stat-label">Bloques</span></div>
   <div class="stat-box"><span class="stat-number">3,5</span><span class="stat-label">Años</span></div>
-  <div class="stat-box"><span class="stat-number">30–40</span><span class="stat-label">Estudiantes/cohorte</span></div>
-  <div class="stat-box"><span class="stat-number">1</span><span class="stat-label">Electiva guiada</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Estudiantes/cohorte</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.guided_electives }}</span><span class="stat-label">Electiva guiada</span></div>
 </div>
 <div class="stats-grid" lang="en">
-  <div class="stat-box"><span class="stat-number">39</span><span class="stat-label">Courses</span></div>
-  <div class="stat-box"><span class="stat-number">6</span><span class="stat-label">Studios</span></div>
-  <div class="stat-box"><span class="stat-number">14</span><span class="stat-label">Blocks</span></div>
-  <div class="stat-box"><span class="stat-number">3.5</span><span class="stat-label">Years</span></div>
-  <div class="stat-box"><span class="stat-number">30–40</span><span class="stat-label">Students/cohort</span></div>
-  <div class="stat-box"><span class="stat-number">1</span><span class="stat-label">Guided elective</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Courses</span></div>
+  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.years * program.blocks_per_year | int }}</span><span class="stat-label">Blocks</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.years }}</span><span class="stat-label">Years</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students/cohort</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.guided_electives }}</span><span class="stat-label">Guided elective</span></div>
 </div>
 
 <!-- SECTION 9: COURSE DESCRIPTIONS -->

@@ -37,7 +37,7 @@
   {% if course.references %}
   <div class="course-section-label">Cursos de referencia / Reference courses</div>
   <ul>
-    {% for r in course.references %}<li>{% if r.url %}{{ r.name }} — <a href="{{ r.url }}">{{ r.url | replace(from='https://', to='') | replace(from='http://', to='') }}</a>{% else %}{{ r.name }}{% endif %}</li>{% endfor %}
+    {% for r in course.references %}<li>{% if r.url %}<a href="{{ r.url }}">{{ r.name }}</a>{% else %}{{ r.name }}{% endif %}</li>{% endfor %}
   </ul>
   {% endif %}
 

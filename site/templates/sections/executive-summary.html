@@ -6,19 +6,19 @@
 
 <div class="stats-grid" lang="es">
   <div class="stat-box"><span class="stat-number">3,5</span><span class="stat-label">Años</span></div>
-  <div class="stat-box"><span class="stat-number">39</span><span class="stat-label">Materias</span></div>
-  <div class="stat-box"><span class="stat-number">6</span><span class="stat-label">Studios</span></div>
-  <div class="stat-box"><span class="stat-number">30–40</span><span class="stat-label">Estudiantes por cohorte</span></div>
-  <div class="stat-box"><span class="stat-number">8</span><span class="stat-label">Semanas por bloque</span></div>
-  <div class="stat-box"><span class="stat-number">0</span><span class="stat-label">Exámenes finales escritos</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Materias</span></div>
+  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Estudiantes por cohorte</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.weeks_per_block }}</span><span class="stat-label">Semanas por bloque</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.written_final_exams }}</span><span class="stat-label">Exámenes finales escritos</span></div>
 </div>
 <div class="stats-grid" lang="en">
-  <div class="stat-box"><span class="stat-number">3.5</span><span class="stat-label">Years</span></div>
-  <div class="stat-box"><span class="stat-number">39</span><span class="stat-label">Courses</span></div>
-  <div class="stat-box"><span class="stat-number">6</span><span class="stat-label">Studios</span></div>
-  <div class="stat-box"><span class="stat-number">30–40</span><span class="stat-label">Students per cohort</span></div>
-  <div class="stat-box"><span class="stat-number">8</span><span class="stat-label">Weeks per block</span></div>
-  <div class="stat-box"><span class="stat-number">0</span><span class="stat-label">Written final exams</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.years }}</span><span class="stat-label">Years</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Courses</span></div>
+  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students per cohort</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.weeks_per_block }}</span><span class="stat-label">Weeks per block</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.written_final_exams }}</span><span class="stat-label">Written final exams</span></div>
 </div>
 
 <p lang="es">La Licenciatura en Sistemas Complejos — Bachelor of Systems and Decision Science — es una nueva carrera de grado de la Universidad de Buenos Aires, diseñada para formar una generación de constructores capaces de operar en la intersección entre la tecnología, las instituciones y el poder, en un mundo de inteligencia artificial abundante.</p>
@@ -30,8 +30,8 @@
 <p lang="es">El plan de estudios abarca matemática, física, biología, ciencias de la computación, machine learning, economía, teoría de juegos, diseño institucional, economía política, filosofía de la ciencia y análisis cultural. Se completa con seis proyectos Studio de ambición creciente, que culminan en la creación de una empresa real durante el último Studio. El programa se desarrolla en bloques de ocho semanas — una estructura tomada de la École Polytechnique — con tres materias por bloque y un Studio que corre de manera continua a lo largo de dos bloques consecutivos.</p>
 <p lang="en">The curriculum spans mathematics, physics, biology, computer science, machine learning, economics, game theory, institutional design, political economy, philosophy of science, and cultural analysis. It is completed by six Studio projects of increasing ambition, culminating in the creation of a real company during the final Studio. The program runs in eight-week blocks — a structure borrowed from the École Polytechnique — with three courses per block and a Studio running continuously across two consecutive blocks.</p>
 
-<p lang="es">El programa admite entre 30 y 40 estudiantes por cohorte mediante un proceso de selección competitivo en tres etapas. No hay exámenes finales escritos. Toda la evaluación primaria se realiza por defensa oral, ejecución en vivo y defensa pública ante paneles externos. El uso de herramientas de IA es obligatorio en todo el programa.</p>
-<p lang="en">The program admits 30 to 40 students per cohort through a competitive three-stage selection process. There are no written final exams. All primary evaluation is through oral defense, live performance, and public defense before external panels. AI tools are mandatory throughout.</p>
+<p lang="es">El programa admite entre {{ program.cohort_min }} y {{ program.cohort_max }} estudiantes por cohorte mediante un proceso de selección competitivo en tres etapas. No hay exámenes finales escritos. Toda la evaluación primaria es presencial y en tiempo real: examen escrito, defensa oral, programación en vivo o defensa pública, según la materia. El uso de herramientas de IA es obligatorio en todo el programa.</p>
+<p lang="en">The program admits {{ program.cohort_min }} to {{ program.cohort_max }} students per cohort through a competitive three-stage selection process. There are no written final exams. All primary evaluation is in person, in real time: written exams, oral defenses, live coding, or public defense depending on the course. AI tools are mandatory throughout.</p>
 
 <div class="pullquote" lang="es">El mundo tiene suficientes personas que saben escribir un prompt. Lo que necesita son personas capaces de decidir qué construir, por qué importa y cómo hacer que perdure.</div>
 <div class="pullquote" lang="en">The world has enough people who know how to write a prompt. It needs people who can decide what to build, why it matters, and how to make it last.</div>
