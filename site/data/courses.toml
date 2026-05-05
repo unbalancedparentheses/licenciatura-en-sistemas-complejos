@@ -18,10 +18,10 @@ texts = [
   "Axler, Sheldon. <em>Linear Algebra Done Right.</em> 4th ed. Springer, 2024.",
 ]
 references = [
-  { name = "MIT 18.06 Linear Algebra", url = "https://ocw.mit.edu" },
-  { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu" },
-  { name = "Imperial College Mathematics for Machine Learning — Coursera", url = "" },
-  { name = "3Blue1Brown: Essence of Linear Algebra — YouTube", url = "" },
+  { name = "MIT 18.06 Linear Algebra", url = "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
+  { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" },
+  { name = "Imperial College Mathematics for Machine Learning — Coursera", url = "https://www.coursera.org/specializations/mathematics-machine-learning" },
+  { name = "3Blue1Brown: Essence of Linear Algebra — YouTube", url = "https://www.3blue1brown.com/topics/linear-algebra" },
 ]
 evaluation_primary = "WE — Written Exam"
 evaluation_secondaries = [
@@ -45,7 +45,7 @@ texts = [
   "Boyd, Stephen, and Lieven Vandenberghe. <em>Convex Optimization.</em> Cambridge University Press, 2004.",
 ]
 references = [
-  { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu" },
+  { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" },
   { name = "Stanford EE364A Convex Optimization", url = "https://stanford.edu/class/ee364a" },
 ]
 evaluation_primary = "WE — Written Exam"
@@ -71,9 +71,9 @@ texts = [
   "Enderton, Herbert B. <em>A Mathematical Introduction to Logic.</em> 2nd ed. Academic Press, 2001.",
 ]
 references = [
-  { name = "MIT 6.1200 Mathematics for Computer Science", url = "https://ocw.mit.edu" },
-  { name = "Stanford Phil 151 Metalogic", url = "https://philosophy.stanford.edu" },
-  { name = "Stanford CS 103 Mathematical Foundations of Computing", url = "" },
+  { name = "MIT 6.1200 Mathematics for Computer Science", url = "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/" },
+  { name = "Stanford Phil 151 Metalogic", url = "https://explorecourses.stanford.edu/search?q=PHIL+151" },
+  { name = "Stanford CS 103 Mathematical Foundations of Computing", url = "https://web.stanford.edu/class/cs103/" },
 ]
 evaluation_primary = "WE — Written proof exam"
 evaluation_secondaries = [
@@ -102,9 +102,9 @@ texts = [
 ]
 references = [
   { name = "Caltech Ma 1abc Mathematics", url = "https://pma.caltech.edu/courses" },
-  { name = "École Polytechnique tronc commun (modules de mathématiques)", url = "" },
+  { name = "École Polytechnique tronc commun (modules de mathématiques)", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
   { name = "Cambridge Mathematical Tripos", url = "https://www.maths.cam.ac.uk/undergrad/course" },
-  { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu" },
+  { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/" },
 ]
 evaluation_primary = "WE — Written exam with proofs"
 evaluation_secondaries = [
@@ -129,9 +129,9 @@ texts = [
   "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960.",
 ]
 references = [
-  { name = "MIT 14.01 Principles of Microeconomics", url = "https://ocw.mit.edu" },
-  { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu" },
-  { name = "Stanford Econ 1", url = "" },
+  { name = "MIT 14.01 Principles of Microeconomics", url = "https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/" },
+  { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu/economics/econ-159" },
+  { name = "Stanford Econ 1", url = "https://explorecourses.stanford.edu/search?q=ECON+1" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -156,9 +156,9 @@ texts = [
   "McConnell, Steve. <em>Code Complete.</em> 2nd ed. Microsoft Press, 2004.",
 ]
 references = [
-  { name = "MIT 6.100A Introduction to CS Programming in Python", url = "https://ocw.mit.edu" },
+  { name = "MIT 6.100A Introduction to CS Programming in Python", url = "https://ocw.mit.edu/courses/6-100a-introduction-to-computer-science-programming-in-python-fall-2022/" },
   { name = "MIT Missing Semester", url = "https://missing.csail.mit.edu" },
-  { name = "Stanford CS 106B Programming Abstractions", url = "" },
+  { name = "Stanford CS 106B Programming Abstractions", url = "https://web.stanford.edu/class/cs106b/" },
 ]
 evaluation_primary = "LC — Live coding session"
 evaluation_secondaries = [
@@ -183,10 +183,10 @@ texts = [
   "Jaynes, Edwin T. <em>Probability Theory: The Logic of Science.</em> Cambridge University Press, 2003.",
 ]
 references = [
-  { name = "MIT 6.3700 Introduction to Probability", url = "https://ocw.mit.edu" },
-  { name = "MIT 18.650 Fundamentals of Statistics", url = "https://ocw.mit.edu" },
-  { name = "Stanford CS 109 Probability for Computer Scientists", url = "" },
-  { name = "Caltech Ma 3", url = "" },
+  { name = "MIT 6.3700 Introduction to Probability", url = "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/" },
+  { name = "MIT 18.650 Fundamentals of Statistics", url = "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/" },
+  { name = "Stanford CS 109 Probability for Computer Scientists", url = "https://web.stanford.edu/class/cs109/" },
+  { name = "Caltech Ma 3", url = "https://catalog.caltech.edu/current/courses/department/Ma" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -211,9 +211,9 @@ texts = [
   "Kerrisk, Michael. <em>The Linux Programming Interface.</em> No Starch Press, 2010.",
 ]
 references = [
-  { name = "MIT 6.1800 Computer Systems Engineering", url = "https://ocw.mit.edu" },
-  { name = "MIT 6.1810 Operating Systems Engineering", url = "" },
-  { name = "Stanford CS 110 Principles of Computer Systems", url = "" },
+  { name = "MIT 6.1800 Computer Systems Engineering", url = "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/" },
+  { name = "MIT 6.1810 Operating Systems Engineering", url = "https://pdos.csail.mit.edu/6.1810/" },
+  { name = "Stanford CS 110 Principles of Computer Systems", url = "https://web.stanford.edu/class/cs110/" },
 ]
 evaluation_primary = "LC — Live systems analysis"
 evaluation_secondaries = [
@@ -238,9 +238,9 @@ texts = [
   "Halliday, David, Robert Resnick, and Jearl Walker. <em>Fundamentals of Physics.</em> 11th ed. Wiley, 2018.",
 ]
 references = [
-  { name = "MIT 8.01 Classical Mechanics (Walter Lewin)", url = "https://ocw.mit.edu" },
-  { name = "Caltech Ph 1a Physics", url = "" },
-  { name = "École Polytechnique tronc commun Physique", url = "" },
+  { name = "MIT 8.01 Classical Mechanics (Walter Lewin)", url = "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" },
+  { name = "Caltech Ph 1a Physics", url = "https://catalog.caltech.edu/current/courses/department/Ph" },
+  { name = "École Polytechnique tronc commun Physique", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
 evaluation_primary = "WE — Written exam with unseen problems"
 evaluation_secondaries = [
@@ -265,9 +265,9 @@ texts = [
   "Griffiths, David J. <em>Introduction to Quantum Mechanics.</em> 3rd ed. Cambridge University Press, 2018.",
 ]
 references = [
-  { name = "MIT 8.02 Electricity and Magnetism", url = "https://ocw.mit.edu" },
-  { name = "MIT 8.04 Quantum Physics I", url = "https://ocw.mit.edu" },
-  { name = "Caltech Ph 1b", url = "" },
+  { name = "MIT 8.02 Electricity and Magnetism", url = "https://ocw.mit.edu/courses/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/" },
+  { name = "MIT 8.04 Quantum Physics I", url = "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" },
+  { name = "Caltech Ph 1b", url = "https://catalog.caltech.edu/current/courses/department/Ph" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -292,10 +292,10 @@ texts = [
   "Géron, Aurélien. <em>Hands-On Machine Learning.</em> 3rd ed. O'Reilly, 2022.",
 ]
 references = [
-  { name = "MIT 6.3900 Introduction to Machine Learning", url = "https://ocw.mit.edu" },
+  { name = "MIT 6.3900 Introduction to Machine Learning", url = "https://introml.mit.edu/" },
   { name = "Stanford CS 229 Machine Learning", url = "https://cs229.stanford.edu" },
-  { name = "Caltech CMS 155 Machine Learning and Data Mining", url = "" },
-  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "" },
+  { name = "Caltech CMS 155 Machine Learning and Data Mining", url = "https://catalog.caltech.edu/current/courses/department/CMS" },
+  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
 ]
 evaluation_primary = "LC — Live ML pipeline session"
 evaluation_secondaries = [
@@ -329,11 +329,11 @@ texts = [
 ]
 references = [
   { name = "MIT 17.S914 Political Development", url = "https://ocw.mit.edu/courses/17-s914-evolving-approaches-to-the-economics-of-public-policy-chinese-economy-spring-2007/" },
-  { name = "MIT 15.137 Entrepreneurship and the Evolution of American Capitalism", url = "https://ocw.mit.edu" },
-  { name = "Oxford PPE Politics component", url = "" },
-  { name = "Oxford History of Science and Technology Program", url = "" },
-  { name = "Stanford HSST Program", url = "" },
-  { name = "Harvard Kennedy School Governance and Institutions", url = "" },
+  { name = "MIT 15.137 Entrepreneurship and the Evolution of American Capitalism", url = "https://ocw.mit.edu/search/?q=15.137" },
+  { name = "Oxford PPE Politics component", url = "https://www.ppe.ox.ac.uk/" },
+  { name = "Oxford History of Science and Technology Program", url = "https://www.hsm.ox.ac.uk/" },
+  { name = "Stanford HSST Program", url = "https://hs.stanford.edu/" },
+  { name = "Harvard Kennedy School Governance and Institutions", url = "https://www.hks.harvard.edu/centers/ash" },
 ]
 evaluation_primary = "OD — Adversarial oral defense of comparative essay"
 evaluation_secondaries = [
@@ -358,10 +358,10 @@ texts = [
   "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012.",
 ]
 references = [
-  { name = "MIT 6.1210 Introduction to Algorithms", url = "https://ocw.mit.edu" },
-  { name = "MIT 6.C571 Optimization Methods", url = "" },
-  { name = "Stanford CS 161 Design and Analysis of Algorithms", url = "" },
-  { name = "Stanford MS&E 211 Introduction to Optimization", url = "" },
+  { name = "MIT 6.1210 Introduction to Algorithms", url = "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" },
+  { name = "MIT 6.C571 Optimization Methods", url = "https://optimization.mit.edu/classes/" },
+  { name = "Stanford CS 161 Design and Analysis of Algorithms", url = "https://web.stanford.edu/class/cs161/" },
+  { name = "Stanford MS&E 211 Introduction to Optimization", url = "https://explorecourses.stanford.edu/search?q=MS%26E+211" },
 ]
 evaluation_primary = "WE — Written exam with algorithm design problems"
 evaluation_secondaries = [
@@ -386,9 +386,9 @@ texts = [
   "Pearl, Judea, and Dana Mackenzie. <em>The Book of Why.</em> Basic Books, 2018.",
 ]
 references = [
-  { name = "MIT 14.32 Econometric Data Science", url = "https://ocw.mit.edu" },
-  { name = "Stanford MS&E 226 Causal Inference", url = "" },
-  { name = "Caltech IDS 126", url = "" },
+  { name = "MIT 14.32 Econometric Data Science", url = "https://ocw.mit.edu/courses/14-32-econometric-data-science-fall-2021/" },
+  { name = "Stanford MS&E 226 Causal Inference", url = "https://explorecourses.stanford.edu/search?q=MS%26E+226" },
+  { name = "Caltech IDS 126", url = "https://catalog.caltech.edu/current/courses/department/IDS" },
 ]
 evaluation_primary = "OD — Defense of empirical study"
 evaluation_secondaries = [
@@ -415,10 +415,10 @@ texts = [
 ]
 references = [
   { name = "Stanford CS 224N NLP with Deep Learning", url = "https://web.stanford.edu/class/cs224n" },
-  { name = "Stanford CS 236 Deep Generative Models", url = "" },
-  { name = "MIT 6.S898 Deep Learning", url = "" },
+  { name = "Stanford CS 236 Deep Generative Models", url = "https://deepgenerativemodels.github.io/" },
+  { name = "MIT 6.S898 Deep Learning", url = "https://deeplearning.mit.edu/" },
   { name = "fast.ai Practical Deep Learning", url = "https://course.fast.ai" },
-  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "" },
+  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
 ]
 evaluation_primary = "LC — Live architecture session"
 evaluation_secondaries = [
@@ -444,10 +444,10 @@ texts = [
   "Mas-Colell, Andreu, et al. <em>Microeconomic Theory.</em> Oxford University Press, 1995. (game theory chapters)",
 ]
 references = [
-  { name = "Stanford MS&E 232 Introduction to Game Theory", url = "" },
-  { name = "MIT 14.126 Game Theory", url = "https://ocw.mit.edu" },
-  { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu" },
-  { name = "Harvard CS 1360 Economics and Computation", url = "" },
+  { name = "Stanford MS&E 232 Introduction to Game Theory", url = "https://explorecourses.stanford.edu/search?q=MS%26E+232" },
+  { name = "MIT 14.126 Game Theory", url = "https://ocw.mit.edu/search/?q=14.126" },
+  { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu/economics/econ-159" },
+  { name = "Harvard CS 1360 Economics and Computation", url = "https://econcs.seas.harvard.edu/" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -475,7 +475,7 @@ texts = [
   "Cirillo, Pasquale, and Nassim Nicholas Taleb. <em>The Logic of Risk</em> and joint papers on fat tails, wars, and pandemics — rigorous statistical formalization of the fat-tails framework with direct implications for policy and risk management.",
 ]
 references = [
-  { name = "Stanford MS&E 221 Stochastic Modeling", url = "" },
+  { name = "Stanford MS&E 221 Stochastic Modeling", url = "https://explorecourses.stanford.edu/search?q=MS%26E+221" },
   { name = "MIT 6.7700 Discrete Stochastic Processes", url = "https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/" },
   { name = "London Mathematical Laboratory: Ergodicity Economics", url = "https://ergodicityeconomics.com/" },
   { name = "Nassim Taleb's Real World Risk Institute", url = "https://www.realworldrisk.com/" },
@@ -505,7 +505,7 @@ texts = [
 ]
 references = [
   { name = "Carnegie Mellon 15-815 Interactive Theorem Proving", url = "https://www.cs.cmu.edu/~fp/courses/15815-f18/" },
-  { name = "MIT 6.820 Foundations of Program Analysis", url = "" },
+  { name = "MIT 6.820 Foundations of Program Analysis", url = "https://groups.csail.mit.edu/pag/6.820/" },
   { name = "Lean 4 / Mathlib community curriculum", url = "https://leanprover-community.github.io/" },
   { name = "Software Foundations", url = "https://softwarefoundations.cis.upenn.edu/" },
 ]
@@ -532,10 +532,10 @@ texts = [
   "Van Steen, Maarten, and Andrew S. Tanenbaum. <em>Distributed Systems.</em> 4th ed. distributed-systems.net.",
 ]
 references = [
-  { name = "MIT 6.5820 Computer Networks", url = "https://ocw.mit.edu" },
+  { name = "MIT 6.5820 Computer Networks", url = "https://ocw.mit.edu/courses/6-829-computer-networks-fall-2002/" },
   { name = "MIT 6.5840 Distributed Systems", url = "https://pdos.csail.mit.edu/6.824" },
-  { name = "Stanford CS 144 Introduction to Computer Networking", url = "" },
-  { name = "Cambridge Distributed Systems", url = "" },
+  { name = "Stanford CS 144 Introduction to Computer Networking", url = "https://cs144.github.io/" },
+  { name = "Cambridge Distributed Systems", url = "https://www.cl.cam.ac.uk/teaching/current/ConcDisSys/" },
 ]
 evaluation_primary = "LC — Live architecture and failure analysis"
 evaluation_secondaries = [
@@ -566,7 +566,7 @@ texts = [
 references = [
   { name = "MIT 15.401 Finance Theory", url = "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/" },
   { name = "Yale ECON 252 Financial Markets (Robert Shiller)", url = "https://oyc.yale.edu/economics/econ-252" },
-  { name = "Stanford MS&E 246 Financial Risk Analytics", url = "" },
+  { name = "Stanford MS&E 246 Financial Risk Analytics", url = "https://explorecourses.stanford.edu/search?q=MS%26E+246" },
 ]
 evaluation_primary = "OD — Defense of financial model and investment memo"
 evaluation_secondaries = [
@@ -591,9 +591,9 @@ texts = [
   "Boneh, Dan, and Victor Shoup. <em>A Graduate Course in Applied Cryptography.</em> cryptobook.us.",
 ]
 references = [
-  { name = "Stanford CS 255 Introduction to Cryptography", url = "" },
-  { name = "MIT 6.5620 Computer Systems Security", url = "" },
-  { name = "Coursera: Cryptography I & II (Dan Boneh)", url = "" },
+  { name = "Stanford CS 255 Introduction to Cryptography", url = "https://crypto.stanford.edu/~dabo/courses/cs255/" },
+  { name = "MIT 6.5620 Computer Systems Security", url = "https://css.csail.mit.edu/6.858/" },
+  { name = "Coursera: Cryptography I & II (Dan Boneh)", url = "https://www.coursera.org/learn/crypto" },
 ]
 evaluation_primary = "LC — Live threat modeling session"
 evaluation_secondaries = [
@@ -626,7 +626,7 @@ texts = [
 references = [
   { name = "MIT 14.42 Environmental Policy and Economics", url = "https://ocw.mit.edu/courses/14-42-environmental-policy-and-economics-spring-2011/" },
   { name = "Stanford Law and Technology", url = "https://law.stanford.edu/courses/" },
-  { name = "Oxford PPE Politics and Philosophy components", url = "" },
+  { name = "Oxford PPE Politics and Philosophy components", url = "https://www.ppe.ox.ac.uk/" },
 ]
 evaluation_primary = "OD — Adversarial defense of policy analysis"
 evaluation_secondaries = [
@@ -661,9 +661,9 @@ texts = [
   "Zuboff, Shoshana. <em>The Age of Surveillance Capitalism.</em> PublicAffairs, 2019. The extraction of behavioral data as a new form of capital accumulation — the culture of normalized surveillance.",
 ]
 references = [
-  { name = "Stanford Anthropology and Cultural Analysis", url = "" },
+  { name = "Stanford Anthropology and Cultural Analysis", url = "https://anthropology.stanford.edu/" },
   { name = "MIT Comparative Media Studies", url = "https://cmsw.mit.edu/" },
-  { name = "École Polytechnique HSS — Humanités et Sciences Sociales", url = "" },
+  { name = "École Polytechnique HSS — Humanités et Sciences Sociales", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
   { name = "Cambridge Social Anthropology", url = "https://www.socanth.cam.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of critical essay connecting cultural artifact to institutional problem"
@@ -726,9 +726,9 @@ texts = [
 ]
 references = [
   { name = "Stanford Symbolic Systems Program", url = "https://symsys.stanford.edu/" },
-  { name = "Stanford Phil 80 Mind, Matter, and Meaning", url = "" },
+  { name = "Stanford Phil 80 Mind, Matter, and Meaning", url = "https://explorecourses.stanford.edu/search?q=PHIL+80" },
   { name = "MIT 24.09 Minds and Machines", url = "https://ocw.mit.edu/courses/24-09-minds-and-machines-fall-2011/" },
-  { name = "Oxford Philosophy of Mind", url = "" },
+  { name = "Oxford Philosophy of Mind", url = "https://www.philosophy.ox.ac.uk/" },
   { name = "Cambridge HPS", url = "https://www.hps.cam.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of philosophical analysis of a real AI system"
@@ -755,9 +755,9 @@ texts = [
   "Bryar, Colin, and Bill Carr. <em>Working Backwards.</em> St. Martin's Press, 2021.",
 ]
 references = [
-  { name = "Stanford CS 183 Startup", url = "" },
-  { name = "MIT 15.835 Entrepreneurial Marketing", url = "https://ocw.mit.edu" },
-  { name = "Harvard Business School Strategy", url = "" },
+  { name = "Stanford CS 183 Startup", url = "https://startupclass.samaltman.com/" },
+  { name = "MIT 15.835 Entrepreneurial Marketing", url = "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/" },
+  { name = "Harvard Business School Strategy", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
 ]
 evaluation_primary = "OD — Defense of strategic analysis and market entry plan"
 evaluation_secondaries = [
@@ -786,9 +786,9 @@ texts = [
   "Goodhart, Charles. \"Problems of Monetary Management\" (1975) and Strathern's later restatement: <em>\"When a measure becomes a target, it ceases to be a good measure.\"</em>",
 ]
 references = [
-  { name = "Stanford EE 263 Linear Dynamical Systems", url = "" },
-  { name = "MIT 6.3100 Dynamical Systems and Control", url = "https://ocw.mit.edu" },
-  { name = "Caltech CDS 110 Introduction to Control", url = "" },
+  { name = "Stanford EE 263 Linear Dynamical Systems", url = "https://web.stanford.edu/class/ee263/" },
+  { name = "MIT 6.3100 Dynamical Systems and Control", url = "https://ocw.mit.edu/courses/6-241j-dynamic-systems-and-control-spring-2011/" },
+  { name = "Caltech CDS 110 Introduction to Control", url = "https://www.cds.caltech.edu/~murray/courses/cds110/" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -814,9 +814,9 @@ texts = [
   "Parfit, Derek. <em>Reasons and Persons.</em> Oxford University Press, 1984.",
 ]
 references = [
-  { name = "Oxford Practical Ethics", url = "" },
-  { name = "Harvard Kennedy School Ethics and Public Policy", url = "" },
-  { name = "Oxford PPE Philosophy component", url = "" },
+  { name = "Oxford Practical Ethics", url = "https://www.practicalethics.ox.ac.uk/" },
+  { name = "Harvard Kennedy School Ethics and Public Policy", url = "https://www.hks.harvard.edu/educational-programs/courses" },
+  { name = "Oxford PPE Philosophy component", url = "https://www.ppe.ox.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of ethical analysis of a hard case"
 evaluation_secondaries = [
@@ -874,7 +874,7 @@ texts = [
 references = [
   { name = "Harvard Program on Negotiation", url = "https://www.pon.harvard.edu/" },
   { name = "MIT Sloan 15.665 Power and Negotiation", url = "https://ocw.mit.edu/courses/15-665-power-and-negotiation-spring-2014/" },
-  { name = "Cambridge Judge Business School Negotiation", url = "" },
+  { name = "Cambridge Judge Business School Negotiation", url = "https://www.jbs.cam.ac.uk/" },
 ]
 evaluation_primary = "LC — Live negotiation exercise with real stakes"
 evaluation_secondaries = [
@@ -903,7 +903,7 @@ texts = [
 references = [
   { name = "Santa Fe Institute Complexity Explorer", url = "https://www.complexityexplorer.org/" },
   { name = "MIT 18.354 Nonlinear Dynamics", url = "https://ocw.mit.edu/courses/18-354j-nonlinear-dynamics-ii-continuum-systems-spring-2015/" },
-  { name = "Oxford Complex Systems", url = "" },
+  { name = "Oxford Complex Systems", url = "https://www.maths.ox.ac.uk/groups/ociam" },
   { name = "Barabási Network Science", url = "https://networksciencebook.com/" },
 ]
 evaluation_primary = "OD — Defense of agent-based model"
@@ -934,9 +934,9 @@ texts = [
   "Jonas, Hans. <em>The Imperative of Responsibility.</em> University of Chicago Press, 1984. Ethics for technological civilizations — the principle of responsibility toward future generations as a constraint on present decisions.",
 ]
 references = [
-  { name = "Stanford MS&E 250 Decision Analysis", url = "" },
-  { name = "Harvard Kennedy School Decision Science", url = "" },
-  { name = "Oxford PPE Philosophy component", url = "" },
+  { name = "Stanford MS&E 250 Decision Analysis", url = "https://explorecourses.stanford.edu/search?q=MS%26E+250" },
+  { name = "Harvard Kennedy School Decision Science", url = "https://www.hks.harvard.edu/educational-programs/courses" },
+  { name = "Oxford PPE Philosophy component", url = "https://www.ppe.ox.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of decision analysis of a real multi-criteria problem"
 evaluation_secondaries = [
@@ -988,10 +988,10 @@ texts = [
   "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947. Attention as a fundamental ethical act — the leader's responsibility begins with paying real attention to the people who depend on their decisions.",
 ]
 references = [
-  { name = "Stanford MS&E 280 Organizational Behavior", url = "" },
-  { name = "MIT Sloan 15.322 Leading Organizations", url = "" },
-  { name = "Harvard Business School Leadership", url = "" },
-  { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/" },
+  { name = "Stanford MS&E 280 Organizational Behavior", url = "https://explorecourses.stanford.edu/search?q=MS%26E+280" },
+  { name = "MIT Sloan 15.322 Leading Organizations", url = "https://ocw.mit.edu/courses/15-668-people-and-organizations-fall-2010/" },
+  { name = "Harvard Business School Leadership", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
+  { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/faculty-research/academic-areas/organisational-behaviour" },
 ]
 evaluation_primary = "OD — Defense of organizational diagnosis"
 evaluation_secondaries = [
@@ -1015,9 +1015,9 @@ texts = [
   "MacKay, David J. C. <em>Information Theory, Inference, and Learning Algorithms.</em> Cambridge University Press, 2003. inference.org.uk.",
 ]
 references = [
-  { name = "Caltech EE/Ma/CS/IDS 136 Information Theory", url = "" },
-  { name = "MIT 6.441 Information Theory", url = "https://ocw.mit.edu" },
-  { name = "Stanford EE 376A Information Theory", url = "" },
+  { name = "Caltech EE/Ma/CS/IDS 136 Information Theory", url = "https://catalog.caltech.edu/current/courses/department/EE" },
+  { name = "MIT 6.441 Information Theory", url = "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/" },
+  { name = "Stanford EE 376A Information Theory", url = "https://web.stanford.edu/class/ee376a/" },
 ]
 evaluation_primary = "WE — Written exam"
 evaluation_secondaries = [
@@ -1042,9 +1042,9 @@ texts = [
   "Cooper, Alan, Robert Reimann, and David Cronin. <em>About Face: The Essentials of Interaction Design.</em> 4th ed. Wiley, 2014.",
 ]
 references = [
-  { name = "Stanford d.school Design Thinking", url = "" },
-  { name = "MIT Integrated Design and Management", url = "" },
-  { name = "Carnegie Mellon Human-Computer Interaction", url = "" },
+  { name = "Stanford d.school Design Thinking", url = "https://dschool.stanford.edu/" },
+  { name = "MIT Integrated Design and Management", url = "https://idm.mit.edu/" },
+  { name = "Carnegie Mellon Human-Computer Interaction", url = "https://hcii.cmu.edu/" },
 ]
 evaluation_primary = "PD — Public defense of prototype with usability evidence"
 evaluation_secondaries = [
@@ -1094,9 +1094,9 @@ texts = [
   "Dawkins, Richard. <em>The Selfish Gene.</em> 40th Anniversary ed. Oxford University Press, 2016.",
 ]
 references = [
-  { name = "MIT 7.013 Introductory Biology", url = "https://ocw.mit.edu" },
-  { name = "Caltech Bi 1 Principles of Biology", url = "" },
-  { name = "École Polytechnique tronc commun Biologie", url = "" },
+  { name = "MIT 7.013 Introductory Biology", url = "https://ocw.mit.edu/courses/7-013-introductory-biology-spring-2018/" },
+  { name = "Caltech Bi 1 Principles of Biology", url = "https://catalog.caltech.edu/current/courses/department/Bi" },
+  { name = "École Polytechnique tronc commun Biologie", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
 evaluation_primary = "OD — Defense of analysis of a biological system"
 evaluation_secondaries = [
