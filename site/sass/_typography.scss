@@ -1,0 +1,54 @@
+h1, h2, h3, h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+  font-variant-numeric: lining-nums;
+}
+
+.cover-title, .course-title-es, .studio-title, .pub-name {
+  font-variant-numeric: lining-nums;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #1a1a1a;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  letter-spacing: -0.005em;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.part-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}

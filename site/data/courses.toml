@@ -24,7 +24,9 @@ references = [
   { name = "3Blue1Brown: Essence of Linear Algebra — YouTube", url = "" },
 ]
 evaluation_primary = "WE — Written Exam"
-evaluation_secondary = "TP — Weekly problem sets"
+evaluation_secondaries = [
+  "TP — Weekly problem sets",
+]
 
 [[course]]
 slug = "algebra-lineal-y-computacion-ii"
@@ -47,7 +49,9 @@ references = [
   { name = "Stanford EE364A Convex Optimization", url = "https://stanford.edu/class/ee364a" },
 ]
 evaluation_primary = "WE — Written Exam"
-evaluation_secondary = "TP — Computational project"
+evaluation_secondaries = [
+  "TP — Computational project",
+]
 
 [[course]]
 slug = "razonamiento-formal-y-demostracion"
@@ -72,7 +76,9 @@ references = [
   { name = "Stanford CS 103 Mathematical Foundations of Computing", url = "" },
 ]
 evaluation_primary = "WE — Written proof exam"
-evaluation_secondary = "OD — Oral defense of proof portfolio"
+evaluation_secondaries = [
+  "OD — Oral defense of proof portfolio",
+]
 
 [[course]]
 slug = "matematica-pura"
@@ -101,7 +107,9 @@ references = [
   { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu" },
 ]
 evaluation_primary = "WE — Written exam with proofs"
-evaluation_secondary = "OD — Oral defense of problem portfolio across combinatorics, algebra, and topology"
+evaluation_secondaries = [
+  "OD — Oral defense of problem portfolio across combinatorics, algebra, and topology",
+]
 
 [[course]]
 slug = "microeconomia-y-logica-de-decision"
@@ -126,7 +134,9 @@ references = [
   { name = "Stanford Econ 1", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "OD — Defense of market analysis project"
+evaluation_secondaries = [
+  "OD — Defense of market analysis project",
+]
 
 [[course]]
 slug = "fundamentos-de-programacion"
@@ -151,7 +161,9 @@ references = [
   { name = "Stanford CS 106B Programming Abstractions", url = "" },
 ]
 evaluation_primary = "LC — Live coding session"
-evaluation_secondary = "TP — Weekly coding assignments"
+evaluation_secondaries = [
+  "TP — Weekly coding assignments",
+]
 
 [[course]]
 slug = "probabilidad-y-estadistica"
@@ -177,7 +189,9 @@ references = [
   { name = "Caltech Ma 3", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "TP — Weekly problem sets"
+evaluation_secondaries = [
+  "TP — Weekly problem sets",
+]
 
 [[course]]
 slug = "programacion-de-sistemas"
@@ -202,7 +216,9 @@ references = [
   { name = "Stanford CS 110 Principles of Computer Systems", url = "" },
 ]
 evaluation_primary = "LC — Live systems analysis"
-evaluation_secondary = "TP — Debugging portfolio and systems labs"
+evaluation_secondaries = [
+  "TP — Debugging portfolio and systems labs",
+]
 
 [[course]]
 slug = "fisica-i"
@@ -227,7 +243,9 @@ references = [
   { name = "École Polytechnique tronc commun Physique", url = "" },
 ]
 evaluation_primary = "WE — Written exam with unseen problems"
-evaluation_secondary = "TP — Problem sets and estimation exercises"
+evaluation_secondaries = [
+  "TP — Problem sets and estimation exercises",
+]
 
 [[course]]
 slug = "fisica-ii"
@@ -252,7 +270,9 @@ references = [
   { name = "Caltech Ph 1b", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "TP — Problem sets and physical system analysis"
+evaluation_secondaries = [
+  "TP — Problem sets and physical system analysis",
+]
 
 [[course]]
 slug = "machine-learning-e-ingenieria-de-modelos"
@@ -278,7 +298,9 @@ references = [
   { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "" },
 ]
 evaluation_primary = "LC — Live ML pipeline session"
-evaluation_secondary = "TP — End-to-end ML project"
+evaluation_secondaries = [
+  "TP — End-to-end ML project",
+]
 
 [[course]]
 slug = "historia-de-las-instituciones-la-tecnologia-y-el-poder"
@@ -314,7 +336,9 @@ references = [
   { name = "Harvard Kennedy School Governance and Institutions", url = "" },
 ]
 evaluation_primary = "OD — Adversarial oral defense of comparative essay"
-evaluation_secondary = "TP — Essay with revision history"
+evaluation_secondaries = [
+  "TP — Essay with revision history",
+]
 
 [[course]]
 slug = "algoritmos-complejidad-y-optimizacion"
@@ -340,7 +364,9 @@ references = [
   { name = "Stanford MS&E 211 Introduction to Optimization", url = "" },
 ]
 evaluation_primary = "WE — Written exam with algorithm design problems"
-evaluation_secondary = "TP — Algorithm portfolio with formal proofs"
+evaluation_secondaries = [
+  "TP — Algorithm portfolio with formal proofs",
+]
 
 [[course]]
 slug = "econometria-e-inferencia-causal"
@@ -365,7 +391,9 @@ references = [
   { name = "Caltech IDS 126", url = "" },
 ]
 evaluation_primary = "OD — Defense of empirical study"
-evaluation_secondary = "TP — Empirical study with real data"
+evaluation_secondaries = [
+  "TP — Empirical study with real data",
+]
 
 [[course]]
 slug = "deep-learning-y-modelos-fundacionales"
@@ -393,7 +421,10 @@ references = [
   { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "" },
 ]
 evaluation_primary = "LC — Live architecture session"
-evaluation_secondary = "OD — Defense of deep learning replication"
+evaluation_secondaries = [
+  "OD — Defense of deep learning replication",
+  "TP — Replication at reduced scale",
+]
 
 [[course]]
 slug = "teoria-de-juegos-y-diseno-de-mecanismos"
@@ -419,7 +450,9 @@ references = [
   { name = "Harvard CS 1360 Economics and Computation", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "OD — Defense of mechanism design project"
+evaluation_secondaries = [
+  "OD — Defense of mechanism design project",
+]
 
 [[course]]
 slug = "procesos-estocasticos-y-riesgo"
@@ -448,7 +481,9 @@ references = [
   { name = "Nassim Taleb's Real World Risk Institute", url = "https://www.realworldrisk.com/" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "OD — Defense of risk analysis"
+evaluation_secondaries = [
+  "OD — Defense of risk analysis",
+]
 
 [[course]]
 slug = "metodos-formales-y-verificacion"
@@ -475,7 +510,9 @@ references = [
   { name = "Software Foundations", url = "https://softwarefoundations.cis.upenn.edu/" },
 ]
 evaluation_primary = "TP — Lean 4 proof portfolio"
-evaluation_secondary = "OD — Defense of formal verification project"
+evaluation_secondaries = [
+  "OD — Defense of formal verification project",
+]
 
 [[course]]
 slug = "redes-y-sistemas-distribuidos"
@@ -501,7 +538,9 @@ references = [
   { name = "Cambridge Distributed Systems", url = "" },
 ]
 evaluation_primary = "LC — Live architecture and failure analysis"
-evaluation_secondary = "TP — Architecture document and protocol specification"
+evaluation_secondaries = [
+  "TP — Architecture document and protocol specification",
+]
 
 [[course]]
 slug = "finanzas-dinero-y-banca"
@@ -530,7 +569,9 @@ references = [
   { name = "Stanford MS&E 246 Financial Risk Analytics", url = "" },
 ]
 evaluation_primary = "OD — Defense of financial model and investment memo"
-evaluation_secondary = "TP — Financial model built with AI"
+evaluation_secondaries = [
+  "TP — Financial model built with AI",
+]
 
 [[course]]
 slug = "seguridad-criptografia-y-confianza"
@@ -555,7 +596,9 @@ references = [
   { name = "Coursera: Cryptography I & II (Dan Boneh)", url = "" },
 ]
 evaluation_primary = "LC — Live threat modeling session"
-evaluation_secondary = "TP — Threat model and security architecture"
+evaluation_secondaries = [
+  "TP — Threat model and security architecture",
+]
 
 [[course]]
 slug = "economia-politica-derecho-y-regulacion"
@@ -586,7 +629,9 @@ references = [
   { name = "Oxford PPE Politics and Philosophy components", url = "" },
 ]
 evaluation_primary = "OD — Adversarial defense of policy analysis"
-evaluation_secondary = "TP — Policy analysis with stakeholder map"
+evaluation_secondaries = [
+  "TP — Policy analysis with stakeholder map",
+]
 
 [[course]]
 slug = "cultura-legitimidad-y-normas"
@@ -622,7 +667,9 @@ references = [
   { name = "Cambridge Social Anthropology", url = "https://www.socanth.cam.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of critical essay connecting cultural artifact to institutional problem"
-evaluation_secondary = "TP — Essay with full revision history"
+evaluation_secondaries = [
+  "TP — Essay with full revision history",
+]
 
 [[course.extra_section]]
 label = "Canon de análisis / Primary cultural canon"
@@ -685,7 +732,9 @@ references = [
   { name = "Cambridge HPS", url = "https://www.hps.cam.ac.uk/" },
 ]
 evaluation_primary = "OD — Defense of philosophical analysis of a real AI system"
-evaluation_secondary = "TP — Written analysis"
+evaluation_secondaries = [
+  "TP — Written analysis",
+]
 
 [[course]]
 slug = "estrategia-producto-y-salida-al-mercado"
@@ -711,7 +760,9 @@ references = [
   { name = "Harvard Business School Strategy", url = "" },
 ]
 evaluation_primary = "OD — Defense of strategic analysis and market entry plan"
-evaluation_secondary = "TP — Strategic analysis built with AI"
+evaluation_secondaries = [
+  "TP — Strategic analysis built with AI",
+]
 
 [[course]]
 slug = "control-observabilidad-y-medicion"
@@ -740,7 +791,9 @@ references = [
   { name = "Caltech CDS 110 Introduction to Control", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "OD — Defense of system stability analysis"
+evaluation_secondaries = [
+  "OD — Defense of system stability analysis",
+]
 
 [[course]]
 slug = "etica-y-responsabilidad-bajo-incertidumbre"
@@ -766,7 +819,9 @@ references = [
   { name = "Oxford PPE Philosophy component", url = "" },
 ]
 evaluation_primary = "OD — Defense of ethical analysis of a hard case"
-evaluation_secondary = "TP — Written case analysis"
+evaluation_secondaries = [
+  "TP — Written case analysis",
+]
 
 [[course]]
 slug = "laboratorio-de-diseno-institucional"
@@ -793,7 +848,9 @@ references = [
   { name = "Oxford Blavatnik School of Government", url = "https://www.bsg.ox.ac.uk/" },
 ]
 evaluation_primary = "PD — Public defense before external panel with practitioners"
-evaluation_secondary = "TP — Institutional design document"
+evaluation_secondaries = [
+  "TP — Institutional design document",
+]
 
 [[course]]
 slug = "negociacion-persuasion-y-liderazgo"
@@ -820,7 +877,9 @@ references = [
   { name = "Cambridge Judge Business School Negotiation", url = "" },
 ]
 evaluation_primary = "LC — Live negotiation exercise with real stakes"
-evaluation_secondary = "OD — Debrief and strategy analysis"
+evaluation_secondaries = [
+  "OD — Debrief and strategy analysis",
+]
 
 [[course]]
 slug = "sistemas-complejos"
@@ -848,7 +907,9 @@ references = [
   { name = "Barabási Network Science", url = "https://networksciencebook.com/" },
 ]
 evaluation_primary = "OD — Defense of agent-based model"
-evaluation_secondary = "TP — Agent-based model of a real complex system"
+evaluation_secondaries = [
+  "TP — Agent-based model of a real complex system",
+]
 
 [[course]]
 slug = "teoria-de-la-decision"
@@ -878,7 +939,9 @@ references = [
   { name = "Oxford PPE Philosophy component", url = "" },
 ]
 evaluation_primary = "OD — Defense of decision analysis of a real multi-criteria problem"
-evaluation_secondary = "TP — Decision analysis built with AI"
+evaluation_secondaries = [
+  "TP — Decision analysis built with AI",
+]
 
 [[course]]
 slug = "escritura-avanzada-en-espanol"
@@ -900,7 +963,7 @@ texts = [
 ]
 references = []
 evaluation_primary = "WP — Written portfolio with full revision history"
-evaluation_secondary = ""
+evaluation_secondaries = []
 
 [[course]]
 slug = "comportamiento-organizacional-y-equipos"
@@ -931,7 +994,9 @@ references = [
   { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/" },
 ]
 evaluation_primary = "OD — Defense of organizational diagnosis"
-evaluation_secondary = "TP — Diagnosis of a real or simulated organization"
+evaluation_secondaries = [
+  "TP — Diagnosis of a real or simulated organization",
+]
 
 [[course]]
 slug = "informacion-senales-y-comunicacion"
@@ -955,7 +1020,9 @@ references = [
   { name = "Stanford EE 376A Information Theory", url = "" },
 ]
 evaluation_primary = "WE — Written exam"
-evaluation_secondary = "TP — Problem sets"
+evaluation_secondaries = [
+  "TP — Problem sets",
+]
 
 [[course]]
 slug = "diseno-de-producto-e-interaccion"
@@ -980,7 +1047,9 @@ references = [
   { name = "Carnegie Mellon Human-Computer Interaction", url = "" },
 ]
 evaluation_primary = "PD — Public defense of prototype with usability evidence"
-evaluation_secondary = "TP — Prototype with documented user research"
+evaluation_secondaries = [
+  "TP — Prototype with documented user research",
+]
 
 [[course]]
 slug = "seminario-fundacional-ia-juicio-y-responsabilidad"
@@ -1002,7 +1071,9 @@ texts = [
 ]
 references = []
 evaluation_primary = "OD — Oral defense of position paper"
-evaluation_secondary = "TP — Position paper on what AI changes and what it does not"
+evaluation_secondaries = [
+  "TP — Position paper on what AI changes and what it does not",
+]
 
 [[course]]
 slug = "biologia"
@@ -1028,4 +1099,6 @@ references = [
   { name = "École Polytechnique tronc commun Biologie", url = "" },
 ]
 evaluation_primary = "OD — Defense of analysis of a biological system"
-evaluation_secondary = "TP — Quantitative analysis with estimates and models"
+evaluation_secondaries = [
+  "TP — Quantitative analysis with estimates and models",
+]

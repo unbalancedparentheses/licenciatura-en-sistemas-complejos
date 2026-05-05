@@ -3,8 +3,10 @@ title = "Licenciatura en Sistemas Complejos — Propuesta UBA"
 description = "Bachelor of Systems and Decision Science · Universidad de Buenos Aires"
 default_language = "es"
 
-# Generate output without trailing slashes for cleaner URLs
 generate_feeds = false
+
+# Compile SCSS partials in site/sass/ to public/*.css
+compile_sass = true
 
 [markdown]
 smart_punctuation = true

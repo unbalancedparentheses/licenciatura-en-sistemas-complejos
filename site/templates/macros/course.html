@@ -4,13 +4,17 @@
   <div class="course-title-es">{{ course.title_es }}</div>
   <div class="course-title-en">{{ course.title_en }}</div>
 
+  {% if course.objective_es or course.objective_en %}
   <div class="course-section-label">Objetivo / Objective</div>
   <p lang="es">{{ course.objective_es }}</p>
   <p lang="en">{{ course.objective_en }}</p>
+  {% endif %}
 
+  {% if course.content_es or course.content_en %}
   <div class="course-section-label">Contenido / Content</div>
   <p lang="es">{{ course.content_es }}</p>
   <p lang="en">{{ course.content_en }}</p>
+  {% endif %}
 
   {% if course.notes_html %}
     <p><em>{{ course.notes_html | safe }}</em></p>
@@ -18,7 +22,7 @@
 
   {% if course.extra_section %}
     {% for x in course.extra_section %}
-      <div class="course-section-label">{{ x.label }}</div>
+      <div class="course-section-label">{{ x.label | safe }}</div>
       {{ x.html | safe }}
     {% endfor %}
   {% endif %}
@@ -33,14 +37,13 @@
   {% if course.references %}
   <div class="course-section-label">Cursos de referencia / Reference courses</div>
   <ul>
-    {% for r in course.references %}<li><a href="{{ r.url }}">{{ r.name }}</a></li>{% endfor %}
+    {% for r in course.references %}<li>{% if r.url %}{{ r.name }} — <a href="{{ r.url }}">{{ r.url | replace(from='https://', to='') | replace(from='http://', to='') }}</a>{% else %}{{ r.name }}{% endif %}</li>{% endfor %}
   </ul>
   {% endif %}
 
   <div class="course-section-label">Evaluación / Evaluation</div>
   <p>
-    <span class="eval-badge">{{ course.evaluation_primary }}</span>
-    {% if course.evaluation_secondary %}<span class="eval-secondary">{{ course.evaluation_secondary }}</span>{% endif %}
+    <span class="eval-badge">{{ course.evaluation_primary }}</span>{% for s in course.evaluation_secondaries %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
   </p>
 </div>
 {% endmacro card %}

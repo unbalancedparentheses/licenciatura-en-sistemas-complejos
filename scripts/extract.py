@@ -144,10 +144,10 @@ def extract_lang_pair(html_fragment: str) -> tuple[str, str]:
     return (es.group(1).strip() if es else "", en.group(1).strip() if en else "")
 
 
-def extract_evaluation(html_fragment: str) -> tuple[str, str]:
+def extract_evaluation(html_fragment: str) -> tuple[str, list[str]]:
     p = EVAL_PRIMARY_RE.search(html_fragment)
-    s = EVAL_SECONDARY_RE.search(html_fragment)
-    return (p.group(1).strip() if p else "", s.group(1).strip() if s else "")
+    secondaries = [m.group(1).strip() for m in EVAL_SECONDARY_RE.finditer(html_fragment)]
+    return (p.group(1).strip() if p else "", secondaries)
 
 
 def parse_li_for_text(li: str) -> str:
@@ -218,7 +218,7 @@ def extract_courses(html: str) -> list[dict]:
         texts = extract_lis(texts_block) if texts_block else []
         refs_raw = extract_lis(refs_block) if refs_block else []
         refs = [parse_li_for_reference(r) for r in refs_raw]
-        eval_p, eval_s = extract_evaluation(eval_block) if eval_block else ("", "")
+        eval_p, eval_secondaries = extract_evaluation(eval_block) if eval_block else ("", [])
 
         # notes — italic <em> paragraph immediately before evaluation, if any
         notes = ""
@@ -239,7 +239,7 @@ def extract_courses(html: str) -> list[dict]:
             "texts": texts,
             "references": refs,
             "evaluation_primary": eval_p,
-            "evaluation_secondary": eval_s,
+            "evaluation_secondaries": eval_secondaries,
             "extras": extras,
         })
     return courses
@@ -345,7 +345,13 @@ def emit_courses(courses: list[dict]) -> str:
         else:
             out.append("references = []")
         out.append(f"evaluation_primary = {toml_str(c['evaluation_primary'])}")
-        out.append(f"evaluation_secondary = {toml_str(c['evaluation_secondary'])}")
+        if c.get('evaluation_secondaries'):
+            out.append("evaluation_secondaries = [")
+            for s in c['evaluation_secondaries']:
+                out.append(f"  {toml_str(s)},")
+            out.append("]")
+        else:
+            out.append("evaluation_secondaries = []")
         # extras must come AFTER all primary fields because they open a sub-table
         if c.get("extras"):
             for label, body in c["extras"]:
@@ -370,8 +376,17 @@ def extract_studios(html: str) -> list[dict]:
     if s < 0 or e < 0:
         return []
     region = html[s:e]
-    for m in re.finditer(r'<div class="studio">(.*?)</div>\s*\n\s*(?=<div class="studio">|<!--|<div class="page-break")', region, re.DOTALL):
-        block = m.group(1)
+    pos = 0
+    while True:
+        sm = re.search(r'<div class="studio">', region[pos:])
+        if not sm:
+            break
+        start = pos + sm.start()
+        end = find_course_end(region, start)  # depth-balanced div matching
+        if end < 0:
+            break
+        block = region[start:end]
+        pos = end
         num_match = re.search(r'<div class="studio-number">([^<]+)</div>', block)
         title_match = re.search(r'<div class="studio-title">([^<]+)</div>', block)
         if not num_match or not title_match:

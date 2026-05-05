@@ -1,0 +1,57 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.stat-box {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 24pt;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  font-feature-settings: "kern", "lnum", "tnum";
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.pullquote {
+  border-left: 3px solid #1a1a1a;
+  padding: 16px 24px;
+  margin: 28px 0;
+  font-size: 13pt;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+}
+
+.publication {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-name {
+  font-weight: 600;
+  font-size: 12pt;
+  margin-bottom: 4px;
+}
+
+.pub-desc {
+  color: #333;
+  margin-bottom: 0;
+}

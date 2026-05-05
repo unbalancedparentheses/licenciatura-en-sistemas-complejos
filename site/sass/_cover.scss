@@ -1,0 +1,68 @@
+.cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  border-bottom: 2px solid #1a1a1a;
+  margin-bottom: 80px;
+}
+
+.cover-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.proposal-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5pt;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b54a00;
+  border: 1.5px solid #b54a00;
+  padding: 5px 12px;
+  margin-bottom: 36px;
+}
+
+.cover-title {
+  font-size: 32pt;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+
+.cover-subtitle {
+  font-size: 16pt;
+  font-weight: 400;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 48px;
+}
+
+.cover-institution {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cover-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  color: #666;
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid #ddd;
+
+  span { margin-right: 32px; }
+}

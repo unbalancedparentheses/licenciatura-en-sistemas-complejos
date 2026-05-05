@@ -1,9 +1,8 @@
 name: Deploy site
 
-# Manual-only until the Zola build is confirmed visually equivalent to legacy.
-# When ready, change to also trigger on `push: branches: [main]` and switch
-# the repo Pages source to "GitHub Actions" in the repo settings.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

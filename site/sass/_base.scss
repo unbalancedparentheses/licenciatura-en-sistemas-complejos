@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 14pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 60px 60px;
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-bottom: 12px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+li { margin-bottom: 6px; }
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #aaa;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.15em;
+  &:hover { text-decoration-color: #1a1a1a; }
+}
+
+.page-break { page-break-before: always; margin-top: 80px; }

@@ -1,0 +1,57 @@
+.course {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.course-title-es {
+  font-size: 13pt;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+
+.course-title-en {
+  font-size: 10pt;
+  font-style: italic;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+.course-section-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.bilingual-block { margin-bottom: 12px; }
+.lang-es, .lang-en { margin-bottom: 0; }
+
+.eval-badge {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5pt;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.eval-secondary {
+  display: inline-block;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5pt;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}

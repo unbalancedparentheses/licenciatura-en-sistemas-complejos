@@ -6,7 +6,8 @@ roman = "I"
 title_es = "Escritura y Oratoria"
 title_en = "Writing and Rhetoric"
 raw_html = """
-<div class="studio-number">Studio I — Año 1, Bloques A+B</div>
+<div class="studio">
+  <div class="studio-number">Studio I — Año 1, Bloques A+B</div>
   <div class="studio-title">Escritura y Oratoria / Writing and Rhetoric</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -25,6 +26,7 @@ raw_html = """
   <p><span class="eval-badge">WP — Written portfolio with revision history</span><span class="eval-secondary">Recorded presentations with self-evaluation</span></p>
   <h4>Reference programs</h4>
   <p>Stanford PWR Program in Writing and Rhetoric · MIT CI-H Communication Intensive · Harvard Bok Center Writing Program</p>
+</div>
 """
 
 [[studio]]
@@ -33,7 +35,8 @@ roman = "II"
 title_es = "Construir y Romper"
 title_en = "Build and Break"
 raw_html = """
-<div class="studio-number">Studio II — Año 1, Bloques C+D</div>
+<div class="studio">
+  <div class="studio-number">Studio II — Año 1, Bloques C+D</div>
   <div class="studio-title">Construir y Romper / Build and Break</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -54,6 +57,7 @@ raw_html = """
   <p><span class="eval-badge">PD — Public defense of functional system</span></p>
   <h4>Reference programs</h4>
   <p>MIT 6.S08 Interconnected Embedded Systems · Caltech ME/EE 75 Projects in Experimental Engineering · UCL Integrated Engineering Programme</p>
+</div>
 """
 
 [[studio]]
@@ -62,7 +66,8 @@ roman = "III"
 title_es = "Fiabilidad Bajo Presión"
 title_en = "Reliability Under Pressure"
 raw_html = """
-<div class="studio-number">Studio III — Año 2, Bloques A+B</div>
+<div class="studio">
+  <div class="studio-number">Studio III — Año 2, Bloques A+B</div>
   <div class="studio-title">Fiabilidad Bajo Presión / Reliability Under Pressure</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -81,6 +86,7 @@ raw_html = """
   <p><span class="eval-badge">PD — Defense simulating a post-incident review</span></p>
   <h4>Reference programs</h4>
   <p>Google Site Reliability Engineering methodology · MIT distributed systems labs</p>
+</div>
 """
 
 [[studio]]
@@ -89,7 +95,8 @@ roman = "IV"
 title_es = "Diseño de Sistemas Institucionales"
 title_en = "Institutional Systems Design"
 raw_html = """
-<div class="studio-number">Studio IV — Año 2, Bloques C+D</div>
+<div class="studio">
+  <div class="studio-number">Studio IV — Año 2, Bloques C+D</div>
   <div class="studio-title">Diseño de Sistemas Institucionales / Institutional Systems Design</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -109,6 +116,7 @@ raw_html = """
   <p><span class="eval-badge">PD — Public defense before panel including practitioners from the relevant institutional domain</span></p>
   <h4>Reference programs</h4>
   <p>Oxford Blavatnik School of Government capstone projects · Harvard Kennedy School policy exercises</p>
+</div>
 """
 
 [[studio]]
@@ -117,7 +125,8 @@ roman = "V"
 title_es = "Sistema Crítico bajo Restricciones"
 title_en = "Critical System Under Constraints"
 raw_html = """
-<div class="studio-number">Studio V — Año 3, Bloques A+B</div>
+<div class="studio">
+  <div class="studio-number">Studio V — Año 3, Bloques A+B</div>
   <div class="studio-title">Sistema Crítico bajo Restricciones / Critical System Under Constraints</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -138,6 +147,7 @@ raw_html = """
   <p><span class="eval-badge">PD — Public defense with red team findings as adversarial input</span></p>
   <h4>Reference programs</h4>
   <p>MIT capstone engineering projects · Caltech senior thesis projects · UCL IEP final projects</p>
+</div>
 """
 
 [[studio]]
@@ -146,7 +156,8 @@ roman = "VI"
 title_es = "Venture from Zero"
 title_en = "Venture from Zero"
 raw_html = """
-<div class="studio-number">Studio VI — Año 3, Bloques C+D + Año 3.5</div>
+<div class="studio">
+  <div class="studio-number">Studio VI — Año 3, Bloques C+D + Año 3.5</div>
   <div class="studio-title">Venture from Zero</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -170,4 +181,5 @@ raw_html = """
   <p><span class="eval-badge">PD — Final public defense before real investors or panel simulating investor conditions exactly</span></p>
   <h4>Reference programs</h4>
   <p>Y Combinator Startup School · Stanford CS 183 Startup · MIT delta v accelerator · Entrepreneur First</p>
+</div>
 """
