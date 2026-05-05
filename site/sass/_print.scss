@@ -6,6 +6,17 @@
   .pdf-link-wrap { display: none; }
 }
 
+// PDF mode: triggered by ?pdf=1 URL parameter so chromium --print-to-pdf
+// hides interactive chrome regardless of whether @media print is honored.
+body.pdf-mode {
+  padding: 40px 50px;
+
+  .cover { min-height: auto; padding: 60px 0; }
+  .view-switcher,
+  .lang-switcher,
+  .pdf-link-wrap { display: none !important; }
+}
+
 @media (max-width: 600px) {
   .view-switcher,
   .lang-switcher {

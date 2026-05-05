@@ -52,6 +52,10 @@
     const params = new URLSearchParams(window.location.search);
     const qpLang = params.get('lang');
     if (qpLang && LANGS.includes(qpLang)) initialLang = qpLang;
+    // PDF mode: hide all interactive chrome via body class
+    if (params.get('pdf') === '1') {
+      document.body.classList.add('pdf-mode');
+    }
   } catch (e) {}
   applyLang(initialLang);
 

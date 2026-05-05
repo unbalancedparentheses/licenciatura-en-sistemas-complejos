@@ -73,10 +73,12 @@ def build_pdf(chromium: str, url: str, output: Path) -> None:
         "--disable-gpu",
         "--no-sandbox",
         "--hide-scrollbars",
-        "--virtual-time-budget=4000",
+        "--run-all-compositor-stages-before-draw",
+        "--virtual-time-budget=8000",
+        "--no-pdf-header-footer",
         "--print-to-pdf-no-header",
         f"--print-to-pdf={output}",
-        url,
+        url + ("&" if "?" in url else "?") + "pdf=1",
     ]
     print(f"  → {output.name}")
     res = subprocess.run(cmd, capture_output=True, text=True)
