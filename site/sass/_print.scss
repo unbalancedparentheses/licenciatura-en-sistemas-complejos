@@ -58,13 +58,47 @@ body.pdf-mode {
 
   // Tables: allow text wrap so cells don't force horizontal scroll.
   table {
-    font-size: 9pt;
+    font-size: 10pt;
     table-layout: fixed;
     word-wrap: break-word;
   }
   th, td {
     padding: 6px 6px;
     vertical-align: top;
+  }
+
+  // Curriculum tables (4 blocks across) flatten into stacked rows with
+  // block labels via :nth-child. Readable rather than horizontal-scrolling.
+  // Detection: tables whose header row contains a "Bloque" cell — we approximate
+  // with table-layout:fixed + 4-column structure, so we use a class hint added
+  // by a small JS, OR target all tables in the curriculum section by giving
+  // section-level scope. Here we use a section-level approach that matches the
+  // 4-block tables specifically (Año 1 / 2 / 3) and leaves Año 3.5 (2 blocks)
+  // and other tables alone via a CSS class hook.
+  .curriculum-table {
+    table { display: block; border-collapse: collapse; }
+    thead, tbody { display: block; }
+    tr { display: block; border-bottom: 1px solid #e8e8e8; padding: 6px 0; }
+    tr:last-child { border-bottom: none; }
+    th { display: none; }
+    td {
+      display: block;
+      border: none;
+      padding: 4px 8px;
+      background: transparent !important;
+      font-size: 11pt;
+    }
+    td:nth-child(1)::before { content: "Bloque A · "; color: #999; font-size: 9pt; letter-spacing: 0.05em; text-transform: uppercase; }
+    td:nth-child(2)::before { content: "Bloque B · "; color: #999; font-size: 9pt; letter-spacing: 0.05em; text-transform: uppercase; }
+    td:nth-child(3)::before { content: "Bloque C · "; color: #999; font-size: 9pt; letter-spacing: 0.05em; text-transform: uppercase; }
+    td:nth-child(4)::before { content: "Bloque D · "; color: #999; font-size: 9pt; letter-spacing: 0.05em; text-transform: uppercase; }
+    td[colspan]::before { content: ""; }
+    td[colspan] {
+      background: #f5f5f5 !important;
+      font-style: italic;
+      text-align: center;
+      margin-top: 8px;
+    }
   }
 
   // Pull quote less padding
