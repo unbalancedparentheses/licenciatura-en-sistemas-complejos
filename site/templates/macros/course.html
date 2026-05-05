@@ -12,9 +12,15 @@
   <p lang="es">{{ course.content_es }}</p>
   <p lang="en">{{ course.content_en }}</p>
 
-  {% if course.notes_es or course.notes_en %}
-    <p class="course-notes" lang="es"><em>{{ course.notes_es }}</em></p>
-    <p class="course-notes" lang="en"><em>{{ course.notes_en }}</em></p>
+  {% if course.notes_html %}
+    <p><em>{{ course.notes_html | safe }}</em></p>
+  {% endif %}
+
+  {% if course.extra_section %}
+    {% for x in course.extra_section %}
+      <div class="course-section-label">{{ x.label }}</div>
+      {{ x.html | safe }}
+    {% endfor %}
   {% endif %}
 
   {% if course.texts %}

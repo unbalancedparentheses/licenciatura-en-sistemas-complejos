@@ -16,6 +16,8 @@
             zola
             gnumake
             taplo
+            pandoc
+            python3
           ];
           shellHook = ''
             echo "lsc dev shell · zola $(zola --version)"

@@ -1,0 +1,40 @@
+name: Deploy site
+
+# Manual-only until the Zola build is confirmed visually equivalent to legacy.
+# When ready, change to also trigger on `push: branches: [main]` and switch
+# the repo Pages source to "GitHub Actions" in the repo settings.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.22.1
+      - name: Build site
+        run: cd site && zola build --output-dir ../public
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

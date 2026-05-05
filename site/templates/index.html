@@ -8,15 +8,17 @@
 </head>
 <body data-lang="es">
 
-<nav class="lang-switcher" aria-label="Language selector">
-  <button data-lang="es">ES</button>
-  <button data-lang="en">EN</button>
-</nav>
-
 {% set audiences = load_data(path='data/audiences.toml') %}
 {% set program = load_data(path='data/program.toml') %}
 {% set courses_data = load_data(path='data/courses.toml') %}
 {% set curriculum = load_data(path='data/curriculum.toml') %}
+{% set studios_data = load_data(path='data/studios.toml') %}
+{% set bibliography = load_data(path='data/bibliography.toml') %}
+
+<nav class="lang-switcher" aria-label="Language selector">
+  <button data-lang="es">ES</button>
+  <button data-lang="en">EN</button>
+</nav>
 
 <nav class="view-switcher" aria-label="Document view selector">
   <span class="view-label" data-i18n="view">Vista</span>
@@ -32,10 +34,9 @@
   <div class="proposal-badge" lang="es">{{ program.status_label_es }}</div>
   <div class="proposal-badge" lang="en">{{ program.status_label_en }}</div>
   <div class="cover-title">Licenciatura en<br>Sistemas Complejos</div>
-  <div class="cover-subtitle">{{ config.extra.program_title_en }}</div>
-  <div class="cover-institution">{{ config.extra.institution }}</div>
+  <div class="cover-subtitle">Bachelor of Systems and Decision Science</div>
+  <div class="cover-institution">Universidad de Buenos Aires</div>
   <div class="cover-institution" style="margin-top:4px; color:#888;">{{ config.extra.faculties }}</div>
-  {% set studios = curriculum.studio %}
   <div class="cover-meta" lang="es">
     <span>Duración: {{ program.years }} años</span>
     <span>Cohorte: {{ program.cohort_min }}–{{ program.cohort_max }} estudiantes</span>
@@ -50,48 +51,92 @@
   </div>
 </div>
 
-{# Render each section in order #}
-{% set section = get_section(path='_index.md') %}
-{% for page in section.pages %}
-  <article class="section" data-views="{{ page.extra.audiences | default(value=['students','faculty','authorities']) | join(sep=',') }}">
-    <div class="page-break"></div>
-    <div class="part-label">{{ page.extra.part | default(value='') }}</div>
-    <h1>{{ page.title }}</h1>
-    {{ page.content | safe }}
-  </article>
+{# Table of contents — kept inline since legacy uses inline TOC #}
+<div class="part-label">Contents</div>
+<h1>Table of Contents</h1>
+<div class="toc-part">Front Matter</div>
+<div class="toc-entry"><span>Preface</span><span>2</span></div>
+<div class="toc-entry"><span>Executive Summary</span><span>3</span></div>
+<div class="toc-part">Part I — Context</div>
+<div class="toc-entry"><span>1. Context and Motivation</span><span>4</span></div>
+<div class="toc-entry"><span>2. The Contemporary Intellectual Context</span><span>6</span></div>
+<div class="toc-part">Part II — Argument</div>
+<div class="toc-entry"><span>3. The Founding Argument</span><span>8</span></div>
+<div class="toc-entry"><span>4. Program Identity and Positioning</span><span>11</span></div>
+<div class="toc-part">Part III — Design</div>
+<div class="toc-entry"><span>5. Academic References and Inspiration</span><span>14</span></div>
+<div class="toc-entry"><span>6. Pedagogical Model</span><span>18</span></div>
+<div class="toc-entry"><span>7. Evaluation Framework</span><span>21</span></div>
+<div class="toc-part">Part IV — Curriculum</div>
+<div class="toc-entry"><span>8. Curriculum Overview</span><span>24</span></div>
+<div class="toc-entry"><span>9. Course Descriptions</span><span>27</span></div>
+<div class="toc-entry"><span>10. Studio Descriptions</span><span>39</span></div>
+<div class="toc-part">Part V — Operations</div>
+<div class="toc-entry"><span>11. Admissions</span><span>42</span></div>
+<div class="toc-entry"><span>12. Graduate Profile</span><span>44</span></div>
+<div class="toc-part">Appendices</div>
+<div class="toc-entry"><span>Appendix A — References by Course and Institution</span><span>46</span></div>
+<div class="toc-entry"><span>Appendix B — Evaluation Framework by Course</span><span>48</span></div>
+<div class="toc-entry"><span>Appendix C — Full Bibliography</span><span>49</span></div>
+
+{# Section partials — preserved verbatim from legacy for content fidelity #}
+{% include "sections/preface.html" %}
+{% include "sections/executive-summary.html" %}
+{% include "sections/01-context.html" %}
+{% include "sections/02-intellectual-context.html" %}
+{% include "sections/03-founding-argument.html" %}
+{% include "sections/04-positioning.html" %}
+{% include "sections/05-references.html" %}
+{% include "sections/06-pedagogy.html" %}
+{% include "sections/07-evaluation.html" %}
+{% include "sections/08-curriculum.html" %}
+
+{# §9 Course Descriptions — generated from data #}
+<div class="page-break" data-views="faculty,authorities"></div>
+<div class="part-label">Part IV — Curriculum · Section 9</div>
+<h1>Course Descriptions</h1>
+{% set years = curriculum.year %}
+{% for y in years %}
+  {% set year_courses = courses_data.course | filter(attribute='year', value=y.number) %}
+  {% if year_courses | length > 0 %}
+    <h2>{{ y.title_es }}</h2>
+    {% for c in year_courses %}
+      {{ course_m::card(course=c) }}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
 
-{# Course descriptions section — generated from data #}
-<article class="section" data-views="faculty,authorities">
-  <div class="page-break"></div>
-  <div class="part-label">Part IV — Curriculum · Section 9</div>
-  <h1>Course Descriptions</h1>
+{# §10 Studio Descriptions — preserved verbatim from data #}
+<div class="page-break" data-views="students,faculty,authorities"></div>
+<div class="part-label">Part IV — Curriculum · Section 10</div>
+<h1>Studio Descriptions</h1>
+<p>Studios are the spine of the program. They are not courses. They are sixteen-week projects with real deliverables, real teams, real constraints, and real accountability. All Studios culminate in a public defense before a panel that includes external reviewers.</p>
+{% for s in studios_data.studio %}
+  {{ s.raw_html | safe }}
+{% endfor %}
 
-  {% set years = curriculum.year %}
-  {% for y in years %}
-    {% set year_courses = courses_data.course | filter(attribute='year', value=y.number) %}
-    {% if year_courses | length > 0 %}
-      <h2>{{ y.title_es }}</h2>
-      {% for c in year_courses %}
-        {{ course_m::card(course=c) }}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-</article>
+{# §11 + §12 #}
+{% include "sections/11-admissions.html" %}
+{% include "sections/12-graduate-profile.html" %}
 
-{# Auto-generated stats #}
-<article class="section" data-views="students,faculty,authorities">
-  <div class="page-break"></div>
-  <h1>Program Statistics</h1>
-  <div class="stats-grid">
-    <div class="stat-box"><span class="stat-number">{{ program.years }}</span><span class="stat-label">Years</span></div>
-    <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Courses</span></div>
-    <div class="stat-box"><span class="stat-number">{{ studios | length }}</span><span class="stat-label">Studios</span></div>
-    <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students/cohort</span></div>
-    <div class="stat-box"><span class="stat-number">{{ program.weeks_per_block }}</span><span class="stat-label">Weeks per block</span></div>
-    <div class="stat-box"><span class="stat-number">{{ program.written_final_exams }}</span><span class="stat-label">Written final exams</span></div>
-  </div>
-</article>
+{# Appendices A and B preserved verbatim #}
+{% include "sections/appendix-a.html" %}
+{% include "sections/appendix-b.html" %}
+
+{# Appendix C — Full Bibliography from data #}
+<div class="page-break" data-views="faculty,authorities"></div>
+<div class="part-label">Appendix C</div>
+<h1>Full Bibliography</h1>
+<p style="font-size:9.5pt; line-height:1.6;">
+{% for e in bibliography.entry %}{{ e.text | safe }}{% if not loop.last %}<br><br>{% endif %}
+{% endfor %}
+</p>
+
+<div style="margin-top:80px; padding-top:32px; border-top:1px solid #ddd; font-family:'Inter',sans-serif; font-size:8pt; color:#888; text-align:center;">
+  Licenciatura en Sistemas Complejos · Bachelor of Systems and Decision Science<br>
+  Universidad de Buenos Aires · Facultad de Ciencias Económicas · Facultad de Ingeniería<br>
+  <span lang="es">Propuesta · Borrador · {{ config.extra.year }}</span><span lang="en">Proposal · Draft · {{ config.extra.year }}</span>
+</div>
 
 <script src="{{ get_url(path='view-switcher.js') }}"></script>
 </body>
