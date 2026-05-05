@@ -1,0 +1,131 @@
+{% import 'macros/course.html' as course_m %}
+{% set audience = section.extra.audience %}
+{% set lang_param = "" %}{# overridden by ?lang=en query string at runtime, but server-rendered defaults to es #}
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<title>{{ section.title }}</title>
+<link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body data-lang="es" data-audience="{{ audience }}">
+
+{% set audiences_data = load_data(path='data/audiences.toml') %}
+{% set program = load_data(path='data/program.toml') %}
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set curriculum = load_data(path='data/curriculum.toml') %}
+{% set studios_data = load_data(path='data/studios.toml') %}
+{% set bibliography = load_data(path='data/bibliography.toml') %}
+
+<nav class="lang-switcher" aria-label="Language selector">
+  <button data-lang="es">ES</button>
+  <button data-lang="en">EN</button>
+</nav>
+
+<nav class="view-switcher" aria-label="Document view selector">
+  <span class="view-label" data-i18n="view">Vista</span>
+  <a href="{{ get_url(path='@/_index.md') }}" class="view-link" data-view="full" data-i18n="full">Completa</a>
+  {% for a in audiences_data.audience %}
+    <a href="{{ get_url(path='@/' ~ a.slug ~ '/_index.md') }}" class="view-link {% if audience == a.slug %}active{% endif %}" data-view="{{ a.slug }}" data-i18n="{{ a.slug }}">{{ a.label_es }}</a>
+  {% endfor %}
+</nav>
+
+{# Cover #}
+<div class="cover">
+  <div class="cover-label" lang="es">Propuesta de programa — {{ config.extra.institution }}</div>
+  <div class="cover-label" lang="en">Program Proposal — {{ config.extra.institution }}</div>
+  <div class="proposal-badge" lang="es">{{ program.status_label_es }}</div>
+  <div class="proposal-badge" lang="en">{{ program.status_label_en }}</div>
+  <div class="cover-title">Licenciatura en<br>Sistemas Complejos</div>
+  <div class="cover-subtitle">Bachelor of Systems and Decision Science</div>
+  <div class="cover-institution">Universidad de Buenos Aires</div>
+  <div class="cover-institution" style="margin-top:4px; color:#888;">{{ config.extra.faculties }}</div>
+  <div class="cover-meta" lang="es">
+    <span>Duración: {{ program.years }} años</span>
+    <span>Cohorte: {{ program.cohort_min }}–{{ program.cohort_max }} estudiantes</span>
+    <span>Bloques de {{ program.weeks_per_block }} semanas</span>
+    <span>Sin exámenes finales escritos</span>
+  </div>
+  <div class="cover-meta" lang="en">
+    <span>Duration: {{ program.years }} years</span>
+    <span>Cohort: {{ program.cohort_min }}–{{ program.cohort_max }} students</span>
+    <span>{{ program.weeks_per_block }}-week blocks</span>
+    <span>No written final exams</span>
+  </div>
+  <div class="cover-audience" style="margin-top:24px; font-family:'Inter',sans-serif; font-size:9pt; letter-spacing:0.15em; text-transform:uppercase; color:#888;">
+    {% if audience == "students" %}<span lang="es">Versión: Estudiantes</span><span lang="en">View: Students</span>
+    {% elif audience == "faculty" %}<span lang="es">Versión: Profesores</span><span lang="en">View: Faculty</span>
+    {% elif audience == "authorities" %}<span lang="es">Versión: Autoridades</span><span lang="en">View: Authorities</span>
+    {% endif %}
+  </div>
+</div>
+
+{# Section partials filtered by audience #}
+{% include 'sections/preface.html' %}
+{% include 'sections/executive-summary.html' %}
+{% include 'sections/01-context.html' %}
+{% if audience != "students" %}{% include 'sections/02-intellectual-context.html' %}{% endif %}
+{% include 'sections/03-founding-argument.html' %}
+{% include 'sections/04-positioning.html' %}
+{% if audience != "students" %}{% include 'sections/05-references.html' %}{% endif %}
+{% include 'sections/06-pedagogy.html' %}
+{% if audience != "students" %}{% include 'sections/07-evaluation.html' %}{% endif %}
+{% include 'sections/08-curriculum.html' %}
+
+{# Course descriptions — only for faculty + authorities #}
+{% if audience in ["faculty", "authorities"] %}
+<div class="page-break"></div>
+<div class="part-label">Part IV — Curriculum · Section 9</div>
+<h1 lang="es">Descripciones de las materias</h1>
+<h1 lang="en">Course Descriptions</h1>
+{% set years = curriculum.year %}
+{% for y in years %}
+  {% set year_courses = courses_data.course | filter(attribute='year', value=y.number) %}
+  {% if year_courses | length > 0 %}
+    <h2>{{ y.title_es }}</h2>
+    {% for c in year_courses %}
+      {{ course_m::card(course=c) }}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% endif %}
+
+{# Studio Descriptions — visible to all audiences #}
+<div class="page-break"></div>
+<div class="part-label">Part IV — Curriculum · Section 10</div>
+<h1 lang="es">Descripciones de los Studios</h1>
+<h1 lang="en">Studio Descriptions</h1>
+<p lang="es">Los Studios son la columna vertebral del programa. No son materias. Son proyectos de dieciséis semanas con entregables reales, equipos reales, restricciones reales y rendición de cuentas real. Todos los Studios culminan en una defensa pública ante un panel que incluye revisores externos.</p>
+<p lang="en">Studios are the spine of the program. They are not courses. They are sixteen-week projects with real deliverables, real teams, real constraints, and real accountability. All Studios culminate in a public defense before a panel that includes external reviewers.</p>
+{% for s in studios_data.studio %}
+  {{ s.raw_html | safe }}
+{% endfor %}
+
+{# Admissions and graduate profile #}
+{% if audience != "faculty" %}{% include 'sections/11-admissions.html' %}{% endif %}
+{% include 'sections/12-graduate-profile.html' %}
+
+{# Appendices — faculty + authorities only #}
+{% if audience in ["faculty", "authorities"] %}
+{% include 'sections/appendix-a.html' %}
+{% include 'sections/appendix-b.html' %}
+
+<div class="page-break"></div>
+<div class="part-label">Appendix C</div>
+<h1 lang="es">Bibliografía completa</h1>
+<h1 lang="en">Full Bibliography</h1>
+<p style="font-size:9.5pt; line-height:1.6;">
+{% for e in bibliography.entry %}{{ e.text | safe }}{% if not loop.last %}<br><br>{% endif %}
+{% endfor %}
+</p>
+{% endif %}
+
+<div style="margin-top:80px; padding-top:32px; border-top:1px solid #ddd; font-family:'Inter',sans-serif; font-size:8pt; color:#888; text-align:center;">
+  Licenciatura en Sistemas Complejos · Bachelor of Systems and Decision Science<br>
+  Universidad de Buenos Aires · Facultad de Ciencias Económicas · Facultad de Ingeniería<br>
+  <span lang="es">Propuesta · Borrador · {{ config.extra.year }}</span><span lang="en">Proposal · Draft · {{ config.extra.year }}</span>
+</div>
+
+<script src="{{ get_url(path='view-switcher.js') }}"></script>
+</body>
+</html>

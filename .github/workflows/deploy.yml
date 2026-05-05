@@ -24,6 +24,18 @@ jobs:
           tool: zola@0.22.1
       - name: Build site
         run: cd site && zola build --output-dir ../public
+      - name: Install chromium for PDF export
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq chromium-browser
+      - name: Build PDFs (audience × language)
+        run: |
+          # Move generated site to expected location for the PDF script
+          mkdir -p site/public
+          cp -r public/* site/public/
+          python3 scripts/build_pdfs.py
+          # Promote PDFs to the site for upload
+          cp -r site/public/pdf public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

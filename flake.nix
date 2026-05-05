@@ -18,6 +18,7 @@
             taplo
             pandoc
             python3
+            chromium
           ];
           shellHook = ''
             echo "lsc dev shell · zola $(zola --version)"

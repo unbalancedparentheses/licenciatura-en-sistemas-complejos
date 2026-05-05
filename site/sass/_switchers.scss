@@ -43,7 +43,7 @@
   display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 
-  button {
+  button, .view-link {
     background: transparent;
     border: none;
     padding: 9px 14px;
@@ -53,6 +53,8 @@
     letter-spacing: inherit;
     text-transform: inherit;
     border-right: 1px solid #e0e0e0;
+    text-decoration: none;
+    display: inline-block;
 
     &:last-child { border-right: none; }
     &:hover { background: #f5f5f5; color: #1a1a1a; }

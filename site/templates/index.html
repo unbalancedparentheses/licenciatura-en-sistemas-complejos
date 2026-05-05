@@ -23,8 +23,9 @@
 
 <nav class="view-switcher" aria-label="Document view selector">
   <span class="view-label" data-i18n="view">Vista</span>
+  <a href="{{ get_url(path='@/_index.md') }}" class="view-link active" data-view="full" data-i18n="full">Completa</a>
   {% for a in audiences.audience %}
-    <button data-view="{{ a.slug }}" data-i18n="{{ a.slug }}">{{ a.label_es }}</button>
+    <a href="{{ get_url(path='@/' ~ a.slug ~ '/_index.md') }}" class="view-link" data-view="{{ a.slug }}" data-i18n="{{ a.slug }}">{{ a.label_es }}</a>
   {% endfor %}
 </nav>
 
