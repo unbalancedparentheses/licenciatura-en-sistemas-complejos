@@ -170,7 +170,7 @@
 <h1 lang="es">Bibliografía completa</h1>
 <h1 lang="en">Full Bibliography</h1>
 <p style="font-size:9.5pt; line-height:1.6;">
-{% for e in bibliography.entry %}{{ e.text | safe }}{% if not loop.last %}<br><br>{% endif %}
+{% for e in bibliography.entry %}{{ e.text | safe }}{% if e.url %} <a href="{{ e.url }}" class="bib-link">↗</a>{% endif %}{% if not loop.last %}<br><br>{% endif %}
 {% endfor %}
 </p>
 

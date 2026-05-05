@@ -3,414 +3,549 @@
 
 [[entry]]
 text = "Abelson, Harold, and Gerald Jay Sussman. <em>Structure and Interpretation of Computer Programs.</em> 2nd ed. MIT Press, 1996."
+url = "https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/"
 
 [[entry]]
 text = "Acemoglu, Daron, and James A. Robinson. <em>The Narrow Corridor: States, Societies, and the Fate of Liberty.</em> Penguin Press, 2019."
+url = "https://en.wikipedia.org/wiki/The_Narrow_Corridor"
 
 [[entry]]
 text = "Acemoglu, Daron, and James A. Robinson. <em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty.</em> Crown, 2012."
+url = "https://en.wikipedia.org/wiki/Why_Nations_Fail"
 
 [[entry]]
 text = "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999."
+url = "https://store.doverpublications.com/products/9780486409160"
 
 [[entry]]
 text = "Alberts, Bruce, et al. <em>Essential Cell Biology.</em> 5th ed. W. W. Norton, 2019."
+url = "https://wwnorton.com/books/9780393680362"
 
 [[entry]]
 text = "Alden, Lyn. <em>Broken Money: Why Our Financial System Is Failing Us and How We Can Make It Better.</em> Timestamp Press, 2023."
+url = "https://www.lynalden.com/broken-money/"
 
 [[entry]]
 text = "Ammous, Saifedean. <em>The Bitcoin Standard: The Decentralized Alternative to Central Banking.</em> Wiley, 2018."
+url = "https://en.wikipedia.org/wiki/The_Bitcoin_Standard"
 
 [[entry]]
 text = "Anderson, Ross J. <em>Security Engineering: A Guide to Building Dependable Distributed Systems.</em> 3rd ed. Wiley, 2020."
+url = "https://www.cl.cam.ac.uk/~rja14/book.html"
 
 [[entry]]
 text = "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010."
+url = "https://www.pearson.com/en-us/subject-catalog/p/algebra/P200000006236"
 
 [[entry]]
 text = "Angrist, Joshua D., and Jörn-Steffen Pischke. <em>Mostly Harmless Econometrics: An Empiricist's Companion.</em> Princeton University Press, 2009."
+url = "https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics"
 
 [[entry]]
 text = "Arpaci-Dusseau, Remzi H., and Andrea C. Arpaci-Dusseau. <em>Operating Systems: Three Easy Pieces.</em> Arpaci-Dusseau Books, 2018. ostep.org."
+url = "https://pages.cs.wisc.edu/~remzi/OSTEP/"
 
 [[entry]]
 text = "Åström, Karl J., and Richard M. Murray. <em>Feedback Systems: An Introduction for Scientists and Engineers.</em> Princeton University Press, 2008."
+url = "https://fbswiki.org/wiki/index.php/FBS"
 
 [[entry]]
 text = "Avigad, Jeremy. <em>Mathematics in Lean.</em> Lean Prover Community, 2023. leanprover-community.github.io."
+url = "https://leanprover-community.github.io/mathematics_in_lean/"
 
 [[entry]]
 text = "Axler, Sheldon. <em>Linear Algebra Done Right.</em> 4th ed. Springer, 2024."
+url = "https://linear.axler.net/"
 
 [[entry]]
 text = "Barabási, Albert-László. <em>Network Science.</em> Cambridge University Press, 2016."
+url = "http://networksciencebook.com/"
 
 [[entry]]
 text = "Bishop, Christopher M. <em>Pattern Recognition and Machine Learning.</em> Springer, 2006."
+url = "https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/"
 
 [[entry]]
 text = "Blitzstein, Joseph K., and Jessica Hwang. <em>Introduction to Probability.</em> 2nd ed. CRC Press, 2019. probabilitybook.net."
+url = "https://probabilitybook.net/"
 
 [[entry]]
 text = "Boneh, Dan, and Victor Shoup. <em>A Graduate Course in Applied Cryptography.</em> cryptobook.us, 2023."
+url = "https://toc.cryptobook.us/"
 
 [[entry]]
 text = "Bostrom, Nick. <em>Superintelligence: Paths, Dangers, Strategies.</em> Oxford University Press, 2014."
+url = "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
 
 [[entry]]
 text = "Bourdieu, Pierre. <em>The Logic of Practice.</em> Stanford University Press, 1990."
+url = "https://www.sup.org/books/title/?id=2536"
 
 [[entry]]
 text = "Boyd, Stephen, and Lieven Vandenberghe. <em>Convex Optimization.</em> Cambridge University Press, 2004. stanford.edu/~boyd/cvxbook."
+url = "https://web.stanford.edu/~boyd/cvxbook/"
 
 [[entry]]
 text = "Brealey, Richard A., Stewart C. Myers, and Franklin Allen. <em>Principles of Corporate Finance.</em> 14th ed. McGraw-Hill, 2022."
+url = "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781265074159.html"
 
 [[entry]]
 text = "Bryant, Randal E., and David R. O'Hallaron. <em>Computer Systems: A Programmer's Perspective.</em> 3rd ed. Pearson, 2015."
+url = "https://csapp.cs.cmu.edu/"
 
 [[entry]]
 text = "Bryar, Colin, and Bill Carr. <em>Working Backwards: Insights, Stories, and Secrets from Inside Amazon.</em> St. Martin's Press, 2021."
+url = "https://www.workingbackwards.com/"
 
 [[entry]]
 text = "Brynjolfsson, Erik, and Andrew McAfee. <em>The Second Machine Age.</em> W. W. Norton, 2014."
+url = "https://wwnorton.com/books/the-second-machine-age"
 
 [[entry]]
 text = "Carroll, Sean B. <em>The Serengeti Rules.</em> Princeton University Press, 2016."
+url = "https://press.princeton.edu/books/hardcover/9780691167428/the-serengeti-rules"
 
 [[entry]]
 text = "Cartwright, Nancy. <em>How the Laws of Physics Lie.</em> Oxford University Press, 1983."
+url = "https://en.wikipedia.org/wiki/How_the_Laws_of_Physics_Lie"
 
 [[entry]]
 text = "Chandler, Alfred D. <em>The Visible Hand: The Managerial Revolution in American Business.</em> Harvard University Press, 1977."
+url = "https://www.hup.harvard.edu/books/9780674940529"
 
 [[entry]]
 text = "Chlipala, Adam. <em>Certified Programming with Dependent Types.</em> MIT Press, 2013. adam.chlipala.net/cpdt."
+url = "http://adam.chlipala.net/cpdt/"
 
 [[entry]]
 text = "Christensen, Clayton M. <em>The Innovator's Dilemma.</em> Harvard Business Review Press, 1997."
+url = "https://en.wikipedia.org/wiki/The_Innovator%27s_Dilemma"
 
 [[entry]]
 text = "Christian, Brian. <em>The Alignment Problem: Machine Learning and Human Values.</em> W. W. Norton, 2020."
+url = "https://wwnorton.com/books/9780393635829"
 
 [[entry]]
 text = "Cialdini, Robert B. <em>Influence: The Psychology of Persuasion.</em> Harper Business, 2006."
+url = "https://en.wikipedia.org/wiki/Influence:_Science_and_Practice"
 
 [[entry]]
 text = "Cooper, Alan, Robert Reimann, and David Cronin. <em>About Face: The Essentials of Interaction Design.</em> 4th ed. Wiley, 2014."
+url = "https://www.wiley.com/en-us/About+Face%3A+The+Essentials+of+Interaction+Design%2C+4th+Edition-p-9781118766576"
 
 [[entry]]
 text = "Cormen, Thomas H., Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. <em>Introduction to Algorithms.</em> 4th ed. MIT Press, 2022."
+url = "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/"
 
 [[entry]]
 text = "Cover, Thomas M., and Joy A. Thomas. <em>Elements of Information Theory.</em> 2nd ed. Wiley, 2006."
+url = "https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959"
 
 [[entry]]
 text = "Cunningham, Scott. <em>Causal Inference: The Mixtape.</em> Yale University Press, 2021. mixtape.scunning.com."
+url = "https://mixtape.scunning.com/"
 
 [[entry]]
 text = "Dalio, Ray. <em>Principles for Dealing with the Changing World Order: Why Nations Succeed and Fail.</em> Simon & Schuster, 2021."
+url = "https://economicprinciples.org/"
 
 [[entry]]
 text = "Dawkins, Richard. <em>The Selfish Gene.</em> 40th Anniversary ed. Oxford University Press, 2016."
+url = "https://en.wikipedia.org/wiki/The_Selfish_Gene"
 
 [[entry]]
 text = "Debord, Guy. <em>The Society of the Spectacle.</em> Zone Books, 1994."
+url = "https://en.wikipedia.org/wiki/The_Society_of_the_Spectacle"
 
 [[entry]]
 text = "Dennett, Daniel C. <em>Consciousness Explained.</em> Little, Brown, 1991."
+url = "https://en.wikipedia.org/wiki/Consciousness_Explained"
 
 [[entry]]
 text = "Douglas, Mary. <em>How Institutions Think.</em> Syracuse University Press, 1986."
 
 [[entry]]
 text = "Dreyfus, Hubert L. <em>What Computers Can't Do: A Critique of Artificial Reason.</em> Harper & Row, 1972."
+url = "https://en.wikipedia.org/wiki/What_Computers_Can%27t_Do"
 
 [[entry]]
 text = "Enderton, Herbert B. <em>A Mathematical Introduction to Logic.</em> 2nd ed. Academic Press, 2001."
+url = "https://shop.elsevier.com/books/a-mathematical-introduction-to-logic/enderton/978-0-12-238452-3"
 
 [[entry]]
 text = "Feynman, Richard P., Robert B. Leighton, and Matthew Sands. <em>The Feynman Lectures on Physics.</em> Vols. I–II. Caltech, 2013. feynmanlectures.caltech.edu."
+url = "https://www.feynmanlectures.caltech.edu/"
 
 [[entry]]
 text = "Feyerabend, Paul. <em>Against Method.</em> 4th ed. Verso, 2010."
+url = "https://en.wikipedia.org/wiki/Against_Method"
 
 [[entry]]
 text = "Fisher, Mark. <em>Ghosts of My Life: Writings on Depression, Hauntology and Lost Futures.</em> Zero Books, 2014."
+url = "https://en.wikipedia.org/wiki/Ghosts_of_My_Life"
 
 [[entry]]
 text = "Fisher, Roger, William Ury, and Bruce Patton. <em>Getting to Yes: Negotiating Agreement Without Giving In.</em> Penguin Books, 2011."
+url = "https://en.wikipedia.org/wiki/Getting_to_Yes"
 
 [[entry]]
 text = "Géron, Aurélien. <em>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.</em> 3rd ed. O'Reilly, 2022."
+url = "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
 
 [[entry]]
 text = "Gigerenzer, Gerd. <em>Gut Feelings: The Intelligence of the Unconscious.</em> Viking, 2007."
+url = "https://en.wikipedia.org/wiki/Gut_Feelings:_The_Intelligence_of_the_Unconscious"
 
 [[entry]]
 text = "Girard, René. <em>Violence and the Sacred.</em> Johns Hopkins University Press, 1977."
+url = "https://en.wikipedia.org/wiki/Violence_and_the_Sacred"
 
 [[entry]]
 text = "Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. <em>Deep Learning.</em> MIT Press, 2016. deeplearningbook.org."
+url = "https://www.deeplearningbook.org/"
 
 [[entry]]
 text = "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics: A Foundation for Computer Science.</em> 2nd ed. Addison-Wesley, 1994."
+url = "https://en.wikipedia.org/wiki/Concrete_Mathematics"
 
 [[entry]]
 text = "Griffiths, David J. <em>Introduction to Electrodynamics.</em> 4th ed. Cambridge University Press, 2017."
+url = "https://www.cambridge.org/9781108420419"
 
 [[entry]]
 text = "Griffiths, David J. <em>Introduction to Quantum Mechanics.</em> 3rd ed. Cambridge University Press, 2018."
+url = "https://www.cambridge.org/9781107189638"
 
 [[entry]]
 text = "Grove, Andrew S. <em>High Output Management.</em> Random House, 1983."
+url = "https://en.wikipedia.org/wiki/High_Output_Management"
 
 [[entry]]
 text = "Halliday, David, Robert Resnick, and Jearl Walker. <em>Fundamentals of Physics.</em> 11th ed. Wiley, 2018."
+url = "https://www.wiley.com/en-us/Fundamentals+of+Physics%2C+11th+Edition-p-9781119306856"
 
 [[entry]]
 text = "Han, Byung-Chul. <em>The Burnout Society.</em> Stanford University Press, 2015."
+url = "https://www.sup.org/books/title/?id=25725"
 
 [[entry]]
 text = "Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. <em>The Elements of Statistical Learning.</em> 2nd ed. Springer, 2009. hastie.su.domains/ElemStatLearn."
+url = "https://hastie.su.domains/ElemStatLearn/"
 
 [[entry]]
 text = "Henrich, Joseph. <em>The WEIRDest People in the World.</em> Farrar, Straus and Giroux, 2020."
+url = "https://en.wikipedia.org/wiki/The_WEIRDest_People_in_the_World"
 
 [[entry]]
 text = "Hirschman, Albert O. <em>Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States.</em> Harvard University Press, 1970."
+url = "https://www.hup.harvard.edu/books/9780674276604"
 
 [[entry]]
 text = "Hobart, Byrne, and Tobias Huber. <em>Bubbles and the End of Stagnation.</em> Stripe Press, 2024."
+url = "https://press.stripe.com/boom"
 
 [[entry]]
 text = "Hobsbawm, Eric. <em>The Age of Revolution: 1789–1848.</em> Vintage, 1962. <em>The Age of Capital: 1848–1875.</em> Vintage, 1975. <em>The Age of Empire: 1875–1914.</em> Vintage, 1987."
+url = "https://en.wikipedia.org/wiki/The_Age_of_Revolution"
 
 [[entry]]
 text = "Horowitz, Ben. <em>The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers.</em> Harper Business, 2014."
+url = "https://en.wikipedia.org/wiki/The_Hard_Thing_About_Hard_Things"
 
 [[entry]]
 text = "Imbens, Guido W., and Donald B. Rubin. <em>Causal Inference for Statistics, Social, and Biomedical Sciences.</em> Cambridge University Press, 2015."
+url = "https://www.cambridge.org/9780521885881"
 
 [[entry]]
 text = "Jaynes, Edwin T. <em>Probability Theory: The Logic of Science.</em> Cambridge University Press, 2003."
+url = "https://www.cambridge.org/9780521592710"
 
 [[entry]]
 text = "Jonas, Hans. <em>The Imperative of Responsibility: In Search of an Ethics for the Technological Age.</em> University of Chicago Press, 1984."
+url = "https://press.uchicago.edu/ucp/books/book/chicago/I/bo3633568.html"
 
 [[entry]]
 text = "Jurafsky, Daniel, and James H. Martin. <em>Speech and Language Processing.</em> 3rd ed. draft. web.stanford.edu/~jurafsky/slp3."
+url = "https://web.stanford.edu/~jurafsky/slp3/"
 
 [[entry]]
 text = "Kahneman, Daniel. <em>Thinking, Fast and Slow.</em> Farrar, Straus and Giroux, 2011."
+url = "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow"
 
 [[entry]]
 text = "Kaplan, Jared, et al. \"Scaling Laws for Neural Language Models.\" arXiv:2001.08361, 2020."
+url = "https://arxiv.org/abs/2001.08361"
 
 [[entry]]
 text = "Katz, Jonathan, and Yehuda Lindell. <em>Introduction to Modern Cryptography.</em> 3rd ed. CRC Press, 2020."
+url = "https://www.routledge.com/Introduction-to-Modern-Cryptography/Katz-Lindell/p/book/9780815354369"
 
 [[entry]]
 text = "Kerrisk, Michael. <em>The Linux Programming Interface: A Linux and UNIX System Programming Handbook.</em> No Starch Press, 2010."
+url = "https://nostarch.com/tlpi"
 
 [[entry]]
 text = "Kleppmann, Martin. <em>Designing Data-Intensive Applications.</em> O'Reilly, 2017."
+url = "https://dataintensive.net/"
 
 [[entry]]
 text = "Krug, Steve. <em>Don't Make Me Think, Revisited.</em> 3rd ed. New Riders, 2014."
+url = "https://sensible.com/dont-make-me-think/"
 
 [[entry]]
 text = "Kuhn, Thomas S. <em>The Structure of Scientific Revolutions.</em> 4th ed. University of Chicago Press, 2012."
+url = "https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions"
 
 [[entry]]
 text = "Kurose, James F., and Keith W. Ross. <em>Computer Networking: A Top-Down Approach.</em> 8th ed. Pearson, 2021."
+url = "https://gaia.cs.umass.edu/kurose_ross/index.php"
 
 [[entry]]
 text = "Lencioni, Patrick. <em>The Five Dysfunctions of a Team.</em> Jossey-Bass, 2002."
+url = "https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team"
 
 [[entry]]
 text = "Lessig, Lawrence. <em>Code: And Other Laws of Cyberspace.</em> Basic Books, 1999."
+url = "https://en.wikipedia.org/wiki/Code_and_Other_Laws_of_Cyberspace"
 
 [[entry]]
 text = "Leveson, Nancy G. <em>Engineering a Safer World: Systems Thinking Applied to Safety.</em> MIT Press, 2011."
+url = "https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/"
 
 [[entry]]
 text = "MacIntyre, Alasdair. <em>After Virtue: A Study in Moral Theory.</em> 3rd ed. University of Notre Dame Press, 2007."
+url = "https://en.wikipedia.org/wiki/After_Virtue"
 
 [[entry]]
 text = "MacKay, David J. C. <em>Information Theory, Inference, and Learning Algorithms.</em> Cambridge University Press, 2003. inference.org.uk."
+url = "https://www.inference.org.uk/itila/"
 
 [[entry]]
 text = "Mahajan, Sanjoy. <em>The Art of Insight in Science and Engineering: Mastering Complexity.</em> MIT Press, 2014."
+url = "https://mitpress.mit.edu/9780262526548/the-art-of-insight-in-science-and-engineering/"
 
 [[entry]]
 text = "March, James G. <em>A Primer on Decision Making: How Decisions Happen.</em> Free Press, 1994."
+url = "https://www.simonandschuster.com/books/A-Primer-on-Decision-Making/James-G-March/9781439135884"
 
 [[entry]]
 text = "Mas-Colell, Andreu, Michael D. Whinston, and Jerry R. Green. <em>Microeconomic Theory.</em> Oxford University Press, 1995."
+url = "https://global.oup.com/academic/product/microeconomic-theory-9780195102680"
 
 [[entry]]
 text = "Maynard Smith, John. <em>Evolution and the Theory of Games.</em> Cambridge University Press, 1982."
+url = "https://www.cambridge.org/9780521288842"
 
 [[entry]]
 text = "McConnell, Steve. <em>Code Complete: A Practical Handbook of Software Construction.</em> 2nd ed. Microsoft Press, 2004."
+url = "https://en.wikipedia.org/wiki/Code_Complete"
 
 [[entry]]
 text = "Meadows, Donella H. <em>Thinking in Systems: A Primer.</em> Chelsea Green, 2008."
+url = "https://www.chelseagreen.com/product/thinking-in-systems/"
 
 [[entry]]
 text = "Mehrling, Perry. <em>The New Lombard Street: How the Fed Became the Dealer of Last Resort.</em> Princeton University Press, 2011."
+url = "https://press.princeton.edu/books/paperback/9780691155241/the-new-lombard-street"
 
 [[entry]]
 text = "Milgrom, Paul, and John Roberts. <em>Economics, Organization and Management.</em> Prentice Hall, 1992."
 
 [[entry]]
 text = "Miller, John H., and Scott E. Page. <em>Complex Adaptive Systems: An Introduction to Computational Models of Social Life.</em> Princeton University Press, 2007."
+url = "https://press.princeton.edu/books/paperback/9780691127026/complex-adaptive-systems"
 
 [[entry]]
 text = "Minsky, Hyman P. <em>Stabilizing an Unstable Economy.</em> McGraw-Hill, 2008."
+url = "https://en.wikipedia.org/wiki/Stabilizing_an_Unstable_Economy"
 
 [[entry]]
 text = "Mitchell, Melanie. <em>Complexity: A Guided Tour.</em> Oxford University Press, 2009."
+url = "https://en.wikipedia.org/wiki/Complexity:_A_Guided_Tour"
 
 [[entry]]
 text = "Mokyr, Joel. <em>The Lever of Riches: Technological Creativity and Economic Progress.</em> Oxford University Press, 1990."
+url = "https://en.wikipedia.org/wiki/The_Lever_of_Riches"
 
 [[entry]]
 text = "Muller, Jerry Z. <em>The Tyranny of Metrics.</em> Princeton University Press, 2018."
+url = "https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics"
 
 [[entry]]
 text = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000."
+url = "https://www.pearson.com/en-us/subject-catalog/p/topology-classic-version/P200000006299"
 
 [[entry]]
 text = "Nisan, Noam, et al. <em>Algorithmic Game Theory.</em> Cambridge University Press, 2007."
+url = "https://www.cambridge.org/9780521872829"
 
 [[entry]]
 text = "Norman, Donald A. <em>The Design of Everyday Things.</em> Revised and Expanded ed. Basic Books, 2013."
+url = "https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"
 
 [[entry]]
 text = "Norris, J. R. <em>Markov Chains.</em> Cambridge University Press, 1997."
+url = "https://www.cambridge.org/9780521633963"
 
 [[entry]]
 text = "North, Douglass C. <em>Institutions, Institutional Change and Economic Performance.</em> Cambridge University Press, 1990."
+url = "https://www.cambridge.org/9780521397346"
 
 [[entry]]
 text = "Olson, Mancur. <em>The Logic of Collective Action: Public Goods and the Theory of Groups.</em> Harvard University Press, 1965."
+url = "https://en.wikipedia.org/wiki/The_Logic_of_Collective_Action"
 
 [[entry]]
 text = "Ostrom, Elinor. <em>Governing the Commons: The Evolution of Institutions for Collective Action.</em> Cambridge University Press, 1990."
+url = "https://en.wikipedia.org/wiki/Governing_the_Commons"
 
 [[entry]]
 text = "Ouyang, Long, et al. \"Training Language Models to Follow Instructions with Human Feedback.\" NeurIPS, 2022."
+url = "https://arxiv.org/abs/2203.02155"
 
 [[entry]]
 text = "Parfit, Derek. <em>Reasons and Persons.</em> Oxford University Press, 1984."
+url = "https://en.wikipedia.org/wiki/Reasons_and_Persons"
 
 [[entry]]
 text = "Pearl, Judea, and Dana Mackenzie. <em>The Book of Why: The New Science of Cause and Effect.</em> Basic Books, 2018."
+url = "https://en.wikipedia.org/wiki/The_Book_of_Why"
 
 [[entry]]
 text = "Perez, Carlota. <em>Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages.</em> Edward Elgar, 2002."
+url = "https://www.e-elgar.com/shop/usd/technological-revolutions-and-financial-capital-9781843763314.html"
 
 [[entry]]
 text = "Peters, Ole. \"The Ergodicity Problem in Economics.\" <em>Nature Physics</em> 15 (2019): 1216–1221."
+url = "https://doi.org/10.1038/s41567-019-0732-0"
 
 [[entry]]
 text = "Pierce, Benjamin C., et al. <em>Software Foundations.</em> Electronic textbook, 2023. softwarefoundations.cis.upenn.edu."
+url = "https://softwarefoundations.cis.upenn.edu/"
 
 [[entry]]
 text = "Polanyi, Karl. <em>The Great Transformation: The Political and Economic Origins of Our Time.</em> Beacon Press, 1944."
+url = "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)"
 
 [[entry]]
 text = "Polanyi, Michael. <em>Personal Knowledge: Towards a Post-Critical Philosophy.</em> University of Chicago Press, 1958."
+url = "https://en.wikipedia.org/wiki/Personal_Knowledge"
 
 [[entry]]
 text = "Porter, Theodore M. <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life.</em> Princeton University Press, 1995."
+url = "https://press.princeton.edu/books/paperback/9780691208411/trust-in-numbers"
 
 [[entry]]
 text = "Prince, Simon J.D. <em>Understanding Deep Learning.</em> MIT Press, 2023. udlbook.github.io/udlbook."
+url = "https://udlbook.github.io/udlbook/"
 
 [[entry]]
 text = "Raiffa, Howard. <em>Decision Analysis: Introductory Lectures on Choices Under Uncertainty.</em> Addison-Wesley, 1968."
 
 [[entry]]
 text = "Ries, Eric. <em>The Lean Startup.</em> Crown Business, 2011."
+url = "https://en.wikipedia.org/wiki/The_Lean_Startup"
 
 [[entry]]
 text = "Ross, Sheldon M. <em>Introduction to Probability Models.</em> 12th ed. Academic Press, 2019."
+url = "https://shop.elsevier.com/books/introduction-to-probability-models/ross/978-0-12-814346-9"
 
 [[entry]]
 text = "Roth, Alvin E. <em>Who Gets What — and Why: The New Economics of Matchmaking and Market Design.</em> Houghton Mifflin Harcourt, 2015."
+url = "https://en.wikipedia.org/wiki/Who_Gets_What_%E2%80%93_and_Why"
 
 [[entry]]
 text = "Rumelt, Richard P. <em>Good Strategy Bad Strategy: The Difference and Why It Matters.</em> Crown Business, 2011."
+url = "https://en.wikipedia.org/wiki/Good_Strategy_Bad_Strategy"
 
 [[entry]]
 text = "Russell, Stuart. <em>Human Compatible: Artificial Intelligence and the Problem of Control.</em> Viking, 2019."
+url = "https://en.wikipedia.org/wiki/Human_Compatible"
 
 [[entry]]
 text = "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960."
+url = "https://en.wikipedia.org/wiki/The_Strategy_of_Conflict"
 
 [[entry]]
 text = "Scott, James C. <em>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed.</em> Yale University Press, 1998."
+url = "https://en.wikipedia.org/wiki/Seeing_Like_a_State"
 
 [[entry]]
 text = "Sedgewick, Robert, and Kevin Wayne. <em>Algorithms.</em> 4th ed. Addison-Wesley, 2011."
+url = "https://algs4.cs.princeton.edu/home/"
 
 [[entry]]
 text = "Simon, Herbert A. <em>Models of Bounded Rationality.</em> MIT Press, 1982."
+url = "https://mitpress.mit.edu/9780262690867/models-of-bounded-rationality/"
 
 [[entry]]
 text = "Simon, Herbert A. <em>The Sciences of the Artificial.</em> 3rd ed. MIT Press, 1996."
+url = "https://mitpress.mit.edu/9780262691918/the-sciences-of-the-artificial/"
 
 [[entry]]
 text = "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012."
+url = "https://math.mit.edu/~sipser/book.html"
 
 [[entry]]
 text = "Strang, Gilbert. <em>Introduction to Linear Algebra.</em> 6th ed. Wellesley-Cambridge Press, 2023."
+url = "https://math.mit.edu/~gs/linearalgebra/"
 
 [[entry]]
 text = "Strang, Gilbert. <em>Linear Algebra and Learning from Data.</em> Wellesley-Cambridge Press, 2019."
+url = "https://math.mit.edu/~gs/learningfromdata/"
 
 [[entry]]
 text = "Taleb, Nassim Nicholas. <em>Statistical Consequences of Fat Tails.</em> STEM Academic Press, 2020."
+url = "https://arxiv.org/abs/2001.10488"
 
 [[entry]]
 text = "Tao, Terence. <em>Analysis I and II.</em> Hindustan Book Agency, 2016."
+url = "https://terrytao.wordpress.com/books/analysis-i/"
 
 [[entry]]
 text = "Tetlock, Philip E., and Dan Gardner. <em>Superforecasting: The Art and Science of Prediction.</em> Crown, 2015."
+url = "https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction"
 
 [[entry]]
 text = "Tirole, Jean. <em>Economics for the Common Good.</em> Princeton University Press, 2017."
+url = "https://press.princeton.edu/books/hardcover/9780691175164/economics-for-the-common-good"
 
 [[entry]]
 text = "Van Steen, Maarten, and Andrew S. Tanenbaum. <em>Distributed Systems.</em> 4th ed. distributed-systems.net, 2023."
+url = "https://www.distributed-systems.net/index.php/books/ds4/"
 
 [[entry]]
 text = "Varian, Hal R. <em>Intermediate Microeconomics: A Modern Approach.</em> 9th ed. W. W. Norton, 2014."
+url = "https://wwnorton.com/books/9780393123968"
 
 [[entry]]
 text = "Vaswani, Ashish, et al. \"Attention Is All You Need.\" NeurIPS, 2017."
+url = "https://arxiv.org/abs/1706.03762"
 
 [[entry]]
 text = "Velleman, Daniel J. <em>How to Prove It: A Structured Approach.</em> 3rd ed. Cambridge University Press, 2019."
+url = "https://www.cambridge.org/9781108439534"
 
 [[entry]]
 text = "Voss, Chris. <em>Never Split the Difference: Negotiating As If Your Life Depended On It.</em> Harper Business, 2016."
+url = "https://en.wikipedia.org/wiki/Never_Split_the_Difference"
 
 [[entry]]
 text = "Wasserman, Larry. <em>All of Statistics: A Concise Course in Statistical Inference.</em> Springer, 2004."
+url = "https://link.springer.com/book/10.1007/978-0-387-21736-9"
 
 [[entry]]
 text = "West, Geoffrey. <em>Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies.</em> Penguin Press, 2017."
+url = "https://en.wikipedia.org/wiki/Scale_(book)"
 
 [[entry]]
 text = "Williams, Bernard. <em>Ethics and the Limits of Philosophy.</em> Harvard University Press, 1985."
+url = "https://en.wikipedia.org/wiki/Ethics_and_the_Limits_of_Philosophy"
 
 [[entry]]
 text = "Williamson, Oliver E. <em>The Economic Institutions of Capitalism.</em> Free Press, 1985."
+url = "https://en.wikipedia.org/wiki/The_Economic_Institutions_of_Capitalism"
 
 [[entry]]
 text = "Zuboff, Shoshana. <em>The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power.</em> PublicAffairs, 2019."
+url = "https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism"
