@@ -1,0 +1,72 @@
+# Curriculum grid: which course slugs land in which year/block.
+# Ordering within a block is determined by `position` in courses.toml.
+
+[[year]]
+number = 1
+title_es = "Año 1 — Fundamentos"
+title_en = "Year 1 — Foundations"
+
+[[year]]
+number = 2
+title_es = "Año 2 — Sistemas"
+title_en = "Year 2 — Systems"
+
+[[year]]
+number = 3
+title_es = "Año 3 — Síntesis"
+title_en = "Year 3 — Synthesis"
+
+[[year]]
+number = 3.5
+title_es = "Año 3.5 — Salida"
+title_en = "Year 3.5 — Exit"
+
+# Studios occupy two consecutive blocks. Listed separately so the template
+# can render them across the curriculum table.
+[[studio]]
+number = 1
+slug = "escritura-y-oratoria"
+title_es = "Escritura y Oratoria"
+title_en = "Writing and Rhetoric"
+year = 1
+blocks = ["A", "B"]
+
+[[studio]]
+number = 2
+slug = "construir-y-romper"
+title_es = "Construir y Romper"
+title_en = "Build and Break"
+year = 1
+blocks = ["C", "D"]
+
+[[studio]]
+number = 3
+slug = "fiabilidad-bajo-presion"
+title_es = "Fiabilidad Bajo Presión"
+title_en = "Reliability Under Pressure"
+year = 2
+blocks = ["A", "B"]
+
+[[studio]]
+number = 4
+slug = "diseno-sistemas-institucionales"
+title_es = "Diseño de Sistemas Institucionales"
+title_en = "Institutional Systems Design"
+year = 2
+blocks = ["C", "D"]
+
+[[studio]]
+number = 5
+slug = "sistema-critico"
+title_es = "Sistema Crítico bajo Restricciones"
+title_en = "Critical System Under Constraints"
+year = 3
+blocks = ["A", "B"]
+
+[[studio]]
+number = 6
+slug = "venture-from-zero"
+title_es = "Venture from Zero"
+title_en = "Venture from Zero"
+year = 3
+blocks = ["C", "D"]

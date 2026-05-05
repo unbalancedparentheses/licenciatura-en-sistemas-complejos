@@ -1,0 +1,40 @@
+{# Render a single course card. Both languages emitted; CSS hides the inactive one. #}
+{% macro card(course) %}
+<div class="course" data-slug="{{ course.slug }}" data-audiences="{{ course.audiences | join(sep=',') }}">
+  <div class="course-title-es">{{ course.title_es }}</div>
+  <div class="course-title-en">{{ course.title_en }}</div>
+
+  <div class="course-section-label">Objetivo / Objective</div>
+  <p lang="es">{{ course.objective_es }}</p>
+  <p lang="en">{{ course.objective_en }}</p>
+
+  <div class="course-section-label">Contenido / Content</div>
+  <p lang="es">{{ course.content_es }}</p>
+  <p lang="en">{{ course.content_en }}</p>
+
+  {% if course.notes_es or course.notes_en %}
+    <p class="course-notes" lang="es"><em>{{ course.notes_es }}</em></p>
+    <p class="course-notes" lang="en"><em>{{ course.notes_en }}</em></p>
+  {% endif %}
+
+  {% if course.texts %}
+  <div class="course-section-label">Textos principales / Primary texts</div>
+  <ul>
+    {% for t in course.texts %}<li>{{ t | markdown(inline=true) | safe }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if course.references %}
+  <div class="course-section-label">Cursos de referencia / Reference courses</div>
+  <ul>
+    {% for r in course.references %}<li><a href="{{ r.url }}">{{ r.name }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="course-section-label">Evaluación / Evaluation</div>
+  <p>
+    <span class="eval-badge">{{ course.evaluation_primary }}</span>
+    {% if course.evaluation_secondary %}<span class="eval-secondary">{{ course.evaluation_secondary }}</span>{% endif %}
+  </p>
+</div>
+{% endmacro card %}

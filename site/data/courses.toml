@@ -1,0 +1,56 @@
+# Source of truth for all course descriptions.
+# Each course has audiences = ["students","faculty","authorities"] unless restricted.
+# Render order is determined by year + block + position.
+
+[[course]]
+slug = "algebra-lineal-i"
+title_es = "Álgebra Lineal y Computación I"
+title_en = "Linear Algebra and Computation I"
+year = 1
+block = "A"
+position = 1
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Construir la columna vertebral matemática del programa. El álgebra lineal es el lenguaje de los datos, el machine learning, la optimización y el razonamiento cuantitativo."
+objective_en = "To build the mathematical backbone of the program. Linear algebra is the language of data, machine learning, optimization, and quantitative reasoning."
+content_es = "Espacios vectoriales, transformaciones lineales, espacios columna y nulo, factorizaciones matriciales (LU, QR), autovalores y autovectores, descomposición en valores singulares. Fundamentos de probabilidad a través del álgebra lineal."
+content_en = "Vector spaces, linear transformations, column and null spaces, matrix factorizations (LU, QR), eigenvalues and eigenvectors, singular value decomposition. Foundations of probability through linear algebra."
+texts = [
+  "Strang, Gilbert. *Linear Algebra and Learning from Data.* Wellesley-Cambridge Press, 2019.",
+  "Strang, Gilbert. *Introduction to Linear Algebra.* 6th ed. Wellesley-Cambridge Press, 2023.",
+  "Axler, Sheldon. *Linear Algebra Done Right.* 4th ed. Springer, 2024.",
+]
+references = [
+  { name = "MIT 18.06 Linear Algebra", url = "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
+  { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" },
+]
+evaluation_primary = "WE — Written Exam"
+evaluation_secondary = "TP — Weekly problem sets"
+
+[[course]]
+slug = "matematica-pura"
+title_es = "Matemática Pura"
+title_en = "Pure Mathematics"
+year = 1
+block = "B"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Desarrollar la capacidad de razonamiento matemático abstracto — reconocer estructura, construir demostraciones en territorio desconocido y pensar más allá de la computación."
+objective_en = "To develop the capacity for abstract mathematical reasoning — to recognize structure, construct proofs in unfamiliar territory, and think beyond computation."
+content_es = "Combinatoria y argumentos de conteo. Estructuras algebraicas (grupos, anillos, cuerpos, aritmética modular). Ideas seleccionadas de topología y análisis."
+content_en = "Combinatorics and counting arguments. Algebraic structures (groups, rings, fields, modular arithmetic). Selected ideas from topology and analysis."
+notes_es = "Conecta directamente con Razonamiento Formal y Demostración, Seguridad y Criptografía, Métodos Formales, e Información, Señales y Comunicación."
+notes_en = "Connects directly with Razonamiento Formal y Demostración, Seguridad y Criptografía, Métodos Formales, and Información, Señales y Comunicación."
+texts = [
+  "Artin, Michael. *Algebra.* 2nd ed. Pearson, 2010.",
+  "Graham, Knuth, Patashnik. *Concrete Mathematics.* 2nd ed. Addison-Wesley, 1994.",
+  "Munkres, James R. *Topology.* 2nd ed. Pearson, 2000.",
+  "Aleksandrov, Kolmogorov, Lavrent'ev. *Mathematics: Its Content, Methods and Meaning.* Dover, 1999.",
+  "Tao, Terence. *Analysis I and II.* Hindustan Book Agency, 2016.",
+]
+references = [
+  { name = "Caltech Ma 1abc Mathematics", url = "https://pma.caltech.edu/courses" },
+  { name = "Cambridge Mathematical Tripos", url = "https://www.maths.cam.ac.uk/undergrad/course" },
+  { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu" },
+]
+evaluation_primary = "WE — Written exam with proofs"
+evaluation_secondary = "OD — Oral defense of problem portfolio"

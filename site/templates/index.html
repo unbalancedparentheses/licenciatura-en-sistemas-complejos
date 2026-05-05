@@ -1,0 +1,98 @@
+{% import 'macros/course.html' as course_m %}
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Propuesta — {{ config.extra.program_title_es }} · UBA</title>
+<link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body data-lang="es">
+
+<nav class="lang-switcher" aria-label="Language selector">
+  <button data-lang="es">ES</button>
+  <button data-lang="en">EN</button>
+</nav>
+
+{% set audiences = load_data(path='data/audiences.toml') %}
+{% set program = load_data(path='data/program.toml') %}
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set curriculum = load_data(path='data/curriculum.toml') %}
+
+<nav class="view-switcher" aria-label="Document view selector">
+  <span class="view-label" data-i18n="view">Vista</span>
+  {% for a in audiences.audience %}
+    <button data-view="{{ a.slug }}" data-i18n="{{ a.slug }}">{{ a.label_es }}</button>
+  {% endfor %}
+</nav>
+
+{# Cover #}
+<div class="cover">
+  <div class="cover-label" lang="es">Propuesta de programa — {{ config.extra.institution }}</div>
+  <div class="cover-label" lang="en">Program Proposal — {{ config.extra.institution }}</div>
+  <div class="proposal-badge" lang="es">{{ program.status_label_es }}</div>
+  <div class="proposal-badge" lang="en">{{ program.status_label_en }}</div>
+  <div class="cover-title">Licenciatura en<br>Sistemas Complejos</div>
+  <div class="cover-subtitle">{{ config.extra.program_title_en }}</div>
+  <div class="cover-institution">{{ config.extra.institution }}</div>
+  <div class="cover-institution" style="margin-top:4px; color:#888;">{{ config.extra.faculties }}</div>
+  {% set studios = curriculum.studio %}
+  <div class="cover-meta" lang="es">
+    <span>Duración: {{ program.years }} años</span>
+    <span>Cohorte: {{ program.cohort_min }}–{{ program.cohort_max }} estudiantes</span>
+    <span>Bloques de {{ program.weeks_per_block }} semanas</span>
+    <span>Sin exámenes finales escritos</span>
+  </div>
+  <div class="cover-meta" lang="en">
+    <span>Duration: {{ program.years }} years</span>
+    <span>Cohort: {{ program.cohort_min }}–{{ program.cohort_max }} students</span>
+    <span>{{ program.weeks_per_block }}-week blocks</span>
+    <span>No written final exams</span>
+  </div>
+</div>
+
+{# Render each section in order #}
+{% set section = get_section(path='_index.md') %}
+{% for page in section.pages %}
+  <article class="section" data-views="{{ page.extra.audiences | default(value=['students','faculty','authorities']) | join(sep=',') }}">
+    <div class="page-break"></div>
+    <div class="part-label">{{ page.extra.part | default(value='') }}</div>
+    <h1>{{ page.title }}</h1>
+    {{ page.content | safe }}
+  </article>
+{% endfor %}
+
+{# Course descriptions section — generated from data #}
+<article class="section" data-views="faculty,authorities">
+  <div class="page-break"></div>
+  <div class="part-label">Part IV — Curriculum · Section 9</div>
+  <h1>Course Descriptions</h1>
+
+  {% set years = curriculum.year %}
+  {% for y in years %}
+    {% set year_courses = courses_data.course | filter(attribute='year', value=y.number) %}
+    {% if year_courses | length > 0 %}
+      <h2>{{ y.title_es }}</h2>
+      {% for c in year_courses %}
+        {{ course_m::card(course=c) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</article>
+
+{# Auto-generated stats #}
+<article class="section" data-views="students,faculty,authorities">
+  <div class="page-break"></div>
+  <h1>Program Statistics</h1>
+  <div class="stats-grid">
+    <div class="stat-box"><span class="stat-number">{{ program.years }}</span><span class="stat-label">Years</span></div>
+    <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Courses</span></div>
+    <div class="stat-box"><span class="stat-number">{{ studios | length }}</span><span class="stat-label">Studios</span></div>
+    <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students/cohort</span></div>
+    <div class="stat-box"><span class="stat-number">{{ program.weeks_per_block }}</span><span class="stat-label">Weeks per block</span></div>
+    <div class="stat-box"><span class="stat-number">{{ program.written_final_exams }}</span><span class="stat-label">Written final exams</span></div>
+  </div>
+</article>
+
+<script src="{{ get_url(path='view-switcher.js') }}"></script>
+</body>
+</html>

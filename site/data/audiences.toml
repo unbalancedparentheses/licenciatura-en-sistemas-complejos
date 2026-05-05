@@ -1,0 +1,15 @@
+# Audience definitions and labels used by view filters.
+[[audience]]
+slug = "students"
+label_es = "Estudiantes"
+label_en = "Students"
+
+[[audience]]
+slug = "faculty"
+label_es = "Profesores"
+label_en = "Faculty"
+
+[[audience]]
+slug = "authorities"
+label_es = "Autoridades"
+label_en = "Authorities"

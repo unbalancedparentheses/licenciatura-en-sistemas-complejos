@@ -1,0 +1,11 @@
+# Program-level metadata. Numbers come from data, not hand-typed strings.
+years = 3.5
+weeks_per_block = 8
+blocks_per_year = 4
+cohort_min = 30
+cohort_max = 40
+written_final_exams = 0
+guided_electives = 1
+status = "draft"
+status_label_es = "Borrador · No aprobado"
+status_label_en = "Draft · Not yet approved"
