@@ -2,7 +2,8 @@
   body { padding: 40px 50px; }
   .cover { min-height: auto; padding: 60px 0; }
   .view-switcher,
-  .lang-switcher { display: none; }
+  .lang-switcher,
+  .pdf-link-wrap { display: none; }
 }
 
 @media (max-width: 600px) {
@@ -16,4 +17,6 @@
   .view-switcher button,
   .lang-switcher button { padding: 7px 9px; }
   .view-label { display: none; }
+  .pdf-link-wrap { top: 10px; left: 10px; }
+  .pdf-link { font-size: 7pt; padding: 7px 9px; }
 }

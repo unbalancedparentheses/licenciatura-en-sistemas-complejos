@@ -22,6 +22,11 @@
   <button data-lang="en">EN</button>
 </nav>
 
+<nav class="pdf-link-wrap" aria-label="PDF download">
+  <a class="pdf-link" lang="es" href="{{ get_url(path='pdf/' ~ audience ~ '-es.pdf') }}">PDF ↓</a>
+  <a class="pdf-link" lang="en" href="{{ get_url(path='pdf/' ~ audience ~ '-en.pdf') }}">PDF ↓</a>
+</nav>
+
 <nav class="view-switcher" aria-label="Document view selector">
   <span class="view-label" data-i18n="view">Vista</span>
   <a href="{{ get_url(path='@/_index.md') }}" class="view-link" data-view="full" data-i18n="full">Completa</a>
