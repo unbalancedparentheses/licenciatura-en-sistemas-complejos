@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: taiki-e/install-action@v2
@@ -24,18 +25,19 @@ jobs:
           tool: zola@0.22.1
       - name: Build site
         run: cd site && zola build --output-dir ../public
-      - name: Install chromium for PDF export
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq chromium-browser
+      - name: Install chrome for PDF export
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
       - name: Build PDFs (audience × language)
+        timeout-minutes: 5
+        env:
+          LSC_BROWSER: chrome
         run: |
-          # Move generated site to expected location for the PDF script
           mkdir -p site/public
           cp -r public/* site/public/
-          python3 scripts/build_pdfs.py
-          # Promote PDFs to the site for upload
-          cp -r site/public/pdf public/
+          python3 scripts/build_pdfs.py || echo "::warning::PDF build failed; site will deploy without PDFs"
+          if [ -d site/public/pdf ]; then cp -r site/public/pdf public/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

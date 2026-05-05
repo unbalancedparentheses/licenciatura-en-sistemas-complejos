@@ -43,12 +43,17 @@ LANGS = ["es", "en"]
 
 
 def find_chromium() -> str:
-    for name in ("chromium", "chromium-browser", "google-chrome", "chrome"):
+    # Allow override via env (CI uses LSC_BROWSER=chrome)
+    forced = os.environ.get("LSC_BROWSER")
+    candidates = [forced] if forced else ["chromium", "chromium-browser", "google-chrome", "chrome"]
+    for name in candidates:
+        if not name:
+            continue
         path = shutil.which(name)
         if path:
             return path
     print("ERROR: no chromium-class browser found in PATH.", file=sys.stderr)
-    print("Enter the nix dev shell first: `nix develop`.", file=sys.stderr)
+    print("Enter the nix dev shell first: `nix develop`, or set LSC_BROWSER.", file=sys.stderr)
     sys.exit(1)
 
 
