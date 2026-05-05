@@ -18,16 +18,88 @@ body.pdf-mode {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 64px 18px 32px;
+    font-size: 13pt;
+    line-height: 1.55;
+  }
+
+  // Cover scaled down
+  .cover {
+    padding: 48px 0;
+    margin-bottom: 48px;
+  }
+  .cover-title { font-size: 24pt; }
+  .cover-subtitle { font-size: 13pt; margin-bottom: 32px; }
+  .cover-meta { margin-top: 48px; padding-top: 24px; }
+  .cover-meta span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+  .proposal-badge {
+    font-size: 7.5pt;
+    padding: 4px 10px;
+    margin-bottom: 24px;
+  }
+
+  // Headings narrower
+  h1 { font-size: 20pt; margin-bottom: 24px; }
+  h2 { font-size: 14pt; margin-top: 28px; margin-bottom: 12px; }
+  h3 { font-size: 13pt; }
+
+  // Stats grid: 3 cols → 2 cols
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .stat-number { font-size: 18pt; }
+  .stat-box { padding: 12px 8px; }
+
+  // Tables: allow horizontal scroll on overflow
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 9pt;
+    -webkit-overflow-scrolling: touch;
+  }
+  th, td { padding: 6px 8px; }
+
+  // Pull quote less padding
+  .pullquote {
+    padding: 12px 16px;
+    margin: 20px 0;
+    font-size: 12pt;
+  }
+
+  // Course / studio cards
+  .course { margin-bottom: 28px; padding-bottom: 28px; }
+  .course-title-es { font-size: 12pt; }
+  .studio { padding: 16px; margin-bottom: 24px; }
+
+  // Long URLs / inline code wrap
+  a, .pub-name, .publication { word-break: break-word; }
+
+  // Top-bar controls
   .view-switcher,
   .lang-switcher {
     font-size: 7pt;
-    right: 10px;
+    right: 8px;
   }
-  .lang-switcher { top: 10px; }
-  .view-switcher { top: 50px; }
-  .view-switcher button,
-  .lang-switcher button { padding: 7px 9px; }
+  .lang-switcher { top: 8px; }
+  .view-switcher { top: 44px; }
+  .view-switcher button, .view-switcher .view-link,
+  .lang-switcher button { padding: 6px 8px; }
   .view-label { display: none; }
-  .pdf-link-wrap { top: 10px; left: 10px; }
-  .pdf-link { font-size: 7pt; padding: 7px 9px; }
+  .pdf-link-wrap { top: 8px; left: 8px; }
+  .pdf-link { font-size: 7pt; padding: 6px 8px; }
+
+  // Page breaks: smaller gap on mobile (no real "pages")
+  .page-break { margin-top: 40px; }
+}
+
+@media (max-width: 380px) {
+  // Very narrow: drop view switcher to one-row scroll
+  .view-switcher { overflow-x: auto; max-width: calc(100vw - 16px); }
 }
