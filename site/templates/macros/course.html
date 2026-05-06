@@ -16,8 +16,9 @@
   <p lang="en">{{ course.content_en }}</p>
   {% endif %}
 
-  {% if course.notes_html %}
-    <p><em>{{ course.notes_html | safe }}</em></p>
+  {% if course.notes_html_es or course.notes_html_en %}
+    {% if course.notes_html_es %}<p lang="es"><em>{{ course.notes_html_es | safe }}</em></p>{% endif %}
+    {% if course.notes_html_en %}<p lang="en"><em>{{ course.notes_html_en | safe }}</em></p>{% endif %}
   {% endif %}
 
   {% if course.extra_section %}
@@ -30,7 +31,17 @@
   {% if course.texts %}
   <div class="course-section-label">Textos principales / Primary texts</div>
   <ul>
-    {% for t in course.texts %}<li>{{ t | markdown(inline=true) | safe }}</li>{% endfor %}
+    {% for t in course.texts %}
+      <li>
+        {% if t.citation %}
+          {{ t.citation | markdown(inline=true) | safe }}
+          {% if t.note_es %} <span lang="es"><em>{{ t.note_es | markdown(inline=true) | safe }}</em></span>{% endif %}
+          {% if t.note_en %} <span lang="en"><em>{{ t.note_en | markdown(inline=true) | safe }}</em></span>{% endif %}
+        {% else %}
+          {{ t | markdown(inline=true) | safe }}
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
   {% endif %}
 

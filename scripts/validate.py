@@ -102,7 +102,8 @@ def validate_course_texts() -> list[str]:
     for course in courses.get("course", []):
         course_name = course.get("title_es") or course.get("slug", "unknown course")
         for text in course.get("texts", []):
-            title = first_title(text)
+            citation = text["citation"] if isinstance(text, dict) else text
+            title = first_title(citation)
             if not title:
                 continue
 
