@@ -52,7 +52,7 @@
 {% for pos in [1, 2, 3] %}
 <tr>{% for b in blocks_4 %}{% set matches = courses_data.course | filter(attribute="year", value=y.number) | filter(attribute="block", value=b) | filter(attribute="position", value=pos) %}{% if matches | length > 0 %}<td>{{ matches | first | get(key="title_es") }}</td>{% elif y.number == 3 and b == "B" and pos == 3 %}<td><em lang="es">Bloque más liviano · Studio V intensifica</em><em lang="en">Lighter block · Studio V intensifies</em></td>{% else %}<td></td>{% endif %}{% endfor %}</tr>
 {% endfor %}
-{% set studios = curriculum.studio | filter(attribute="year", value=y.number) %}
+{% set studios = studios_data.studio | filter(attribute="year", value=y.number) %}
 {% if studios | length > 0 %}
 <tr>{% for s in studios %}<td colspan="2"><em>Studio {{ s.roman }} — {{ s.title_es }} ({{ s.blocks | join(sep="+") }})</em></td>{% endfor %}</tr>
 {% endif %}
@@ -76,7 +76,7 @@
 
 <div class="stats-grid" lang="es">
   <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Materias</span></div>
-  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ studios_data.studio | length }}</span><span class="stat-label">Studios</span></div>
   <div class="stat-box"><span class="stat-number">{{ program.years * program.blocks_per_year | int }}</span><span class="stat-label">Bloques</span></div>
   <div class="stat-box"><span class="stat-number">3,5</span><span class="stat-label">Años</span></div>
   <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Estudiantes/cohorte</span></div>
@@ -84,7 +84,7 @@
 </div>
 <div class="stats-grid" lang="en">
   <div class="stat-box"><span class="stat-number">{{ courses_data.course | length }}</span><span class="stat-label">Courses</span></div>
-  <div class="stat-box"><span class="stat-number">{{ curriculum.studio | length }}</span><span class="stat-label">Studios</span></div>
+  <div class="stat-box"><span class="stat-number">{{ studios_data.studio | length }}</span><span class="stat-label">Studios</span></div>
   <div class="stat-box"><span class="stat-number">{{ program.years * program.blocks_per_year | int }}</span><span class="stat-label">Blocks</span></div>
   <div class="stat-box"><span class="stat-number">{{ program.years }}</span><span class="stat-label">Years</span></div>
   <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students/cohort</span></div>
