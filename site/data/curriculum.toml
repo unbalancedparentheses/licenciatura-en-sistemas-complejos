@@ -25,6 +25,7 @@ title_en = "Year 3.5 — Exit"
 # can render them across the curriculum table.
 [[studio]]
 number = 1
+roman = "I"
 slug = "escritura-y-oratoria"
 title_es = "Escritura y Oratoria"
 title_en = "Writing and Rhetoric"
@@ -33,6 +34,7 @@ blocks = ["A", "B"]
 
 [[studio]]
 number = 2
+roman = "II"
 slug = "construir-y-romper"
 title_es = "Construir y Romper"
 title_en = "Build and Break"
@@ -41,6 +43,7 @@ blocks = ["C", "D"]
 
 [[studio]]
 number = 3
+roman = "III"
 slug = "fiabilidad-bajo-presion"
 title_es = "Fiabilidad Bajo Presión"
 title_en = "Reliability Under Pressure"
@@ -49,6 +52,7 @@ blocks = ["A", "B"]
 
 [[studio]]
 number = 4
+roman = "IV"
 slug = "diseno-sistemas-institucionales"
 title_es = "Diseño de Sistemas Institucionales"
 title_en = "Institutional Systems Design"
@@ -57,6 +61,7 @@ blocks = ["C", "D"]
 
 [[studio]]
 number = 5
+roman = "V"
 slug = "sistema-critico"
 title_es = "Sistema Crítico bajo Restricciones"
 title_en = "Critical System Under Constraints"
@@ -65,6 +70,7 @@ blocks = ["A", "B"]
 
 [[studio]]
 number = 6
+roman = "VI"
 slug = "venture-from-zero"
 title_es = "Venture from Zero"
 title_en = "Venture from Zero"
