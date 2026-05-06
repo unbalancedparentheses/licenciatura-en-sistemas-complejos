@@ -18,7 +18,11 @@
             taplo
             pandoc
             python3
-            chromium
+          ] ++ pkgs.lib.optionals pkgs.stdenv.isLinux [
+            # chromium is only built on Linux in nixpkgs; on macOS users should
+            # set LSC_BROWSER to the system Chrome binary, e.g.:
+            #   LSC_BROWSER="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" make pdf
+            pkgs.chromium
           ];
           shellHook = ''
             echo "lsc dev shell · zola $(zola --version)"
