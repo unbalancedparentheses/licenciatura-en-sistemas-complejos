@@ -1,0 +1,42 @@
+{# Render a Studio description from structured TOML data. #}
+{% macro card(studio) %}
+<div class="studio" data-slug="{{ studio.slug }}">
+  <div class="studio-number">{{ studio.number_text }}</div>
+  <div class="studio-title">{{ studio.title_es }} / {{ studio.title_en }}</div>
+
+  <h4>Objetivo / Objective</h4>
+  <div class="bilingual-block">
+    <p class="lang-es">{{ studio.objective_es }}</p>
+    <p class="lang-en">{{ studio.objective_en }}</p>
+  </div>
+
+  {% if studio.structure_es or studio.structure_en %}
+  <h4>Estructura / Structure</h4>
+  <div class="bilingual-block">
+    {% if studio.structure_es %}<p class="lang-es">{{ studio.structure_es }}</p>{% endif %}
+    {% if studio.structure_en %}<p class="lang-en">{{ studio.structure_en }}</p>{% endif %}
+  </div>
+  {% endif %}
+
+  <h4>Entregables / Deliverables</h4>
+  <ul lang="es">
+    {% for d in studio.deliverables_es %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+  <ul lang="en">
+    {% for d in studio.deliverables_en %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+
+  <h4>Evaluación / Evaluation</h4>
+  <p lang="es">
+    <span class="eval-badge">{{ studio.evaluation_primary_es }}</span>
+    {% for s in studio.evaluation_secondaries_es %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
+  </p>
+  <p lang="en">
+    <span class="eval-badge">{{ studio.evaluation_primary_en }}</span>
+    {% for s in studio.evaluation_secondaries_en %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
+  </p>
+
+  <h4>Programas de referencia / Reference programs</h4>
+  <p>{{ studio.references | join(sep=" · ") }}</p>
+</div>
+{% endmacro card %}

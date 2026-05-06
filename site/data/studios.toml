@@ -1,4 +1,4 @@
-# Auto-extracted from legacy index.html. See scripts/extract.py.
+# Studio metadata and descriptions. Rendered by templates/macros/studio.html.
 
 [[studio]]
 number = 1
@@ -9,29 +9,17 @@ number_text = "Studio I, Año 1, Bloques A+B"
 roman = "I"
 title_es = "Escritura y Oratoria"
 title_en = "Writing and Rhetoric"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio I, Año 1, Bloques A+B</div>
-  <div class="studio-title">Escritura y Oratoria / Writing and Rhetoric</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Entrenar formalmente las habilidades de comunicación escrita y oral sobre las que todo lo demás en el programa descansa.</p>
-    <p class="lang-en">To formally train the written and oral communication skills on which everything else in the program rests.</p>
-  </div>
-  <h4>Structure</h4>
-  <p>Writing emphasis in the first eight weeks. Oral emphasis in the second eight weeks. Both practiced throughout. Material comes from courses being taken simultaneously, students write and present about real content, not abstract exercises.</p>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Portfolio of rewritten essays with complete revision history, original drafts, feedback received, rewrites</li>
-    <li>Recorded oral presentations with self-evaluation</li>
-    <li>Final oral defense without notes</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">WP, Written portfolio with revision history</span><span class="eval-secondary">Recorded presentations with self-evaluation</span></p>
-  <h4>Reference programs</h4>
-  <p>Stanford PWR Program in Writing and Rhetoric · MIT CI-H Communication Intensive · Harvard Bok Center Writing Program</p>
-</div>
-"""
+objective_es = "Entrenar formalmente las habilidades de comunicación escrita y oral sobre las que todo lo demás en el programa descansa."
+objective_en = "To formally train the written and oral communication skills on which everything else in the program rests."
+structure_es = "Énfasis en escritura durante las primeras ocho semanas. Énfasis oral durante las segundas ocho semanas. Ambas se practican durante todo el Studio. El material proviene de las materias cursadas en simultáneo: los estudiantes escriben y presentan sobre contenido real, no sobre ejercicios abstractos."
+structure_en = "Writing emphasis in the first eight weeks. Oral emphasis in the second eight weeks. Both practiced throughout. Material comes from courses being taken simultaneously: students write and present about real content, not abstract exercises."
+deliverables_es = ["Portfolio de ensayos reescritos con historia completa de revisión: borradores originales, feedback recibido y reescrituras", "Presentaciones orales grabadas con autoevaluación", "Defensa oral final sin notas"]
+deliverables_en = ["Portfolio of rewritten essays with complete revision history: original drafts, feedback received, rewrites", "Recorded oral presentations with self-evaluation", "Final oral defense without notes"]
+evaluation_primary_es = "WP, Portfolio escrito con historia de revisiones"
+evaluation_primary_en = "WP, Written portfolio with revision history"
+evaluation_secondaries_es = ["Presentaciones grabadas con autoevaluación"]
+evaluation_secondaries_en = ["Recorded presentations with self-evaluation"]
+references = ["Stanford PWR Program in Writing and Rhetoric", "MIT CI-H Communication Intensive", "Harvard Bok Center Writing Program"]
 
 [[studio]]
 number = 2
@@ -42,31 +30,17 @@ number_text = "Studio II, Año 1, Bloques C+D"
 roman = "II"
 title_es = "Construir y Romper"
 title_en = "Build and Break"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio II, Año 1, Bloques C+D</div>
-  <div class="studio-title">Construir y Romper / Build and Break</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Construir un sistema con componente físico obligatorio. Otro equipo lo ataca. Los roles rotan.</p>
-    <p class="lang-en">Build a system with a mandatory physical component. Another team attacks it. Roles rotate.</p>
-  </div>
-  <h4>Structure</h4>
-  <p>Teams of 4-5 students. One team builds, another attacks. Roles rotate at the midpoint. The physical component is mandatory: the system must measure, move, or interact with something tangible. AI assists both sides.</p>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Specification document</li>
-    <li>Functional prototype with physical component</li>
-    <li>Threat model</li>
-    <li>Incident report</li>
-    <li>Postmortem and team retrospective</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD, Public defense of functional system</span></p>
-  <h4>Reference programs</h4>
-  <p>MIT 6.S08 Interconnected Embedded Systems · Caltech ME/EE 75 Projects in Experimental Engineering · UCL Integrated Engineering Programme</p>
-</div>
-"""
+objective_es = "Construir un sistema con componente físico obligatorio. Otro equipo lo ataca. Los roles rotan."
+objective_en = "Build a system with a mandatory physical component. Another team attacks it. Roles rotate."
+structure_es = "Equipos de 4 a 5 estudiantes. Un equipo construye y otro ataca. Los roles rotan en el punto medio. El componente físico es obligatorio: el sistema debe medir, mover o interactuar con algo tangible. La IA asiste a ambos lados."
+structure_en = "Teams of 4-5 students. One team builds, another attacks. Roles rotate at the midpoint. The physical component is mandatory: the system must measure, move, or interact with something tangible. AI assists both sides."
+deliverables_es = ["Documento de especificación", "Prototipo funcional con componente físico", "Modelo de amenazas", "Reporte de incidente", "Postmortem y retrospectiva de equipo"]
+deliverables_en = ["Specification document", "Functional prototype with physical component", "Threat model", "Incident report", "Postmortem and team retrospective"]
+evaluation_primary_es = "PD, Defensa pública de un sistema funcional"
+evaluation_primary_en = "PD, Public defense of functional system"
+evaluation_secondaries_es = []
+evaluation_secondaries_en = []
+references = ["MIT 6.S08 Interconnected Embedded Systems", "Caltech ME/EE 75 Projects in Experimental Engineering", "UCL Integrated Engineering Programme"]
 
 [[studio]]
 number = 3
@@ -77,29 +51,17 @@ number_text = "Studio III, Año 2, Bloques A+B"
 roman = "III"
 title_es = "Fiabilidad Bajo Presión"
 title_en = "Reliability Under Pressure"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio III, Año 2, Bloques A+B</div>
-  <div class="studio-title">Fiabilidad Bajo Presión / Reliability Under Pressure</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Operar un sistema bajo condiciones simuladas de producción. Definir SLOs, construir monitoreo, manejar incidentes, ejecutar rollbacks, escribir postmortems.</p>
-    <p class="lang-en">Operate a system under simulated production conditions. Define SLOs, build monitoring, manage incidents, execute rollbacks, write postmortems.</p>
-  </div>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Service Level Objectives (SLOs)</li>
-    <li>Monitoring dashboard</li>
-    <li>Incident logs</li>
-    <li>Postmortems</li>
-    <li>Team coordination retrospective</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD, Defense simulating a post-incident review</span></p>
-  <h4>Reference programs</h4>
-  <p>Google Site Reliability Engineering methodology · MIT distributed systems labs</p>
-</div>
-"""
+objective_es = "Operar un sistema bajo condiciones simuladas de producción. Definir SLOs, construir monitoreo, manejar incidentes, ejecutar rollbacks, escribir postmortems."
+objective_en = "Operate a system under simulated production conditions. Define SLOs, build monitoring, manage incidents, execute rollbacks, write postmortems."
+structure_es = ""
+structure_en = ""
+deliverables_es = ["Objetivos de nivel de servicio (SLOs)", "Dashboard de monitoreo", "Registros de incidentes", "Postmortems", "Retrospectiva de coordinación de equipo"]
+deliverables_en = ["Service Level Objectives (SLOs)", "Monitoring dashboard", "Incident logs", "Postmortems", "Team coordination retrospective"]
+evaluation_primary_es = "PD, Defensa simulando una revisión post-incidente"
+evaluation_primary_en = "PD, Defense simulating a post-incident review"
+evaluation_secondaries_es = []
+evaluation_secondaries_en = []
+references = ["Google Site Reliability Engineering methodology", "MIT distributed systems labs"]
 
 [[studio]]
 number = 4
@@ -110,30 +72,17 @@ number_text = "Studio IV, Año 2, Bloques C+D"
 roman = "IV"
 title_es = "Diseño de Sistemas Institucionales"
 title_en = "Institutional Systems Design"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio IV, Año 2, Bloques C+D</div>
-  <div class="studio-title">Diseño de Sistemas Institucionales / Institutional Systems Design</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Diseñar un sistema que cruce fronteras técnicas e institucionales. La IA simula comportamiento de reguladores, atacantes y usuarios.</p>
-    <p class="lang-en">Design a system that crosses technical and institutional boundaries. AI simulates the behavior of regulators, attackers, and users.</p>
-  </div>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Requirements document</li>
-    <li>Incentive analysis</li>
-    <li>Partial formal specification</li>
-    <li>Monitoring plan</li>
-    <li>Financial viability assessment</li>
-    <li>Public defense</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD, Public defense before panel including practitioners from the relevant institutional domain</span></p>
-  <h4>Reference programs</h4>
-  <p>Oxford Blavatnik School of Government capstone projects · Harvard Kennedy School policy exercises</p>
-</div>
-"""
+objective_es = "Diseñar un sistema que cruce fronteras técnicas e institucionales. La IA simula comportamiento de reguladores, atacantes y usuarios."
+objective_en = "Design a system that crosses technical and institutional boundaries. AI simulates the behavior of regulators, attackers, and users."
+structure_es = ""
+structure_en = ""
+deliverables_es = ["Documento de requisitos", "Análisis de incentivos", "Especificación formal parcial", "Plan de monitoreo", "Evaluación de viabilidad financiera", "Defensa pública"]
+deliverables_en = ["Requirements document", "Incentive analysis", "Partial formal specification", "Monitoring plan", "Financial viability assessment", "Public defense"]
+evaluation_primary_es = "PD, Defensa pública ante panel con practicantes del dominio institucional relevante"
+evaluation_primary_en = "PD, Public defense before panel including practitioners from the relevant institutional domain"
+evaluation_secondaries_es = []
+evaluation_secondaries_en = []
+references = ["Oxford Blavatnik School of Government capstone projects", "Harvard Kennedy School policy exercises"]
 
 [[studio]]
 number = 5
@@ -144,31 +93,17 @@ number_text = "Studio V, Año 3, Bloques A+B"
 roman = "V"
 title_es = "Sistema Crítico bajo Restricciones"
 title_en = "Critical System Under Constraints"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio V, Año 3, Bloques A+B</div>
-  <div class="studio-title">Sistema Crítico bajo Restricciones / Critical System Under Constraints</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Diseñar y construir parcialmente un sistema que opere bajo restricciones reales, regulatorias, financieras, de seguridad o éticas. La restricción es el punto.</p>
-    <p class="lang-en">Design and partially build a system that operates under real constraints, regulatory, financial, safety, or ethical. The constraint is the point.</p>
-  </div>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Hazard analysis</li>
-    <li>Verification plan</li>
-    <li>Monitoring design</li>
-    <li>Red team report</li>
-    <li>Budget and resource plan</li>
-    <li>Revised design responding to red team findings</li>
-    <li>Team retrospective</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD, Public defense with red team findings as adversarial input</span></p>
-  <h4>Reference programs</h4>
-  <p>MIT capstone engineering projects · Caltech senior thesis projects · UCL IEP final projects</p>
-</div>
-"""
+objective_es = "Diseñar y construir parcialmente un sistema que opere bajo restricciones reales, regulatorias, financieras, de seguridad o éticas. La restricción es el punto."
+objective_en = "Design and partially build a system that operates under real constraints, regulatory, financial, safety, or ethical. The constraint is the point."
+structure_es = ""
+structure_en = ""
+deliverables_es = ["Análisis de riesgos", "Plan de verificación", "Diseño de monitoreo", "Reporte de red team", "Presupuesto y plan de recursos", "Diseño revisado en respuesta a los hallazgos del red team", "Retrospectiva de equipo"]
+deliverables_en = ["Hazard analysis", "Verification plan", "Monitoring design", "Red team report", "Budget and resource plan", "Revised design responding to red team findings", "Team retrospective"]
+evaluation_primary_es = "PD, Defensa pública con hallazgos del red team como insumo adversarial"
+evaluation_primary_en = "PD, Public defense with red team findings as adversarial input"
+evaluation_secondaries_es = []
+evaluation_secondaries_en = []
+references = ["MIT capstone engineering projects", "Caltech senior thesis projects", "UCL IEP final projects"]
 
 [[studio]]
 number = 6
@@ -179,31 +114,14 @@ number_text = "Studio VI, Año 3, Bloques C+D + Año 3.5"
 roman = "VI"
 title_es = "Venture from Zero"
 title_en = "Venture from Zero"
-raw_html = """
-<div class="studio">
-  <div class="studio-number">Studio VI, Año 3, Bloques C+D + Año 3.5</div>
-  <div class="studio-title">Venture from Zero</div>
-  <h4>Objetivo / Objective</h4>
-  <div class="bilingual-block">
-    <p class="lang-es">Crear una empresa real durante 16 semanas. No es una simulación. Incorporan legalmente. Construyen un MVP. Buscan primeros clientes reales. Venden. Cobran. Miden. Iteran.</p>
-    <p class="lang-en">Create a real company over 16 weeks. This is not a simulation. They incorporate legally. Build an MVP. Find real customers. Sell. Get paid. Measure. Iterate.</p>
-  </div>
-  <h4>Structure</h4>
-  <p>The first weeks cover operational mechanics: incorporation, cap table, fundraising, first customers, basic accounting, compliance, taxes. These are not taught in the abstract, they are executed immediately as part of launching the venture. The Studio integrates everything learned in three years: technical skills, design, institutions, finance, communication, and leadership.</p>
-  <h4>Deliverables / Entregables</h4>
-  <ul>
-    <li>Incorporated company (or in process)</li>
-    <li>Functional MVP</li>
-    <li>Evidence of traction with real customers</li>
-    <li>Updated financial model</li>
-    <li>AI usage report</li>
-    <li>Red team report by peers</li>
-    <li>Complete postmortem</li>
-    <li>Final public defense before technical, institutional, and industry reviewers</li>
-  </ul>
-  <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD, Final public defense before real investors or panel simulating investor conditions exactly</span></p>
-  <h4>Reference programs</h4>
-  <p>Y Combinator Startup School · Stanford CS 183 Startup · MIT delta v accelerator · Entrepreneur First</p>
-</div>
-"""
+objective_es = "Crear una empresa real durante 16 semanas. No es una simulación. Incorporan legalmente. Construyen un MVP. Buscan primeros clientes reales. Venden. Cobran. Miden. Iteran."
+objective_en = "Create a real company over 16 weeks. This is not a simulation. They incorporate legally. Build an MVP. Find real customers. Sell. Get paid. Measure. Iterate."
+structure_es = "Las primeras semanas cubren mecánicas operativas: constitución legal, cap table, fundraising, primeros clientes, contabilidad básica, compliance e impuestos. No se enseñan en abstracto: se ejecutan inmediatamente como parte del lanzamiento del emprendimiento. El Studio integra todo lo aprendido en tres años: habilidades técnicas, diseño, instituciones, finanzas, comunicación y liderazgo."
+structure_en = "The first weeks cover operational mechanics: incorporation, cap table, fundraising, first customers, basic accounting, compliance, taxes. These are not taught in the abstract: they are executed immediately as part of launching the venture. The Studio integrates everything learned in three years: technical skills, design, institutions, finance, communication, and leadership."
+deliverables_es = ["Empresa constituida o en proceso de constitución", "MVP funcional", "Evidencia de tracción con clientes reales", "Modelo financiero actualizado", "Reporte de uso de IA", "Reporte de red team por pares", "Postmortem completo", "Defensa pública final ante revisores técnicos, institucionales e industriales"]
+deliverables_en = ["Incorporated company (or in process)", "Functional MVP", "Evidence of traction with real customers", "Updated financial model", "AI usage report", "Red team report by peers", "Complete postmortem", "Final public defense before technical, institutional, and industry reviewers"]
+evaluation_primary_es = "PD, Defensa pública final ante inversores reales o panel que simule con precisión condiciones de inversión"
+evaluation_primary_en = "PD, Final public defense before real investors or panel simulating investor conditions exactly"
+evaluation_secondaries_es = []
+evaluation_secondaries_en = []
+references = ["Y Combinator Startup School", "Stanford CS 183 Startup", "MIT delta v accelerator", "Entrepreneur First"]

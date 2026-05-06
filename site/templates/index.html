@@ -1,4 +1,5 @@
 {% import 'macros/course.html' as course_m %}
+{% import 'macros/studio.html' as studio_m %}
 {% import 'macros/layout.html' as layout %}
 <!DOCTYPE html>
 <html lang="es" data-lang="es">
@@ -109,13 +110,13 @@
   {% endif %}
 {% endfor %}
 
-{# §10 Studio Descriptions, preserved verbatim from data #}
+{# §10 Studio Descriptions, rendered from structured data #}
 <div class="page-break" data-views="students,faculty,authorities"></div>
 <div class="part-label">Part IV, Curriculum · Section 10</div>
 <h1>Studio Descriptions</h1>
 <p>Studios are the spine of the program. They are not courses. They are sixteen-week projects with real deliverables, real teams, real constraints, and real accountability. All Studios culminate in a public defense before a panel that includes external reviewers.</p>
 {% for s in studios_data.studio %}
-  {{ s.raw_html | safe }}
+  {{ studio_m::card(studio=s) }}
 {% endfor %}
 
 {# §11 + §12 #}
