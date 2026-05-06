@@ -36,8 +36,10 @@ jobs:
         run: |
           mkdir -p site/public
           cp -r public/* site/public/
-          python3 scripts/build_pdfs.py || echo "::warning::PDF build failed; site will deploy without PDFs"
-          if [ -d site/public/pdf ]; then cp -r site/public/pdf public/; fi
+          python3 scripts/build_pdfs.py
+          cp -r site/public/pdf public/
+      - name: Validate data and generated links
+        run: python3 scripts/validate.py --skip-zola
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

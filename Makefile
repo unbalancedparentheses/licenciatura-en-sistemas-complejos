@@ -1,4 +1,4 @@
-.PHONY: dev build clean check serve pdf extract help
+.PHONY: dev build clean check serve pdf validate extract help
 
 SITE_DIR := site
 
@@ -9,6 +9,7 @@ help:
 	@echo "  make dev      Start Zola dev server with live reload"
 	@echo "  make build    Build static site to $(SITE_DIR)/public"
 	@echo "  make pdf      Build site then export 8 PDFs (audience × language)"
+	@echo "  make validate Run data, bibliography, PDF-link, and Zola validation"
 	@echo "  make check    Validate Zola config + content"
 	@echo "  make clean    Remove build artifacts"
 	@echo "  make serve    Build then preview at localhost:1111"
@@ -30,6 +31,9 @@ extract:
 
 check:
 	cd $(SITE_DIR) && zola check
+
+validate: pdf
+	python3 scripts/validate.py --skip-zola
 
 clean:
 	rm -rf $(SITE_DIR)/public
