@@ -10,6 +10,13 @@
     <p class="lang-en">{{ studio.objective_en }}</p>
   </div>
 
+  {% if studio.concrete_example_es or studio.concrete_example_en %}
+  <div class="bilingual-block">
+    {% if studio.concrete_example_es %}<p lang="es"><strong>Ejemplo concreto.</strong> {{ studio.concrete_example_es }}</p>{% endif %}
+    {% if studio.concrete_example_en %}<p lang="en"><strong>Concrete example.</strong> {{ studio.concrete_example_en }}</p>{% endif %}
+  </div>
+  {% endif %}
+
   {% if studio.structure_es or studio.structure_en %}
   <h4>Estructura / Structure</h4>
   <div class="bilingual-block">
