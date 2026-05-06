@@ -26,6 +26,9 @@ def load_toml(path: Path) -> dict:
         return tomllib.load(f)
 
 
+BASE_URL = load_toml(SITE / "config.toml").get("base_url", "").rstrip("/")
+
+
 def normalize(value: str) -> str:
     value = re.sub(r"<[^>]+>", "", value)
     value = html.unescape(value)
@@ -33,6 +36,17 @@ def normalize(value: str) -> str:
     value = value.replace("&", "and")
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def title_variants(value: str) -> set[str]:
+    normalized = normalize(value)
+    variants = {normalized}
+    for article in ("a ", "an ", "the "):
+        if normalized.startswith(article):
+            variants.add(normalized[len(article) :])
+        else:
+            variants.add(article + normalized)
+    return variants
 
 
 def first_title(value: str) -> str | None:
@@ -45,11 +59,12 @@ def first_title(value: str) -> str | None:
 
 
 def title_matches(title: str, bibliography_titles: set[str]) -> bool:
-    normalized = normalize(title)
+    variants = title_variants(title)
     return any(
-        normalized == candidate
-        or normalized.startswith(candidate + " ")
-        or candidate.startswith(normalized + " ")
+        variant == candidate
+        or variant.startswith(candidate + " ")
+        or candidate.startswith(variant + " ")
+        for variant in variants
         for candidate in bibliography_titles
     )
 
@@ -77,10 +92,11 @@ def validate_course_texts() -> list[str]:
     courses = load_toml(SITE / "data" / "courses.toml")
 
     bibliography_titles = {
-        normalize(title)
+        variant
         for entry in bibliography.get("entry", [])
         for title in [first_title(entry.get("text", ""))]
         if title
+        for variant in title_variants(title)
     }
 
     for course in courses.get("course", []):
@@ -103,12 +119,18 @@ def validate_course_texts() -> list[str]:
 
 def public_path_for_href(href: str, html_file: Path) -> Path | None:
     parsed = urlparse(href)
+    base = urlparse(BASE_URL)
     if parsed.scheme or parsed.netloc:
-        return None
+        if parsed.scheme != base.scheme or parsed.netloc != base.netloc:
+            return None
 
     path = unquote(parsed.path)
     if not path.endswith(".pdf"):
         return None
+
+    base_path = base.path.rstrip("/")
+    if base_path and path.startswith(base_path + "/"):
+        path = path[len(base_path) :]
 
     if path.startswith("/"):
         marker = "/pdf/"

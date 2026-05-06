@@ -19,9 +19,38 @@ body.pdf-mode {
 
 @media (max-width: 600px) {
   body {
-    padding: 64px 18px 32px;
+    padding: 84px 18px 32px;  // top padding makes room for unified top bar
     font-size: 13pt;
     line-height: 1.55;
+  }
+
+  // Unified top bar: a single white surface behind the three nav floaters.
+  // Visually consolidates PDF / lang / view-switcher into one bar.
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 76px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 999;
+    transition: transform 0.22s ease-out;
+  }
+
+  // Auto-hide on scroll-down (body.nav-hidden set by JS)
+  .pdf-link-wrap,
+  .lang-switcher,
+  .view-switcher {
+    transition: transform 0.22s ease-out;
+    will-change: transform;
+  }
+  body.nav-hidden {
+    &::before,
+    .pdf-link-wrap,
+    .lang-switcher,
+    .view-switcher { transform: translateY(-100%); }
   }
 
   // Cover scaled down
@@ -116,19 +145,34 @@ body.pdf-mode {
   // Long URLs / inline code wrap
   a, .pub-name, .publication { word-break: break-word; }
 
-  // Top-bar controls
+  // Top-bar controls — positioned to share a single visual bar (body::before)
   .view-switcher,
   .lang-switcher {
     font-size: 7pt;
-    right: 8px;
+    box-shadow: none;          // bar already has its own border-bottom
+    background: transparent;
+    border: 1px solid #1a1a1a;
   }
-  .lang-switcher { top: 8px; }
-  .view-switcher { top: 44px; }
+  .pdf-link-wrap { top: 8px; left: 8px; z-index: 1001; }
+  .lang-switcher { top: 8px; right: 8px; z-index: 1001; }
+  .view-switcher {
+    top: 42px;
+    left: 8px;
+    right: 8px;
+    z-index: 1001;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+  }
   .view-switcher button, .view-switcher .view-link,
   .lang-switcher button { padding: 6px 8px; }
   .view-label { display: none; }
-  .pdf-link-wrap { top: 8px; left: 8px; }
-  .pdf-link { font-size: 7pt; padding: 6px 8px; }
+  .pdf-link {
+    font-size: 7pt;
+    padding: 6px 8px;
+    box-shadow: none;
+    background: #fff;
+  }
 
   // Page breaks: smaller gap on mobile (no real "pages")
   .page-break { margin-top: 40px; }

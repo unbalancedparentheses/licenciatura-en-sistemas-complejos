@@ -61,4 +61,27 @@
 
   // On the full page, default to showing everything ("full" view).
   applyView('full');
+
+  // Mobile: auto-hide top nav on scroll-down, restore on scroll-up.
+  // Only attaches the listener on small viewports so desktop is unaffected.
+  if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
+    let lastY = 0;
+    let hidden = false;
+    const TOP_THRESHOLD = 80;
+    const DEAD_BAND = 8;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y < TOP_THRESHOLD && hidden) {
+        document.body.classList.remove('nav-hidden');
+        hidden = false;
+      } else if (y > lastY + DEAD_BAND && y > TOP_THRESHOLD && !hidden) {
+        document.body.classList.add('nav-hidden');
+        hidden = true;
+      } else if (y < lastY - DEAD_BAND && hidden) {
+        document.body.classList.remove('nav-hidden');
+        hidden = false;
+      }
+      lastY = y;
+    }, { passive: true });
+  }
 })();
