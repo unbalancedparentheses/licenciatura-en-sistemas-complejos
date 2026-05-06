@@ -688,7 +688,7 @@ html = """
   </ul>
   <p><strong>Science fiction:</strong></p>
   <ul>
-    <li>Asimov, <em>Foundation</em>, psychohistory: can the behavior of complex systems be predicted and designed at civilizational scale? Connects directly with Sistemas Complejos.</li>
+    <li>Asimov, <em>Foundation</em>, psychohistory: can the behavior of complex systems be predicted and designed at societal scale? Connects directly with Sistemas Complejos.</li>
     <li>Asimov, "The Last Question", entropy, information, and the limits of computation.</li>
     <li>Gibson, <em>Neuromancer</em>, invented the concept of cyberspace; defines the aesthetic of the human-machine relationship.</li>
     <li>Dick, <em>Do Androids Dream of Electric Sheep?</em> / <em>Blade Runner</em>, empathy as a test of humanity.</li>
@@ -937,7 +937,7 @@ texts = [
   { citation = "Tetlock, Philip E., and Dan Gardner. <em>Superforecasting.</em> Crown, 2015.", note_es = "La práctica disciplinada de la predicción calibrada, conecta directamente con la actualización bayesiana.", note_en = "The disciplined practice of calibrated prediction, connects directly with Bayesian updating." },
   { citation = "Simon, Herbert A. <em>Models of Bounded Rationality.</em> MIT Press, 1982.", note_es = "Por qué los agentes reales satisfacen en lugar de optimizar.", note_en = "Why real agents satisfice rather than optimize." },
   { citation = "Williams, Bernard. <em>Ethics and the Limits of Philosophy.</em> Harvard University Press, 1985.", note_es = "Los tradeoffs trágicos son irreducibles: toda decisión importante tiene una dimensión ética que ningún framework limpio resuelve.", note_en = "Tragic tradeoffs are irreducible, every important decision has an ethical dimension that clean frameworks cannot resolve." },
-  { citation = "Jonas, Hans. <em>The Imperative of Responsibility.</em> University of Chicago Press, 1984.", note_es = "Ética para civilizaciones tecnológicas, el principio de responsabilidad hacia las generaciones futuras como restricción sobre las decisiones presentes.", note_en = "Ethics for technological civilizations, the principle of responsibility toward future generations as a constraint on present decisions." },
+  { citation = "Jonas, Hans. <em>The Imperative of Responsibility.</em> University of Chicago Press, 1984.", note_es = "Ética para sociedades tecnológicas, el principio de responsabilidad hacia las generaciones futuras como restricción sobre las decisiones presentes.", note_en = "Ethics for technological societies, the principle of responsibility toward future generations as a constraint on present decisions." },
 ]
 references = [
   { name = "Stanford MS&E 250 Decision Analysis", url = "https://explorecourses.stanford.edu/search?q=MS%26E+250" },
