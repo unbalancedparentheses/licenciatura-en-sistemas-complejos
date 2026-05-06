@@ -1173,24 +1173,29 @@ evaluation_secondaries = [
 
 [[course]]
 slug = "biologia"
-title_es = "Biología"
-title_en = "Biology"
+title_es = "Biología de Sistemas, Evolución y Ecología"
+title_en = "Systems Biology, Evolution and Ecology"
 year = 1
 block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender los sistemas biológicos con rigor, evolución, ecología, genética, inmunología, como base para razonar sobre el mundo vivo y como fuente de modelos para el diseño de sistemas. Ubicada junto a Física para que la ciencia fundacional del programa incluya tanto sistemas físicos como sistemas vivos."
-objective_en = "To understand biological systems rigorously, evolution, ecology, genetics, immunology, as a basis for reasoning about the living world and as a source of models for systems design. Placed near Physics so the program's scientific foundation includes both physical systems and living systems."
-content_es = ""
-content_en = ""
+objective_es = "Estudiar sistemas vivos como sistemas adaptativos complejos: evolución, ecología, redes regulatorias, inmunidad, epidemias, robustez y fragilidad. La materia no es una introducción genérica a la biología sino una lente para entender adaptación, selección, feedback, coevolución, colapso ecológico y optimización bajo restricciones."
+objective_en = "To study living systems as complex adaptive systems: evolution, ecology, regulatory networks, immunity, epidemics, robustness, and fragility. This is not a generic introduction to biology but a lens for understanding adaptation, selection, feedback, coevolution, ecological collapse, and optimization under constraints."
+content_es = "Evolución por selección y dinámica adaptativa. Genética y biología celular solo en la medida necesaria para entender mecanismos de regulación, herencia y variación. Redes biológicas, feedback y homeostasis. Inmunidad como sistema de detección, memoria y respuesta. Ecología, estabilidad, resiliencia, cascadas tróficas y colapso. Epidemiología y difusión. Teoría de juegos evolutiva, cooperación, competencia y coevolución. Robustez, fragilidad, redundancia, tradeoffs y path dependence. Uso cuidadoso de analogías biológicas en instituciones, IA y diseño de sistemas."
+content_en = "Evolution by selection and adaptive dynamics. Genetics and cell biology only as needed to understand regulation, inheritance, and variation. Biological networks, feedback, and homeostasis. Immunity as a system of detection, memory, and response. Ecology, stability, resilience, trophic cascades, and collapse. Epidemiology and diffusion. Evolutionary game theory, cooperation, competition, and coevolution. Robustness, fragility, redundancy, tradeoffs, and path dependence. Careful use of biological analogies in institutions, AI, and systems design."
+notes_html_es = "El objetivo es que los estudiantes incorporen un dominio de complejidad que no fue diseñado por humanos. Física enseña leyes, restricciones y conservación; biología enseña adaptación, falla, selección y supervivencia bajo condiciones cambiantes. La materia exige modelos, estimaciones y diagramas causales, no memorización taxonómica ni una orientación pre-médica."
+notes_html_en = "The goal is for students to internalize a domain of complexity not designed by humans. Physics teaches laws, constraints, and conservation; biology teaches adaptation, failure, selection, and survival under changing conditions. The course requires models, estimates, and causal diagrams, not taxonomic memorization or a pre-medical orientation."
 texts = [
-  "Alberts, Bruce, et al. <em>Essential Cell Biology.</em> 5th ed. W. W. Norton, 2019.",
   "Carroll, Sean B. <em>The Serengeti Rules.</em> Princeton University Press, 2016.",
   "Maynard Smith, John. <em>Evolution and the Theory of Games.</em> Cambridge University Press, 1982.",
+  "Nowak, Martin A. <em>Evolutionary Dynamics: Exploring the Equations of Life.</em> Belknap Press, 2006.",
+  "Levin, Simon A. <em>Fragile Dominion: Complexity and the Commons.</em> Perseus Books, 1999.",
+  { citation = "Alberts, Bruce, et al. <em>Essential Cell Biology.</em> 5th ed. W. W. Norton, 2019.", note_es = "Referencia de consulta para mecanismos celulares, no columna vertebral de la materia.", note_en = "Reference for cellular mechanisms, not the backbone of the course." },
   "Dawkins, Richard. <em>The Selfish Gene.</em> 40th Anniversary ed. Oxford University Press, 2016.",
 ]
 references = [
   { name = "MIT 7.013 Introductory Biology", url = "https://ocw.mit.edu/courses/7-013-introductory-biology-spring-2018/" },
+  { name = "MIT 7.91J Foundations of Computational and Systems Biology", url = "https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/" },
   { name = "Caltech Bi 1 Principles of Biology", url = "https://catalog.caltech.edu/current/courses/department/Bi" },
   { name = "École Polytechnique tronc commun Biologie", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
