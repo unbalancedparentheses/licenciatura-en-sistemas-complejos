@@ -98,7 +98,7 @@ texts = [
   { citation = "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010.", note_es = "Introducción rigurosa estándar al álgebra abstracta a nivel de grado.", note_en = "The standard rigorous introduction to abstract algebra at undergraduate level." },
   { citation = "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics.</em> 2nd ed. Addison-Wesley, 1994.", note_es = "Combinatoria, funciones generatrices y razonamiento discreto en la base de la computación.", note_en = "Combinatorics, generating functions, and discrete reasoning at the foundation of CS." },
   { citation = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000.", note_es = "Capítulos seleccionados: topología de conjuntos de puntos y fundamentos de espacios métricos.", note_en = "Selected chapters, point-set topology and fundamentals of metric spaces." },
-  { citation = "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999.", note_es = "El mejor panorama de las grandes ramas de la matemática con profundidad real, contexto imprescindible para entender la matemática como empresa intelectual.", note_en = "The best survey of the major branches of mathematics with real depth, essential context for understanding mathematics as an intellectual enterprise." },
+  { citation = "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999.", note_es = "Panorama sólido de las grandes ramas de la matemática con profundidad real, contexto imprescindible para entender la matemática como empresa intelectual.", note_en = "A strong survey of the major branches of mathematics with real depth, essential context for understanding mathematics as an intellectual enterprise." },
   { citation = "Tao, Terence. <em>Analysis I and II.</em> Hindustan Book Agency, 2016.", note_es = "Análisis real riguroso a nivel de grado.", note_en = "Rigorous real analysis at undergraduate level." },
 ]
 references = [
@@ -307,7 +307,7 @@ evaluation_secondaries = [
 slug = "historia-de-las-instituciones-la-tecnologia-y-el-poder"
 title_es = "Historia de las Instituciones, la Tecnología y el Poder"
 title_en = "History of Institutions, Technology and Power"
-year = 1
+year = 2
 block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
@@ -640,8 +640,8 @@ evaluation_secondaries = [
 slug = "cultura-legitimidad-y-normas"
 title_es = "Cultura, Legitimidad y Normas"
 title_en = "Culture, Legitimacy and Norms"
-year = 2
-block = "D"
+year = 3.5
+block = "A"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender las estructuras no formales que sostienen a los sistemas, o los desgarran. La cultura popular es donde una sociedad procesa sus ansiedades sobre el futuro."
@@ -1175,12 +1175,12 @@ evaluation_secondaries = [
 slug = "biologia"
 title_es = "Biología"
 title_en = "Biology"
-year = 3.5
-block = "A"
+year = 1
+block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender los sistemas biológicos con rigor, evolución, ecología, genética, inmunología, como base para razonar sobre el mundo vivo y como fuente de modelos para el diseño de sistemas. Colocada al final para conectar con Sistemas Complejos recién cursado."
-objective_en = "To understand biological systems rigorously, evolution, ecology, genetics, immunology, as a basis for reasoning about the living world and as a source of models for systems design. Placed at the end to connect with Complex Systems just completed."
+objective_es = "Entender los sistemas biológicos con rigor, evolución, ecología, genética, inmunología, como base para razonar sobre el mundo vivo y como fuente de modelos para el diseño de sistemas. Ubicada junto a Física para que la ciencia fundacional del programa incluya tanto sistemas físicos como sistemas vivos."
+objective_en = "To understand biological systems rigorously, evolution, ecology, genetics, immunology, as a basis for reasoning about the living world and as a source of models for systems design. Placed near Physics so the program's scientific foundation includes both physical systems and living systems."
 content_es = ""
 content_en = ""
 texts = [

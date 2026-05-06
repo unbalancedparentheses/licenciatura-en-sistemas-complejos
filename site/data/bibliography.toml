@@ -74,6 +74,10 @@ text = "Boneh, Dan, and Victor Shoup. <em>A Graduate Course in Applied Cryptogra
 url = "https://toc.cryptobook.us/"
 
 [[entry]]
+text = "Banzi, Massimo, and Michael Shiloh. <em>Getting Started with Arduino.</em> 3rd ed. Maker Media, 2014."
+url = "https://www.oreilly.com/library/view/getting-started-with/9781457185378/"
+
+[[entry]]
 text = "Bostrom, Nick. <em>Superintelligence: Paths, Dangers, Strategies.</em> Oxford University Press, 2014."
 url = "https://global.oup.com/academic/product/superintelligence-9780198739838"
 
@@ -248,6 +252,10 @@ url = "https://press.stripe.com/boom"
 [[entry]]
 text = "Hobsbawm, Eric. <em>The Age of Revolution: 1789–1848.</em> Vintage, 1962. <em>The Age of Capital: 1848–1875.</em> Vintage, 1975. <em>The Age of Empire: 1875–1914.</em> Vintage, 1987."
 url = "https://www.penguinrandomhouse.com/authors/13437/eric-hobsbawm/"
+
+[[entry]]
+text = "Horowitz, Paul, and Winfield Hill. <em>The Art of Electronics.</em> 3rd ed. Cambridge University Press, 2015."
+url = "https://artofelectronics.net/"
 
 [[entry]]
 text = "Horowitz, Ben. <em>The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers.</em> Harper Business, 2014."
@@ -614,6 +622,10 @@ text = "Latour, Bruno. <em>Science in Action: How to Follow Scientists and Engin
 url = "https://www.hup.harvard.edu/books/9780674792913"
 
 [[entry]]
+text = "Lee, Edward A., and Sanjit A. Seshia. <em>Introduction to Embedded Systems: A Cyber-Physical Systems Approach.</em> 2nd ed. MIT Press, 2017."
+url = "https://leeseshia.org/"
+
+[[entry]]
 text = "Martínez Estrada, Ezequiel. <em>Radiografía de la Pampa.</em> Babel, 1933."
 url = "https://books.google.com/books/about/Radiograf%C3%ADa_de_la_pampa.html?id=VlYLAQAAIAAJ"
 
@@ -648,3 +660,11 @@ url = "https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Cap
 [[entry]]
 text = "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947."
 url = "https://www.trotta.es/libros/la-gravedad-y-la-gracia/9788413642574/"
+
+[[entry]]
+text = "Warden, Pete, and Daniel Situnayake. <em>TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers.</em> O'Reilly, 2019."
+url = "https://www.oreilly.com/library/view/tinyml/9781492052036/"
+
+[[entry]]
+text = "Warren, Henry S. <em>Hacker's Delight.</em> 2nd ed. Addison-Wesley, 2012."
+url = "https://www.oreilly.com/library/view/hackers-delight-second/9780133084993/"

@@ -42,6 +42,15 @@
     <span class="eval-badge">{{ studio.evaluation_primary_en }}</span>
     {% for s in studio.evaluation_secondaries_en %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
   </p>
+  {% if studio.evaluation_criteria_es or studio.evaluation_criteria_en %}
+  <h4>Criterios / Criteria</h4>
+  <ul lang="es">
+    {% for c in studio.evaluation_criteria_es %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+  <ul lang="en">
+    {% for c in studio.evaluation_criteria_en %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+  {% endif %}
 
   <h4>Programas de referencia / Reference programs</h4>
   <p>{{ studio.references | join(sep=" · ") }}</p>
