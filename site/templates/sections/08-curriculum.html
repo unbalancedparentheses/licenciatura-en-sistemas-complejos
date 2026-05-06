@@ -56,7 +56,7 @@
 <table>
 <tr>{% for b in blocks_4 %}<th>Bloque {{ b }}</th>{% endfor %}</tr>
 {% for pos in [1, 2, 3] %}
-<tr>{% for b in blocks_4 %}{% set matches = courses_data.course | filter(attribute="year", value=y.number) | filter(attribute="block", value=b) | filter(attribute="position", value=pos) %}{% if matches | length > 0 %}<td>{{ matches | first | get(key="title_es") }}</td>{% elif y.number == 3 and b == "B" and pos == 3 %}<td><em lang="es">Bloque más liviano · Studio V intensifica</em><em lang="en">Lighter block · Studio V intensifies</em></td>{% else %}<td></td>{% endif %}{% endfor %}</tr>
+<tr>{% for b in blocks_4 %}{% set matches = courses_data.course | filter(attribute="year", value=y.number) | filter(attribute="block", value=b) | filter(attribute="position", value=pos) %}{% if matches | length > 0 %}<td>{{ matches | first | get(key="title_es") }}</td>{% else %}<td></td>{% endif %}{% endfor %}</tr>
 {% endfor %}
 {% set studios = studios_data.studio | filter(attribute="year", value=y.number) %}
 {% if studios | length > 0 %}

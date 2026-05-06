@@ -727,26 +727,16 @@ position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender qué cuenta como conocimiento, qué hace válido a un modelo y qué pueden y no pueden hacer las máquinas. La materia que examina la afirmación fundacional del programa: que la AGI aún no puede ser confiada con el juicio."
 objective_en = "To understand what counts as knowledge, what makes a model valid, and what machines can and cannot do. The course that examines the program's founding claim: that AI cannot yet be trusted with judgment."
-content_es = "Epistemología, filosofía de la ciencia (falsabilidad, paradigmas, validez de modelos), filosofía de la mente y la IA (la Habitación China, el problema del anclaje simbólico, consciencia y computación, el problema del alineamiento)."
-content_en = "Epistemology, philosophy of science (falsifiability, paradigms, model validity), philosophy of mind and AI (the Chinese Room, the symbol grounding problem, consciousness and computation, the alignment problem)."
-notes_html_es = "La filosofía de la ciencia no es abstracta, es operativa para los que construyen. Lakatos muestra cómo funciona realmente la matemática como actividad humana. Feyerabend demuestra que la ciencia avanza por transgresión, no por método. Cartwright expone que los modelos científicos idealizan, no describen. Hacking distingue representar el mundo de intervenirlo. Latour revela a la ciencia como una red de actores, instrumentos e instituciones. Estos pensadores desmontan la idea de que la ciencia es pura racionalidad descarnada, una lectura imprescindible para estudiantes que van a construir modelos y a confundirlos con la verdad."
-notes_html_en = "Philosophy of science is not abstract, it is operational for builders. Lakatos shows how mathematics actually works as human activity. Feyerabend demonstrates that science advances by transgression, not method. Cartwright exposes that scientific models idealize, they don't describe. Hacking distinguishes representing the world from intervening in it. Latour reveals science as a network of actors, instruments, and institutions. These thinkers dismantle the idea that science is pure disembodied rationality, essential for students who will build models and confuse them with truth."
+content_es = "La materia se organiza en torno a tres preguntas: (1) ¿qué cuenta como conocimiento científico válido y cómo cambia esa pregunta a lo largo del tiempo? (2) ¿qué es la inteligencia, y qué la distingue, si algo la distingue, entre humanos y máquinas? (3) ¿qué oculta un modelo cuando explica algo, y cuándo la idealización deja de ser útil? El plan combina filosofía de la ciencia (falsabilidad, paradigmas, validez de modelos) con filosofía de la mente y la IA (la Habitación China, el problema del anclaje simbólico, el problema del alineamiento)."
+content_en = "The course is organized around three questions: (1) what counts as valid scientific knowledge, and how does that question change over time? (2) what is intelligence, and what distinguishes it, if anything distinguishes it, between humans and machines? (3) what does a model hide when it explains something, and when does idealization stop being useful? The plan combines philosophy of science (falsifiability, paradigms, model validity) with philosophy of mind and AI (the Chinese Room, the symbol grounding problem, the alignment problem)."
+notes_html_es = "La filosofía de la ciencia no es abstracta, es operativa para quienes construyen sistemas. La materia se ancla en cuatro lecturas centrales: Kuhn sobre cómo cambian los paradigmas, el debate Dreyfus–Dennett sobre qué es la inteligencia, Cartwright sobre la idealización en los modelos científicos, y Russell sobre el problema del alineamiento. Esos cuatro ejes estructuran el curso; los demás autores aparecen como ampliación o referencia, no como lectura paralela. Conecta directamente con Métodos Formales (Lakatos), Machine Learning (Cartwright sobre modelos) y Sistemas Complejos (Polanyi sobre conocimiento tácito)."
+notes_html_en = "Philosophy of science is not abstract, it is operational for those who build systems. The course anchors on four core readings: Kuhn on how paradigms change, the Dreyfus–Dennett debate on what intelligence is, Cartwright on idealization in scientific models, and Russell on the alignment problem. Those four are the structural spine of the course; other authors appear as extensions or references, not as parallel reading. Connects directly with Métodos Formales (Lakatos), Machine Learning (Cartwright on models), and Sistemas Complejos (Polanyi on tacit knowledge)."
 texts = [
   "Kuhn, Thomas S. <em>The Structure of Scientific Revolutions.</em> 4th ed. University of Chicago Press, 2012.",
-  { citation = "Dreyfus, Hubert L. <em>What Computers Can't Do.</em> Harper & Row, 1972.", note_es = "La crítica fenomenológica más potente de la IA; tuvo razón sobre la GOFAI y sus argumentos sobre la corporalidad siguen sin resolución por parte de los LLMs.", note_en = "The most powerful phenomenological critique of AI, was right about GOFAI, his arguments about embodiment remain unresolved by LLMs." },
-  { citation = "Dennett, Daniel C. <em>Consciousness Explained.</em> Little, Brown, 1991.", note_es = "La posición funcionalista / deflacionaria, contrapunto directo a Dreyfus; el debate Dreyfus–Dennett es el eje central de la filosofía de la IA.", note_en = "The functionalist / deflationary position, direct counterpoint to Dreyfus; the Dreyfus–Dennett debate is the central axis of philosophy of AI." },
-  { citation = "Russell, Stuart. <em>Human Compatible.</em> Viking, 2019.", note_es = "El problema del alineamiento por uno de los fundadores del campo: por qué las máquinas que optimizan objetivos mal especificados son peligrosas.", note_en = "The alignment problem from a founder of the field, why machines optimizing misspecified objectives are dangerous." },
-  { citation = "Christian, Brian. <em>The Alignment Problem.</em> W. W. Norton, 2020.", note_es = "La historia y el estado actual del alineamiento de los sistemas de IA con los valores humanos.", note_en = "The history and current state of aligning AI systems with human values." },
-  { citation = "Cartwright, Nancy. <em>How the Laws of Physics Lie.</em> Oxford University Press, 1983.", note_es = "Los modelos idealizan, no describen; lectura clave para quienes construyen modelos de ML.", note_en = "Models idealize, they don't describe, crucial for ML builders." },
-  { citation = "Polanyi, Michael. <em>Personal Knowledge.</em> University of Chicago Press, 1958.", note_es = "Conocimiento tácito: lo que un experto sabe y no puede formalizarse, con implicancias para los límites de la IA.", note_en = "Tacit knowledge, what an expert knows that cannot be formalized, with implications for the limits of AI." },
-  { citation = "Feyerabend, Paul. <em>Against Method.</em> 4th ed. Verso, 2010.", note_es = "Anarquismo epistemológico: la ciencia avanza por transgresión.", note_en = "Epistemological anarchism, science advances by transgression." },
-  { citation = "Lakatos, Imre. <em>Proofs and Refutations.</em> Cambridge University Press, 1976.", note_es = "El mejor texto sobre cómo funciona realmente la matemática, conecta con Métodos Formales.", note_en = "The best text on how mathematics actually works, connects with Métodos Formales." },
-  { citation = "Hacking, Ian. <em>Representing and Intervening.</em> Cambridge University Press, 1983.", note_es = "La ciencia no es solo modelos, es la manipulación de la realidad.", note_en = "Science is not just models, it is the manipulation of reality." },
-  { citation = "Latour, Bruno. <em>Science in Action.</em> Harvard University Press, 1987.", note_es = "La ciencia como red de actores, instrumentos e instituciones.", note_en = "Science as a network of actors, instruments, and institutions." },
-  { citation = "Hui, Yuk. <em>The Question Concerning Technology in China.</em> Urbanomic, 2016.", note_es = "La relación con la technē no es universal, hay cosmotécnicas distintas; la mejor respuesta contemporánea a Heidegger desde una perspectiva no occidental.", note_en = "The relation to technē is not universal, there are distinct cosmotechnics; the best contemporary response to Heidegger from a non-Western perspective." },
-  { citation = "Simondon, Gilbert. <em>On the Mode of Existence of Technical Objects.</em> Univocal, 2017.", note_es = "Los objetos técnicos tienen su propia lógica evolutiva, no son meros instrumentos.", note_en = "Technical objects have their own evolutionary logic, they are not mere instruments." },
-  { citation = "Haraway, Donna. <em>Cyborg Manifesto.</em> 1985.", note_es = "La disolución de las fronteras humano/máquina como oportunidad, no como amenaza.", note_en = "The dissolution of human/machine boundaries as opportunity, not threat." },
-  "Bostrom, Nick. <em>Superintelligence.</em> Oxford University Press, 2014.",
+  { citation = "Dreyfus, Hubert L. <em>What Computers Can't Do.</em> Harper & Row, 1972.", note_es = "Lectura central. La crítica fenomenológica más potente de la IA; tuvo razón sobre la GOFAI y sus argumentos sobre la corporalidad siguen sin resolución por parte de los LLMs.", note_en = "Core reading. The most powerful phenomenological critique of AI, was right about GOFAI, his arguments about embodiment remain unresolved by LLMs." },
+  { citation = "Dennett, Daniel C. <em>Consciousness Explained.</em> Little, Brown, 1991.", note_es = "Lectura central. La posición funcionalista / deflacionaria, contrapunto directo a Dreyfus; el debate Dreyfus–Dennett es el eje central de la filosofía de la IA.", note_en = "Core reading. The functionalist / deflationary position, direct counterpoint to Dreyfus; the Dreyfus–Dennett debate is the central axis of philosophy of AI." },
+  { citation = "Cartwright, Nancy. <em>How the Laws of Physics Lie.</em> Oxford University Press, 1983.", note_es = "Lectura central. Los modelos idealizan, no describen; lectura clave para quienes construyen modelos de ML.", note_en = "Core reading. Models idealize, they don't describe, crucial for ML builders." },
+  { citation = "Russell, Stuart. <em>Human Compatible.</em> Viking, 2019.", note_es = "Lectura central. El problema del alineamiento por uno de los fundadores del campo: por qué las máquinas que optimizan objetivos mal especificados son peligrosas.", note_en = "Core reading. The alignment problem from a founder of the field, why machines optimizing misspecified objectives are dangerous." },
 ]
 references = [
   { name = "Stanford Symbolic Systems Program", url = "https://symsys.stanford.edu/" },
@@ -759,6 +749,54 @@ evaluation_primary = "OD, Defense of philosophical analysis of a real AI system"
 evaluation_secondaries = [
   "TP, Written analysis",
 ]
+
+[[course.extra_section]]
+label_es = "Lecturas secundarias"
+label_en = "Secondary readings"
+html_es = """
+<p>Extractos seleccionados, no lectura completa:</p>
+<ul>
+  <li>Lakatos, <em>Proofs and Refutations</em>: cómo funciona la matemática como actividad humana; conecta con Métodos Formales.</li>
+  <li>Polanyi, <em>Personal Knowledge</em>: conocimiento tácito y lo que un experto sabe pero no puede formalizar.</li>
+  <li>Christian, <em>The Alignment Problem</em>: historia reciente del problema del alineamiento.</li>
+  <li>Feyerabend, <em>Against Method</em>: anarquismo epistemológico, complemento crítico a Kuhn.</li>
+</ul>
+"""
+html_en = """
+<p>Selected excerpts, not full reading:</p>
+<ul>
+  <li>Lakatos, <em>Proofs and Refutations</em>: how mathematics works as human activity; connects with Métodos Formales.</li>
+  <li>Polanyi, <em>Personal Knowledge</em>: tacit knowledge and what an expert knows but cannot formalize.</li>
+  <li>Christian, <em>The Alignment Problem</em>: recent history of the alignment problem.</li>
+  <li>Feyerabend, <em>Against Method</em>: epistemological anarchism, critical complement to Kuhn.</li>
+</ul>
+"""
+
+[[course.extra_section]]
+label_es = "Lecturas complementarias"
+label_en = "Further reading"
+html_es = """
+<p>Disponibles para profundización individual o trabajos de Studio:</p>
+<ul>
+  <li>Hacking, <em>Representing and Intervening</em></li>
+  <li>Latour, <em>Science in Action</em></li>
+  <li>Hui, <em>The Question Concerning Technology in China</em></li>
+  <li>Simondon, <em>On the Mode of Existence of Technical Objects</em></li>
+  <li>Haraway, <em>Cyborg Manifesto</em></li>
+  <li>Bostrom, <em>Superintelligence</em></li>
+</ul>
+"""
+html_en = """
+<p>Available for individual depth or Studio projects:</p>
+<ul>
+  <li>Hacking, <em>Representing and Intervening</em></li>
+  <li>Latour, <em>Science in Action</em></li>
+  <li>Hui, <em>The Question Concerning Technology in China</em></li>
+  <li>Simondon, <em>On the Mode of Existence of Technical Objects</em></li>
+  <li>Haraway, <em>Cyborg Manifesto</em></li>
+  <li>Bostrom, <em>Superintelligence</em></li>
+</ul>
+"""
 
 [[course]]
 slug = "estrategia-producto-y-salida-al-mercado"
@@ -903,6 +941,38 @@ references = [
 evaluation_primary = "LC, Live negotiation exercise with real stakes"
 evaluation_secondaries = [
   "OD, Debrief and strategy analysis",
+]
+
+[[course]]
+slug = "sistemas-embebidos-e-interaccion-fisica"
+title_es = "Sistemas Embebidos e Interacción Física"
+title_en = "Embedded Systems and Physical Interaction"
+year = 3
+block = "B"
+position = 3
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Construir sistemas que interactúen con el mundo físico. La materia que cierra la brecha entre el software y el hardware: sensores, actuadores, microcontroladores, comunicación en tiempo real, y las restricciones físicas que un sistema embebido impone sobre el diseño."
+objective_en = "Build systems that interact with the physical world. The course that closes the gap between software and hardware: sensors, actuators, microcontrollers, real-time communication, and the physical constraints an embedded system imposes on design."
+content_es = "Microcontroladores y plataformas embebidas (Arduino, ESP32, Raspberry Pi). Sensores e instrumentación, actuadores y control. Comunicación: I2C, SPI, UART, redes inalámbricas. Sistemas en tiempo real, latencia y determinismo. Restricciones físicas: consumo energético, disipación térmica, robustez electromagnética. Inferencia en el borde (edge ML) para sistemas con presupuesto computacional acotado. Conexión con la materia de Física I y con el componente físico de Studio II."
+content_en = "Microcontrollers and embedded platforms (Arduino, ESP32, Raspberry Pi). Sensors and instrumentation, actuators and control. Communication: I2C, SPI, UART, wireless networks. Real-time systems, latency, and determinism. Physical constraints: power consumption, thermal dissipation, electromagnetic robustness. Edge ML for systems with bounded compute budget. Connects with Física I and the physical component of Studio II."
+notes_html_es = "El programa tiene la doble sede de Ciencias Económicas e Ingeniería; la profundidad técnica en sistemas físicos forma parte de lo que la dimensión de Ingeniería compromete a entregar. La materia conecta los fundamentos físicos del Año 1 con la práctica de construir sistemas que importan en el mundo real, no solamente en el navegador."
+notes_html_en = "The program is jointly hosted by Ciencias Económicas and Ingeniería; technical depth in physical systems is part of what the Engineering dimension commits to deliver. The course connects the physical foundations from Year 1 with the practice of building systems that matter in the real world, not only in the browser."
+texts = [
+  { citation = "Lee, Edward A., and Sanjit A. Seshia. <em>Introduction to Embedded Systems: A Cyber-Physical Systems Approach.</em> 2nd ed. MIT Press, 2017.", note_es = "El texto de referencia para sistemas ciberfísicos a nivel universitario; combina rigor formal con práctica de diseño.", note_en = "The reference text for cyber-physical systems at university level; combines formal rigor with design practice." },
+  { citation = "Horowitz, Paul, and Winfield Hill. <em>The Art of Electronics.</em> 3rd ed. Cambridge University Press, 2015.", note_es = "El texto canónico de electrónica para ingenieros que necesitan diseñar circuitos reales, no solamente analizarlos.", note_en = "The canonical electronics text for engineers who need to design real circuits, not only analyze them." },
+  { citation = "Warren, Henry S. <em>Hacker's Delight.</em> 2nd ed. Addison-Wesley, 2012.", note_es = "Operaciones a nivel de bits, optimización de bajo nivel; útil para programar microcontroladores con recursos limitados.", note_en = "Bit-level operations, low-level optimization; useful for programming microcontrollers with limited resources." },
+  "Banzi, Massimo, and Michael Shiloh. <em>Getting Started with Arduino.</em> 3rd ed. Maker Media, 2014.",
+  { citation = "Warden, Pete, and Daniel Situnayake. <em>TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers.</em> O'Reilly, 2019.", note_es = "Inferencia de ML en microcontroladores; conecta Deep Learning con sistemas embebidos reales.", note_en = "ML inference on microcontrollers; connects Deep Learning with real embedded systems." },
+]
+references = [
+  { name = "MIT 6.S08 Interconnected Embedded Systems", url = "https://ocw.mit.edu/courses/6-08-introduction-to-eecs-via-interconnected-embedded-systems-spring-2017/" },
+  { name = "Berkeley EECS 149 Introduction to Embedded Systems", url = "https://ptolemy.berkeley.edu/projects/embedded/eecsx49/" },
+  { name = "Stanford CS 149 Parallel Computing", url = "https://gfxcourses.stanford.edu/cs149/" },
+  { name = "ETH Zurich Embedded Systems", url = "https://tec.ee.ethz.ch/teaching.html" },
+]
+evaluation_primary = "PD, Public defense of a working embedded system with documented design decisions"
+evaluation_secondaries = [
+  "TP, Functional prototype with hardware + firmware + measurement plan",
 ]
 
 [[course]]
