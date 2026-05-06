@@ -79,6 +79,6 @@ site/
 - **Add or change a course** → edit `site/data/courses.toml`. Year/block/position determines where it appears in the §8.2 curriculum table; details in §9 are rendered from the same entry.
 - **Add or change a Studio** → edit `site/data/studios.toml`. Year/blocks determine where it appears in §8.2; the `raw_html` field is the §10 description.
 - **Change a program-level stat** (years, cohort size) → edit `site/data/program.toml`. Stat boxes throughout are derived.
-- **Edit narrative prose** → edit the matching `site/templates/sections/NN-*.html`. Each prose element has bilingual ES/EN siblings — keep both in sync.
+- **Edit narrative prose** → edit the matching `site/templates/sections/NN-*.html`. Each prose element has bilingual ES/EN siblings, keep both in sync.
 - **Add a bibliography entry** → append to `site/data/bibliography.toml`. Every entry should have a canonical `url` (publisher page, DOI, arXiv, or open-access copy).
 - **Run before pushing**: `make build && make validate` (without `--skip-pdf-links` if Chrome is available).

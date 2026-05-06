@@ -31,10 +31,10 @@
 {% if audience != "students" %}{% include 'sections/07-evaluation.html' %}{% endif %}
 {% include 'sections/08-curriculum.html' %}
 
-{# Course descriptions — only for faculty + authorities #}
+{# Course descriptions, only for faculty + authorities #}
 {% if audience in ["faculty", "authorities"] %}
 <div class="page-break"></div>
-<div class="part-label">Part IV — Curriculum · Section 9</div>
+<div class="part-label">Part IV, Curriculum · Section 9</div>
 <h1 lang="es">Descripciones de las materias</h1>
 <h1 lang="en">Course Descriptions</h1>
 {% set years = curriculum.year %}
@@ -49,9 +49,9 @@
 {% endfor %}
 {% endif %}
 
-{# Studio Descriptions — visible to all audiences #}
+{# Studio Descriptions, visible to all audiences #}
 <div class="page-break"></div>
-<div class="part-label">Part IV — Curriculum · Section 10</div>
+<div class="part-label">Part IV, Curriculum · Section 10</div>
 <h1 lang="es">Descripciones de los Studios</h1>
 <h1 lang="en">Studio Descriptions</h1>
 <p lang="es">Los Studios son la columna vertebral del programa. No son materias. Son proyectos de dieciséis semanas con entregables reales, equipos reales, restricciones reales y rendición de cuentas real. Todos los Studios culminan en una defensa pública ante un panel que incluye revisores externos.</p>
@@ -64,7 +64,7 @@
 {% if audience != "faculty" %}{% include 'sections/11-admissions.html' %}{% endif %}
 {% include 'sections/12-graduate-profile.html' %}
 
-{# Appendices — faculty + authorities only #}
+{# Appendices, faculty + authorities only #}
 {% if audience in ["faculty", "authorities"] %}
 {% include 'sections/appendix-a.html' %}
 {% include 'sections/appendix-b.html' %}

@@ -31,15 +31,22 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 PUBLIC = REPO / "site" / "public"
 PDF_DIR = PUBLIC / "pdf"
+AUDIENCES_TOML = REPO / "site" / "data" / "audiences.toml"
 PORT = 8765
 
-ROUTES = [
-    ("full", ""),
-    ("students", "students/"),
-    ("faculty", "faculty/"),
-    ("authorities", "authorities/"),
-]
 LANGS = ["es", "en"]
+
+
+def load_routes() -> list[tuple[str, str]]:
+    """Derive (slug, route) pairs from data/audiences.toml plus the 'full' default."""
+    import tomllib
+    with AUDIENCES_TOML.open("rb") as f:
+        data = tomllib.load(f)
+    routes = [("full", "")]
+    for entry in data.get("audience", []):
+        slug = entry["slug"]
+        routes.append((slug, f"{slug}/"))
+    return routes
 
 
 def find_chromium() -> str:
@@ -105,7 +112,7 @@ def main() -> int:
     time.sleep(0.3)
 
     try:
-        for name, route in ROUTES:
+        for name, route in load_routes():
             for lang in LANGS:
                 url = f"http://127.0.0.1:{PORT}/{route}?lang={lang}"
                 output = PDF_DIR / f"{name}-{lang}.pdf"

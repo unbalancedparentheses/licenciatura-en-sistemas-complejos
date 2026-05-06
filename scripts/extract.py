@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 """
-Extract structured content from legacy index.html into TOML data files
-and HTML section partials. Designed to preserve content byte-for-byte
-where reasonable.
+HISTORICAL one-shot extractor. Read the legacy single-file index.html
+(now removed from the repo, see git history) and emit:
+  - site/data/courses.toml
+  - site/data/studios.toml
+  - site/data/bibliography.toml
+  - site/templates/sections/*.html
 
-Run from repo root:
+The migration is complete; this script is kept only as a record of how
+the data files were originally produced. It will fail at runtime because
+index.html is gone. Do NOT run it against the current site, it would
+overwrite the canonical data with stale content.
+
+Run from repo root (only against a historical commit that still has
+index.html):
     python3 scripts/extract.py
 """
 from __future__ import annotations

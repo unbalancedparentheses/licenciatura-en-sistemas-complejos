@@ -1,5 +1,5 @@
 +++
-title = "Vista Autoridades — Licenciatura en Sistemas Complejos"
+title = "Vista Autoridades · Licenciatura en Sistemas Complejos"
 template = "audience.html"
 sort_by = "weight"
 

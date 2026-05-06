@@ -3,23 +3,23 @@
 
 [[year]]
 number = 1
-title_es = "Año 1 — Fundamentos"
-title_en = "Year 1 — Foundations"
+title_es = "Año 1, Fundamentos"
+title_en = "Year 1, Foundations"
 
 [[year]]
 number = 2
-title_es = "Año 2 — Sistemas"
-title_en = "Year 2 — Systems"
+title_es = "Año 2, Sistemas"
+title_en = "Year 2, Systems"
 
 [[year]]
 number = 3
-title_es = "Año 3 — Síntesis"
-title_en = "Year 3 — Synthesis"
+title_es = "Año 3, Síntesis"
+title_en = "Year 3, Synthesis"
 
 [[year]]
 number = 3.5
-title_es = "Año 3.5 — Salida"
-title_en = "Year 3.5 — Exit"
+title_es = "Año 3.5, Salida"
+title_en = "Year 3.5, Exit"
 
 # Studio metadata moved to data/studios.toml so each studio has a single
 # source of truth (year/blocks live alongside the §10 description payload).

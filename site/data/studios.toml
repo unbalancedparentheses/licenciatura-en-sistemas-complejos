@@ -5,13 +5,13 @@ number = 1
 slug = "escritura-y-oratoria"
 year = 1
 blocks = ["A", "B"]
-number_text = "Studio I — Año 1, Bloques A+B"
+number_text = "Studio I, Año 1, Bloques A+B"
 roman = "I"
 title_es = "Escritura y Oratoria"
 title_en = "Writing and Rhetoric"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio I — Año 1, Bloques A+B</div>
+  <div class="studio-number">Studio I, Año 1, Bloques A+B</div>
   <div class="studio-title">Escritura y Oratoria / Writing and Rhetoric</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -19,15 +19,15 @@ raw_html = """
     <p class="lang-en">To formally train the written and oral communication skills on which everything else in the program rests.</p>
   </div>
   <h4>Structure</h4>
-  <p>Writing emphasis in the first eight weeks. Oral emphasis in the second eight weeks. Both practiced throughout. Material comes from courses being taken simultaneously — students write and present about real content, not abstract exercises.</p>
+  <p>Writing emphasis in the first eight weeks. Oral emphasis in the second eight weeks. Both practiced throughout. Material comes from courses being taken simultaneously, students write and present about real content, not abstract exercises.</p>
   <h4>Deliverables / Entregables</h4>
   <ul>
-    <li>Portfolio of rewritten essays with complete revision history — original drafts, feedback received, rewrites</li>
+    <li>Portfolio of rewritten essays with complete revision history, original drafts, feedback received, rewrites</li>
     <li>Recorded oral presentations with self-evaluation</li>
     <li>Final oral defense without notes</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">WP — Written portfolio with revision history</span><span class="eval-secondary">Recorded presentations with self-evaluation</span></p>
+  <p><span class="eval-badge">WP, Written portfolio with revision history</span><span class="eval-secondary">Recorded presentations with self-evaluation</span></p>
   <h4>Reference programs</h4>
   <p>Stanford PWR Program in Writing and Rhetoric · MIT CI-H Communication Intensive · Harvard Bok Center Writing Program</p>
 </div>
@@ -38,13 +38,13 @@ number = 2
 slug = "construir-y-romper"
 year = 1
 blocks = ["C", "D"]
-number_text = "Studio II — Año 1, Bloques C+D"
+number_text = "Studio II, Año 1, Bloques C+D"
 roman = "II"
 title_es = "Construir y Romper"
 title_en = "Build and Break"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio II — Año 1, Bloques C+D</div>
+  <div class="studio-number">Studio II, Año 1, Bloques C+D</div>
   <div class="studio-title">Construir y Romper / Build and Break</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -62,7 +62,7 @@ raw_html = """
     <li>Postmortem and team retrospective</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD — Public defense of functional system</span></p>
+  <p><span class="eval-badge">PD, Public defense of functional system</span></p>
   <h4>Reference programs</h4>
   <p>MIT 6.S08 Interconnected Embedded Systems · Caltech ME/EE 75 Projects in Experimental Engineering · UCL Integrated Engineering Programme</p>
 </div>
@@ -73,13 +73,13 @@ number = 3
 slug = "fiabilidad-bajo-presion"
 year = 2
 blocks = ["A", "B"]
-number_text = "Studio III — Año 2, Bloques A+B"
+number_text = "Studio III, Año 2, Bloques A+B"
 roman = "III"
 title_es = "Fiabilidad Bajo Presión"
 title_en = "Reliability Under Pressure"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio III — Año 2, Bloques A+B</div>
+  <div class="studio-number">Studio III, Año 2, Bloques A+B</div>
   <div class="studio-title">Fiabilidad Bajo Presión / Reliability Under Pressure</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -95,7 +95,7 @@ raw_html = """
     <li>Team coordination retrospective</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD — Defense simulating a post-incident review</span></p>
+  <p><span class="eval-badge">PD, Defense simulating a post-incident review</span></p>
   <h4>Reference programs</h4>
   <p>Google Site Reliability Engineering methodology · MIT distributed systems labs</p>
 </div>
@@ -106,13 +106,13 @@ number = 4
 slug = "diseno-sistemas-institucionales"
 year = 2
 blocks = ["C", "D"]
-number_text = "Studio IV — Año 2, Bloques C+D"
+number_text = "Studio IV, Año 2, Bloques C+D"
 roman = "IV"
 title_es = "Diseño de Sistemas Institucionales"
 title_en = "Institutional Systems Design"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio IV — Año 2, Bloques C+D</div>
+  <div class="studio-number">Studio IV, Año 2, Bloques C+D</div>
   <div class="studio-title">Diseño de Sistemas Institucionales / Institutional Systems Design</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -129,7 +129,7 @@ raw_html = """
     <li>Public defense</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD — Public defense before panel including practitioners from the relevant institutional domain</span></p>
+  <p><span class="eval-badge">PD, Public defense before panel including practitioners from the relevant institutional domain</span></p>
   <h4>Reference programs</h4>
   <p>Oxford Blavatnik School of Government capstone projects · Harvard Kennedy School policy exercises</p>
 </div>
@@ -140,18 +140,18 @@ number = 5
 slug = "sistema-critico"
 year = 3
 blocks = ["A", "B"]
-number_text = "Studio V — Año 3, Bloques A+B"
+number_text = "Studio V, Año 3, Bloques A+B"
 roman = "V"
 title_es = "Sistema Crítico bajo Restricciones"
 title_en = "Critical System Under Constraints"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio V — Año 3, Bloques A+B</div>
+  <div class="studio-number">Studio V, Año 3, Bloques A+B</div>
   <div class="studio-title">Sistema Crítico bajo Restricciones / Critical System Under Constraints</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
-    <p class="lang-es">Diseñar y construir parcialmente un sistema que opere bajo restricciones reales — regulatorias, financieras, de seguridad o éticas. La restricción es el punto.</p>
-    <p class="lang-en">Design and partially build a system that operates under real constraints — regulatory, financial, safety, or ethical. The constraint is the point.</p>
+    <p class="lang-es">Diseñar y construir parcialmente un sistema que opere bajo restricciones reales, regulatorias, financieras, de seguridad o éticas. La restricción es el punto.</p>
+    <p class="lang-en">Design and partially build a system that operates under real constraints, regulatory, financial, safety, or ethical. The constraint is the point.</p>
   </div>
   <h4>Deliverables / Entregables</h4>
   <ul>
@@ -164,7 +164,7 @@ raw_html = """
     <li>Team retrospective</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD — Public defense with red team findings as adversarial input</span></p>
+  <p><span class="eval-badge">PD, Public defense with red team findings as adversarial input</span></p>
   <h4>Reference programs</h4>
   <p>MIT capstone engineering projects · Caltech senior thesis projects · UCL IEP final projects</p>
 </div>
@@ -175,13 +175,13 @@ number = 6
 slug = "venture-from-zero"
 year = 3
 blocks = ["C", "D"]
-number_text = "Studio VI — Año 3, Bloques C+D + Año 3.5"
+number_text = "Studio VI, Año 3, Bloques C+D + Año 3.5"
 roman = "VI"
 title_es = "Venture from Zero"
 title_en = "Venture from Zero"
 raw_html = """
 <div class="studio">
-  <div class="studio-number">Studio VI — Año 3, Bloques C+D + Año 3.5</div>
+  <div class="studio-number">Studio VI, Año 3, Bloques C+D + Año 3.5</div>
   <div class="studio-title">Venture from Zero</div>
   <h4>Objetivo / Objective</h4>
   <div class="bilingual-block">
@@ -189,7 +189,7 @@ raw_html = """
     <p class="lang-en">Create a real company over 16 weeks. This is not a simulation. They incorporate legally. Build an MVP. Find real customers. Sell. Get paid. Measure. Iterate.</p>
   </div>
   <h4>Structure</h4>
-  <p>The first weeks cover operational mechanics: incorporation, cap table, fundraising, first customers, basic accounting, compliance, taxes. These are not taught in the abstract — they are executed immediately as part of launching the venture. The Studio integrates everything learned in three years: technical skills, design, institutions, finance, communication, and leadership.</p>
+  <p>The first weeks cover operational mechanics: incorporation, cap table, fundraising, first customers, basic accounting, compliance, taxes. These are not taught in the abstract, they are executed immediately as part of launching the venture. The Studio integrates everything learned in three years: technical skills, design, institutions, finance, communication, and leadership.</p>
   <h4>Deliverables / Entregables</h4>
   <ul>
     <li>Incorporated company (or in process)</li>
@@ -202,7 +202,7 @@ raw_html = """
     <li>Final public defense before technical, institutional, and industry reviewers</li>
   </ul>
   <h4>Evaluación / Evaluation</h4>
-  <p><span class="eval-badge">PD — Final public defense before real investors or panel simulating investor conditions exactly</span></p>
+  <p><span class="eval-badge">PD, Final public defense before real investors or panel simulating investor conditions exactly</span></p>
   <h4>Reference programs</h4>
   <p>Y Combinator Startup School · Stanford CS 183 Startup · MIT delta v accelerator · Entrepreneur First</p>
 </div>

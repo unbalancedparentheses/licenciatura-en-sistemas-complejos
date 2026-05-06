@@ -20,12 +20,12 @@ texts = [
 references = [
   { name = "MIT 18.06 Linear Algebra", url = "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
   { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" },
-  { name = "Imperial College Mathematics for Machine Learning — Coursera", url = "https://www.coursera.org/specializations/mathematics-machine-learning" },
-  { name = "3Blue1Brown: Essence of Linear Algebra — YouTube", url = "https://www.3blue1brown.com/topics/linear-algebra" },
+  { name = "Imperial College Mathematics for Machine Learning, Coursera", url = "https://www.coursera.org/specializations/mathematics-machine-learning" },
+  { name = "3Blue1Brown: Essence of Linear Algebra, YouTube", url = "https://www.3blue1brown.com/topics/linear-algebra" },
 ]
-evaluation_primary = "WE — Written Exam"
+evaluation_primary = "WE, Written Exam"
 evaluation_secondaries = [
-  "TP — Weekly problem sets",
+  "TP, Weekly problem sets",
 ]
 
 [[course]]
@@ -48,9 +48,9 @@ references = [
   { name = "MIT 18.065 Matrix Methods in Data Analysis", url = "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" },
   { name = "Stanford EE364A Convex Optimization", url = "https://stanford.edu/class/ee364a" },
 ]
-evaluation_primary = "WE — Written Exam"
+evaluation_primary = "WE, Written Exam"
 evaluation_secondaries = [
-  "TP — Computational project",
+  "TP, Computational project",
 ]
 
 [[course]]
@@ -63,8 +63,8 @@ position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entrenar el razonamiento preciso y la disciplina de la falsificación. Construir la capacidad de trabajar con rigor en territorio desconocido."
 objective_en = "To train precise reasoning and the discipline of falsification. To build the capacity to work rigorously in unfamiliar territory."
-content_es = "Lógica proposicional y de predicados, técnicas de demostración (directa, por contradicción, inducción), construcción de contraejemplos, teoría de conjuntos básica, relaciones. La IA puede proponer demostraciones — los estudiantes encuentran los huecos."
-content_en = "Propositional and predicate logic, proof techniques (direct, contradiction, induction), counterexample construction, basic set theory, relations. AI may propose proofs — students find the gaps."
+content_es = "Lógica proposicional y de predicados, técnicas de demostración (directa, por contradicción, inducción), construcción de contraejemplos, teoría de conjuntos básica, relaciones. La IA puede proponer demostraciones, los estudiantes encuentran los huecos."
+content_en = "Propositional and predicate logic, proof techniques (direct, contradiction, induction), counterexample construction, basic set theory, relations. AI may propose proofs, students find the gaps."
 texts = [
   "Velleman, Daniel J. <em>How to Prove It.</em> 3rd ed. Cambridge University Press, 2019.",
   "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012.",
@@ -75,9 +75,9 @@ references = [
   { name = "Stanford Phil 151 Metalogic", url = "https://explorecourses.stanford.edu/search?q=PHIL+151" },
   { name = "Stanford CS 103 Mathematical Foundations of Computing", url = "https://web.stanford.edu/class/cs103/" },
 ]
-evaluation_primary = "WE — Written proof exam"
+evaluation_primary = "WE, Written proof exam"
 evaluation_secondaries = [
-  "OD — Oral defense of proof portfolio",
+  "OD, Oral defense of proof portfolio",
 ]
 
 [[course]]
@@ -88,16 +88,16 @@ year = 1
 block = "B"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Desarrollar la capacidad de razonamiento matemático abstracto — reconocer estructura, construir demostraciones en territorio desconocido y pensar más allá de la computación."
-objective_en = "To develop the capacity for abstract mathematical reasoning — to recognize structure, construct proofs in unfamiliar territory, and think beyond computation."
-content_es = "Combinatoria y argumentos de conteo (funciones generatrices, principio del palomar, método probabilístico). Estructuras algebraicas (grupos, anillos, cuerpos, aritmética modular — los fundamentos de la criptografía). Ideas seleccionadas de topología y análisis (continuidad como preservación de estructura, compacidad, teoremas de punto fijo). Cada tema se desarrolla con demostraciones completas y conjuntos de problemas."
-content_en = "Combinatorics and counting arguments (generating functions, pigeonhole principle, probabilistic method). Algebraic structures (groups, rings, fields, modular arithmetic — the foundations of cryptography). Selected ideas from topology and analysis (continuity as structure preservation, compactness, fixed-point theorems). Each topic is developed with complete proofs and problem sets."
-notes_html = "The goal is mathematical maturity: the ability to read a proof in an unfamiliar domain, identify the key idea, and adapt the technique. Students who complete this course can follow the mathematical arguments of any later course — stochastic processes, information theory, cryptography, mechanism design — without being stopped by unfamiliar abstractions. Connects directly with Razonamiento Formal y Demostración (which provides the proof toolkit), Seguridad y Criptografía (where group theory becomes operational), Métodos Formales (where abstract structures appear in Lean 4), and Información, Señales y Comunicación."
+objective_es = "Desarrollar la capacidad de razonamiento matemático abstracto, reconocer estructura, construir demostraciones en territorio desconocido y pensar más allá de la computación."
+objective_en = "To develop the capacity for abstract mathematical reasoning, to recognize structure, construct proofs in unfamiliar territory, and think beyond computation."
+content_es = "Combinatoria y argumentos de conteo (funciones generatrices, principio del palomar, método probabilístico). Estructuras algebraicas (grupos, anillos, cuerpos, aritmética modular, los fundamentos de la criptografía). Ideas seleccionadas de topología y análisis (continuidad como preservación de estructura, compacidad, teoremas de punto fijo). Cada tema se desarrolla con demostraciones completas y conjuntos de problemas."
+content_en = "Combinatorics and counting arguments (generating functions, pigeonhole principle, probabilistic method). Algebraic structures (groups, rings, fields, modular arithmetic, the foundations of cryptography). Selected ideas from topology and analysis (continuity as structure preservation, compactness, fixed-point theorems). Each topic is developed with complete proofs and problem sets."
+notes_html = "The goal is mathematical maturity: the ability to read a proof in an unfamiliar domain, identify the key idea, and adapt the technique. Students who complete this course can follow the mathematical arguments of any later course, stochastic processes, information theory, cryptography, mechanism design, without being stopped by unfamiliar abstractions. Connects directly with Razonamiento Formal y Demostración (which provides the proof toolkit), Seguridad y Criptografía (where group theory becomes operational), Métodos Formales (where abstract structures appear in Lean 4), and Información, Señales y Comunicación."
 texts = [
   "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010. The standard rigorous introduction to abstract algebra at undergraduate level.",
   "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics.</em> 2nd ed. Addison-Wesley, 1994. Combinatorics, generating functions, and discrete reasoning at the foundation of CS.",
-  "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000. Selected chapters — point-set topology and fundamentals of metric spaces.",
-  "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999. The best survey of the major branches of mathematics with real depth — essential context for understanding mathematics as an intellectual enterprise.",
+  "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000. Selected chapters, point-set topology and fundamentals of metric spaces.",
+  "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999. The best survey of the major branches of mathematics with real depth, essential context for understanding mathematics as an intellectual enterprise.",
   "Tao, Terence. <em>Analysis I and II.</em> Hindustan Book Agency, 2016. Rigorous real analysis at undergraduate level.",
 ]
 references = [
@@ -106,9 +106,9 @@ references = [
   { name = "Cambridge Mathematical Tripos", url = "https://www.maths.cam.ac.uk/undergrad/course" },
   { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/" },
 ]
-evaluation_primary = "WE — Written exam with proofs"
+evaluation_primary = "WE, Written exam with proofs"
 evaluation_secondaries = [
-  "OD — Oral defense of problem portfolio across combinatorics, algebra, and topology",
+  "OD, Oral defense of problem portfolio across combinatorics, algebra, and topology",
 ]
 
 [[course]]
@@ -133,9 +133,9 @@ references = [
   { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu/economics/econ-159" },
   { name = "Stanford Econ 1", url = "https://explorecourses.stanford.edu/search?q=ECON+1" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "OD — Defense of market analysis project",
+  "OD, Defense of market analysis project",
 ]
 
 [[course]]
@@ -146,8 +146,8 @@ year = 1
 block = "B"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Escribir software que hace lo que dice hacer. No velocidad de codificación — precisión conceptual: entender qué hace el código, por qué falla, y cómo saber que hace lo que uno cree."
-objective_en = "To write software that does what it says it does. Not coding speed — conceptual precision: understanding what code does, why it fails, and how to verify it does what you believe."
+objective_es = "Escribir software que hace lo que dice hacer. No velocidad de codificación, precisión conceptual: entender qué hace el código, por qué falla, y cómo saber que hace lo que uno cree."
+objective_en = "To write software that does what it says it does. Not coding speed, conceptual precision: understanding what code does, why it fails, and how to verify it does what you believe."
 content_es = "Estructuras de datos, testing, desarrollo dirigido por especificaciones. SQL y modelado de datos. Shell, git, debugging, profiling, SSH, entornos de desarrollo. Especificación primero, implementación después, tests siempre."
 content_en = "Data structures, testing, specification-driven development. SQL and data modeling. Shell, git, debugging, profiling, SSH, development environments. Specification first, implementation second, tests always."
 texts = [
@@ -160,9 +160,9 @@ references = [
   { name = "MIT Missing Semester", url = "https://missing.csail.mit.edu" },
   { name = "Stanford CS 106B Programming Abstractions", url = "https://web.stanford.edu/class/cs106b/" },
 ]
-evaluation_primary = "LC — Live coding session"
+evaluation_primary = "LC, Live coding session"
 evaluation_secondaries = [
-  "TP — Weekly coding assignments",
+  "TP, Weekly coding assignments",
 ]
 
 [[course]]
@@ -188,9 +188,9 @@ references = [
   { name = "Stanford CS 109 Probability for Computer Scientists", url = "https://web.stanford.edu/class/cs109/" },
   { name = "Caltech Ma 3", url = "https://catalog.caltech.edu/current/courses/department/Ma" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "TP — Weekly problem sets",
+  "TP, Weekly problem sets",
 ]
 
 [[course]]
@@ -201,8 +201,8 @@ year = 1
 block = "C"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender la computación como un proceso físico y temporal. El foco está en el modelo mental — cómo la computación realmente sucede en hardware y sistemas operativos."
-objective_en = "To understand computation as a physical and temporal process. The focus is on the mental model — how computation actually happens in hardware and operating systems."
+objective_es = "Entender la computación como un proceso físico y temporal. El foco está en el modelo mental, cómo la computación realmente sucede en hardware y sistemas operativos."
+objective_en = "To understand computation as a physical and temporal process. The focus is on the mental model, how computation actually happens in hardware and operating systems."
 content_es = "Jerarquía de memoria, concurrencia, I/O, procesos, scheduling, aislamiento, control de recursos, debugging bajo carga y contención de recursos."
 content_en = "Memory hierarchy, concurrency, I/O, processes, scheduling, isolation, resource control, debugging under load and resource contention."
 texts = [
@@ -215,9 +215,9 @@ references = [
   { name = "MIT 6.1810 Operating Systems Engineering", url = "https://pdos.csail.mit.edu/6.1810/" },
   { name = "Stanford CS 110 Principles of Computer Systems", url = "https://web.stanford.edu/class/cs110/" },
 ]
-evaluation_primary = "LC — Live systems analysis"
+evaluation_primary = "LC, Live systems analysis"
 evaluation_secondaries = [
-  "TP — Debugging portfolio and systems labs",
+  "TP, Debugging portfolio and systems labs",
 ]
 
 [[course]]
@@ -228,8 +228,8 @@ year = 1
 block = "C"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Física para constructores, no para físicos. Entender el mundo físico lo suficiente para construir cosas que interactúen con él — y reconocer cuándo tus abstracciones ignoran restricciones reales."
-objective_en = "Physics for builders, not for physicists. To understand the physical world well enough to build things that interact with it — and to recognize when abstractions ignore real constraints."
+objective_es = "Física para constructores, no para físicos. Entender el mundo físico lo suficiente para construir cosas que interactúen con él, y reconocer cuándo tus abstracciones ignoran restricciones reales."
+objective_en = "Physics for builders, not for physicists. To understand the physical world well enough to build things that interact with it, and to recognize when abstractions ignore real constraints."
 content_es = "Mecánica clásica: fuerzas, energía, momento, rotación. Termodinámica y entropía. Razonamiento por órdenes de magnitud. Estimación física: ¿cuánta energía necesita? ¿Cuánto pesa? ¿A qué escala deja de funcionar?"
 content_en = "Classical mechanics: forces, energy, momentum, rotation. Thermodynamics and entropy. Order-of-magnitude reasoning. Physical estimation: how much energy does it need? How much does it weigh? At what scale does it stop working?"
 texts = [
@@ -242,9 +242,9 @@ references = [
   { name = "Caltech Ph 1a Physics", url = "https://catalog.caltech.edu/current/courses/department/Ph" },
   { name = "École Polytechnique tronc commun Physique", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
-evaluation_primary = "WE — Written exam with unseen problems"
+evaluation_primary = "WE, Written exam with unseen problems"
 evaluation_secondaries = [
-  "TP — Problem sets and estimation exercises",
+  "TP, Problem sets and estimation exercises",
 ]
 
 [[course]]
@@ -269,9 +269,9 @@ references = [
   { name = "MIT 8.04 Quantum Physics I", url = "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" },
   { name = "Caltech Ph 1b", url = "https://catalog.caltech.edu/current/courses/department/Ph" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "TP — Problem sets and physical system analysis",
+  "TP, Problem sets and physical system analysis",
 ]
 
 [[course]]
@@ -282,8 +282,8 @@ year = 1
 block = "D"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Construir, entrenar, evaluar, desplegar y monitorear modelos de ML — y saber cuándo no usarlos. Los fundamentos matemáticos fueron establecidos en bloques anteriores. Este bloque enseña la ingeniería."
-objective_en = "To build, train, evaluate, deploy, and monitor ML models — and to know when not to use them. The mathematical foundations were established in earlier blocks. This block teaches the engineering."
+objective_es = "Construir, entrenar, evaluar, desplegar y monitorear modelos de ML, y saber cuándo no usarlos. Los fundamentos matemáticos fueron establecidos en bloques anteriores. Este bloque enseña la ingeniería."
+objective_en = "To build, train, evaluate, deploy, and monitor ML models, and to know when not to use them. The mathematical foundations were established in earlier blocks. This block teaches the engineering."
 content_es = "Pipelines de datos, feature engineering, entrenamiento, evaluación, overfitting, regularización, deployment, monitoreo, distribution shift, modos de falla en producción."
 content_en = "Data pipelines, feature engineering, training pipelines, evaluation methodology, overfitting, regularization, deployment constraints, model monitoring, distribution shift, production failure modes."
 texts = [
@@ -295,11 +295,11 @@ references = [
   { name = "MIT 6.3900 Introduction to Machine Learning", url = "https://introml.mit.edu/" },
   { name = "Stanford CS 229 Machine Learning", url = "https://cs229.stanford.edu" },
   { name = "Caltech CMS 155 Machine Learning and Data Mining", url = "https://catalog.caltech.edu/current/courses/department/CMS" },
-  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
+  { name = "Andrej Karpathy: Neural Networks Zero to Hero, YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
 ]
-evaluation_primary = "LC — Live ML pipeline session"
+evaluation_primary = "LC, Live ML pipeline session"
 evaluation_secondaries = [
-  "TP — End-to-end ML project",
+  "TP, End-to-end ML project",
 ]
 
 [[course]]
@@ -310,10 +310,10 @@ year = 1
 block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender cómo las organizaciones, los estados, los mercados y las tecnologías transformadoras realmente funcionan — y cómo fallan. Casos históricos como tests de estrés de modelos de gobernanza, junto al estudio de cómo cada gran transición tecnológica reorganizó el poder, la economía y las formas de vida."
-objective_en = "To understand how organizations, states, markets, and transformative technologies actually work — and how they fail. Historical cases as stress tests of governance models, together with the study of how each major technological transition reorganized power, economy, and forms of life."
-content_es = "Primera mitad — instituciones: modos de falla institucional y sus causas estructurales. Por qué colapsan los imperios, por qué los regímenes regulatorios se calcifican, por qué organizaciones efectivas se vuelven patológicas. Segunda mitad — tecnología como motor de cambio: la imprenta, la máquina de vapor, la electricidad, la computadora, internet, la IA. Cómo cada tecnología cambió qué tipos de organizaciones son posibles, quién tiene poder, y qué formas de vida se vuelven imaginables."
-content_en = "First half — institutions: institutional failure modes and their structural causes. Why empires collapse, why regulatory regimes calcify, why effective organizations become pathological. Second half — technology as engine of change: the printing press, steam engine, electricity, computer, internet, AI. How each technology changed what kinds of organizations are possible, who holds power, and what forms of life become imaginable."
+objective_es = "Entender cómo las organizaciones, los estados, los mercados y las tecnologías transformadoras realmente funcionan, y cómo fallan. Casos históricos como tests de estrés de modelos de gobernanza, junto al estudio de cómo cada gran transición tecnológica reorganizó el poder, la economía y las formas de vida."
+objective_en = "To understand how organizations, states, markets, and transformative technologies actually work, and how they fail. Historical cases as stress tests of governance models, together with the study of how each major technological transition reorganized power, economy, and forms of life."
+content_es = "Primera mitad, instituciones: modos de falla institucional y sus causas estructurales. Por qué colapsan los imperios, por qué los regímenes regulatorios se calcifican, por qué organizaciones efectivas se vuelven patológicas. Segunda mitad, tecnología como motor de cambio: la imprenta, la máquina de vapor, la electricidad, la computadora, internet, la IA. Cómo cada tecnología cambió qué tipos de organizaciones son posibles, quién tiene poder, y qué formas de vida se vuelven imaginables."
+content_en = "First half, institutions: institutional failure modes and their structural causes. Why empires collapse, why regulatory regimes calcify, why effective organizations become pathological. Second half, technology as engine of change: the printing press, steam engine, electricity, computer, internet, AI. How each technology changed what kinds of organizations are possible, who holds power, and what forms of life become imaginable."
 texts = [
   "Acemoglu, Daron, and James A. Robinson. <em>Why Nations Fail.</em> Crown, 2012.",
   "North, Douglass C. <em>Institutions, Institutional Change and Economic Performance.</em> Cambridge University Press, 1990.",
@@ -321,7 +321,7 @@ texts = [
   "Hirschman, Albert O. <em>Exit, Voice, and Loyalty.</em> Harvard University Press, 1970.",
   "Olson, Mancur. <em>The Logic of Collective Action.</em> Harvard University Press, 1965.",
   "Dalio, Ray. <em>Principles for Dealing with the Changing World Order.</em> Simon & Schuster, 2021.",
-  "Hobsbawm, Eric. <em>The Age of Revolution</em>, <em>The Age of Capital</em>, <em>The Age of Empire</em>. Vintage, 1962–1987. The 1789–1914 trilogy — historical scaffolding for understanding how the modern world was formed by the dual revolution.",
+  "Hobsbawm, Eric. <em>The Age of Revolution</em>, <em>The Age of Capital</em>, <em>The Age of Empire</em>. Vintage, 1962–1987. The 1789–1914 trilogy, historical scaffolding for understanding how the modern world was formed by the dual revolution.",
   "Mokyr, Joel. <em>The Lever of Riches.</em> Oxford University Press, 1990. Technological creativity and economic progress as historical forces.",
   "Chandler, Alfred D. <em>The Visible Hand.</em> Harvard University Press, 1977. The managerial revolution and how organizations became the dominant form of coordination.",
   "Perez, Carlota. <em>Technological Revolutions and Financial Capital.</em> Edward Elgar, 2002. Long-cycle theory of technology, capital, and institutional adjustment.",
@@ -335,9 +335,9 @@ references = [
   { name = "Stanford HSST Program", url = "https://hs.stanford.edu/" },
   { name = "Harvard Kennedy School Governance and Institutions", url = "https://www.hks.harvard.edu/centers/ash" },
 ]
-evaluation_primary = "OD — Adversarial oral defense of comparative essay"
+evaluation_primary = "OD, Adversarial oral defense of comparative essay"
 evaluation_secondaries = [
-  "TP — Essay with revision history",
+  "TP, Essay with revision history",
 ]
 
 [[course]]
@@ -363,9 +363,9 @@ references = [
   { name = "Stanford CS 161 Design and Analysis of Algorithms", url = "https://web.stanford.edu/class/cs161/" },
   { name = "Stanford MS&E 211 Introduction to Optimization", url = "https://explorecourses.stanford.edu/search?q=MS%26E+211" },
 ]
-evaluation_primary = "WE — Written exam with algorithm design problems"
+evaluation_primary = "WE, Written exam with algorithm design problems"
 evaluation_secondaries = [
-  "TP — Algorithm portfolio with formal proofs",
+  "TP, Algorithm portfolio with formal proofs",
 ]
 
 [[course]]
@@ -390,9 +390,9 @@ references = [
   { name = "Stanford MS&E 226 Causal Inference", url = "https://explorecourses.stanford.edu/search?q=MS%26E+226" },
   { name = "Caltech IDS 126", url = "https://catalog.caltech.edu/current/courses/department/IDS" },
 ]
-evaluation_primary = "OD — Defense of empirical study"
+evaluation_primary = "OD, Defense of empirical study"
 evaluation_secondaries = [
-  "TP — Empirical study with real data",
+  "TP, Empirical study with real data",
 ]
 
 [[course]]
@@ -403,8 +403,8 @@ year = 2
 block = "A"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender en profundidad las arquitecturas, mecanismos y leyes de escala de los sistemas de IA que definen esta era — no como usuarios, sino como ingenieros y críticos."
-objective_en = "To understand in depth the architectures, mechanisms, and scaling laws of the AI systems that define this era — not as users, but as engineers and critics."
+objective_es = "Entender en profundidad las arquitecturas, mecanismos y leyes de escala de los sistemas de IA que definen esta era, no como usuarios, sino como ingenieros y críticos."
+objective_en = "To understand in depth the architectures, mechanisms, and scaling laws of the AI systems that define this era, not as users, but as engineers and critics."
 content_es = "Arquitecturas transformer, mecanismos de atención, modelos de difusión, large language models, scaling laws, emergent capabilities, in-context learning, RLHF, fine-tuning, destilación, multimodalidad."
 content_en = "Transformer architectures, attention mechanisms, diffusion models, large language models, scaling laws, emergent capabilities, in-context learning, RLHF, fine-tuning, distillation, multimodality."
 texts = [
@@ -418,12 +418,12 @@ references = [
   { name = "Stanford CS 236 Deep Generative Models", url = "https://deepgenerativemodels.github.io/" },
   { name = "MIT 6.S898 Deep Learning", url = "https://deeplearning.mit.edu/" },
   { name = "fast.ai Practical Deep Learning", url = "https://course.fast.ai" },
-  { name = "Andrej Karpathy: Neural Networks Zero to Hero — YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
+  { name = "Andrej Karpathy: Neural Networks Zero to Hero, YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
 ]
-evaluation_primary = "LC — Live architecture session"
+evaluation_primary = "LC, Live architecture session"
 evaluation_secondaries = [
-  "OD — Defense of deep learning replication",
-  "TP — Replication at reduced scale",
+  "OD, Defense of deep learning replication",
+  "TP, Replication at reduced scale",
 ]
 
 [[course]]
@@ -440,7 +440,7 @@ content_es = "Teoría de juegos, equilibrios de Nash, teoría de subastas, merca
 content_en = "Game theory, Nash equilibria, auction theory, matching markets, incentive compatibility, social choice, computational complexity of mechanisms."
 texts = [
   "Nisan, Noam, et al. <em>Algorithmic Game Theory.</em> Cambridge University Press, 2007.",
-  "Roth, Alvin E. <em>Who Gets What — and Why.</em> Houghton Mifflin Harcourt, 2015.",
+  "Roth, Alvin E. <em>Who Gets What, and Why.</em> Houghton Mifflin Harcourt, 2015.",
   "Mas-Colell, Andreu, et al. <em>Microeconomic Theory.</em> Oxford University Press, 1995. (game theory chapters)",
 ]
 references = [
@@ -449,9 +449,9 @@ references = [
   { name = "Yale ECON 159 Game Theory", url = "https://oyc.yale.edu/economics/econ-159" },
   { name = "Harvard CS 1360 Economics and Computation", url = "https://econcs.seas.harvard.edu/" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "OD — Defense of mechanism design project",
+  "OD, Defense of mechanism design project",
 ]
 
 [[course]]
@@ -466,13 +466,13 @@ objective_es = "Modelar procesos dependientes del camino, detectar no-ergodicida
 objective_en = "To model path-dependent processes, detect non-ergodicity, and identify ruin scenarios. To understand why conventional risk metrics fail catastrophically in fat-tailed domains."
 content_es = "Cadenas de Markov, caminatas aleatorias, procesos de Poisson, movimiento browniano. Distribuciones de colas gruesas, el problema de la ergodicidad, criterio de Kelly, dinámica de Cisne Negro. La segunda mitad trata las fat tails como el argumento central."
 content_en = "Markov chains, random walks, Poisson processes, Brownian motion. Fat-tailed distributions, the ergodicity problem, Kelly criterion, Black Swan dynamics. The second half treats fat tails as the central argument, not an appendix."
-notes_html = "The integration of fat tails is not an appendix — it is the central argument of the second half of the course. Connects directly with Biology (ecological collapse is a fat-tailed event), Physics (thermodynamics of far-from-equilibrium systems), and Epistemology (the problem of induction is Taleb's central philosophical concern)."
+notes_html = "The integration of fat tails is not an appendix, it is the central argument of the second half of the course. Connects directly with Biology (ecological collapse is a fat-tailed event), Physics (thermodynamics of far-from-equilibrium systems), and Epistemology (the problem of induction is Taleb's central philosophical concern)."
 texts = [
   "Ross, Sheldon M. <em>Introduction to Probability Models.</em> 12th ed. Academic Press, 2019.",
   "Taleb, Nassim Nicholas. <em>Statistical Consequences of Fat Tails.</em> STEM Academic Press, 2020.",
   "Norris, J. R. <em>Markov Chains.</em> Cambridge University Press, 1997.",
-  "Peters, Ole, and London Mathematical Laboratory papers on ergodicity. The distinction between ensemble averages and time averages — if a process is non-ergodic, the average across the group does not describe the experience of the individual, which fundamentally changes how risk, inequality, and decisions should be analyzed.",
-  "Cirillo, Pasquale, and Nassim Nicholas Taleb. <em>The Logic of Risk</em> and joint papers on fat tails, wars, and pandemics — rigorous statistical formalization of the fat-tails framework with direct implications for policy and risk management.",
+  "Peters, Ole, and London Mathematical Laboratory papers on ergodicity. The distinction between ensemble averages and time averages, if a process is non-ergodic, the average across the group does not describe the experience of the individual, which fundamentally changes how risk, inequality, and decisions should be analyzed.",
+  "Cirillo, Pasquale, and Nassim Nicholas Taleb. <em>The Logic of Risk</em> and joint papers on fat tails, wars, and pandemics, rigorous statistical formalization of the fat-tails framework with direct implications for policy and risk management.",
 ]
 references = [
   { name = "Stanford MS&E 221 Stochastic Modeling", url = "https://explorecourses.stanford.edu/search?q=MS%26E+221" },
@@ -480,9 +480,9 @@ references = [
   { name = "London Mathematical Laboratory: Ergodicity Economics", url = "https://ergodicityeconomics.com/" },
   { name = "Nassim Taleb's Real World Risk Institute", url = "https://www.realworldrisk.com/" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "OD — Defense of risk analysis",
+  "OD, Defense of risk analysis",
 ]
 
 [[course]]
@@ -509,9 +509,9 @@ references = [
   { name = "Lean 4 / Mathlib community curriculum", url = "https://leanprover-community.github.io/" },
   { name = "Software Foundations", url = "https://softwarefoundations.cis.upenn.edu/" },
 ]
-evaluation_primary = "TP — Lean 4 proof portfolio"
+evaluation_primary = "TP, Lean 4 proof portfolio"
 evaluation_secondaries = [
-  "OD — Defense of formal verification project",
+  "OD, Defense of formal verification project",
 ]
 
 [[course]]
@@ -537,9 +537,9 @@ references = [
   { name = "Stanford CS 144 Introduction to Computer Networking", url = "https://cs144.github.io/" },
   { name = "Cambridge Distributed Systems", url = "https://www.cl.cam.ac.uk/teaching/current/ConcDisSys/" },
 ]
-evaluation_primary = "LC — Live architecture and failure analysis"
+evaluation_primary = "LC, Live architecture and failure analysis"
 evaluation_secondaries = [
-  "TP — Architecture document and protocol specification",
+  "TP, Architecture document and protocol specification",
 ]
 
 [[course]]
@@ -559,18 +559,18 @@ texts = [
   "Mehrling, Perry. <em>The New Lombard Street.</em> Princeton University Press, 2011.",
   "Ammous, Saifedean. <em>The Bitcoin Standard.</em> Wiley, 2018.",
   "Alden, Lyn. <em>Broken Money.</em> Timestamp Press, 2023.",
-  "Minsky, Hyman P. <em>Stabilizing an Unstable Economy.</em> McGraw-Hill, 2008. Financial instability is endogenous to capitalism, not an external shock — the hedge / speculative / Ponzi phases explain every financial crisis since publication.",
-  "Hayek, Friedrich A. \"The Use of Knowledge in Society\" and <em>Denationalisation of Money.</em> The spontaneous order of the price system as a coordination mechanism for dispersed knowledge — and the radical proposal of private monetary competition.",
-  "Hobart, Byrne, and Tobias Huber. <em>Bubbles and the End of Stagnation.</em> Stripe Press, 2024. Bubbles as engines of progress, not only destructive forces — how speculative energy drives technological adoption.",
+  "Minsky, Hyman P. <em>Stabilizing an Unstable Economy.</em> McGraw-Hill, 2008. Financial instability is endogenous to capitalism, not an external shock, the hedge / speculative / Ponzi phases explain every financial crisis since publication.",
+  "Hayek, Friedrich A. \"The Use of Knowledge in Society\" and <em>Denationalisation of Money.</em> The spontaneous order of the price system as a coordination mechanism for dispersed knowledge, and the radical proposal of private monetary competition.",
+  "Hobart, Byrne, and Tobias Huber. <em>Bubbles and the End of Stagnation.</em> Stripe Press, 2024. Bubbles as engines of progress, not only destructive forces, how speculative energy drives technological adoption.",
 ]
 references = [
   { name = "MIT 15.401 Finance Theory", url = "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/" },
   { name = "Yale ECON 252 Financial Markets (Robert Shiller)", url = "https://oyc.yale.edu/economics/econ-252" },
   { name = "Stanford MS&E 246 Financial Risk Analytics", url = "https://explorecourses.stanford.edu/search?q=MS%26E+246" },
 ]
-evaluation_primary = "OD — Defense of financial model and investment memo"
+evaluation_primary = "OD, Defense of financial model and investment memo"
 evaluation_secondaries = [
-  "TP — Financial model built with AI",
+  "TP, Financial model built with AI",
 ]
 
 [[course]]
@@ -595,9 +595,9 @@ references = [
   { name = "MIT 6.5620 Computer Systems Security", url = "https://css.csail.mit.edu/6.858/" },
   { name = "Coursera: Cryptography I & II (Dan Boneh)", url = "https://www.coursera.org/learn/crypto" },
 ]
-evaluation_primary = "LC — Live threat modeling session"
+evaluation_primary = "LC, Live threat modeling session"
 evaluation_secondaries = [
-  "TP — Threat model and security architecture",
+  "TP, Threat model and security architecture",
 ]
 
 [[course]]
@@ -610,27 +610,27 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo la regulación, la tributación, la responsabilidad legal y las políticas públicas determinan lo que se puede construir."
 objective_en = "To understand how regulation, taxation, legal liability, and public policy determine what can be built."
-content_es = "Marcos regulatorios, regímenes de responsabilidad, estrategia de compliance, incentivos institucionales, la interacción entre derecho y arquitectura técnica. Los estudiantes trabajan con marcos en conflicto — Hayek junto a Polanyi, Land junto a Srnicek y Williams."
-content_en = "Regulatory frameworks, liability regimes, compliance strategy, institutional incentives, the interaction between law and technical architecture. Students work with conflicting frameworks — Hayek alongside Polanyi, Land alongside Srnicek and Williams."
+content_es = "Marcos regulatorios, regímenes de responsabilidad, estrategia de compliance, incentivos institucionales, la interacción entre derecho y arquitectura técnica. Los estudiantes trabajan con marcos en conflicto, Hayek junto a Polanyi, Land junto a Srnicek y Williams."
+content_en = "Regulatory frameworks, liability regimes, compliance strategy, institutional incentives, the interaction between law and technical architecture. Students work with conflicting frameworks, Hayek alongside Polanyi, Land alongside Srnicek and Williams."
 texts = [
   "Acemoglu, Daron, and James A. Robinson. <em>The Narrow Corridor.</em> Penguin Press, 2019.",
   "Lessig, Lawrence. <em>Code: And Other Laws of Cyberspace.</em> Basic Books, 1999.",
   "Tirole, Jean. <em>Economics for the Common Good.</em> Princeton University Press, 2017.",
-  "Polanyi, Karl. <em>The Great Transformation.</em> Beacon Press, 1944. The market is not natural — it was politically constructed. Essential counterpoint to Hayek.",
+  "Polanyi, Karl. <em>The Great Transformation.</em> Beacon Press, 1944. The market is not natural, it was politically constructed. Essential counterpoint to Hayek.",
   "Zuboff, Shoshana. <em>The Age of Surveillance Capitalism.</em> PublicAffairs, 2019.",
-  "Land, Nick. Selections from <em>Fanged Noumena.</em> Urbanomic, 2011. Accelerationism, intelligence as a process exceeding the human, capital as AI <em>avant la lettre</em> — taught as object of analysis, not doctrine.",
-  "Srnicek, Nick, and Alex Williams. <em>Inventing the Future.</em> Verso, 2015. Take Land's premises and turn them leftward — the contrast is pedagogically potent.",
+  "Land, Nick. Selections from <em>Fanged Noumena.</em> Urbanomic, 2011. Accelerationism, intelligence as a process exceeding the human, capital as AI <em>avant la lettre</em>, taught as object of analysis, not doctrine.",
+  "Srnicek, Nick, and Alex Williams. <em>Inventing the Future.</em> Verso, 2015. Take Land's premises and turn them leftward, the contrast is pedagogically potent.",
   "Brown, Wendy. <em>Undoing the Demos.</em> Zone Books, 2015. Neoliberalism as a rationality that converts everything into market logic, including politics and subjectivity.",
-  "Davidson, James Dale, and William Rees-Mogg. <em>The Sovereign Individual.</em> Touchstone, 1997. Predicted in 1997 how technology would shift power between individuals and states — the framework remains remarkably useful for analyzing current dynamics.",
+  "Davidson, James Dale, and William Rees-Mogg. <em>The Sovereign Individual.</em> Touchstone, 1997. Predicted in 1997 how technology would shift power between individuals and states, the framework remains remarkably useful for analyzing current dynamics.",
 ]
 references = [
   { name = "MIT 14.42 Environmental Policy and Economics", url = "https://ocw.mit.edu/courses/14-42-environmental-policy-and-economics-spring-2011/" },
   { name = "Stanford Law and Technology", url = "https://law.stanford.edu/courses/" },
   { name = "Oxford PPE Politics and Philosophy components", url = "https://www.ppe.ox.ac.uk/" },
 ]
-evaluation_primary = "OD — Adversarial defense of policy analysis"
+evaluation_primary = "OD, Adversarial defense of policy analysis"
 evaluation_secondaries = [
-  "TP — Policy analysis with stakeholder map",
+  "TP, Policy analysis with stakeholder map",
 ]
 
 [[course]]
@@ -641,34 +641,34 @@ year = 2
 block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender las estructuras no formales que sostienen a los sistemas — o los desgarran. La cultura popular es donde una sociedad procesa sus ansiedades sobre el futuro."
-objective_en = "To understand the informal structures that sustain systems — or tear them apart. Popular culture is where a society processes its anxieties about the future."
+objective_es = "Entender las estructuras no formales que sostienen a los sistemas, o los desgarran. La cultura popular es donde una sociedad procesa sus ansiedades sobre el futuro."
+objective_en = "To understand the informal structures that sustain systems, or tear them apart. Popular culture is where a society processes its anxieties about the future."
 content_es = "Análisis de cómo las normas culturales, las pretensiones de legitimidad y las expectativas sociales moldean el comportamiento institucional. Incluye canon de anime y ciencia ficción tratados como material primario de análisis: Neon Genesis Evangelion, Ghost in the Shell, Foundation, Neuromancer."
 content_en = "Analysis of how cultural norms, legitimacy claims, and social expectations shape institutional behavior. Includes anime and science fiction canon treated as primary analytical material: Neon Genesis Evangelion, Ghost in the Shell, Foundation, Neuromancer."
-notes_html = "These works are not entertainment: they are cultural artifacts that articulate the tensions between technology, institutions, identity, and power in ways academic papers cannot. AI writes convincing-but-shallow cultural analyses — students expose missing assumptions and connect cultural narratives to systemic stability."
+notes_html = "These works are not entertainment: they are cultural artifacts that articulate the tensions between technology, institutions, identity, and power in ways academic papers cannot. AI writes convincing-but-shallow cultural analyses, students expose missing assumptions and connect cultural narratives to systemic stability."
 texts = [
   "Douglas, Mary. <em>How Institutions Think.</em> Syracuse University Press, 1986.",
   "Bourdieu, Pierre. <em>The Logic of Practice.</em> Stanford University Press, 1990.",
   "Henrich, Joseph. <em>The WEIRDest People in the World.</em> Farrar, Straus and Giroux, 2020.",
-  "Fisher, Mark. <em>Ghosts of My Life.</em> Zero Books, 2014. Hauntology — culture as the repetition of cancelled futures; the theoretical frame for analyzing why we keep processing the same technological anxieties.",
-  "Han, Byung-Chul. <em>The Burnout Society</em> and <em>Psychopolitics.</em> Stanford University Press, 2015 / Verso, 2017. Control is no longer disciplinary but operates through self-exploitation and performance — students will live this.",
-  "Girard, René. <em>Violence and the Sacred.</em> Johns Hopkins University Press, 1977. Mimesis, scapegoats, the founding violence of every culture — explains social media dynamics and consensus formation better than any contemporary sociologist.",
-  "Illich, Ivan. <em>Tools for Conviviality.</em> Harper & Row, 1973. Institutions become counterproductive past a certain threshold — meta-relevant: students are in an educational program that should ask itself this question.",
-  "Debord, Guy. <em>The Society of the Spectacle.</em> Zone Books, 1994. The total mediation of experience by images — written in 1967, describes 2025 better than any contemporary analysis.",
-  "Weber, Max. <em>The Protestant Ethic and the Spirit of Capitalism.</em> 1905. How religious ideas shaped economic behavior — foundational for understanding the cultural bases of modern capitalism.",
-  "Siedentop, Larry. <em>Inventing the Individual.</em> Belknap Press, 2014. Genealogy of Western individualism from early Christianity — essential context for debates on consciousness, subjectivity, and autonomy.",
-  "O'Neil, Cathy. <em>Weapons of Math Destruction.</em> Crown, 2016. How algorithms encode and amplify inequality — the culture of algorithmic opacity.",
-  "Zuboff, Shoshana. <em>The Age of Surveillance Capitalism.</em> PublicAffairs, 2019. The extraction of behavioral data as a new form of capital accumulation — the culture of normalized surveillance.",
+  "Fisher, Mark. <em>Ghosts of My Life.</em> Zero Books, 2014. Hauntology, culture as the repetition of cancelled futures; the theoretical frame for analyzing why we keep processing the same technological anxieties.",
+  "Han, Byung-Chul. <em>The Burnout Society</em> and <em>Psychopolitics.</em> Stanford University Press, 2015 / Verso, 2017. Control is no longer disciplinary but operates through self-exploitation and performance, students will live this.",
+  "Girard, René. <em>Violence and the Sacred.</em> Johns Hopkins University Press, 1977. Mimesis, scapegoats, the founding violence of every culture, explains social media dynamics and consensus formation better than any contemporary sociologist.",
+  "Illich, Ivan. <em>Tools for Conviviality.</em> Harper & Row, 1973. Institutions become counterproductive past a certain threshold, meta-relevant: students are in an educational program that should ask itself this question.",
+  "Debord, Guy. <em>The Society of the Spectacle.</em> Zone Books, 1994. The total mediation of experience by images, written in 1967, describes 2025 better than any contemporary analysis.",
+  "Weber, Max. <em>The Protestant Ethic and the Spirit of Capitalism.</em> 1905. How religious ideas shaped economic behavior, foundational for understanding the cultural bases of modern capitalism.",
+  "Siedentop, Larry. <em>Inventing the Individual.</em> Belknap Press, 2014. Genealogy of Western individualism from early Christianity, essential context for debates on consciousness, subjectivity, and autonomy.",
+  "O'Neil, Cathy. <em>Weapons of Math Destruction.</em> Crown, 2016. How algorithms encode and amplify inequality, the culture of algorithmic opacity.",
+  "Zuboff, Shoshana. <em>The Age of Surveillance Capitalism.</em> PublicAffairs, 2019. The extraction of behavioral data as a new form of capital accumulation, the culture of normalized surveillance.",
 ]
 references = [
   { name = "Stanford Anthropology and Cultural Analysis", url = "https://anthropology.stanford.edu/" },
   { name = "MIT Comparative Media Studies", url = "https://cmsw.mit.edu/" },
-  { name = "École Polytechnique HSS — Humanités et Sciences Sociales", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
+  { name = "École Polytechnique HSS, Humanités et Sciences Sociales", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
   { name = "Cambridge Social Anthropology", url = "https://www.socanth.cam.ac.uk/" },
 ]
-evaluation_primary = "OD — Defense of critical essay connecting cultural artifact to institutional problem"
+evaluation_primary = "OD, Defense of critical essay connecting cultural artifact to institutional problem"
 evaluation_secondaries = [
-  "TP — Essay with full revision history",
+  "TP, Essay with full revision history",
 ]
 
 [[course.extra_section]]
@@ -676,22 +676,22 @@ label = "Canon de análisis / Primary cultural canon"
 html = """
 <p><strong>Anime:</strong></p>
   <ul>
-    <li><em>Neon Genesis Evangelion</em> — technology, dysfunctional institutions (NERV), individual responsibility under institutional pressure, the limits of human control over systems we don't understand.</li>
-    <li><em>Serial Experiments Lain</em> — identity, reality, and the dissolution of the boundary between the digital and the human; philosophy of mind disguised as anime.</li>
-    <li><em>Ghost in the Shell</em> — consciousness in a world of artificial bodies; connects directly with Epistemología and the Limits of AI.</li>
-    <li><em>Ergo Proxy</em> — post-collapse societies, authoritarian governance, what it means to be human when machines are conscious.</li>
-    <li><em>Akira</em> — technology, state power, and destruction.</li>
+    <li><em>Neon Genesis Evangelion</em>, technology, dysfunctional institutions (NERV), individual responsibility under institutional pressure, the limits of human control over systems we don't understand.</li>
+    <li><em>Serial Experiments Lain</em>, identity, reality, and the dissolution of the boundary between the digital and the human; philosophy of mind disguised as anime.</li>
+    <li><em>Ghost in the Shell</em>, consciousness in a world of artificial bodies; connects directly with Epistemología and the Limits of AI.</li>
+    <li><em>Ergo Proxy</em>, post-collapse societies, authoritarian governance, what it means to be human when machines are conscious.</li>
+    <li><em>Akira</em>, technology, state power, and destruction.</li>
   </ul>
   <p><strong>Science fiction:</strong></p>
   <ul>
-    <li>Asimov, <em>Foundation</em> — psychohistory: can the behavior of complex systems be predicted and designed at civilizational scale? Connects directly with Sistemas Complejos.</li>
-    <li>Asimov, "The Last Question" — entropy, information, and the limits of computation.</li>
-    <li>Gibson, <em>Neuromancer</em> — invented the concept of cyberspace; defines the aesthetic of the human-machine relationship.</li>
-    <li>Dick, <em>Do Androids Dream of Electric Sheep?</em> / <em>Blade Runner</em> — empathy as a test of humanity.</li>
-    <li><em>Black Mirror</em> (selected episodes) — unintended consequences of technology.</li>
-    <li><em>The Matrix</em> — simulation, reality, and the Chinese Room turned into film.</li>
+    <li>Asimov, <em>Foundation</em>, psychohistory: can the behavior of complex systems be predicted and designed at civilizational scale? Connects directly with Sistemas Complejos.</li>
+    <li>Asimov, "The Last Question", entropy, information, and the limits of computation.</li>
+    <li>Gibson, <em>Neuromancer</em>, invented the concept of cyberspace; defines the aesthetic of the human-machine relationship.</li>
+    <li>Dick, <em>Do Androids Dream of Electric Sheep?</em> / <em>Blade Runner</em>, empathy as a test of humanity.</li>
+    <li><em>Black Mirror</em> (selected episodes), unintended consequences of technology.</li>
+    <li><em>The Matrix</em>, simulation, reality, and the Chinese Room turned into film.</li>
   </ul>
-  <p><em>These works are not entertainment: they are cultural artifacts that articulate the tensions between technology, institutions, identity, and power in ways academic papers cannot. AI writes convincing-but-shallow cultural analyses — students expose missing assumptions and connect cultural narratives to systemic stability.</em></p>
+  <p><em>These works are not entertainment: they are cultural artifacts that articulate the tensions between technology, institutions, identity, and power in ways academic papers cannot. AI writes convincing-but-shallow cultural analyses, students expose missing assumptions and connect cultural narratives to systemic stability.</em></p>
 """
 
 [[course]]
@@ -706,21 +706,21 @@ objective_es = "Entender qué cuenta como conocimiento, qué hace válido a un m
 objective_en = "To understand what counts as knowledge, what makes a model valid, and what machines can and cannot do. The course that examines the program's founding claim: that AI cannot yet be trusted with judgment."
 content_es = "Epistemología, filosofía de la ciencia (falsabilidad, paradigmas, validez de modelos), filosofía de la mente y la IA (la Habitación China, el problema del anclaje simbólico, consciencia y computación, el problema del alineamiento)."
 content_en = "Epistemology, philosophy of science (falsifiability, paradigms, model validity), philosophy of mind and AI (the Chinese Room, the symbol grounding problem, consciousness and computation, the alignment problem)."
-notes_html = "Philosophy of science is not abstract — it is operational for builders. Lakatos shows how mathematics actually works as human activity. Feyerabend demonstrates that science advances by transgression, not method. Cartwright exposes that scientific models idealize, they don't describe. Hacking distinguishes representing the world from intervening in it. Latour reveals science as a network of actors, instruments, and institutions. These thinkers dismantle the idea that science is pure disembodied rationality — essential for students who will build models and confuse them with truth."
+notes_html = "Philosophy of science is not abstract, it is operational for builders. Lakatos shows how mathematics actually works as human activity. Feyerabend demonstrates that science advances by transgression, not method. Cartwright exposes that scientific models idealize, they don't describe. Hacking distinguishes representing the world from intervening in it. Latour reveals science as a network of actors, instruments, and institutions. These thinkers dismantle the idea that science is pure disembodied rationality, essential for students who will build models and confuse them with truth."
 texts = [
   "Kuhn, Thomas S. <em>The Structure of Scientific Revolutions.</em> 4th ed. University of Chicago Press, 2012.",
-  "Dreyfus, Hubert L. <em>What Computers Can't Do.</em> Harper & Row, 1972. The most powerful phenomenological critique of AI — was right about GOFAI, his arguments about embodiment remain unresolved by LLMs.",
-  "Dennett, Daniel C. <em>Consciousness Explained.</em> Little, Brown, 1991. The functionalist / deflationary position — direct counterpoint to Dreyfus; the Dreyfus–Dennett debate is the central axis of philosophy of AI.",
-  "Russell, Stuart. <em>Human Compatible.</em> Viking, 2019. The alignment problem from a founder of the field — why machines optimizing misspecified objectives are dangerous.",
+  "Dreyfus, Hubert L. <em>What Computers Can't Do.</em> Harper & Row, 1972. The most powerful phenomenological critique of AI, was right about GOFAI, his arguments about embodiment remain unresolved by LLMs.",
+  "Dennett, Daniel C. <em>Consciousness Explained.</em> Little, Brown, 1991. The functionalist / deflationary position, direct counterpoint to Dreyfus; the Dreyfus–Dennett debate is the central axis of philosophy of AI.",
+  "Russell, Stuart. <em>Human Compatible.</em> Viking, 2019. The alignment problem from a founder of the field, why machines optimizing misspecified objectives are dangerous.",
   "Christian, Brian. <em>The Alignment Problem.</em> W. W. Norton, 2020. The history and current state of aligning AI systems with human values.",
-  "Cartwright, Nancy. <em>How the Laws of Physics Lie.</em> Oxford University Press, 1983. Models idealize, they don't describe — crucial for ML builders.",
-  "Polanyi, Michael. <em>Personal Knowledge.</em> University of Chicago Press, 1958. Tacit knowledge — what an expert knows that cannot be formalized, with implications for the limits of AI.",
-  "Feyerabend, Paul. <em>Against Method.</em> 4th ed. Verso, 2010. Epistemological anarchism — science advances by transgression.",
-  "Lakatos, Imre. <em>Proofs and Refutations.</em> Cambridge University Press, 1976. The best text on how mathematics actually works — connects with Métodos Formales.",
-  "Hacking, Ian. <em>Representing and Intervening.</em> Cambridge University Press, 1983. Science is not just models — it is the manipulation of reality.",
+  "Cartwright, Nancy. <em>How the Laws of Physics Lie.</em> Oxford University Press, 1983. Models idealize, they don't describe, crucial for ML builders.",
+  "Polanyi, Michael. <em>Personal Knowledge.</em> University of Chicago Press, 1958. Tacit knowledge, what an expert knows that cannot be formalized, with implications for the limits of AI.",
+  "Feyerabend, Paul. <em>Against Method.</em> 4th ed. Verso, 2010. Epistemological anarchism, science advances by transgression.",
+  "Lakatos, Imre. <em>Proofs and Refutations.</em> Cambridge University Press, 1976. The best text on how mathematics actually works, connects with Métodos Formales.",
+  "Hacking, Ian. <em>Representing and Intervening.</em> Cambridge University Press, 1983. Science is not just models, it is the manipulation of reality.",
   "Latour, Bruno. <em>Science in Action.</em> Harvard University Press, 1987. Science as a network of actors, instruments, and institutions.",
-  "Hui, Yuk. <em>The Question Concerning Technology in China.</em> Urbanomic, 2016. The relation to technē is not universal — there are distinct cosmotechnics; the best contemporary response to Heidegger from a non-Western perspective.",
-  "Simondon, Gilbert. <em>On the Mode of Existence of Technical Objects.</em> Univocal, 2017. Technical objects have their own evolutionary logic — they are not mere instruments.",
+  "Hui, Yuk. <em>The Question Concerning Technology in China.</em> Urbanomic, 2016. The relation to technē is not universal, there are distinct cosmotechnics; the best contemporary response to Heidegger from a non-Western perspective.",
+  "Simondon, Gilbert. <em>On the Mode of Existence of Technical Objects.</em> Univocal, 2017. Technical objects have their own evolutionary logic, they are not mere instruments.",
   "Haraway, Donna. <em>Cyborg Manifesto.</em> 1985. The dissolution of human/machine boundaries as opportunity, not threat.",
   "Bostrom, Nick. <em>Superintelligence.</em> Oxford University Press, 2014.",
 ]
@@ -731,9 +731,9 @@ references = [
   { name = "Oxford Philosophy of Mind", url = "https://www.philosophy.ox.ac.uk/" },
   { name = "Cambridge HPS", url = "https://www.hps.cam.ac.uk/" },
 ]
-evaluation_primary = "OD — Defense of philosophical analysis of a real AI system"
+evaluation_primary = "OD, Defense of philosophical analysis of a real AI system"
 evaluation_secondaries = [
-  "TP — Written analysis",
+  "TP, Written analysis",
 ]
 
 [[course]]
@@ -759,9 +759,9 @@ references = [
   { name = "MIT 15.835 Entrepreneurial Marketing", url = "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/" },
   { name = "Harvard Business School Strategy", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
 ]
-evaluation_primary = "OD — Defense of strategic analysis and market entry plan"
+evaluation_primary = "OD, Defense of strategic analysis and market entry plan"
 evaluation_secondaries = [
-  "TP — Strategic analysis built with AI",
+  "TP, Strategic analysis built with AI",
 ]
 
 [[course]]
@@ -772,10 +772,10 @@ year = 3
 block = "A"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender feedback, estabilidad y observabilidad — y qué le hace la medición a las cosas que mide. La materia que une control de sistemas con la epistemología y la política de las métricas."
-objective_en = "To understand feedback, stability, and observability — and what measurement does to the things it measures. The course that fuses systems control with the epistemology and politics of metrics."
-content_es = "Teoría de control, análisis de estabilidad, diseño de controladores. Observabilidad: qué se puede y no se puede medir. Ley de Goodhart y ley de Campbell — cuándo una métrica deja de medir lo que dice medir. La política de las métricas: incentivos perversos, gaming, captura. La diferencia entre medir y gestionar. Epistemología de los indicadores: qué construye una medición sobre el sistema medido. Resiliencia: degradación grácil, recuperación, blast radius."
-content_en = "Control theory, stability analysis, controller design. Observability: what can and cannot be measured. Goodhart's law and Campbell's law — when a metric stops measuring what it claims to. The politics of metrics: perverse incentives, gaming, capture. The difference between measuring and managing. Epistemology of indicators: what a measurement constructs about the system measured. Resilience: graceful degradation, recovery, blast radius."
+objective_es = "Entender feedback, estabilidad y observabilidad, y qué le hace la medición a las cosas que mide. La materia que une control de sistemas con la epistemología y la política de las métricas."
+objective_en = "To understand feedback, stability, and observability, and what measurement does to the things it measures. The course that fuses systems control with the epistemology and politics of metrics."
+content_es = "Teoría de control, análisis de estabilidad, diseño de controladores. Observabilidad: qué se puede y no se puede medir. Ley de Goodhart y ley de Campbell, cuándo una métrica deja de medir lo que dice medir. La política de las métricas: incentivos perversos, gaming, captura. La diferencia entre medir y gestionar. Epistemología de los indicadores: qué construye una medición sobre el sistema medido. Resiliencia: degradación grácil, recuperación, blast radius."
+content_en = "Control theory, stability analysis, controller design. Observability: what can and cannot be measured. Goodhart's law and Campbell's law, when a metric stops measuring what it claims to. The politics of metrics: perverse incentives, gaming, capture. The difference between measuring and managing. Epistemology of indicators: what a measurement constructs about the system measured. Resilience: graceful degradation, recovery, blast radius."
 texts = [
   "Åström, Karl J., and Richard M. Murray. <em>Feedback Systems.</em> Princeton University Press, 2008.",
   "Leveson, Nancy G. <em>Engineering a Safer World.</em> MIT Press, 2011.",
@@ -790,9 +790,9 @@ references = [
   { name = "MIT 6.3100 Dynamical Systems and Control", url = "https://ocw.mit.edu/courses/6-241j-dynamic-systems-and-control-spring-2011/" },
   { name = "Caltech CDS 110 Introduction to Control", url = "https://www.cds.caltech.edu/~murray/courses/cds110/" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "OD — Defense of system stability analysis",
+  "OD, Defense of system stability analysis",
 ]
 
 [[course]]
@@ -818,9 +818,9 @@ references = [
   { name = "Harvard Kennedy School Ethics and Public Policy", url = "https://www.hks.harvard.edu/educational-programs/courses" },
   { name = "Oxford PPE Philosophy component", url = "https://www.ppe.ox.ac.uk/" },
 ]
-evaluation_primary = "OD — Defense of ethical analysis of a hard case"
+evaluation_primary = "OD, Defense of ethical analysis of a hard case"
 evaluation_secondaries = [
-  "TP — Written case analysis",
+  "TP, Written case analysis",
 ]
 
 [[course]]
@@ -837,19 +837,19 @@ content_es = ""
 content_en = ""
 texts = [
   "Ostrom, Elinor. <em>Governing the Commons.</em> Cambridge University Press, 1990.",
-  "Roth, Alvin E. <em>Who Gets What — and Why.</em> Houghton Mifflin Harcourt, 2015.",
+  "Roth, Alvin E. <em>Who Gets What, and Why.</em> Houghton Mifflin Harcourt, 2015.",
   "Williamson, Oliver E. <em>The Economic Institutions of Capitalism.</em> Free Press, 1985.",
-  "Simon, Herbert A. <em>The Sciences of the Artificial.</em> 3rd ed. MIT Press, 1996. Bounded rationality, satisficing, design as discipline — Simon is the bridge between AI, economics, and organizational theory.",
-  "Ostrom, Vincent. <em>The Intellectual Crisis in American Public Administration.</em> University of Alabama Press, 1973. Polycentricity — institutional design isn't choosing between hierarchy and market; there's a third path of polycentric governance.",
+  "Simon, Herbert A. <em>The Sciences of the Artificial.</em> 3rd ed. MIT Press, 1996. Bounded rationality, satisficing, design as discipline, Simon is the bridge between AI, economics, and organizational theory.",
+  "Ostrom, Vincent. <em>The Intellectual Crisis in American Public Administration.</em> University of Alabama Press, 1973. Polycentricity, institutional design isn't choosing between hierarchy and market; there's a third path of polycentric governance.",
 ]
 references = [
-  { name = "Elinor Ostrom Workshop — Indiana University", url = "https://ostromworkshop.indiana.edu/" },
+  { name = "Elinor Ostrom Workshop, Indiana University", url = "https://ostromworkshop.indiana.edu/" },
   { name = "Santa Fe Institute Complexity and Governance", url = "https://www.santafe.edu/" },
   { name = "Oxford Blavatnik School of Government", url = "https://www.bsg.ox.ac.uk/" },
 ]
-evaluation_primary = "PD — Public defense before external panel with practitioners"
+evaluation_primary = "PD, Public defense before external panel with practitioners"
 evaluation_secondaries = [
-  "TP — Institutional design document",
+  "TP, Institutional design document",
 ]
 
 [[course]]
@@ -867,18 +867,18 @@ content_en = ""
 texts = [
   "Fisher, Roger, William Ury, and Bruce Patton. <em>Getting to Yes.</em> Penguin Books, 2011.",
   "Cialdini, Robert B. <em>Influence: The Psychology of Persuasion.</em> Harper Business, 2006.",
-  "Voss, Chris. <em>Never Split the Difference.</em> Harper Business, 2016. Negotiation as a fundamental human skill — techniques from a former FBI hostage negotiator, immediately practical.",
-  "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960. Focal points, credible commitments, the rationality of seemingly irrational behavior — bridge between game theory and real negotiation.",
-  "Epictetus. <em>The Discourses</em> and <em>Enchiridion.</em> Distinguish what is under our control from what is not — stoic composure under pressure is the psychological foundation of all effective negotiation.",
+  "Voss, Chris. <em>Never Split the Difference.</em> Harper Business, 2016. Negotiation as a fundamental human skill, techniques from a former FBI hostage negotiator, immediately practical.",
+  "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960. Focal points, credible commitments, the rationality of seemingly irrational behavior, bridge between game theory and real negotiation.",
+  "Epictetus. <em>The Discourses</em> and <em>Enchiridion.</em> Distinguish what is under our control from what is not, stoic composure under pressure is the psychological foundation of all effective negotiation.",
 ]
 references = [
   { name = "Harvard Program on Negotiation", url = "https://www.pon.harvard.edu/" },
   { name = "MIT Sloan 15.665 Power and Negotiation", url = "https://ocw.mit.edu/courses/15-665-power-and-negotiation-spring-2014/" },
   { name = "Cambridge Judge Business School Negotiation", url = "https://www.jbs.cam.ac.uk/" },
 ]
-evaluation_primary = "LC — Live negotiation exercise with real stakes"
+evaluation_primary = "LC, Live negotiation exercise with real stakes"
 evaluation_secondaries = [
-  "OD — Debrief and strategy analysis",
+  "OD, Debrief and strategy analysis",
 ]
 
 [[course]]
@@ -889,16 +889,16 @@ year = 3
 block = "C"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender cómo el orden, el caos y la estructura emergen de la interacción de agentes simples — y por qué los sistemas complejos se resisten a la predicción y al control centralizado."
-objective_en = "To understand how order, chaos, and structure emerge from the interaction of simple agents — and why complex systems resist prediction and centralized control."
+objective_es = "Entender cómo el orden, el caos y la estructura emergen de la interacción de agentes simples, y por qué los sistemas complejos se resisten a la predicción y al control centralizado."
+objective_en = "To understand how order, chaos, and structure emerge from the interaction of simple agents, and why complex systems resist prediction and centralized control."
 content_es = "Comportamiento emergente, redes complejas, modelos basados en agentes, transiciones de fase, autoorganización, power laws, coevolución. Los patrones de complejidad atraviesan dominios."
 content_en = "Emergent behavior, complex networks, agent-based models, phase transitions, self-organization, power laws, coevolution. Complexity patterns cross domains."
-notes_html = "Connects everything: Biología (Año 1) with Economía (Año 1–2) with Redes (Año 2) with Instituciones (Año 2) with Riesgo y fat tails (Año 2). Complexity patterns cross domains — the cascade failure in a power grid, a bank run, an epidemic, and an institutional collapse are the same phenomenon viewed from different disciplines."
+notes_html = "Connects everything: Biología (Año 1) with Economía (Año 1–2) with Redes (Año 2) with Instituciones (Año 2) with Riesgo y fat tails (Año 2). Complexity patterns cross domains, the cascade failure in a power grid, a bank run, an epidemic, and an institutional collapse are the same phenomenon viewed from different disciplines."
 texts = [
   "Mitchell, Melanie. <em>Complexity: A Guided Tour.</em> Oxford University Press, 2009.",
   "Barabási, Albert-László. <em>Network Science.</em> Cambridge University Press, 2016.",
   "Miller, John H., and Scott E. Page. <em>Complex Adaptive Systems.</em> Princeton University Press, 2007.",
-  "West, Geoffrey. <em>Scale.</em> Penguin Press, 2017. Universal scaling laws in biology, cities, and economies — the same mathematical patterns appear in radically different systems, from metabolic rates to urban innovation.",
+  "West, Geoffrey. <em>Scale.</em> Penguin Press, 2017. Universal scaling laws in biology, cities, and economies, the same mathematical patterns appear in radically different systems, from metabolic rates to urban innovation.",
 ]
 references = [
   { name = "Santa Fe Institute Complexity Explorer", url = "https://www.complexityexplorer.org/" },
@@ -906,9 +906,9 @@ references = [
   { name = "Oxford Complex Systems", url = "https://www.maths.ox.ac.uk/groups/ociam" },
   { name = "Barabási Network Science", url = "https://networksciencebook.com/" },
 ]
-evaluation_primary = "OD — Defense of agent-based model"
+evaluation_primary = "OD, Defense of agent-based model"
 evaluation_secondaries = [
-  "TP — Agent-based model of a real complex system",
+  "TP, Agent-based model of a real complex system",
 ]
 
 [[course]]
@@ -927,20 +927,20 @@ texts = [
   "Raiffa, Howard. <em>Decision Analysis.</em> Addison-Wesley, 1968.",
   "Savage, Leonard J. <em>The Foundations of Statistics.</em> Wiley, 1954. The foundational axioms of decision under uncertainty.",
   "Kahneman, Daniel. <em>Thinking, Fast and Slow.</em> Farrar, Straus and Giroux, 2011.",
-  "Gigerenzer, Gerd. <em>Gut Feelings: The Intelligence of the Unconscious.</em> Viking, 2007. Fast heuristics that outperform formal models in uncertain environments — empirical counterpoint to expected utility theory.",
-  "Tetlock, Philip E., and Dan Gardner. <em>Superforecasting.</em> Crown, 2015. The disciplined practice of calibrated prediction — connects directly with Bayesian updating.",
+  "Gigerenzer, Gerd. <em>Gut Feelings: The Intelligence of the Unconscious.</em> Viking, 2007. Fast heuristics that outperform formal models in uncertain environments, empirical counterpoint to expected utility theory.",
+  "Tetlock, Philip E., and Dan Gardner. <em>Superforecasting.</em> Crown, 2015. The disciplined practice of calibrated prediction, connects directly with Bayesian updating.",
   "Simon, Herbert A. <em>Models of Bounded Rationality.</em> MIT Press, 1982. Why real agents satisfice rather than optimize.",
-  "Williams, Bernard. <em>Ethics and the Limits of Philosophy.</em> Harvard University Press, 1985. Tragic tradeoffs are irreducible — every important decision has an ethical dimension that clean frameworks cannot resolve.",
-  "Jonas, Hans. <em>The Imperative of Responsibility.</em> University of Chicago Press, 1984. Ethics for technological civilizations — the principle of responsibility toward future generations as a constraint on present decisions.",
+  "Williams, Bernard. <em>Ethics and the Limits of Philosophy.</em> Harvard University Press, 1985. Tragic tradeoffs are irreducible, every important decision has an ethical dimension that clean frameworks cannot resolve.",
+  "Jonas, Hans. <em>The Imperative of Responsibility.</em> University of Chicago Press, 1984. Ethics for technological civilizations, the principle of responsibility toward future generations as a constraint on present decisions.",
 ]
 references = [
   { name = "Stanford MS&E 250 Decision Analysis", url = "https://explorecourses.stanford.edu/search?q=MS%26E+250" },
   { name = "Harvard Kennedy School Decision Science", url = "https://www.hks.harvard.edu/educational-programs/courses" },
   { name = "Oxford PPE Philosophy component", url = "https://www.ppe.ox.ac.uk/" },
 ]
-evaluation_primary = "OD — Defense of decision analysis of a real multi-criteria problem"
+evaluation_primary = "OD, Defense of decision analysis of a real multi-criteria problem"
 evaluation_secondaries = [
-  "TP — Decision analysis built with AI",
+  "TP, Decision analysis built with AI",
 ]
 
 [[course]]
@@ -951,8 +951,8 @@ year = 3
 block = "C"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Dominar la escritura analítica y argumentativa en español. Para personas que operarán en América Latina, la capacidad de escribir con precisión en español no es secundaria — es central."
-objective_en = "To master analytical and argumentative writing in Spanish. For people who will operate in Latin America, the ability to write precisely in Spanish is not secondary — it is central."
+objective_es = "Dominar la escritura analítica y argumentativa en español. Para personas que operarán en América Latina, la capacidad de escribir con precisión en español no es secundaria, es central."
+objective_en = "To master analytical and argumentative writing in Spanish. For people who will operate in Latin America, the ability to write precisely in Spanish is not secondary, it is central."
 content_es = ""
 content_en = ""
 texts = [
@@ -962,7 +962,7 @@ texts = [
   "Cortázar, Julio. Selected essays on structure and form.",
 ]
 references = []
-evaluation_primary = "WP — Written portfolio with full revision history"
+evaluation_primary = "WP, Written portfolio with full revision history"
 evaluation_secondaries = []
 
 [[course]]
@@ -973,19 +973,19 @@ year = 3
 block = "D"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender cómo las organizaciones realmente funcionan — y liderar personas dentro de ellas. Primera mitad: analítica. Segunda mitad: práctica."
-objective_en = "To understand how organizations actually work — and to lead people within them. First half: analytical. Second half: practical."
+objective_es = "Entender cómo las organizaciones realmente funcionan, y liderar personas dentro de ellas. Primera mitad: analítica. Segunda mitad: práctica."
+objective_en = "To understand how organizations actually work, and to lead people within them. First half: analytical. Second half: practical."
 content_es = ""
 content_en = ""
-notes_html = "The fusion is natural: you cannot lead what you don't structurally understand, and you cannot diagnose organizations without intervention tools. Principal-agent explains <strong>why</strong> your team isn't doing what you expect; situational leadership tells you <strong>what to do about it</strong>. Negociación covers peer-to-peer interaction; this course covers asymmetric responsibility — when you make the decision and others live with the consequences."
+notes_html = "The fusion is natural: you cannot lead what you don't structurally understand, and you cannot diagnose organizations without intervention tools. Principal-agent explains <strong>why</strong> your team isn't doing what you expect; situational leadership tells you <strong>what to do about it</strong>. Negociación covers peer-to-peer interaction; this course covers asymmetric responsibility, when you make the decision and others live with the consequences."
 texts = [
   "March, James G. <em>A Primer on Decision Making.</em> Free Press, 1994.",
   "Grove, Andrew S. <em>High Output Management.</em> Random House, 1983.",
   "Horowitz, Ben. <em>The Hard Thing About Hard Things.</em> Harper Business, 2014.",
   "Lencioni, Patrick. <em>The Five Dysfunctions of a Team.</em> Jossey-Bass, 2002.",
   "Milgrom, Paul, and John Roberts. <em>Economics, Organization and Management.</em> Prentice Hall, 1992.",
-  "MacIntyre, Alasdair. <em>After Virtue.</em> 3rd ed. University of Notre Dame Press, 2007. The crisis of modern moral language — why leaders cannot rely on universal ethical frameworks and need situated judgment.",
-  "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947. Attention as a fundamental ethical act — the leader's responsibility begins with paying real attention to the people who depend on their decisions.",
+  "MacIntyre, Alasdair. <em>After Virtue.</em> 3rd ed. University of Notre Dame Press, 2007. The crisis of modern moral language, why leaders cannot rely on universal ethical frameworks and need situated judgment.",
+  "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947. Attention as a fundamental ethical act, the leader's responsibility begins with paying real attention to the people who depend on their decisions.",
 ]
 references = [
   { name = "Stanford MS&E 280 Organizational Behavior", url = "https://explorecourses.stanford.edu/search?q=MS%26E+280" },
@@ -993,9 +993,9 @@ references = [
   { name = "Harvard Business School Leadership", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
   { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/faculty-research/academic-areas/organisational-behaviour" },
 ]
-evaluation_primary = "OD — Defense of organizational diagnosis"
+evaluation_primary = "OD, Defense of organizational diagnosis"
 evaluation_secondaries = [
-  "TP — Diagnosis of a real or simulated organization",
+  "TP, Diagnosis of a real or simulated organization",
 ]
 
 [[course]]
@@ -1019,9 +1019,9 @@ references = [
   { name = "MIT 6.441 Information Theory", url = "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/" },
   { name = "Stanford EE 376A Information Theory", url = "https://web.stanford.edu/class/ee376a/" },
 ]
-evaluation_primary = "WE — Written exam"
+evaluation_primary = "WE, Written exam"
 evaluation_secondaries = [
-  "TP — Problem sets",
+  "TP, Problem sets",
 ]
 
 [[course]]
@@ -1046,9 +1046,9 @@ references = [
   { name = "MIT Integrated Design and Management", url = "https://idm.mit.edu/" },
   { name = "Carnegie Mellon Human-Computer Interaction", url = "https://hcii.cmu.edu/" },
 ]
-evaluation_primary = "PD — Public defense of prototype with usability evidence"
+evaluation_primary = "PD, Public defense of prototype with usability evidence"
 evaluation_secondaries = [
-  "TP — Prototype with documented user research",
+  "TP, Prototype with documented user research",
 ]
 
 [[course]]
@@ -1070,9 +1070,9 @@ texts = [
   "Christian, Brian. <em>The Alignment Problem.</em> W. W. Norton, 2020.",
 ]
 references = []
-evaluation_primary = "OD — Oral defense of position paper"
+evaluation_primary = "OD, Oral defense of position paper"
 evaluation_secondaries = [
-  "TP — Position paper on what AI changes and what it does not",
+  "TP, Position paper on what AI changes and what it does not",
 ]
 
 [[course]]
@@ -1083,8 +1083,8 @@ year = 3.5
 block = "A"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender los sistemas biológicos con rigor — evolución, ecología, genética, inmunología — como base para razonar sobre el mundo vivo y como fuente de modelos para el diseño de sistemas. Colocada al final para conectar con Sistemas Complejos recién cursado."
-objective_en = "To understand biological systems rigorously — evolution, ecology, genetics, immunology — as a basis for reasoning about the living world and as a source of models for systems design. Placed at the end to connect with Complex Systems just completed."
+objective_es = "Entender los sistemas biológicos con rigor, evolución, ecología, genética, inmunología, como base para razonar sobre el mundo vivo y como fuente de modelos para el diseño de sistemas. Colocada al final para conectar con Sistemas Complejos recién cursado."
+objective_en = "To understand biological systems rigorously, evolution, ecology, genetics, immunology, as a basis for reasoning about the living world and as a source of models for systems design. Placed at the end to connect with Complex Systems just completed."
 content_es = ""
 content_en = ""
 texts = [
@@ -1098,9 +1098,9 @@ references = [
   { name = "Caltech Bi 1 Principles of Biology", url = "https://catalog.caltech.edu/current/courses/department/Bi" },
   { name = "École Polytechnique tronc commun Biologie", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
-evaluation_primary = "OD — Defense of analysis of a biological system"
+evaluation_primary = "OD, Defense of analysis of a biological system"
 evaluation_secondaries = [
-  "TP — Quantitative analysis with estimates and models",
+  "TP, Quantitative analysis with estimates and models",
 ]
 
 [[course]]
