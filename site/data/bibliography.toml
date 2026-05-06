@@ -258,6 +258,10 @@ text = "Horowitz, Paul, and Winfield Hill. <em>The Art of Electronics.</em> 3rd 
 url = "https://artofelectronics.net/"
 
 [[entry]]
+text = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach.</em> 5th ed. Matrix Editions, 2015."
+url = "https://matrixeditions.com/5thUnifiedApproach.html"
+
+[[entry]]
 text = "Horowitz, Ben. <em>The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers.</em> Harper Business, 2014."
 url = "https://www.harpercollins.com/products/the-hard-thing-about-hard-things-ben-horowitz"
 
@@ -506,12 +510,20 @@ text = "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd
 url = "https://math.mit.edu/~sipser/book.html"
 
 [[entry]]
+text = "Spivak, Michael. <em>Calculus.</em> 4th ed. Publish or Perish, 2008."
+url = "https://www.publishorperish.com/spivak/spivak-calculus.html"
+
+[[entry]]
 text = "Strang, Gilbert. <em>Introduction to Linear Algebra.</em> 6th ed. Wellesley-Cambridge Press, 2023."
 url = "https://math.mit.edu/~gs/linearalgebra/"
 
 [[entry]]
 text = "Strang, Gilbert. <em>Linear Algebra and Learning from Data.</em> Wellesley-Cambridge Press, 2019."
 url = "https://math.mit.edu/~gs/learningfromdata/"
+
+[[entry]]
+text = "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering.</em> 2nd ed. CRC Press, 2014."
+url = "https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering"
 
 [[entry]]
 text = "Taleb, Nassim Nicholas. <em>Statistical Consequences of Fat Tails.</em> STEM Academic Press, 2020."

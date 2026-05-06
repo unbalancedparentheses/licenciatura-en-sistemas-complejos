@@ -63,12 +63,13 @@ position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entrenar el razonamiento preciso y la disciplina de la falsificación. Construir la capacidad de trabajar con rigor en territorio desconocido."
 objective_en = "To train precise reasoning and the discipline of falsification. To build the capacity to work rigorously in unfamiliar territory."
-content_es = "Lógica proposicional y de predicados, técnicas de demostración (directa, por contradicción, inducción), construcción de contraejemplos, teoría de conjuntos básica, relaciones. La IA puede proponer demostraciones, los estudiantes encuentran los huecos."
-content_en = "Propositional and predicate logic, proof techniques (direct, contradiction, induction), counterexample construction, basic set theory, relations. AI may propose proofs, students find the gaps."
+content_es = "Lógica proposicional y de predicados, técnicas de demostración (directa, por contradicción, inducción), construcción de contraejemplos, teoría de conjuntos básica, relaciones. Combinatoria y argumentos de conteo (funciones generatrices, principio del palomar, método probabilístico) tratados como aplicación intensiva de las técnicas de demostración. La IA puede proponer demostraciones, los estudiantes encuentran los huecos."
+content_en = "Propositional and predicate logic, proof techniques (direct, contradiction, induction), counterexample construction, basic set theory, relations. Combinatorics and counting arguments (generating functions, pigeonhole principle, probabilistic method) treated as intensive applications of the proof techniques. AI may propose proofs, students find the gaps."
 texts = [
   "Velleman, Daniel J. <em>How to Prove It.</em> 3rd ed. Cambridge University Press, 2019.",
   "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012.",
   "Enderton, Herbert B. <em>A Mathematical Introduction to Logic.</em> 2nd ed. Academic Press, 2001.",
+  "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics.</em> 2nd ed. Addison-Wesley, 1994.",
 ]
 references = [
   { name = "MIT 6.1200 Mathematics for Computer Science", url = "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/" },
@@ -81,35 +82,36 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "matematica-pura"
-title_es = "Matemática Pura"
-title_en = "Pure Mathematics"
+slug = "calculo-y-analisis"
+title_es = "Cálculo y Análisis"
+title_en = "Calculus and Analysis"
 year = 1
-block = "B"
-position = 2
+block = "A"
+position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Desarrollar la capacidad de razonamiento matemático abstracto, reconocer estructura, construir demostraciones en territorio desconocido y pensar más allá de la computación."
-objective_en = "To develop the capacity for abstract mathematical reasoning, to recognize structure, construct proofs in unfamiliar territory, and think beyond computation."
-content_es = "Combinatoria y argumentos de conteo (funciones generatrices, principio del palomar, método probabilístico). Estructuras algebraicas (grupos, anillos, cuerpos, aritmética modular, los fundamentos de la criptografía). Ideas seleccionadas de topología y análisis (continuidad como preservación de estructura, compacidad, teoremas de punto fijo). Cada tema se desarrolla con demostraciones completas y conjuntos de problemas."
-content_en = "Combinatorics and counting arguments (generating functions, pigeonhole principle, probabilistic method). Algebraic structures (groups, rings, fields, modular arithmetic, the foundations of cryptography). Selected ideas from topology and analysis (continuity as structure preservation, compactness, fixed-point theorems). Each topic is developed with complete proofs and problem sets."
-notes_html_es = "El objetivo es la madurez matemática: la capacidad de leer una demostración en un dominio desconocido, identificar la idea central y adaptar la técnica. Quienes completan esta materia pueden seguir los argumentos matemáticos de cualquier curso posterior, procesos estocásticos, teoría de la información, criptografía, diseño de mecanismos, sin quedar trabados ante abstracciones nuevas. Se conecta directamente con Razonamiento Formal y Demostración (que provee la caja de herramientas para demostrar), Seguridad y Criptografía (donde la teoría de grupos se vuelve operativa), Métodos Formales (donde las estructuras abstractas aparecen en Lean 4) e Información, Señales y Comunicación."
-notes_html_en = "The goal is mathematical maturity: the ability to read a proof in an unfamiliar domain, identify the key idea, and adapt the technique. Students who complete this course can follow the mathematical arguments of any later course, stochastic processes, information theory, cryptography, mechanism design, without being stopped by unfamiliar abstractions. Connects directly with Razonamiento Formal y Demostración (which provides the proof toolkit), Seguridad y Criptografía (where group theory becomes operational), Métodos Formales (where abstract structures appear in Lean 4), and Información, Señales y Comunicación."
+objective_es = "Construir el cálculo y el análisis matemático que el resto del programa asume en silencio. Desde límites y continuidad hasta cálculo en varias variables y elementos de análisis real, con el rigor suficiente para que probabilidad, optimización, física, machine learning y procesos estocásticos puedan apoyarse en él en lugar de evitarlo."
+objective_en = "To build the calculus and mathematical analysis that the rest of the program silently assumes. From limits and continuity to multivariable calculus and elements of real analysis, with enough rigor that probability, optimization, physics, machine learning, and stochastic processes can rely on it rather than work around it."
+content_es = "Límites, continuidad, derivadas y aproximación de Taylor. Integración de Riemann. Sucesiones y series, criterios de convergencia. Cálculo en varias variables: gradientes, jacobianos, hessianos, integrales múltiples. Optimización con restricciones, multiplicadores de Lagrange. Ecuaciones diferenciales ordinarias elementales. Unidad final de análisis real y topología: espacios métricos, compacidad, convergencia uniforme, continuidad como preservación de estructura, teoremas de punto fijo."
+content_en = "Limits, continuity, derivatives, and Taylor approximation. Riemann integration. Sequences and series, convergence criteria. Multivariable calculus: gradients, Jacobians, Hessians, multiple integrals. Constrained optimization, Lagrange multipliers. Elementary ordinary differential equations. Closing unit on real analysis and topology: metric spaces, compactness, uniform convergence, continuity as structure preservation, fixed-point theorems."
+notes_html_es = "El curso es deliberadamente denso para una sola materia: ocho semanas para material que muchos programas distribuyen en un año entero. La compresión es posible porque corre en paralelo con Razonamiento Formal y Demostración, donde se construye la disciplina de prueba que el cálculo riguroso requiere, y con Álgebra Lineal y Computación I, que provee el lenguaje vectorial. La meta no es agotar a Tao, es que Probabilidad, Procesos Estocásticos, Física, Machine Learning y los cursos de optimización puedan asumir el cálculo en lugar de trabajar a su alrededor."
+notes_html_en = "The course is deliberately dense for a single block: eight weeks for material many programs spread over a full year. The compression is possible because it runs in parallel with Razonamiento Formal y Demostración, where the proof discipline rigorous calculus requires is built, and with Álgebra Lineal y Computación I, which provides the vector language. The goal is not to exhaust Tao, it is for Probabilidad, Procesos Estocásticos, Física, Machine Learning, and the optimization courses to be able to assume calculus rather than work around it."
 texts = [
-  { citation = "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010.", note_es = "Introducción rigurosa estándar al álgebra abstracta a nivel de grado.", note_en = "The standard rigorous introduction to abstract algebra at undergraduate level." },
-  { citation = "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics.</em> 2nd ed. Addison-Wesley, 1994.", note_es = "Combinatoria, funciones generatrices y razonamiento discreto en la base de la computación.", note_en = "Combinatorics, generating functions, and discrete reasoning at the foundation of CS." },
-  { citation = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000.", note_es = "Capítulos seleccionados: topología de conjuntos de puntos y fundamentos de espacios métricos.", note_en = "Selected chapters, point-set topology and fundamentals of metric spaces." },
-  { citation = "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999.", note_es = "Panorama sólido de las grandes ramas de la matemática con profundidad real, contexto imprescindible para entender la matemática como empresa intelectual.", note_en = "A strong survey of the major branches of mathematics with real depth, essential context for understanding mathematics as an intellectual enterprise." },
-  { citation = "Tao, Terence. <em>Analysis I and II.</em> Hindustan Book Agency, 2016.", note_es = "Análisis real riguroso a nivel de grado.", note_en = "Rigorous real analysis at undergraduate level." },
+  { citation = "Spivak, Michael. <em>Calculus.</em> 4th ed. Publish or Perish, 2008.", note_es = "Cálculo de una variable tratado con rigor, escrito como introducción al análisis real.", note_en = "Single-variable calculus treated rigorously, written as an introduction to real analysis." },
+  { citation = "Tao, Terence. <em>Analysis I.</em> Hindustan Book Agency, 2016.", note_es = "Análisis real construido desde los axiomas de los reales, autocontenido y riguroso.", note_en = "Real analysis built from the axioms of the reals, self-contained and rigorous." },
+  { citation = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms.</em> 5th ed. Matrix Editions, 2015.", note_es = "Cálculo en varias variables con álgebra lineal y formas diferenciales, el puente natural hacia ML, optimización y física.", note_en = "Multivariable calculus with linear algebra and differential forms, the natural bridge into ML, optimization, and physics." },
+  { citation = "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos.</em> 2nd ed. CRC Press, 2014.", note_es = "Capítulos seleccionados sobre EDO y comportamiento cualitativo, conexión temprana con Sistemas Complejos.", note_en = "Selected chapters on ODEs and qualitative behavior, an early bridge to Sistemas Complejos." },
+  { citation = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000.", note_es = "Capítulos seleccionados de topología de conjuntos de puntos para la unidad final: espacios métricos, compacidad, continuidad.", note_en = "Selected chapters of point-set topology for the closing unit: metric spaces, compactness, continuity." },
 ]
 references = [
+  { name = "MIT 18.01 Single Variable Calculus", url = "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" },
+  { name = "MIT 18.02 Multivariable Calculus", url = "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" },
+  { name = "MIT 18.100A Real Analysis", url = "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/" },
   { name = "Caltech Ma 1abc Mathematics", url = "https://pma.caltech.edu/courses" },
   { name = "École Polytechnique tronc commun (modules de mathématiques)", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
-  { name = "Cambridge Mathematical Tripos", url = "https://www.maths.cam.ac.uk/undergrad/course" },
-  { name = "MIT 18.701 Algebra I", url = "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/" },
 ]
-evaluation_primary = "WE, Written exam with proofs"
+evaluation_primary = "WE, Written exam with unseen problems and short proofs"
 evaluation_secondaries = [
-  "OD, Oral defense of problem portfolio across combinatorics, algebra, and topology",
+  "TP, Weekly problem sets and proof exercises",
 ]
 
 [[course]]
@@ -117,8 +119,8 @@ slug = "microeconomia-y-logica-de-decision"
 title_es = "Microeconomía y Lógica de Decisión"
 title_en = "Microeconomics and Decision Logic"
 year = 1
-block = "A"
-position = 3
+block = "B"
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonar sobre escasez, incentivos y tradeoffs antes de tocar un modelo de negocio. Desarrollar intuición económica antes de que el programa exija modelado formal."
 objective_en = "To reason about scarcity, incentives, and tradeoffs before touching a business model. To develop economic intuition before the program demands formal modeling."
@@ -499,8 +501,8 @@ objective_es = "Demostrar matemáticamente que un sistema hace lo que dice hacer
 objective_en = "To prove mathematically that a system does what it says it does. If AI generates code, formal verification becomes more important, not less."
 content_es = "Especificación formal, Lean 4, verificación de programas, invariantes, pre/postcondiciones, tipos dependientes. Los estudiantes verifican propiedades de programas reales."
 content_en = "Formal specification, Lean 4, program verification, invariants, pre/postconditions, dependent types. Students verify properties of real programs."
-notes_html_es = "Se conecta directamente con Razonamiento Formal (que provee la lógica), Matemática Pura / matemática avanzada (que provee la madurez matemática) y Programación de Sistemas (que provee el contexto del software real). Con la IA generando código, esta disciplina se vuelve <strong>más</strong> importante, no menos."
-notes_html_en = "Connects directly with Razonamiento Formal (which provides the logic), Matemática Pura / advanced math (which provides mathematical maturity), and Programación de Sistemas (which provides the context of real software). With AI generating code, this discipline becomes <strong>more</strong> important, not less."
+notes_html_es = "Se conecta directamente con Razonamiento Formal (que provee la lógica), Cálculo y Análisis (que provee la madurez matemática) y Programación de Sistemas (que provee el contexto del software real). Con la IA generando código, esta disciplina se vuelve <strong>más</strong> importante, no menos."
+notes_html_en = "Connects directly with Razonamiento Formal (which provides the logic), Cálculo y Análisis (which provides mathematical maturity), and Programación de Sistemas (which provides the context of real software). With AI generating code, this discipline becomes <strong>more</strong> important, not less."
 texts = [
   "Avigad, Jeremy. <em>Mathematics in Lean.</em> leanprover-community.github.io.",
   "Pierce, Benjamin C., et al. <em>Software Foundations.</em> softwarefoundations.cis.upenn.edu.",
@@ -586,12 +588,13 @@ position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo se construye la confianza técnicamente y dónde se rompe."
 objective_en = "To understand how trust is constructed technically and where it breaks."
-content_es = "Fundamentos criptográficos: simétrica/asimétrica, hashing, firmas, protocolos. Modelado de amenazas, seguridad de sistemas, superficies de ataque, arquitecturas de confianza."
-content_en = "Cryptographic foundations: symmetric/asymmetric, hashing, signatures, protocols. Threat modeling, system security, attack surfaces, trust architectures."
+content_es = "Estructuras algebraicas operativas para criptografía: grupos, anillos, cuerpos, aritmética modular, suficiente teoría de números para entender RSA, Diffie-Hellman y curvas elípticas. Fundamentos criptográficos: simétrica/asimétrica, hashing, firmas, protocolos. Modelado de amenazas, seguridad de sistemas, superficies de ataque, arquitecturas de confianza."
+content_en = "Algebraic structures used operationally in cryptography: groups, rings, fields, modular arithmetic, enough number theory to understand RSA, Diffie-Hellman, and elliptic curves. Cryptographic foundations: symmetric/asymmetric, hashing, signatures, protocols. Threat modeling, system security, attack surfaces, trust architectures."
 texts = [
   "Katz, Jonathan, and Yehuda Lindell. <em>Introduction to Modern Cryptography.</em> 3rd ed. CRC Press, 2020.",
   "Anderson, Ross J. <em>Security Engineering.</em> 3rd ed. Wiley, 2020.",
   "Boneh, Dan, and Victor Shoup. <em>A Graduate Course in Applied Cryptography.</em> cryptobook.us.",
+  "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010.",
 ]
 references = [
   { name = "Stanford CS 255 Introduction to Cryptography", url = "https://crypto.stanford.edu/~dabo/courses/cs255/" },
@@ -806,10 +809,10 @@ year = 3
 block = "A"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Evaluar un mercado, diseñar un producto, posicionarlo y lanzarlo."
-objective_en = "To evaluate a market, design a product, position it, and launch it."
-content_es = "Análisis competitivo, posicionamiento, efectos de red, costos de cambio, investigación de usuarios, product-market fit, pricing, distribución, estrategia de lanzamiento."
-content_en = "Competitive analysis, positioning, network effects, switching costs, user research, product-market fit, pricing, distribution, launch strategy."
+objective_es = "Evaluar un mercado, diseñar un producto, posicionarlo y lanzarlo con una teoría explícita de adopción, distribución y ventaja."
+objective_en = "To evaluate a market, design a product, position it, and launch it with an explicit theory of adoption, distribution, and advantage."
+content_es = "Análisis competitivo, segmentación, tamaño de mercado, beachhead market, posicionamiento, diferenciación, efectos de red, costos de cambio, economías de escala y aprendizaje. Investigación de usuarios, jobs-to-be-done, product-market fit, willingness to pay, pricing, unit economics, canales de adquisición, ventas B2B/B2C, distribución, estrategia de lanzamiento, métricas de tracción y narrativa para inversores, usuarios y aliados."
+content_en = "Competitive analysis, segmentation, market sizing, beachhead market, positioning, differentiation, network effects, switching costs, economies of scale and learning. User research, jobs-to-be-done, product-market fit, willingness to pay, pricing, unit economics, acquisition channels, B2B/B2C sales, distribution, launch strategy, traction metrics, and narrative for investors, users, and partners."
 texts = [
   "Rumelt, Richard P. <em>Good Strategy Bad Strategy.</em> Crown Business, 2011.",
   "Christensen, Clayton M. <em>The Innovator's Dilemma.</em> Harvard Business Review Press, 1997.",
@@ -895,8 +898,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar instituciones que sobrevivan al contacto con personas reales. La materia donde los estudiantes sintetizan el diseño de mecanismos, la teoría organizacional, la economía política y el razonamiento legal en arquitectura institucional."
 objective_en = "To design institutions that survive contact with real people. The course where students synthesize mechanism design, organizational theory, political economy, and legal reasoning into institutional architecture."
-content_es = ""
-content_en = ""
+content_es = "Diagnóstico institucional: problema público o privado, actores, mandatos, recursos, restricciones legales, capacidades existentes y modos de falla. Diseño de reglas, incentivos, mecanismos de decisión, derechos de acceso, rendición de cuentas y enforcement. Gobernanza policéntrica, bienes comunes, diseño de mercados, procurement, regulación, legitimidad y captura. Diseño de monitoreo, métricas, auditoría, procedimientos de apelación, mantenimiento institucional y planes de transición. Cada estudiante produce una arquitectura institucional con supuestos explícitos, análisis de abusos, estrategia de implementación y defensa ante practicantes."
+content_en = "Institutional diagnosis: public or private problem, stakeholders, mandates, resources, legal constraints, existing capacities, and failure modes. Design of rules, incentives, decision mechanisms, access rights, accountability, and enforcement. Polycentric governance, commons, market design, procurement, regulation, legitimacy, and capture. Monitoring design, metrics, audit, appeal procedures, institutional maintenance, and transition plans. Each student produces an institutional architecture with explicit assumptions, abuse analysis, implementation strategy, and defense before practitioners."
 texts = [
   "Ostrom, Elinor. <em>Governing the Commons.</em> Cambridge University Press, 1990.",
   "Roth, Alvin E. <em>Who Gets What, and Why.</em> Houghton Mifflin Harcourt, 2015.",
@@ -924,8 +927,8 @@ position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Lograr cosas a través de otras personas cuando no tenés autoridad e información es imperfecta."
 objective_en = "To get things done through other people when you have no authority and information is imperfect."
-content_es = ""
-content_en = ""
+content_es = "Negociación distributiva e integrativa, BATNA, ZOPA, anclajes, concesiones, paquetes, compromisos creíbles y puntos focales. Negociación bajo información incompleta, asimetrías de poder, coaliciones, terceros, mediación y conflictos multiparte. Persuasión escrita y oral: framing, audiencia, evidencia, autoridad, confianza y timing. Liderazgo sin autoridad formal, conducción de reuniones difíciles, desacuerdo productivo, crisis communication y decisión bajo presión. Simulaciones con debrief: qué se intentó, qué funcionó, qué señales se leyeron mal y qué se haría distinto."
+content_en = "Distributive and integrative negotiation, BATNA, ZOPA, anchors, concessions, packages, credible commitments, and focal points. Negotiation under incomplete information, power asymmetries, coalitions, third parties, mediation, and multi-party conflict. Written and oral persuasion: framing, audience, evidence, authority, trust, and timing. Leadership without formal authority, running difficult meetings, productive disagreement, crisis communication, and decision under pressure. Simulations with debrief: what was attempted, what worked, which signals were misread, and what would change next time."
 texts = [
   "Fisher, Roger, William Ury, and Bruce Patton. <em>Getting to Yes.</em> Penguin Books, 2011.",
   "Cialdini, Robert B. <em>Influence: The Psychology of Persuasion.</em> Harper Business, 2006.",
@@ -1048,8 +1051,8 @@ position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Dominar la escritura analítica y argumentativa en español. Para personas que operarán en América Latina, la capacidad de escribir con precisión en español no es secundaria, es central."
 objective_en = "To master analytical and argumentative writing in Spanish. For people who will operate in Latin America, the ability to write precisely in Spanish is not secondary, it is central."
-content_es = ""
-content_en = ""
+content_es = "Ensayo analítico, memo ejecutivo, nota técnica, informe institucional, discurso breve, columna pública y explicación para audiencias no especialistas. Estructura argumental, tesis, evidencia, ritmo, precisión léxica, traducción conceptual entre jerga técnica y español público, edición línea por línea y reescritura profunda. Uso de IA para borradores, contraargumentos y edición, con responsabilidad completa del autor. El portfolio exige varias versiones de un mismo texto, registro de decisiones editoriales y defensa oral de estilo, estructura y evidencia."
+content_en = "Analytical essay, executive memo, technical note, institutional report, short speech, public column, and explanation for non-specialist audiences. Argument structure, thesis, evidence, rhythm, lexical precision, conceptual translation between technical jargon and public Spanish, line editing, and deep revision. AI use for drafts, counterarguments, and editing, with full authorial responsibility. The portfolio requires multiple versions of the same text, an editorial decision log, and oral defense of style, structure, and evidence."
 texts = [
   "Borges, Jorge Luis. Selected essays on precision and style.",
   "Walsh, Rodolfo. Selected political and journalistic writing.",
@@ -1070,8 +1073,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo las organizaciones realmente funcionan, y liderar personas dentro de ellas. Primera mitad: analítica. Segunda mitad: práctica."
 objective_en = "To understand how organizations actually work, and to lead people within them. First half: analytical. Second half: practical."
-content_es = ""
-content_en = ""
+content_es = "La organización como sistema de coordinación: objetivos, información, autoridad, incentivos, cultura, estructura informal y restricciones de ejecución. Principal-agente, costos de coordinación, delegación, hiring, onboarding, performance management, diseño de reuniones, cadencias operativas, métricas internas y postmortems. Dinámica de equipos: confianza, conflicto, accountability, estándares, burnout, aprendizaje y toma de decisiones. Casos de organizaciones que escalan, se burocratizan, se fragmentan o fallan bajo presión. La segunda mitad aplica diagnóstico e intervención sobre equipos reales o simulados."
+content_en = "The organization as a coordination system: goals, information, authority, incentives, culture, informal structure, and execution constraints. Principal-agent problems, coordination costs, delegation, hiring, onboarding, performance management, meeting design, operating cadences, internal metrics, and postmortems. Team dynamics: trust, conflict, accountability, standards, burnout, learning, and decision-making. Cases of organizations that scale, bureaucratize, fragment, or fail under pressure. The second half applies diagnosis and intervention to real or simulated teams."
 notes_html_es = "La fusión es natural: no se puede liderar lo que no se entiende estructuralmente, y no se pueden diagnosticar organizaciones sin herramientas de intervención. Principal-agente explica <strong>por qué</strong> tu equipo no está haciendo lo que esperás; el liderazgo situacional te dice <strong>qué hacer al respecto</strong>. Negociación cubre la interacción entre pares; esta materia cubre la responsabilidad asimétrica, cuando uno toma la decisión y otros viven con las consecuencias."
 notes_html_en = "The fusion is natural: you cannot lead what you don't structurally understand, and you cannot diagnose organizations without intervention tools. Principal-agent explains <strong>why</strong> your team isn't doing what you expect; situational leadership tells you <strong>what to do about it</strong>. Negociación covers peer-to-peer interaction; this course covers asymmetric responsibility, when you make the decision and others live with the consequences."
 texts = [
@@ -1104,8 +1107,8 @@ position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender los límites fundamentales de lo que puede ser comunicado, comprimido e inferido. La materia que conecta la matemática del Año 1 con sus límites teóricos."
 objective_en = "To understand the fundamental limits of what can be communicated, compressed, and inferred. The course that connects Year 1 mathematics with its theoretical limits."
-content_es = ""
-content_en = ""
+content_es = "Entropía, información mutua, divergencia KL, compresión, codificación, ruido, capacidad de canal y límites de transmisión. Inferencia como comunicación: priors, likelihood, actualización, minimum description length y la conexión entre compresión y aprendizaje. Señales en sistemas sociales y económicos: signaling, cheap talk, credibilidad, reputación, selección adversa y diseño de mecanismos informativos. Aplicaciones a ML, criptografía, redes, mercados, comunicación institucional y medición bajo ruido. La materia enfatiza límites: qué no puede inferirse, comprimirse o transmitirse sin pérdida."
+content_en = "Entropy, mutual information, KL divergence, compression, coding, noise, channel capacity, and transmission limits. Inference as communication: priors, likelihood, updating, minimum description length, and the connection between compression and learning. Signals in social and economic systems: signaling, cheap talk, credibility, reputation, adverse selection, and design of information mechanisms. Applications to ML, cryptography, networks, markets, institutional communication, and measurement under noise. The course emphasizes limits: what cannot be inferred, compressed, or transmitted without loss."
 texts = [
   "Cover, Thomas M., and Joy A. Thomas. <em>Elements of Information Theory.</em> 2nd ed. Wiley, 2006.",
   "MacKay, David J. C. <em>Information Theory, Inference, and Learning Algorithms.</em> Cambridge University Press, 2003. inference.org.uk.",
@@ -1130,8 +1133,8 @@ position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar productos que la gente realmente use. En un mundo con AGI, el cuello de botella se mueve de ¿podemos construirlo? a ¿estamos construyendo lo correcto?"
 objective_en = "To design products that people actually use. In a world with AI, the bottleneck moves from \"can we build it?\" to \"are we building the right thing?\""
-content_es = ""
-content_en = ""
+content_es = "Investigación de usuarios, entrevistas, observación contextual, jobs-to-be-done, journey maps, personas como hipótesis, definición de problemas y criterios de éxito. Arquitectura de información, flujos, interacción, prototipado de baja y alta fidelidad, usabilidad, accesibilidad, onboarding, empty states, errores, feedback, confianza y diseño para fallas. Analítica de producto, experimentos, métricas de activación, retención y conversión, instrumentación y aprendizaje iterativo. Diseño con IA: copilotos, interfaces conversacionales, límites de automatización, explicación, control del usuario y responsabilidad por decisiones automatizadas."
+content_en = "User research, interviews, contextual observation, jobs-to-be-done, journey maps, personas as hypotheses, problem definition, and success criteria. Information architecture, flows, interaction, low- and high-fidelity prototyping, usability, accessibility, onboarding, empty states, errors, feedback, trust, and design for failure. Product analytics, experiments, activation, retention, and conversion metrics, instrumentation, and iterative learning. Design with AI: copilots, conversational interfaces, limits of automation, explanation, user control, and responsibility for automated decisions."
 texts = [
   "Norman, Donald A. <em>The Design of Everyday Things.</em> Basic Books, 2013.",
   "Krug, Steve. <em>Don't Make Me Think.</em> 3rd ed. New Riders, 2014.",
@@ -1157,8 +1160,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "El argumento fundacional del programa, dado explícitamente después de tres años de haberlo vivido. Qué cambia con la IA, qué no cambia, qué es el juicio, por qué la legitimidad importa."
 objective_en = "The founding argument of the program, given explicitly after three years of living it. What AI changes, what it does not, what judgment is, why legitimacy matters."
-content_es = ""
-content_en = ""
+content_es = "Síntesis final del programa. Qué automatiza la IA y qué desplaza en la economía del conocimiento. Juicio: decisión bajo incertidumbre, objetivos mal especificados, responsabilidad por consecuencias y capacidad de decir no. Legitimidad: confianza, autoridad, explicación pública, instituciones y consentimiento de los afectados. Alineamiento, fallas de especificación, delegación a sistemas opacos, automation bias y accountability. Discusión de casos: sistemas públicos automatizados, modelos fundacionales, decisiones médicas o financieras, infraestructura crítica y ventures construidos en Studio VI. El seminario culmina en una posición defendida públicamente sobre qué debe seguir siendo responsabilidad humana."
+content_en = "Final synthesis of the program. What AI automates and what it displaces in the knowledge economy. Judgment: decision under uncertainty, misspecified objectives, responsibility for consequences, and the capacity to say no. Legitimacy: trust, authority, public explanation, institutions, and consent of affected people. Alignment, specification failures, delegation to opaque systems, automation bias, and accountability. Case discussions: automated public systems, foundation models, medical or financial decisions, critical infrastructure, and ventures built in Studio VI. The seminar culminates in a publicly defended position on what must remain a human responsibility."
 texts = [
   "Russell, Stuart. <em>Human Compatible.</em> Viking, 2019.",
   "Dreyfus, Hubert L. <em>What Computers Can't Do.</em> Harper & Row, 1972.",
