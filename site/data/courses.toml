@@ -676,8 +676,28 @@ evaluation_secondaries = [
 ]
 
 [[course.extra_section]]
-label = "Canon de análisis / Primary cultural canon"
-html = """
+label_es = "Canon de análisis"
+label_en = "Primary cultural canon"
+html_es = """
+<p><strong>Anime:</strong></p>
+  <ul>
+    <li><em>Neon Genesis Evangelion</em>, tecnología, instituciones disfuncionales (NERV), responsabilidad individual bajo presión institucional y límites del control humano sobre sistemas que no entendemos.</li>
+    <li><em>Serial Experiments Lain</em>, identidad, realidad y disolución de la frontera entre lo digital y lo humano; filosofía de la mente disfrazada de anime.</li>
+    <li><em>Ghost in the Shell</em>, conciencia en un mundo de cuerpos artificiales; conecta directamente con Epistemología y los Límites de la IA.</li>
+    <li><em>Ergo Proxy</em>, sociedades post-colapso, gobernanza autoritaria y qué significa ser humano cuando las máquinas son conscientes.</li>
+    <li><em>Akira</em>, tecnología, poder estatal y destrucción.</li>
+  </ul>
+  <p><strong>Ciencia ficción:</strong></p>
+  <ul>
+    <li>Asimov, <em>Foundation</em>, psicohistoria: ¿puede predecirse y diseñarse el comportamiento de sistemas complejos a escala social? Conecta directamente con Sistemas Complejos.</li>
+    <li>Asimov, "The Last Question", entropía, información y límites de la computación.</li>
+    <li>Gibson, <em>Neuromancer</em>, inventó el concepto de ciberespacio; define la estética de la relación humano-máquina.</li>
+    <li>Dick, <em>Do Androids Dream of Electric Sheep?</em> / <em>Blade Runner</em>, la empatía como prueba de humanidad.</li>
+    <li><em>Black Mirror</em> (episodios seleccionados), consecuencias no intencionales de la tecnología.</li>
+    <li><em>The Matrix</em>, simulación, realidad y la Habitación China convertida en cine.</li>
+  </ul>
+"""
+html_en = """
 <p><strong>Anime:</strong></p>
   <ul>
     <li><em>Neon Genesis Evangelion</em>, technology, dysfunctional institutions (NERV), individual responsibility under institutional pressure, the limits of human control over systems we don't understand.</li>
@@ -695,7 +715,6 @@ html = """
     <li><em>Black Mirror</em> (selected episodes), unintended consequences of technology.</li>
     <li><em>The Matrix</em>, simulation, reality, and the Chinese Room turned into film.</li>
   </ul>
-  <p><em>These works are not entertainment: they are cultural artifacts that articulate the tensions between technology, institutions, identity, and power in ways academic papers cannot. AI writes convincing-but-shallow cultural analyses, students expose missing assumptions and connect cultural narratives to systemic stability.</em></p>
 """
 
 [[course]]

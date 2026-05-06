@@ -23,8 +23,18 @@
 
   {% if course.extra_section %}
     {% for x in course.extra_section %}
-      <div class="course-section-label">{{ x.label | safe }}</div>
-      {{ x.html | safe }}
+      {% if x.label_es or x.label_en %}
+        {% if x.label_es %}<div class="course-section-label" lang="es">{{ x.label_es | safe }}</div>{% endif %}
+        {% if x.label_en %}<div class="course-section-label" lang="en">{{ x.label_en | safe }}</div>{% endif %}
+      {% else %}
+        <div class="course-section-label">{{ x.label | safe }}</div>
+      {% endif %}
+      {% if x.html_es or x.html_en %}
+        {% if x.html_es %}<div lang="es">{{ x.html_es | safe }}</div>{% endif %}
+        {% if x.html_en %}<div lang="en">{{ x.html_en | safe }}</div>{% endif %}
+      {% else %}
+        {{ x.html | safe }}
+      {% endif %}
     {% endfor %}
   {% endif %}
 
@@ -54,7 +64,14 @@
 
   <div class="course-section-label">Evaluación / Evaluation</div>
   <p>
-    <span class="eval-badge">{{ course.evaluation_primary }}</span>{% for s in course.evaluation_secondaries %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
+    {% set primary_parts = course.evaluation_primary | split(pat=",") %}
+    <span class="eval-badge" lang="es">{% if course.evaluation_primary == "Defined by supervising faculty" %}A definir{% else %}{{ primary_parts | first }}{% endif %}</span>
+    <span class="eval-badge" lang="en">{{ course.evaluation_primary }}</span>
+    {% for s in course.evaluation_secondaries %}
+      {% set secondary_parts = s | split(pat=",") %}
+      <span class="eval-secondary" lang="es">{{ secondary_parts | first }}</span>
+      <span class="eval-secondary" lang="en">{{ s }}</span>
+    {% endfor %}
   </p>
 </div>
 {% endmacro card %}
