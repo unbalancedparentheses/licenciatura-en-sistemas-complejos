@@ -178,8 +178,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonar rigurosamente sobre incertidumbre, evidencia e inferencia. La base cuantitativa que sostiene ML, econometría, procesos estocásticos y toda decisión bajo incertidumbre."
 objective_en = "To reason rigorously about uncertainty, evidence, and inference. The quantitative foundation on which ML, econometrics, stochastic processes, and every decision under uncertainty rests."
-content_es = "Espacios de probabilidad, variables aleatorias, distribuciones, esperanza y varianza, teorema central del límite, inferencia bayesiana, estimación, testing de hipótesis, intervalos de confianza."
-content_en = "Probability spaces, random variables, distributions, expectation and variance, central limit theorem, Bayesian inference, estimation, hypothesis testing, confidence intervals."
+content_es = "Espacios de probabilidad, variables aleatorias, distribuciones, esperanza y varianza, teorema central del límite, inferencia bayesiana, estimación, testing de hipótesis, intervalos de confianza. Entropía, información mutua y divergencia KL como medidas de incertidumbre, evidencia y actualización."
+content_en = "Probability spaces, random variables, distributions, expectation and variance, central limit theorem, Bayesian inference, estimation, hypothesis testing, confidence intervals. Entropy, mutual information, and KL divergence as measures of uncertainty, evidence, and updating."
 texts = [
   "Blitzstein, Joseph K., and Jessica Hwang. <em>Introduction to Probability.</em> 2nd ed. CRC Press, 2019.",
   "Wasserman, Larry. <em>All of Statistics.</em> Springer, 2004.",
@@ -287,16 +287,18 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir, entrenar, evaluar, desplegar y monitorear modelos de ML, y saber cuándo no usarlos. Los fundamentos matemáticos fueron establecidos en bloques anteriores. Este bloque enseña la ingeniería."
 objective_en = "To build, train, evaluate, deploy, and monitor ML models, and to know when not to use them. The mathematical foundations were established in earlier blocks. This block teaches the engineering."
-content_es = "Pipelines de datos, feature engineering, entrenamiento, evaluación, overfitting, regularización, deployment, monitoreo, distribution shift, modos de falla en producción."
-content_en = "Data pipelines, feature engineering, training pipelines, evaluation methodology, overfitting, regularization, deployment constraints, model monitoring, distribution shift, production failure modes."
+content_es = "Pipelines de datos, feature engineering, entrenamiento, evaluación, overfitting, regularización, deployment y monitoreo. Versionado de datos y modelos, evaluation pipelines, validación offline/online, drift detection, rollback, privacidad, seguridad, fairness checks, model cards, incident response para fallas de modelo y criterios para decidir cuándo no usar ML."
+content_en = "Data pipelines, feature engineering, training pipelines, evaluation methodology, overfitting, regularization, deployment, and monitoring. Data and model versioning, evaluation pipelines, offline/online validation, drift detection, rollback, privacy, security, fairness checks, model cards, incident response for model failures, and criteria for deciding when not to use ML."
 texts = [
   "Bishop, Christopher M. <em>Pattern Recognition and Machine Learning.</em> Springer, 2006.",
   "Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. <em>The Elements of Statistical Learning.</em> 2nd ed. Springer, 2009.",
   "Géron, Aurélien. <em>Hands-On Machine Learning.</em> 3rd ed. O'Reilly, 2022.",
+  "Huyen, Chip. <em>Designing Machine Learning Systems.</em> O'Reilly, 2022.",
 ]
 references = [
   { name = "MIT 6.3900 Introduction to Machine Learning", url = "https://introml.mit.edu/" },
   { name = "Stanford CS 229 Machine Learning", url = "https://cs229.stanford.edu" },
+  { name = "Stanford CS 329S Machine Learning Systems Design", url = "https://stanford-cs329s.github.io/" },
   { name = "Caltech CMS 155 Machine Learning and Data Mining", url = "https://catalog.caltech.edu/current/courses/department/CMS" },
   { name = "Andrej Karpathy: Neural Networks Zero to Hero, YouTube", url = "https://karpathy.ai/zero-to-hero.html" },
 ]
@@ -353,8 +355,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonamiento estructural sobre búsqueda, restricciones y los límites de la computación. La pregunta central: qué problemas son resolubles, a qué costo, y qué significa que un problema sea difícil."
 objective_en = "Structural reasoning about search, constraints, and the limits of computation. The central question: which problems are solvable, at what cost, and what does it mean for a problem to be hard."
-content_es = "Grafos, programación dinámica, clases de complejidad, límites de computabilidad, programación lineal, optimización convexa y dualidad."
-content_en = "Graphs, dynamic programming, complexity classes, computability limits, linear programming, convex optimization and duality."
+content_es = "Grafos, programación dinámica, clases de complejidad, límites de computabilidad, programación lineal, optimización convexa y dualidad. Optimización aplicada: programación entera, flujos en redes, matching, scheduling, ruteo, colas, asignación de recursos, logística, relajaciones, heurísticas, sensibilidad y formulación de problemas operativos reales."
+content_en = "Graphs, dynamic programming, complexity classes, computability limits, linear programming, convex optimization and duality. Applied optimization: integer programming, network flows, matching, scheduling, routing, queues, resource allocation, logistics, relaxations, heuristics, sensitivity, and formulation of real operational problems."
 texts = [
   "Cormen, Thomas H., et al. <em>Introduction to Algorithms.</em> 4th ed. MIT Press, 2022.",
   "Boyd, Stephen, and Lieven Vandenberghe. <em>Convex Optimization.</em> Cambridge University Press, 2004.",
@@ -363,6 +365,7 @@ texts = [
 references = [
   { name = "MIT 6.1210 Introduction to Algorithms", url = "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" },
   { name = "MIT 6.C571 Optimization Methods", url = "https://optimization.mit.edu/classes/" },
+  { name = "MIT 15.053 Optimization Methods in Management Science", url = "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/" },
   { name = "Stanford CS 161 Design and Analysis of Algorithms", url = "https://web.stanford.edu/class/cs161/" },
   { name = "Stanford MS&E 211 Introduction to Optimization", url = "https://explorecourses.stanford.edu/search?q=MS%26E+211" },
 ]
@@ -381,8 +384,8 @@ position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Pasar de correlación a causalidad. La pregunta central: bajo qué condiciones se puede afirmar que X causa Y, y qué estrategia de identificación lo garantiza."
 objective_en = "To move from correlation to causality. The central question: under what conditions can one claim that X causes Y, and what identification strategy guarantees it."
-content_es = "Regresión, variables instrumentales, diferencias en diferencias, regresión discontinua, diseño experimental."
-content_en = "Regression, instrumental variables, differences in differences, regression discontinuity, experimental design."
+content_es = "Regresión, variables instrumentales, diferencias en diferencias, regresión discontinua, diseño experimental. A/B testing, poder estadístico, tamaño muestral, múltiples hipótesis, sesgo de medición, validez externa, encuestas, diseño de instrumentos, investigación cualitativa como evidencia, ética de experimentos y lectura crítica de resultados empíricos."
+content_en = "Regression, instrumental variables, differences in differences, regression discontinuity, experimental design. A/B testing, statistical power, sample size, multiple hypotheses, measurement bias, external validity, surveys, instrument design, qualitative research as evidence, ethics of experiments, and critical reading of empirical results."
 texts = [
   "Angrist, Joshua D., and Jörn-Steffen Pischke. <em>Mostly Harmless Econometrics.</em> Princeton University Press, 2009.",
   "Cunningham, Scott. <em>Causal Inference: The Mixtape.</em> Yale University Press, 2021. mixtape.scunning.com.",
@@ -616,8 +619,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo la regulación, la tributación, la responsabilidad legal y las políticas públicas determinan lo que se puede construir."
 objective_en = "To understand how regulation, taxation, legal liability, and public policy determine what can be built."
-content_es = "Marcos regulatorios, regímenes de responsabilidad, estrategia de compliance, incentivos institucionales, la interacción entre derecho y arquitectura técnica. Los estudiantes trabajan con marcos en conflicto, Hayek junto a Polanyi, Land junto a Srnicek y Williams."
-content_en = "Regulatory frameworks, liability regimes, compliance strategy, institutional incentives, the interaction between law and technical architecture. Students work with conflicting frameworks, Hayek alongside Polanyi, Land alongside Srnicek and Williams."
+content_es = "Marcos regulatorios, regímenes de responsabilidad, estrategia de compliance, incentivos institucionales, la interacción entre derecho y arquitectura técnica. Derecho operativo para sistemas tecnológicos: protección de datos, privacidad, propiedad intelectual, licencias open-source, contratos, procurement, responsabilidad por producto, protección del consumidor, regulación de plataformas, AI governance, auditoría, reporting y compliance by design. Los estudiantes trabajan con marcos en conflicto, Hayek junto a Polanyi, Land junto a Srnicek y Williams."
+content_en = "Regulatory frameworks, liability regimes, compliance strategy, institutional incentives, the interaction between law and technical architecture. Operational law for technological systems: data protection, privacy, intellectual property, open-source licensing, contracts, procurement, product liability, consumer protection, platform regulation, AI governance, audit, reporting, and compliance by design. Students work with conflicting frameworks, Hayek alongside Polanyi, Land alongside Srnicek and Williams."
 texts = [
   "Acemoglu, Daron, and James A. Robinson. <em>The Narrow Corridor.</em> Penguin Press, 2019.",
   "Lessig, Lawrence. <em>Code: And Other Laws of Cyberspace.</em> Basic Books, 1999.",
@@ -1098,29 +1101,32 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "informacion-senales-y-comunicacion"
-title_es = "Información, Señales y Comunicación"
-title_en = "Information, Signals and Communication"
+slug = "sistemas-de-datos"
+title_es = "Sistemas de Datos"
+title_en = "Data Systems"
 year = 3
 block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender los límites fundamentales de lo que puede ser comunicado, comprimido e inferido. La materia que conecta la matemática del Año 1 con sus límites teóricos."
-objective_en = "To understand the fundamental limits of what can be communicated, compressed, and inferred. The course that connects Year 1 mathematics with its theoretical limits."
-content_es = "Entropía, información mutua, divergencia KL, compresión, codificación, ruido, capacidad de canal y límites de transmisión. Inferencia como comunicación: priors, likelihood, actualización, minimum description length y la conexión entre compresión y aprendizaje. Señales en sistemas sociales y económicos: signaling, cheap talk, credibilidad, reputación, selección adversa y diseño de mecanismos informativos. Aplicaciones a ML, criptografía, redes, mercados, comunicación institucional y medición bajo ruido. La materia enfatiza límites: qué no puede inferirse, comprimirse o transmitirse sin pérdida."
-content_en = "Entropy, mutual information, KL divergence, compression, coding, noise, channel capacity, and transmission limits. Inference as communication: priors, likelihood, updating, minimum description length, and the connection between compression and learning. Signals in social and economic systems: signaling, cheap talk, credibility, reputation, adverse selection, and design of information mechanisms. Applications to ML, cryptography, networks, markets, institutional communication, and measurement under noise. The course emphasizes limits: what cannot be inferred, compressed, or transmitted without loss."
+objective_es = "Diseñar sistemas donde los datos sobrevivan al uso real: almacenamiento, consulta, transacciones, recuperación, replicación, migraciones, gobernanza y operación. La materia que hace explícito el sustrato que todo venture, servicio público, sistema de ML y dashboard de monitoreo necesita."
+objective_en = "To design systems where data survives real use: storage, querying, transactions, recovery, replication, migrations, governance, and operations. The course that makes explicit the substrate every venture, public service, ML system, and monitoring dashboard needs."
+content_es = "Modelo relacional, SQL avanzado, modelado de datos, normalización y diseño de esquemas. Índices, query planning, almacenamiento, logs, transacciones, aislamiento, concurrencia, recovery y backups. Replicación, particionamiento, consistencia, sistemas analíticos vs operacionales, data warehouses, lakehouses, pipelines, streaming, calidad de datos, linaje, migraciones, observabilidad, control de acceso, privacidad, retención, gobernanza y operación de datos bajo incidentes."
+content_en = "Relational model, advanced SQL, data modeling, normalization, and schema design. Indexes, query planning, storage, logs, transactions, isolation, concurrency, recovery, and backups. Replication, partitioning, consistency, analytical vs operational systems, data warehouses, lakehouses, pipelines, streaming, data quality, lineage, migrations, observability, access control, privacy, retention, governance, and data operations under incidents."
 texts = [
-  "Cover, Thomas M., and Joy A. Thomas. <em>Elements of Information Theory.</em> 2nd ed. Wiley, 2006.",
-  "MacKay, David J. C. <em>Information Theory, Inference, and Learning Algorithms.</em> Cambridge University Press, 2003. inference.org.uk.",
+  "Kleppmann, Martin. <em>Designing Data-Intensive Applications.</em> O'Reilly, 2017.",
+  "Ramakrishnan, Raghu, and Johannes Gehrke. <em>Database Management Systems.</em> 3rd ed. McGraw-Hill, 2003.",
+  "Silberschatz, Abraham, Henry F. Korth, and S. Sudarshan. <em>Database System Concepts.</em> 7th ed. McGraw-Hill, 2019.",
+  { citation = "Hellerstein, Joseph M., and Michael Stonebraker, eds. <em>Readings in Database Systems.</em> 5th ed. 2015.", note_es = "Selecciones sobre arquitectura, transacciones, sistemas distribuidos y evolución del campo.", note_en = "Selections on architecture, transactions, distributed systems, and the evolution of the field." },
 ]
 references = [
-  { name = "Caltech EE/Ma/CS/IDS 136 Information Theory", url = "https://catalog.caltech.edu/current/courses/department/EE" },
-  { name = "MIT 6.441 Information Theory", url = "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/" },
-  { name = "Stanford EE 376A Information Theory", url = "https://web.stanford.edu/class/ee376a/" },
+  { name = "CMU 15-445/645 Database Systems", url = "https://15445.courses.cs.cmu.edu/" },
+  { name = "MIT 6.5830 Database Systems", url = "https://dsg.csail.mit.edu/6.5830/" },
+  { name = "Stanford CS 145 Data Management and Data Systems", url = "https://cs145-fa24.github.io/" },
+  { name = "Berkeley CS 186 Introduction to Database Systems", url = "https://cs186berkeley.net/" },
 ]
-evaluation_primary = "WE, Written exam"
+evaluation_primary = "LC, Live data-system design and debugging session"
 evaluation_secondaries = [
-  "TP, Problem sets",
+  "TP, Schema, migration, and reliability project",
 ]
 
 [[course]]

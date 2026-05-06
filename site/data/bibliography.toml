@@ -302,6 +302,14 @@ text = "Kleppmann, Martin. <em>Designing Data-Intensive Applications.</em> O'Rei
 url = "https://dataintensive.net/"
 
 [[entry]]
+text = "Hellerstein, Joseph M., and Michael Stonebraker, eds. <em>Readings in Database Systems.</em> 5th ed., 2015."
+url = "https://www.redbook.io/"
+
+[[entry]]
+text = "Huyen, Chip. <em>Designing Machine Learning Systems.</em> O'Reilly, 2022."
+url = "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/"
+
+[[entry]]
 text = "Krug, Steve. <em>Don't Make Me Think, Revisited.</em> 3rd ed. New Riders, 2014."
 url = "https://sensible.com/dont-make-me-think/"
 
@@ -396,6 +404,10 @@ url = "https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-
 [[entry]]
 text = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000."
 url = "https://www.pearson.com/en-us/subject-catalog/p/topology-classic-version/P200000006299"
+
+[[entry]]
+text = "Ramakrishnan, Raghu, and Johannes Gehrke. <em>Database Management Systems.</em> 3rd ed. McGraw-Hill, 2003."
+url = "https://pages.cs.wisc.edu/~dbbook/"
 
 [[entry]]
 text = "Nisan, Noam, et al. <em>Algorithmic Game Theory.</em> Cambridge University Press, 2007."
@@ -504,6 +516,10 @@ url = "https://mitpress.mit.edu/9780262690867/models-of-bounded-rationality/"
 [[entry]]
 text = "Simon, Herbert A. <em>The Sciences of the Artificial.</em> 3rd ed. MIT Press, 1996."
 url = "https://mitpress.mit.edu/9780262691918/the-sciences-of-the-artificial/"
+
+[[entry]]
+text = "Silberschatz, Abraham, Henry F. Korth, and S. Sudarshan. <em>Database System Concepts.</em> 7th ed. McGraw-Hill, 2019."
+url = "https://www.db-book.com/"
 
 [[entry]]
 text = "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012."
