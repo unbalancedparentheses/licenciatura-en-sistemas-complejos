@@ -805,31 +805,37 @@ html_en = """
 """
 
 [[course]]
-slug = "estrategia-producto-y-salida-al-mercado"
-title_es = "Estrategia, Producto y Salida al Mercado"
-title_en = "Strategy, Product and Go-to-Market"
+slug = "diseno-y-estrategia-de-producto"
+title_es = "Diseño y Estrategia de Producto"
+title_en = "Product Strategy and Design"
 year = 3
 block = "A"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Evaluar un mercado, diseñar un producto, posicionarlo y lanzarlo con una teoría explícita de adopción, distribución y ventaja."
-objective_en = "To evaluate a market, design a product, position it, and launch it with an explicit theory of adoption, distribution, and advantage."
-content_es = "Análisis competitivo, segmentación, tamaño de mercado, beachhead market, posicionamiento, diferenciación, efectos de red, costos de cambio, economías de escala y aprendizaje. Investigación de usuarios, jobs-to-be-done, product-market fit, willingness to pay, pricing, unit economics, canales de adquisición, ventas B2B/B2C, distribución, estrategia de lanzamiento, métricas de tracción y narrativa para inversores, usuarios y aliados."
-content_en = "Competitive analysis, segmentation, market sizing, beachhead market, positioning, differentiation, network effects, switching costs, economies of scale and learning. User research, jobs-to-be-done, product-market fit, willingness to pay, pricing, unit economics, acquisition channels, B2B/B2C sales, distribution, launch strategy, traction metrics, and narrative for investors, users, and partners."
+objective_es = "Decidir qué construir y para quién, y diseñarlo de modo que la gente lo use. La materia cubre la dimensión estratégica (mercado, posicionamiento, distribución, ventaja) y la dimensión de diseño (investigación de usuarios, prototipado, interacción, experimentación) como una sola disciplina, porque en la práctica lo son: estrategia sin diseño produce productos que nadie usa, diseño sin estrategia produce productos que no escalan."
+objective_en = "To decide what to build and for whom, and to design it so people actually use it. The course covers strategy (market, positioning, distribution, advantage) and design (user research, prototyping, interaction, experimentation) as a single discipline, because in practice they are: strategy without design produces products no one uses, design without strategy produces products that do not scale."
+content_es = "Análisis competitivo, segmentación, tamaño de mercado, beachhead market, posicionamiento, diferenciación, efectos de red, costos de cambio, economías de escala y aprendizaje, unit economics, pricing, canales, distribución y estrategia de lanzamiento. Investigación de usuarios, entrevistas, observación contextual, jobs-to-be-done, journey maps, personas como hipótesis, definición de problemas y criterios de éxito. Arquitectura de información, flujos, prototipado, usabilidad, accesibilidad, onboarding, manejo de errores, diseño para fallas y diseño de interfaces con IA. Analítica de producto, experimentación, A/B testing y aprendizaje iterativo. Narrativa para inversores, usuarios y aliados."
+content_en = "Competitive analysis, segmentation, market sizing, beachhead market, positioning, differentiation, network effects, switching costs, economies of scale and learning, unit economics, pricing, channels, distribution, and launch strategy. User research, interviews, contextual observation, jobs-to-be-done, journey maps, personas as hypotheses, problem definition, and success criteria. Information architecture, flows, prototyping, usability, accessibility, onboarding, error handling, design for failure, and interface design with AI. Product analytics, experimentation, A/B testing, and iterative learning. Narrative for investors, users, and partners."
+notes_html_es = "La fusión es deliberada: la separación habitual entre estrategia y diseño es un artefacto de cómo están organizadas las business schools y las design schools, no un reflejo de cómo se construyen productos reales. El equipo que decide qué construir es el mismo que decide cómo construirlo. Esta materia entrena ambas decisiones a la vez. Conecta directamente con Studio VI."
+notes_html_en = "The fusion is deliberate: the usual split between strategy and design is an artifact of how business schools and design schools are organized, not how real products are built. The team that decides what to build is the team that decides how to build it. This course trains both decisions together. Connects directly with Studio VI."
 texts = [
   "Rumelt, Richard P. <em>Good Strategy Bad Strategy.</em> Crown Business, 2011.",
   "Christensen, Clayton M. <em>The Innovator's Dilemma.</em> Harvard Business Review Press, 1997.",
   "Ries, Eric. <em>The Lean Startup.</em> Crown Business, 2011.",
-  "Bryar, Colin, and Bill Carr. <em>Working Backwards.</em> St. Martin's Press, 2021.",
+  "Norman, Donald A. <em>The Design of Everyday Things.</em> Basic Books, 2013.",
+  "Cooper, Alan, Robert Reimann, and David Cronin. <em>About Face: The Essentials of Interaction Design.</em> 4th ed. Wiley, 2014.",
+  { citation = "Bryar, Colin, and Bill Carr. <em>Working Backwards.</em> St. Martin's Press, 2021.", note_es = "Cómo Amazon une estrategia, escritura, mecanismos operativos y diseño de producto en una sola práctica.", note_en = "How Amazon unifies strategy, writing, operating mechanisms, and product design as one practice." },
 ]
 references = [
   { name = "Stanford CS 183 Startup", url = "https://startupclass.samaltman.com/" },
+  { name = "Stanford d.school Design Thinking", url = "https://dschool.stanford.edu/" },
   { name = "MIT 15.835 Entrepreneurial Marketing", url = "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/" },
-  { name = "Harvard Business School Strategy", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
+  { name = "MIT Integrated Design and Management", url = "https://idm.mit.edu/" },
+  { name = "Carnegie Mellon Human-Computer Interaction", url = "https://hcii.cmu.edu/" },
 ]
-evaluation_primary = "OD, Defense of strategic analysis and market entry plan"
+evaluation_primary = "PD, Public defense of strategy and product with usability evidence"
 evaluation_secondaries = [
-  "TP, Strategic analysis built with AI",
+  "TP, Strategic and design portfolio built with AI",
 ]
 
 [[course]]
@@ -921,32 +927,36 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "negociacion-persuasion-y-liderazgo"
-title_es = "Negociación, Persuasión y Liderazgo"
-title_en = "Negotiation, Persuasion and Leadership"
+slug = "liderazgo-negociacion-y-coordinacion"
+title_es = "Liderazgo, Negociación y Coordinación"
+title_en = "Leadership, Negotiation and Coordination"
 year = 3
 block = "B"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Lograr cosas a través de otras personas cuando no tenés autoridad e información es imperfecta."
-objective_en = "To get things done through other people when you have no authority and information is imperfect."
-content_es = "Negociación distributiva e integrativa, BATNA, ZOPA, anclajes, concesiones, paquetes, compromisos creíbles y puntos focales. Negociación bajo información incompleta, asimetrías de poder, coaliciones, terceros, mediación y conflictos multiparte. Persuasión escrita y oral: framing, audiencia, evidencia, autoridad, confianza y timing. Liderazgo sin autoridad formal, conducción de reuniones difíciles, desacuerdo productivo, crisis communication y decisión bajo presión. Simulaciones con debrief: qué se intentó, qué funcionó, qué señales se leyeron mal y qué se haría distinto."
-content_en = "Distributive and integrative negotiation, BATNA, ZOPA, anchors, concessions, packages, credible commitments, and focal points. Negotiation under incomplete information, power asymmetries, coalitions, third parties, mediation, and multi-party conflict. Written and oral persuasion: framing, audience, evidence, authority, trust, and timing. Leadership without formal authority, running difficult meetings, productive disagreement, crisis communication, and decision under pressure. Simulations with debrief: what was attempted, what worked, which signals were misread, and what would change next time."
+objective_es = "Lograr cosas a través de otras personas cuando no tenés autoridad y la información es imperfecta, y coordinar organizaciones cuando los incentivos no se alinean solos. La materia combina la habilidad interpersonal de la negociación con la mirada estructural sobre cómo funcionan los equipos y las organizaciones."
+objective_en = "To get things done through other people when you have no authority and information is imperfect, and to coordinate organizations when incentives do not align on their own. The course combines interpersonal skill in negotiation with a structural view of how teams and organizations work."
+content_es = "Negociación distributiva e integrativa, BATNA, ZOPA, anclajes, concesiones, paquetes, compromisos creíbles y puntos focales. Negociación bajo información incompleta, asimetrías de poder, coaliciones, mediación y conflictos multiparte. Persuasión escrita y oral: framing, audiencia, evidencia, autoridad, confianza y timing. Liderazgo sin autoridad formal, conducción de reuniones difíciles, desacuerdo productivo y crisis communication. La organización como sistema de coordinación: principal-agente, costos de coordinación, delegación, hiring, performance management, cadencias operativas, postmortems y dinámica de equipos (confianza, conflicto, accountability, burnout). Casos de organizaciones que escalan, se burocratizan, se fragmentan o fallan bajo presión. Simulaciones y diagnósticos sobre equipos reales o simulados, con debrief."
+content_en = "Distributive and integrative negotiation, BATNA, ZOPA, anchors, concessions, packages, credible commitments, and focal points. Negotiation under incomplete information, power asymmetries, coalitions, mediation, and multi-party conflict. Written and oral persuasion: framing, audience, evidence, authority, trust, and timing. Leadership without formal authority, running difficult meetings, productive disagreement, and crisis communication. The organization as a coordination system: principal-agent, coordination costs, delegation, hiring, performance management, operating cadences, postmortems, and team dynamics (trust, conflict, accountability, burnout). Cases of organizations that scale, bureaucratize, fragment, or fail under pressure. Simulations and diagnostics on real or simulated teams, with debrief."
+notes_html_es = "La fusión es natural: no se puede liderar lo que no se entiende estructuralmente, ni negociar bien sin saber cómo funcionan las contrapartes como organizaciones. Principal-agente explica <strong>por qué</strong> tu equipo o tu contraparte no están haciendo lo que esperás; las técnicas de negociación y liderazgo dicen <strong>qué hacer al respecto</strong>. La materia conecta directamente con Studios IV, V y VI, donde aparecen contrapartes reales y dinámicas organizacionales bajo presión."
+notes_html_en = "The fusion is natural: you cannot lead what you do not structurally understand, nor negotiate well without knowing how counterparties work as organizations. Principal-agent explains <strong>why</strong> your team or your counterpart is not doing what you expect; negotiation and leadership techniques say <strong>what to do about it</strong>. The course connects directly with Studios IV, V, and VI, where real counterparties and organizational dynamics under pressure appear."
 texts = [
   "Fisher, Roger, William Ury, and Bruce Patton. <em>Getting to Yes.</em> Penguin Books, 2011.",
-  "Cialdini, Robert B. <em>Influence: The Psychology of Persuasion.</em> Harper Business, 2006.",
-  { citation = "Voss, Chris. <em>Never Split the Difference.</em> Harper Business, 2016.", note_es = "La negociación como habilidad humana fundamental, técnicas de un ex negociador de rehenes del FBI, de aplicación inmediata.", note_en = "Negotiation as a fundamental human skill, techniques from a former FBI hostage negotiator, immediately practical." },
-  { citation = "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960.", note_es = "Puntos focales, compromisos creíbles, la racionalidad del comportamiento aparentemente irracional; puente entre la teoría de juegos y la negociación real.", note_en = "Focal points, credible commitments, the rationality of seemingly irrational behavior, bridge between game theory and real negotiation." },
-  { citation = "Epictetus. <em>The Discourses</em> and <em>Enchiridion.</em>", note_es = "Distinguir lo que está bajo nuestro control de lo que no lo está; la compostura estoica bajo presión es la base psicológica de toda negociación efectiva.", note_en = "Distinguish what is under our control from what is not, stoic composure under pressure is the psychological foundation of all effective negotiation." },
+  { citation = "Voss, Chris. <em>Never Split the Difference.</em> Harper Business, 2016.", note_es = "Negociación de un ex negociador de rehenes del FBI, técnicas de aplicación inmediata.", note_en = "Negotiation from a former FBI hostage negotiator, immediately practical." },
+  { citation = "Schelling, Thomas C. <em>The Strategy of Conflict.</em> Harvard University Press, 1960.", note_es = "Puntos focales y compromisos creíbles, puente entre teoría de juegos y negociación real.", note_en = "Focal points and credible commitments, bridge between game theory and real negotiation." },
+  "Grove, Andrew S. <em>High Output Management.</em> Random House, 1983.",
+  "Horowitz, Ben. <em>The Hard Thing About Hard Things.</em> Harper Business, 2014.",
+  { citation = "MacIntyre, Alasdair. <em>After Virtue.</em> 3rd ed. University of Notre Dame Press, 2007.", note_es = "Por qué el liderazgo no se puede apoyar en frameworks éticos universales y necesita un juicio situado.", note_en = "Why leadership cannot rely on universal ethical frameworks and needs situated judgment." },
 ]
 references = [
   { name = "Harvard Program on Negotiation", url = "https://www.pon.harvard.edu/" },
   { name = "MIT Sloan 15.665 Power and Negotiation", url = "https://ocw.mit.edu/courses/15-665-power-and-negotiation-spring-2014/" },
-  { name = "Cambridge Judge Business School Negotiation", url = "https://www.jbs.cam.ac.uk/" },
+  { name = "Stanford MS&E 280 Organizational Behavior", url = "https://explorecourses.stanford.edu/search?q=MS%26E+280" },
+  { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/faculty-research/academic-areas/organisational-behaviour" },
 ]
 evaluation_primary = "LC, Live negotiation exercise with real stakes"
 evaluation_secondaries = [
-  "OD, Debrief and strategy analysis",
+  "OD, Defense of organizational diagnosis",
 ]
 
 [[course]]
@@ -1067,37 +1077,35 @@ evaluation_primary = "WP, Written portfolio with full revision history"
 evaluation_secondaries = []
 
 [[course]]
-slug = "comportamiento-organizacional-y-equipos"
-title_es = "Comportamiento Organizacional y Equipos"
-title_en = "Organizational Behavior and Teams"
+slug = "metodos-de-investigacion-medicion-y-diseno-experimental"
+title_es = "Métodos de Investigación, Medición y Diseño Experimental"
+title_en = "Research Methods, Measurement and Experimental Design"
 year = 3
 block = "D"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender cómo las organizaciones realmente funcionan, y liderar personas dentro de ellas. Primera mitad: analítica. Segunda mitad: práctica."
-objective_en = "To understand how organizations actually work, and to lead people within them. First half: analytical. Second half: practical."
-content_es = "La organización como sistema de coordinación: objetivos, información, autoridad, incentivos, cultura, estructura informal y restricciones de ejecución. Principal-agente, costos de coordinación, delegación, hiring, onboarding, performance management, diseño de reuniones, cadencias operativas, métricas internas y postmortems. Dinámica de equipos: confianza, conflicto, accountability, estándares, burnout, aprendizaje y toma de decisiones. Casos de organizaciones que escalan, se burocratizan, se fragmentan o fallan bajo presión. La segunda mitad aplica diagnóstico e intervención sobre equipos reales o simulados."
-content_en = "The organization as a coordination system: goals, information, authority, incentives, culture, informal structure, and execution constraints. Principal-agent problems, coordination costs, delegation, hiring, onboarding, performance management, meeting design, operating cadences, internal metrics, and postmortems. Team dynamics: trust, conflict, accountability, standards, burnout, learning, and decision-making. Cases of organizations that scale, bureaucratize, fragment, or fail under pressure. The second half applies diagnosis and intervention to real or simulated teams."
-notes_html_es = "La fusión es natural: no se puede liderar lo que no se entiende estructuralmente, y no se pueden diagnosticar organizaciones sin herramientas de intervención. Principal-agente explica <strong>por qué</strong> tu equipo no está haciendo lo que esperás; el liderazgo situacional te dice <strong>qué hacer al respecto</strong>. Negociación cubre la interacción entre pares; esta materia cubre la responsabilidad asimétrica, cuando uno toma la decisión y otros viven con las consecuencias."
-notes_html_en = "The fusion is natural: you cannot lead what you don't structurally understand, and you cannot diagnose organizations without intervention tools. Principal-agent explains <strong>why</strong> your team isn't doing what you expect; situational leadership tells you <strong>what to do about it</strong>. Negociación covers peer-to-peer interaction; this course covers asymmetric responsibility, when you make the decision and others live with the consequences."
+objective_es = "Construir, medir y defender afirmaciones con evidencia. La materia que vuelve operativa la pregunta '¿cómo sé que esto es verdad?' Esencial cuando la IA puede generar texto convincente pero no puede generar evidencia."
+objective_en = "To build, measure, and defend claims with evidence. The course that operationalizes the question 'how do I know this is true?' Essential when AI can generate convincing text but cannot generate evidence."
+content_es = "Formulación de hipótesis y preguntas de investigación tratables. Diseño experimental clásico: control, aleatorización, replicación, balance, potencia y tamaño muestral. Diseños cuasi-experimentales: discontinuidad, diferencias-en-diferencias, variables instrumentales a nivel de proyecto. Validez interna, externa, de constructo y de medición. Operacionalización: ¿qué se mide?, ¿qué se está midiendo realmente? Reproducibilidad, pre-registro, ciencia abierta, datos abiertos, código abierto, reportes transparentes. Lectura crítica de papers, identificación de estudios débiles, meta-análisis. Comunicación científica: estructura del paper, peer review, respuesta a revisores. Ética de la investigación: consentimiento, IRB, integridad, conflictos de interés. Casos: A/B tests en producto, evaluación de políticas, ensayos clínicos, replicación de hallazgos en ML."
+content_en = "Formulating hypotheses and tractable research questions. Classical experimental design: control, randomization, replication, balance, power, and sample size. Quasi-experimental designs: regression discontinuity, difference-in-differences, instrumental variables at the project level. Internal, external, construct, and measurement validity. Operationalization: what is being measured, and what is actually being measured? Reproducibility, pre-registration, open science, open data, open code, transparent reporting. Critical reading of papers, identifying weak studies, meta-analysis. Scientific communication: paper structure, peer review, response to reviewers. Research ethics: consent, IRB, integrity, conflicts of interest. Cases: A/B tests in product work, policy evaluation, clinical trials, replication of findings in ML."
+notes_html_es = "La materia es operativa, no filosófica: Epistemología (Año 2) plantea los límites del conocimiento, esta materia construye las herramientas. Pareada con Control, Observabilidad y Medición (Año 3 A): aquella mira la medición desde el sistema controlado, esta mira la medición desde el reclamo de evidencia. Conecta con todo Studio: hipótesis defendibles, mediciones que cuentan, replicabilidad de resultados, postmortems honestos."
+notes_html_en = "The course is operational, not philosophical: Epistemología (Year 2) raises the limits of knowledge, this course builds the tools. Paired with Control, Observabilidad y Medición (Year 3 A): that one looks at measurement from the controlled system; this one looks at measurement from the standpoint of an evidence claim. Connects with every Studio: defensible hypotheses, measurements that count, replicability of results, honest postmortems."
 texts = [
-  "March, James G. <em>A Primer on Decision Making.</em> Free Press, 1994.",
-  "Grove, Andrew S. <em>High Output Management.</em> Random House, 1983.",
-  "Horowitz, Ben. <em>The Hard Thing About Hard Things.</em> Harper Business, 2014.",
-  "Lencioni, Patrick. <em>The Five Dysfunctions of a Team.</em> Jossey-Bass, 2002.",
-  "Milgrom, Paul, and John Roberts. <em>Economics, Organization and Management.</em> Prentice Hall, 1992.",
-  { citation = "MacIntyre, Alasdair. <em>After Virtue.</em> 3rd ed. University of Notre Dame Press, 2007.", note_es = "La crisis del lenguaje moral moderno: por qué quienes lideran no pueden apoyarse en frameworks éticos universales y necesitan un juicio situado.", note_en = "The crisis of modern moral language, why leaders cannot rely on universal ethical frameworks and need situated judgment." },
-  { citation = "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947.", note_es = "La atención como acto ético fundamental: la responsabilidad de quien lidera empieza por prestar atención real a las personas que dependen de sus decisiones.", note_en = "Attention as a fundamental ethical act, the leader's responsibility begins with paying real attention to the people who depend on their decisions." },
+  "Shadish, William R., Thomas D. Cook, and Donald T. Campbell. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference.</em> Houghton Mifflin, 2002.",
+  "Montgomery, Douglas C. <em>Design and Analysis of Experiments.</em> 10th ed. Wiley, 2019.",
+  "Booth, Wayne C., Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald. <em>The Craft of Research.</em> 4th ed. University of Chicago Press, 2016.",
+  { citation = "Bergstrom, Carl T., and Jevin D. West. <em>Calling Bullshit: The Art of Skepticism in a Data-Driven World.</em> Random House, 2020.", note_es = "Lectura crítica en la era de la IA y los datos masivos: cómo distinguir señal de bullshit confiado.", note_en = "Critical reading in the age of AI and mass data: how to distinguish signal from confident bullshit." },
+  { citation = "Ritchie, Stuart. <em>Science Fictions: How Fraud, Bias, Negligence, and Hype Undermine the Search for Truth.</em> Metropolitan Books, 2020.", note_es = "Crisis de replicación contemporánea, contexto de por qué los métodos importan operativamente.", note_en = "The contemporary replication crisis, context for why methods matter operationally." },
 ]
 references = [
-  { name = "Stanford MS&E 280 Organizational Behavior", url = "https://explorecourses.stanford.edu/search?q=MS%26E+280" },
-  { name = "MIT Sloan 15.322 Leading Organizations", url = "https://ocw.mit.edu/courses/15-668-people-and-organizations-fall-2010/" },
-  { name = "Harvard Business School Leadership", url = "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/course-catalog.aspx" },
-  { name = "INSEAD Organisational Behaviour", url = "https://www.insead.edu/faculty-research/academic-areas/organisational-behaviour" },
+  { name = "Stanford GSB Methodology of Empirical Research", url = "https://www.gsb.stanford.edu/" },
+  { name = "MIT 14.310x Data Analysis for Social Scientists", url = "https://ocw.mit.edu/courses/14-310x-data-analysis-for-social-scientists-spring-2023/" },
+  { name = "Berkeley D-Lab Computational Social Science", url = "https://dlab.berkeley.edu/" },
+  { name = "Center for Open Science training", url = "https://www.cos.io/" },
 ]
-evaluation_primary = "OD, Defense of organizational diagnosis"
+evaluation_primary = "OD, Defense of a research design proposal with measurement plan and pre-analysis"
 evaluation_secondaries = [
-  "TP, Diagnosis of a real or simulated organization",
+  "TP, Replication audit of a published study",
 ]
 
 [[course]]
@@ -1130,30 +1138,35 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "diseno-de-producto-e-interaccion"
-title_es = "Diseño de Producto e Interacción"
-title_en = "Product and Interaction Design"
+slug = "optimizacion-aplicada-y-metodos-numericos"
+title_es = "Optimización Aplicada y Métodos Numéricos"
+title_en = "Applied Optimization and Numerical Methods"
 year = 3
 block = "D"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Diseñar productos que la gente realmente use. En un mundo con AGI, el cuello de botella se mueve de ¿podemos construirlo? a ¿estamos construyendo lo correcto?"
-objective_en = "To design products that people actually use. In a world with AI, the bottleneck moves from \"can we build it?\" to \"are we building the right thing?\""
-content_es = "Investigación de usuarios, entrevistas, observación contextual, jobs-to-be-done, journey maps, personas como hipótesis, definición de problemas y criterios de éxito. Arquitectura de información, flujos, interacción, prototipado de baja y alta fidelidad, usabilidad, accesibilidad, onboarding, empty states, errores, feedback, confianza y diseño para fallas. Analítica de producto, experimentos, métricas de activación, retención y conversión, instrumentación y aprendizaje iterativo. Diseño con IA: copilotos, interfaces conversacionales, límites de automatización, explicación, control del usuario y responsabilidad por decisiones automatizadas."
-content_en = "User research, interviews, contextual observation, jobs-to-be-done, journey maps, personas as hypotheses, problem definition, and success criteria. Information architecture, flows, interaction, low- and high-fidelity prototyping, usability, accessibility, onboarding, empty states, errors, feedback, trust, and design for failure. Product analytics, experiments, activation, retention, and conversion metrics, instrumentation, and iterative learning. Design with AI: copilots, conversational interfaces, limits of automation, explanation, user control, and responsibility for automated decisions."
+objective_es = "Modelar problemas reales como problemas de optimización y resolverlos numéricamente con responsabilidad: saber qué método aplica, qué supuestos exige, qué errores introduce y cuándo el resultado es confiable. La materia que provee la columna técnica que ML, finanzas, control, operaciones e investigación asumen."
+objective_en = "To model real problems as optimization problems and solve them numerically with responsibility: knowing which method applies, what assumptions it demands, what errors it introduces, and when the result is reliable. The course that provides the technical backbone that ML, finance, control, operations, and research assume."
+content_es = "Álgebra lineal numérica: estabilidad, condicionamiento, descomposiciones (LU, QR, SVD, Cholesky), métodos iterativos. Optimización convexa y no convexa: gradiente, Newton, cuasi-Newton, métodos de punto interior, restricciones, dualidad, multiplicadores de Lagrange. Programación lineal y entera, simplex, ramificación y acotación, relajaciones. Flujos en redes, scheduling, routing, asignación, problemas de transporte. Métodos estocásticos: Monte Carlo, MCMC, simulación de eventos discretos, optimización estocástica. Análisis de sensibilidad, robustez, estabilidad numérica y trampas computacionales. Casos: planificación de recursos, decisiones bajo restricciones reales, calibración de modelos, simulación de sistemas operativos y físicos."
+content_en = "Numerical linear algebra: stability, conditioning, decompositions (LU, QR, SVD, Cholesky), iterative methods. Convex and nonconvex optimization: gradient, Newton, quasi-Newton, interior-point methods, constraints, duality, Lagrange multipliers. Linear and integer programming, simplex, branch and bound, relaxations. Network flows, scheduling, routing, assignment, transportation problems. Stochastic methods: Monte Carlo, MCMC, discrete-event simulation, stochastic optimization. Sensitivity analysis, robustness, numerical stability, and computational pitfalls. Cases: resource planning, decisions under real constraints, model calibration, simulation of operational and physical systems."
+notes_html_es = "La materia es deliberadamente práctica: el objetivo no es ser optimizador profesional, sino que cuando aparezca un problema operativo (planificar rutas, asignar recursos, calibrar un modelo, simular un sistema) el estudiante sepa modelarlo, elegir el método, ejecutarlo numéricamente sin engañarse y juzgar la solución. Conecta con Algoritmos, Complejidad y Optimización (que provee la base teórica), Procesos Estocásticos y Riesgo (que provee la dimensión probabilística), Finanzas (modelos de cartera y de riesgo), Machine Learning (entrenamiento como optimización) y los Studios donde aparecen restricciones físicas y operativas reales."
+notes_html_en = "The course is deliberately practical: the goal is not to become a professional optimizer, but for the student to be able, when an operational problem appears (route planning, resource allocation, model calibration, system simulation), to model it, choose the method, run it numerically without fooling themselves, and judge the solution. Connects with Algoritmos, Complejidad y Optimización (which provides the theoretical base), Procesos Estocásticos y Riesgo (the probabilistic dimension), Finanzas (portfolio and risk models), Machine Learning (training as optimization), and the Studios where real physical and operational constraints appear."
 texts = [
-  "Norman, Donald A. <em>The Design of Everyday Things.</em> Basic Books, 2013.",
-  "Krug, Steve. <em>Don't Make Me Think.</em> 3rd ed. New Riders, 2014.",
-  "Cooper, Alan, Robert Reimann, and David Cronin. <em>About Face: The Essentials of Interaction Design.</em> 4th ed. Wiley, 2014.",
+  "Nocedal, Jorge, and Stephen J. Wright. <em>Numerical Optimization.</em> 2nd ed. Springer, 2006.",
+  "Trefethen, Lloyd N., and David Bau III. <em>Numerical Linear Algebra.</em> SIAM, 1997.",
+  "Bertsimas, Dimitris, and John N. Tsitsiklis. <em>Introduction to Linear Optimization.</em> Athena Scientific, 1997.",
+  "Hillier, Frederick S., and Gerald J. Lieberman. <em>Introduction to Operations Research.</em> 11th ed. McGraw-Hill, 2021.",
+  { citation = "Boyd, Stephen, and Lieven Vandenberghe. <em>Convex Optimization.</em> Cambridge University Press, 2004.", note_es = "Texto compartido con Algoritmos, Complejidad y Optimización; aquí el énfasis está en métodos numéricos y aplicación.", note_en = "Text shared with Algoritmos, Complejidad y Optimización; here the emphasis is on numerical methods and application." },
 ]
 references = [
-  { name = "Stanford d.school Design Thinking", url = "https://dschool.stanford.edu/" },
-  { name = "MIT Integrated Design and Management", url = "https://idm.mit.edu/" },
-  { name = "Carnegie Mellon Human-Computer Interaction", url = "https://hcii.cmu.edu/" },
+  { name = "MIT 15.053 Optimization Methods in Management Science", url = "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/" },
+  { name = "Stanford EE364B Convex Optimization II", url = "https://web.stanford.edu/class/ee364b/" },
+  { name = "CMU 10-725 Convex Optimization", url = "https://www.cs.cmu.edu/~ggordon/10725-F12/" },
+  { name = "Caltech ACM 113 Mathematical Optimization", url = "https://www.cms.caltech.edu/" },
 ]
-evaluation_primary = "PD, Public defense of prototype with usability evidence"
+evaluation_primary = "WE, Written exam with modeling problems and numerical analysis"
 evaluation_secondaries = [
-  "TP, Prototype with documented user research",
+  "LC, Live design and debugging session on a real optimization problem",
 ]
 
 [[course]]
