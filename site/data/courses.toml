@@ -143,16 +143,16 @@ evaluation_secondaries = [
 
 [[course]]
 slug = "fundamentos-de-programacion"
-title_es = "Fundamentos de Programación"
-title_en = "Foundations of Programming"
+title_es = "Fundamentos de Programación y Datos"
+title_en = "Foundations of Programming and Data"
 year = 1
 block = "B"
 position = 3
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Escribir software que hace lo que dice hacer. No velocidad de codificación, precisión conceptual: entender qué hace el código, por qué falla, y cómo saber que hace lo que uno cree."
-objective_en = "To write software that does what it says it does. Not coding speed, conceptual precision: understanding what code does, why it fails, and how to verify it does what you believe."
-content_es = "Estructuras de datos, testing, desarrollo dirigido por especificaciones. SQL y modelado de datos. Shell, git, debugging, profiling, SSH, entornos de desarrollo. Especificación primero, implementación después, tests siempre."
-content_en = "Data structures, testing, specification-driven development. SQL and data modeling. Shell, git, debugging, profiling, SSH, development environments. Specification first, implementation second, tests always."
+objective_es = "Escribir software que hace lo que dice hacer y manejar datos básicos con criterio. No velocidad de codificación, precisión conceptual: entender qué hace el código, por qué falla, cómo saber que hace lo que uno cree y cómo modelar los datos que usa."
+objective_en = "To write software that does what it says it does and handle basic data with judgment. Not coding speed, conceptual precision: understanding what code does, why it fails, how to verify it does what you believe, and how to model the data it uses."
+content_es = "Estructuras de datos, testing, desarrollo dirigido por especificaciones. SQL, modelado de datos, normalización básica, joins, índices simples y migraciones pequeñas. Shell, git, debugging, profiling, SSH, entornos de desarrollo. Especificación primero, implementación después, tests siempre. Esta materia da el contacto temprano con datos; Sistemas de Datos los trata rigurosamente en Año 2."
+content_en = "Data structures, testing, specification-driven development. SQL, data modeling, basic normalization, joins, simple indexes, and small migrations. Shell, git, debugging, profiling, SSH, development environments. Specification first, implementation second, tests always. This course gives early contact with data; Data Systems treats them rigorously in Year 2."
 texts = [
   "Abelson, Harold, and Gerald Jay Sussman. <em>Structure and Interpretation of Computer Programs.</em> 2nd ed. MIT Press, 1996.",
   "Sedgewick, Robert, and Kevin Wayne. <em>Algorithms.</em> 4th ed. Addison-Wesley, 2011.",
@@ -225,8 +225,8 @@ evaluation_secondaries = [
 
 [[course]]
 slug = "fisica-i"
-title_es = "Física I"
-title_en = "Physics I"
+title_es = "Física I: Mecánica, Energía y Termodinámica"
+title_en = "Physics I: Mechanics, Energy and Thermodynamics"
 year = 1
 block = "C"
 position = 3
@@ -252,8 +252,8 @@ evaluation_secondaries = [
 
 [[course]]
 slug = "fisica-ii"
-title_es = "Física II"
-title_en = "Physics II"
+title_es = "Física II: Electromagnetismo, Señales y Computación Física"
+title_en = "Physics II: Electromagnetism, Signals and Physical Computation"
 year = 1
 block = "D"
 position = 3
@@ -554,8 +554,8 @@ evaluation_secondaries = [
 slug = "finanzas-dinero-y-banca"
 title_es = "Finanzas, Dinero y Banca"
 title_en = "Finance, Money and Banking"
-year = 2
-block = "C"
+year = 3
+block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo se financian las cosas, cómo funciona el dinero, cómo se estructura el capital. Primera mitad: finanzas corporativas. Segunda mitad: sistemas monetarios, banca central, creación de crédito."
@@ -1104,8 +1104,8 @@ evaluation_secondaries = [
 slug = "sistemas-de-datos"
 title_es = "Sistemas de Datos"
 title_en = "Data Systems"
-year = 3
-block = "D"
+year = 2
+block = "C"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar sistemas donde los datos sobrevivan al uso real: almacenamiento, consulta, transacciones, recuperación, replicación, migraciones, gobernanza y operación. La materia que hace explícito el sustrato que todo venture, servicio público, sistema de ML y dashboard de monitoreo necesita."
