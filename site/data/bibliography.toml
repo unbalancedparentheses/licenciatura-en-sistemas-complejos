@@ -50,6 +50,10 @@ text = "Åström, Karl J., and Richard M. Murray. <em>Feedback Systems: An Intro
 url = "https://fbswiki.org/wiki/index.php/FBS"
 
 [[entry]]
+text = "Atkins, Peter, and Julio de Paula. <em>Atkins' Physical Chemistry.</em> 11th ed. Oxford University Press, 2018."
+url = "https://global.oup.com/academic/product/atkins-physical-chemistry-9780198769866"
+
+[[entry]]
 text = "Avigad, Jeremy. <em>Mathematics in Lean.</em> Lean Prover Community, 2023. leanprover-community.github.io."
 url = "https://leanprover-community.github.io/mathematics_in_lean/"
 
@@ -118,6 +122,10 @@ text = "Brealey, Richard A., Stewart C. Myers, and Franklin Allen. <em>Principle
 url = "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781265074159.html"
 
 [[entry]]
+text = "Brown, Theodore L., et al. <em>Chemistry: The Central Science.</em> 15th ed. Pearson, 2022."
+url = "https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000005539"
+
+[[entry]]
 text = "Bryant, Randal E., and David R. O'Hallaron. <em>Computer Systems: A Programmer's Perspective.</em> 3rd ed. Pearson, 2015."
 url = "https://csapp.cs.cmu.edu/"
 
@@ -128,6 +136,10 @@ url = "https://www.workingbackwards.com/"
 [[entry]]
 text = "Brynjolfsson, Erik, and Andrew McAfee. <em>The Second Machine Age.</em> W. W. Norton, 2014."
 url = "https://wwnorton.com/books/the-second-machine-age"
+
+[[entry]]
+text = "Callister, William D., and David G. Rethwisch. <em>Materials Science and Engineering: An Introduction.</em> 10th ed. Wiley, 2018."
+url = "https://www.wiley.com/en-us/Materials+Science+and+Engineering%3A+An+Introduction%2C+10th+Edition-p-9781119405498"
 
 [[entry]]
 text = "Carroll, Sean B. <em>The Serengeti Rules.</em> Princeton University Press, 2016."

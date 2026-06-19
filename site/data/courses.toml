@@ -59,7 +59,7 @@ title_es = "Razonamiento Formal y Demostración"
 title_en = "Formal Reasoning and Proof"
 year = 1
 block = "B"
-position = 2
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entrenar el razonamiento preciso y la disciplina de la falsificación. Construir la capacidad de trabajar con rigor en territorio desconocido."
 objective_en = "To train precise reasoning and the discipline of falsification. To build the capacity to work rigorously in unfamiliar territory."
@@ -82,31 +82,27 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "calculo-y-analisis"
-title_es = "Cálculo y Análisis"
-title_en = "Calculus and Analysis"
+slug = "calculo-y-analisis-i"
+title_es = "Cálculo y Análisis I"
+title_en = "Calculus and Analysis I"
 year = 1
 block = "A"
 position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Construir el cálculo riguroso que el resto del programa asume en silencio. Desde límites y continuidad hasta cálculo en varias variables, con el rigor de ε–δ suficiente para que probabilidad, optimización, física, machine learning y procesos estocásticos puedan apoyarse en él en lugar de evitarlo. El análisis real abstracto y las ecuaciones diferenciales se construyen después, en sus propios cursos."
-objective_en = "To build the rigorous calculus that the rest of the program silently assumes. From limits and continuity to multivariable calculus, with enough ε–δ rigor that probability, optimization, physics, machine learning, and stochastic processes can rely on it rather than work around it. Abstract real analysis and differential equations are built later, in their own courses."
-content_es = "Límites, continuidad, derivadas y aproximación de Taylor, tratados con rigor de ε–δ. Integración de Riemann. Sucesiones y series, criterios de convergencia. Cálculo en varias variables: gradientes, jacobianos, hessianos, integrales múltiples. Optimización con restricciones y multiplicadores de Lagrange."
-content_en = "Limits, continuity, derivatives, and Taylor approximation, treated with ε–δ rigor. Riemann integration. Sequences and series, convergence criteria. Multivariable calculus: gradients, Jacobians, Hessians, multiple integrals. Constrained optimization and Lagrange multipliers."
-notes_html_es = "Con la estructura de cuatro años el curso ya no comprime un año entero de material en ocho semanas: las ecuaciones diferenciales y los sistemas dinámicos pasan a su propio curso en el Año 2, y el análisis real abstracto y la topología (espacios métricos, compacidad, convergencia uniforme, teoremas de punto fijo) al curso de Análisis Avanzado del Año 4. Lo que queda es un cálculo riguroso y enfocado, que corre en paralelo con Razonamiento Formal y Demostración y con Álgebra Lineal y Computación I, de modo que Probabilidad, Física, Machine Learning y los cursos de optimización puedan asumir el cálculo en lugar de trabajar a su alrededor."
-notes_html_en = "With the four-year structure the course no longer compresses a full year of material into eight weeks: differential equations and dynamical systems move to their own course in Year 2, and abstract real analysis and topology (metric spaces, compactness, uniform convergence, fixed-point theorems) to the Advanced Analysis course in Year 4. What remains is a focused, rigorous calculus, running in parallel with Razonamiento Formal y Demostración and Álgebra Lineal y Computación I, so that Probabilidad, Física, Machine Learning, and the optimization courses can assume calculus rather than work around it."
+objective_es = "Construir el cálculo de una variable con rigor, el que el resto del programa asume en silencio. Desde límites y continuidad hasta integración y series, con el rigor de ε–δ suficiente para que probabilidad, física y los cursos cuantitativos puedan apoyarse en él en lugar de evitarlo. Es la primera mitad de la secuencia Ma 1 de Caltech (18.01 del MIT)."
+objective_en = "To build single-variable calculus rigorously, the calculus the rest of the program silently assumes. From limits and continuity to integration and series, with enough ε–δ rigor that probability, physics, and the quantitative courses can rely on it rather than work around it. It is the first half of Caltech's Ma 1 sequence (MIT 18.01)."
+content_es = "Límites, continuidad y la definición ε–δ. Derivadas, teorema del valor medio, aproximación de Taylor. Integración de Riemann y teorema fundamental del cálculo. Sucesiones y series, criterios de convergencia, series de potencias."
+content_en = "Limits, continuity, and the ε–δ definition. Derivatives, the mean value theorem, Taylor approximation. Riemann integration and the fundamental theorem of calculus. Sequences and series, convergence criteria, power series."
+notes_html_es = "Primera de dos materias de cálculo. Separar el cálculo de una variable (esta) del cálculo en varias variables (Cálculo y Análisis II) en lugar de comprimir un año entero en ocho semanas es lo que permite tratar cada uno con la profundidad de Caltech. Corre en paralelo con Razonamiento Formal y Demostración, que provee la disciplina de prueba."
+notes_html_en = "First of two calculus courses. Separating single-variable calculus (this) from multivariable calculus (Cálculo y Análisis II), rather than compressing a full year into eight weeks, is what lets each be taught at Caltech depth. It runs in parallel with Razonamiento Formal y Demostración, which provides the proof discipline."
 texts = [
-  { citation = "Apostol, Tom M. <em>Calculus.</em> Vols. I–II. 2nd ed. Wiley, 1967.", note_es = "El texto canónico del núcleo de matemática de Caltech: cálculo construido con rigor, del que parte la madurez analítica del programa.", note_en = "The canonical text of Caltech's mathematics core: calculus built rigorously, the starting point for the program's analytical maturity." },
   { citation = "Spivak, Michael. <em>Calculus.</em> 4th ed. Publish or Perish, 2008.", note_es = "Cálculo de una variable tratado con rigor, escrito como introducción al análisis real.", note_en = "Single-variable calculus treated rigorously, written as an introduction to real analysis." },
+  { citation = "Apostol, Tom M. <em>Calculus.</em> Vol. I. 2nd ed. Wiley, 1967.", note_es = "El texto canónico del núcleo de matemática de Caltech: cálculo construido con rigor.", note_en = "The canonical text of Caltech's mathematics core: calculus built rigorously." },
   { citation = "Tao, Terence. <em>Analysis I.</em> Hindustan Book Agency, 2016.", note_es = "Análisis real construido desde los axiomas de los reales, autocontenido y riguroso.", note_en = "Real analysis built from the axioms of the reals, self-contained and rigorous." },
-  { citation = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms.</em> 5th ed. Matrix Editions, 2015.", note_es = "Cálculo en varias variables con álgebra lineal y formas diferenciales, el puente natural hacia ML, optimización y física.", note_en = "Multivariable calculus with linear algebra and differential forms, the natural bridge into ML, optimization, and physics." },
 ]
 references = [
   { name = "MIT 18.01 Single Variable Calculus", url = "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" },
-  { name = "MIT 18.02 Multivariable Calculus", url = "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" },
-  { name = "MIT 18.100A Real Analysis", url = "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/" },
   { name = "Caltech Ma 1abc Mathematics", url = "https://pma.caltech.edu/courses" },
-  { name = "École Polytechnique tronc commun (modules de mathématiques)", url = "https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien-program/academics" },
 ]
 evaluation_primary = "WE, Written exam with unseen problems and short proofs"
 evaluation_secondaries = [
@@ -114,12 +110,39 @@ evaluation_secondaries = [
 ]
 
 [[course]]
+slug = "calculo-y-analisis-ii"
+title_es = "Cálculo y Análisis II"
+title_en = "Calculus and Analysis II"
+year = 1
+block = "B"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Extender el cálculo a varias variables, el lenguaje del machine learning, la optimización y la física de campos. Construye sobre Cálculo y Análisis I y provee el cálculo vectorial que Física II, optimización y los gradientes del aprendizaje asumen. Es la segunda mitad de la secuencia Ma 1 de Caltech (18.02 del MIT)."
+objective_en = "To extend calculus to several variables, the language of machine learning, optimization, and field physics. It builds on Cálculo y Análisis I and provides the vector calculus that Física II, optimization, and the gradients of learning assume. It is the second half of Caltech's Ma 1 sequence (MIT 18.02)."
+content_es = "Cálculo en varias variables: gradientes, jacobianos, hessianos. Integrales múltiples, cambio de variables. Cálculo vectorial: divergencia, rotor, teoremas de Green y Stokes. Optimización con restricciones y multiplicadores de Lagrange. Conexión directa con los gradientes del aprendizaje, la optimización y los campos de la física."
+content_en = "Multivariable calculus: gradients, Jacobians, Hessians. Multiple integrals, change of variables. Vector calculus: divergence, curl, theorems of Green and Stokes. Constrained optimization and Lagrange multipliers. Direct connection to the gradients of learning, optimization, and the fields of physics."
+notes_html_es = "Segunda de dos materias de cálculo. Provee a Física II (Año 1) el cálculo vectorial del electromagnetismo y a Machine Learning y los cursos de optimización (Año 2) el cálculo multivariable de los gradientes."
+notes_html_en = "Second of two calculus courses. It gives Física II (Year 1) the vector calculus of electromagnetism, and Machine Learning and the optimization courses (Year 2) the multivariable calculus of gradients."
+texts = [
+  { citation = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms.</em> 5th ed. Matrix Editions, 2015.", note_es = "Cálculo en varias variables con álgebra lineal y formas diferenciales, el puente natural hacia ML, optimización y física.", note_en = "Multivariable calculus with linear algebra and differential forms, the natural bridge into ML, optimization, and physics." },
+  { citation = "Apostol, Tom M. <em>Calculus.</em> Vol. II. 2nd ed. Wiley, 1967.", note_es = "Cálculo en varias variables tratado con el rigor del núcleo de Caltech.", note_en = "Multivariable calculus treated with the rigor of Caltech's core." },
+]
+references = [
+  { name = "MIT 18.02 Multivariable Calculus", url = "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" },
+  { name = "Caltech Ma 1abc Mathematics", url = "https://pma.caltech.edu/courses" },
+]
+evaluation_primary = "WE, Written exam with unseen problems"
+evaluation_secondaries = [
+  "TP, Weekly problem sets and a vector-calculus project",
+]
+
+[[course]]
 slug = "microeconomia-y-logica-de-decision"
 title_es = "Microeconomía y Lógica de Decisión"
 title_en = "Microeconomics and Decision Logic"
-year = 1
-block = "D"
-position = 2
+year = 2
+block = "A"
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonar sobre escasez, incentivos y tradeoffs antes de tocar un modelo de negocio. Desarrollar intuición económica antes de que el programa exija modelado formal."
 objective_en = "To reason about scarcity, incentives, and tradeoffs before touching a business model. To develop economic intuition before the program demands formal modeling."
@@ -145,7 +168,7 @@ slug = "fundamentos-de-programacion"
 title_es = "Fundamentos de Programación y Datos"
 title_en = "Foundations of Programming and Data"
 year = 1
-block = "B"
+block = "C"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Escribir software que hace lo que dice hacer y manejar datos básicos con criterio. No velocidad de codificación, precisión conceptual: entender qué hace el código, por qué falla, cómo saber que hace lo que uno cree y cómo modelar los datos que usa."
@@ -200,8 +223,8 @@ slug = "programacion-de-sistemas"
 title_es = "Programación de Sistemas"
 title_en = "Systems Programming"
 year = 1
-block = "C"
-position = 2
+block = "D"
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender la computación como un proceso físico y temporal. El foco está en el modelo mental, cómo la computación realmente sucede en hardware y sistemas operativos."
 objective_en = "To understand computation as a physical and temporal process. The focus is on the mental model, how computation actually happens in hardware and operating systems."
@@ -255,7 +278,7 @@ title_es = "Física II: Electromagnetismo, Señales y Computación Física"
 title_en = "Physics II: Electromagnetism, Signals and Physical Computation"
 year = 1
 block = "C"
-position = 3
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Electromagnetismo y física de señales para constructores. Suficiente mecánica cuántica para entender semiconductores y los límites físicos de la computación."
 objective_en = "Electromagnetism and signal physics for builders. Enough quantum mechanics to understand semiconductors and the physical limits of computation."
@@ -277,11 +300,40 @@ evaluation_secondaries = [
 ]
 
 [[course]]
+slug = "quimica-y-materiales"
+title_es = "Química y Materiales"
+title_en = "Chemistry and Materials"
+year = 1
+block = "D"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "El núcleo de química que tanto Caltech (Ch 1) como el MIT exigen a todos sus estudiantes, orientado a quien construye: entender la materia, la energía y los materiales lo suficiente para razonar sobre sistemas físicos, energéticos y de hardware reales. No química para químicos, química para constructores."
+objective_en = "The chemistry core that both Caltech (Ch 1) and MIT require of every student, oriented toward the builder: understanding matter, energy, and materials well enough to reason about real physical, energy, and hardware systems. Not chemistry for chemists, chemistry for builders."
+content_es = "Estructura atómica y enlace químico. Estequiometría y equilibrio. Termodinámica química: entalpía, entropía, energía libre. Cinética de reacciones. Ácido-base y redox. Electroquímica: baterías, celdas de combustible. Ciencia de materiales: cristales, polímeros, semiconductores. Almacenamiento y conversión de energía. El curso conecta con Física I (termodinámica), Física II (semiconductores) y los sistemas físicos que aparecen en los Studios."
+content_en = "Atomic structure and chemical bonding. Stoichiometry and equilibrium. Chemical thermodynamics: enthalpy, entropy, free energy. Reaction kinetics. Acid-base and redox. Electrochemistry: batteries, fuel cells. Materials science: crystals, polymers, semiconductors. Energy storage and conversion. The course connects with Física I (thermodynamics), Física II (semiconductors), and the physical systems that appear in the Studios."
+notes_html_es = "Cierra la única materia del núcleo científico común de Caltech y el MIT que faltaba. Para un programa orientado a crear empresas que tocan energía, materiales, hardware y biología, la química no es decorativa: es la base para razonar sobre baterías, semiconductores, procesos industriales y restricciones físicas reales."
+notes_html_en = "Closes the one subject from Caltech's and MIT's common scientific core that was missing. For a program aimed at creating companies that touch energy, materials, hardware, and biology, chemistry is not decorative: it is the basis for reasoning about batteries, semiconductors, industrial processes, and real physical constraints."
+texts = [
+  "Brown, Theodore L., et al. <em>Chemistry: The Central Science.</em> 15th ed. Pearson, 2022.",
+  "Atkins, Peter, and Julio de Paula. <em>Atkins' Physical Chemistry.</em> 11th ed. Oxford University Press, 2018.",
+  "Callister, William D., and David G. Rethwisch. <em>Materials Science and Engineering: An Introduction.</em> 10th ed. Wiley, 2018.",
+]
+references = [
+  { name = "Caltech Ch 1 General Chemistry", url = "https://catalog.caltech.edu/current/courses/department/Ch" },
+  { name = "MIT 5.111 Principles of Chemical Science", url = "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/" },
+  { name = "MIT 3.091 Introduction to Solid-State Chemistry", url = "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/" },
+]
+evaluation_primary = "WE, Written exam with unseen problems"
+evaluation_secondaries = [
+  "TP, Problem sets and a materials/energy analysis project",
+]
+
+[[course]]
 slug = "machine-learning-e-ingenieria-de-modelos"
 title_es = "Machine Learning e Ingeniería de Modelos"
 title_en = "Machine Learning and Model Engineering"
-year = 1
-block = "D"
+year = 2
+block = "B"
 position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir, entrenar, evaluar, desplegar y monitorear modelos de ML, y saber cuándo no usarlos. Los fundamentos matemáticos fueron establecidos en bloques anteriores. Este bloque enseña la ingeniería."
@@ -310,8 +362,8 @@ evaluation_secondaries = [
 slug = "historia-de-las-instituciones-la-tecnologia-y-el-poder"
 title_es = "Historia de las Instituciones, la Tecnología y el Poder"
 title_en = "History of Institutions, Technology and Power"
-year = 2
-block = "D"
+year = 3
+block = "A"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo las organizaciones, los estados, los mercados y las tecnologías transformadoras realmente funcionan, y cómo fallan. Casos históricos como tests de estrés de modelos de gobernanza, junto al estudio de cómo cada gran transición tecnológica reorganizó el poder, la economía y las formas de vida."
@@ -350,7 +402,7 @@ title_es = "Algoritmos, Complejidad y Optimización"
 title_en = "Algorithms, Complexity and Optimization"
 year = 2
 block = "A"
-position = 1
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonamiento estructural sobre búsqueda, restricciones y los límites de la computación. La pregunta central: qué problemas son resolubles, a qué costo, y qué significa que un problema sea difícil."
 objective_en = "Structural reasoning about search, constraints, and the limits of computation. The central question: which problems are solvable, at what cost, and what does it mean for a problem to be hard."
@@ -378,8 +430,8 @@ slug = "econometria-e-inferencia-causal"
 title_es = "Econometría e Inferencia Causal"
 title_en = "Econometrics and Causal Inference"
 year = 2
-block = "C"
-position = 3
+block = "D"
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Pasar de correlación a causalidad. La pregunta central: bajo qué condiciones se puede afirmar que X causa Y, y qué estrategia de identificación lo garantiza."
 objective_en = "To move from correlation to causality. The central question: under what conditions can one claim that X causes Y, and what identification strategy guarantees it."
@@ -405,7 +457,7 @@ slug = "deep-learning-y-modelos-fundacionales"
 title_es = "Deep Learning y Modelos Fundacionales"
 title_en = "Deep Learning and Foundation Models"
 year = 2
-block = "B"
+block = "C"
 position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender en profundidad las arquitecturas, mecanismos y leyes de escala de los sistemas de IA que definen esta era, no como usuarios, sino como ingenieros y críticos."
@@ -437,7 +489,7 @@ title_es = "Teoría de Juegos y Diseño de Mecanismos"
 title_en = "Game Theory and Mechanism Design"
 year = 2
 block = "D"
-position = 1
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "De la optimización individual a la interacción estratégica. Diseñar sistemas donde agentes racionales interactúan y los incentivos producen los resultados deseados."
 objective_en = "From individual optimization to strategic interaction. To design systems where rational agents interact and incentives produce desired outcomes."
@@ -497,7 +549,7 @@ title_es = "Ecuaciones Diferenciales y Sistemas Dinámicos"
 title_en = "Differential Equations and Dynamical Systems"
 year = 2
 block = "A"
-position = 2
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Dar el lenguaje de los sistemas que evolucionan en el tiempo: ecuaciones diferenciales, estabilidad y comportamiento cualitativo. Es la materia bisagra del núcleo, el equivalente a Ma 2 de Caltech y a 18.03 del MIT, y la base sobre la que se apoyan Control, Sistemas Complejos y el modelado físico del Año 3. Razonar sobre dinámica antes de intentar controlarla o simularla."
 objective_en = "To provide the language of systems that evolve in time: differential equations, stability, and qualitative behavior. It is the hinge course of the core, the equivalent of Caltech's Ma 2 and MIT's 18.03, and the foundation on which Control, Sistemas Complejos, and the physical modeling of Year 3 rest. To reason about dynamics before trying to control or simulate it."
@@ -527,7 +579,7 @@ title_es = "Métodos Formales y Verificación"
 title_en = "Formal Methods and Verification"
 year = 2
 block = "C"
-position = 1
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Demostrar matemáticamente que un sistema hace lo que dice hacer. Si AGI genera código, la verificación formal se vuelve más importante, no menos."
 objective_en = "To prove mathematically that a system does what it says it does. If AI generates code, formal verification becomes more important, not less."
@@ -585,7 +637,7 @@ title_es = "Finanzas, Dinero y Banca"
 title_en = "Finance, Money and Banking"
 year = 3
 block = "D"
-position = 2
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo se financian las cosas, cómo funciona el dinero, cómo se estructura el capital. Primera mitad: finanzas corporativas. Segunda mitad: sistemas monetarios, banca central, creación de crédito."
 objective_en = "To understand how things get funded, how money works, how capital is structured. First half: corporate finance. Second half: monetary systems, central banking, credit creation."
@@ -616,7 +668,7 @@ title_es = "Seguridad, Criptografía y Confianza"
 title_en = "Security, Cryptography and Trust"
 year = 2
 block = "C"
-position = 2
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo se construye la confianza técnicamente y dónde se rompe."
 objective_en = "To understand how trust is constructed technically and where it breaks."
@@ -642,9 +694,9 @@ evaluation_secondaries = [
 slug = "economia-politica-derecho-y-regulacion"
 title_es = "Economía Política, Derecho y Regulación"
 title_en = "Political Economy, Law and Regulation"
-year = 2
-block = "D"
-position = 2
+year = 3
+block = "B"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo la regulación, la tributación, la responsabilidad legal y las políticas públicas determinan lo que se puede construir."
 objective_en = "To understand how regulation, taxation, legal liability, and public policy determine what can be built."
@@ -764,7 +816,7 @@ slug = "cultura-legitimidad-y-normas"
 title_es = "Cultura, Legitimidad y Normas"
 title_en = "Culture, Legitimacy and Norms"
 year = 4
-block = "A"
+block = "C"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender las estructuras no formales que sostienen a los sistemas, o los desgarran. La cultura popular es donde una sociedad procesa sus ansiedades sobre el futuro."
@@ -990,8 +1042,8 @@ evaluation_secondaries = [
 slug = "etica-y-responsabilidad-bajo-incertidumbre"
 title_es = "Ética y Responsabilidad bajo Incertidumbre"
 title_en = "Ethics and Responsibility under Uncertainty"
-year = 3
-block = "A"
+year = 4
+block = "B"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Trabajar sistemáticamente los casos difíciles. Un programa que forma personas para tomar decisiones que afectan a otros a escala necesita un espacio dedicado a la ética práctica."
@@ -1081,7 +1133,7 @@ slug = "sistemas-embebidos-e-interaccion-fisica"
 title_es = "Sistemas Embebidos e Interacción Física"
 title_en = "Embedded Systems and Physical Interaction"
 year = 3
-block = "B"
+block = "D"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir sistemas que interactúen con el mundo físico. La materia que cierra la brecha entre el software y el hardware: sensores, actuadores, microcontroladores, comunicación en tiempo real, y las restricciones físicas que un sistema embebido impone sobre el diseño."
@@ -1197,9 +1249,9 @@ evaluation_secondaries = []
 slug = "metodos-de-investigacion-medicion-y-diseno-experimental"
 title_es = "Métodos de Investigación, Medición y Diseño Experimental"
 title_en = "Research Methods, Measurement and Experimental Design"
-year = 3
-block = "D"
-position = 1
+year = 4
+block = "A"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir, medir y defender afirmaciones con evidencia. La materia que vuelve operativa la pregunta '¿cómo sé que esto es verdad?' Esencial cuando la IA puede generar texto convincente pero no puede generar evidencia."
 objective_en = "To build, measure, and defend claims with evidence. The course that operationalizes the question 'how do I know this is true?' Essential when AI can generate convincing text but cannot generate evidence."
@@ -1230,7 +1282,7 @@ slug = "sistemas-de-datos"
 title_es = "Sistemas de Datos"
 title_en = "Data Systems"
 year = 2
-block = "A"
+block = "D"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar sistemas donde los datos sobrevivan al uso real: almacenamiento, consulta, transacciones, recuperación, replicación, migraciones, gobernanza y operación. La materia que hace explícito el sustrato que todo venture, servicio público, sistema de ML y dashboard de monitoreo necesita."
@@ -1260,7 +1312,7 @@ title_es = "Optimización Aplicada y Métodos Numéricos"
 title_en = "Applied Optimization and Numerical Methods"
 year = 3
 block = "D"
-position = 3
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Modelar problemas reales como problemas de optimización y resolverlos numéricamente con responsabilidad: saber qué método aplica, qué supuestos exige, qué errores introduce y cuándo el resultado es confiable. La materia que provee la columna técnica que ML, finanzas, control, operaciones e investigación asumen."
 objective_en = "To model real problems as optimization problems and solve them numerically with responsibility: knowing which method applies, what assumptions it demands, what errors it introduces, and when the result is reliable. The course that provides the technical backbone that ML, finance, control, operations, and research assume."
@@ -1291,7 +1343,7 @@ slug = "seminario-fundacional-ia-juicio-y-responsabilidad"
 title_es = "Seminario Fundacional: IA, Juicio y Responsabilidad"
 title_en = "Founding Seminar: AI, Judgment and Responsibility"
 year = 4
-block = "A"
+block = "C"
 position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "El argumento fundacional del programa, dado explícitamente después de tres años de haberlo vivido. Qué cambia con la IA, qué no cambia, qué es el juicio, por qué la legitimidad importa."
@@ -1348,8 +1400,8 @@ slug = "electiva-guiada"
 title_es = "Electiva Guiada"
 title_en = "Guided Elective"
 year = 4
-block = ""
-position = 99
+block = "C"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Una materia electiva en un área de profundización elegida por el estudiante en consulta con el cuerpo docente. El formato, los textos y la evaluación los define el docente supervisor."
 objective_en = "An elective course in an area of deepening chosen by the student in consultation with the faculty. Format, texts, and evaluation defined by the supervising faculty member."
