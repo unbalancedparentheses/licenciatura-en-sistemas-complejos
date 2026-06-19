@@ -202,6 +202,10 @@ text = "Enderton, Herbert B. <em>A Mathematical Introduction to Logic.</em> 2nd 
 url = "https://shop.elsevier.com/books/a-mathematical-introduction-to-logic/enderton/978-0-12-238452-3"
 
 [[entry]]
+text = "Evans, Lawrence C. <em>Partial Differential Equations.</em> 2nd ed. American Mathematical Society, 2010."
+url = "https://bookstore.ams.org/gsm-19-r"
+
+[[entry]]
 text = "Feynman, Richard P., Robert B. Leighton, and Matthew Sands. <em>The Feynman Lectures on Physics.</em> Vols. I–II. Caltech, 2013. feynmanlectures.caltech.edu."
 url = "https://www.feynmanlectures.caltech.edu/"
 

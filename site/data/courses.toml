@@ -672,35 +672,60 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "analisis-avanzado-y-ecuaciones-en-derivadas-parciales"
-title_es = "Análisis Avanzado y Ecuaciones en Derivadas Parciales"
-title_en = "Advanced Analysis and Partial Differential Equations"
+slug = "analisis-real-y-teoria-de-la-medida"
+title_es = "Análisis Real y Teoría de la Medida"
+title_en = "Real Analysis and Measure Theory"
 year = 4
 block = "A"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Cerrar la secuencia matemática del núcleo en el nivel de madurez que exige el posgrado: análisis real hecho en serio, probabilidad con base en teoría de la medida y ecuaciones en derivadas parciales. Lo que Cálculo y Análisis abre y Ecuaciones Diferenciales y Sistemas Dinámicos consolida, este curso lo lleva a la profundidad del tramo superior de la secuencia Ma de Caltech y de 18.100/18.152 del MIT."
-objective_en = "To close the core's mathematical sequence at the level of maturity graduate study demands: real analysis taken seriously, measure-theoretic probability, and partial differential equations. What Cálculo y Análisis opens and Ecuaciones Diferenciales y Sistemas Dinámicos consolidates, this course takes to the depth of the upper tier of Caltech's Ma sequence and of MIT's 18.100/18.152."
-content_es = "Análisis real en profundidad: espacios métricos y normados, completitud, sucesiones y series de funciones, convergencia uniforme, introducción a la teoría de la medida y la integral de Lebesgue. Probabilidad con base en teoría de la medida: σ-álgebras, medidas, esperanza como integral, modos de convergencia, leyes de los grandes números. Ecuaciones en derivadas parciales: ecuaciones del calor, de onda y de Laplace, separación de variables, métodos de Fourier, buena posición. Conecta hacia atrás con Ecuaciones Diferenciales y Sistemas Dinámicos y hacia adelante con Física III y con Procesos Estocásticos, que aquí queda formalizado."
-content_en = "Real analysis in depth: metric and normed spaces, completeness, sequences and series of functions, uniform convergence, an introduction to measure theory and the Lebesgue integral. Measure-theoretic probability: σ-algebras, measures, expectation as an integral, modes of convergence, laws of large numbers. Partial differential equations: heat, wave, and Laplace equations, separation of variables, Fourier methods, well-posedness. It connects back to Ecuaciones Diferenciales y Sistemas Dinámicos and forward to Física III and to Procesos Estocásticos, which is here put on rigorous footing."
-notes_html_es = "Es el tramo terminal de la secuencia matemática: el cuarto año permite tratar el análisis real, la probabilidad medible y las EDP como un cuerpo riguroso, en lugar de repartir fragmentos. Provee a Física III el lenguaje de Fourier y EDP, da fundamento de teoría de la medida a Procesos Estocásticos y es la madurez analítica con la que el egresado compite por maestrías y doctorados de primer nivel."
-notes_html_en = "It is the terminal tier of the mathematical sequence: the fourth year makes it possible to treat real analysis, measure-theoretic probability, and PDEs as a single rigorous body rather than scattering fragments. It gives Física III the language of Fourier and PDEs, puts Procesos Estocásticos on measure-theoretic footing, and is the analytical maturity graduates carry into top masters and doctoral programs."
+objective_es = "Llevar el análisis al nivel de madurez que exige el posgrado: análisis real hecho en serio y probabilidad con base en teoría de la medida. Lo que Cálculo y Análisis abre con rigor de ε–δ, este curso lo reconstruye desde los cimientos. Es el equivalente a 18.100 del MIT y al tramo superior de la secuencia Ma de Caltech."
+objective_en = "To take analysis to the maturity graduate study demands: real analysis done seriously and measure-theoretic probability. What Cálculo y Análisis opens with ε–δ rigor, this course rebuilds from the foundations. It is the equivalent of MIT's 18.100 and the upper tier of Caltech's Ma sequence."
+content_es = "Análisis real en profundidad: espacios métricos y normados, completitud, sucesiones y series de funciones, convergencia uniforme, teoría de la medida e integral de Lebesgue. Probabilidad con base en teoría de la medida: σ-álgebras, medidas, esperanza como integral, modos de convergencia, leyes de los grandes números. Da fundamento riguroso a Procesos Estocásticos y la madurez analítica con la que el egresado compite por maestrías y doctorados de primer nivel."
+content_en = "Real analysis in depth: metric and normed spaces, completeness, sequences and series of functions, uniform convergence, measure theory and the Lebesgue integral. Measure-theoretic probability: σ-algebras, measures, expectation as an integral, modes of convergence, laws of large numbers. It puts Procesos Estocásticos on rigorous footing and is the analytical maturity graduates carry into top masters and doctoral programs."
+notes_html_es = "Forma, junto con Ecuaciones en Derivadas Parciales, el tramo terminal de la secuencia matemática. Separarlos en dos materias de ocho semanas, en lugar de comprimirlos en una sola, es lo que permite tratar cada uno con la profundidad de un curso de posgrado."
+notes_html_en = "Together with Ecuaciones en Derivadas Parciales it forms the terminal tier of the mathematical sequence. Splitting them into two eight-week courses, rather than compressing both into one, is what lets each be treated at graduate-course depth."
 texts = [
   "Rudin, Walter. <em>Principles of Mathematical Analysis.</em> 3rd ed. McGraw-Hill, 1976.",
   "Apostol, Tom M. <em>Mathematical Analysis.</em> 2nd ed. Addison-Wesley, 1974.",
-  "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007.",
   "Williams, David. <em>Probability with Martingales.</em> Cambridge University Press, 1991.",
 ]
 references = [
   { name = "MIT 18.100B Real Analysis", url = "https://ocw.mit.edu/courses/18-100b-analysis-i-fall-2010/" },
-  { name = "MIT 18.152 Introduction to PDEs", url = "https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/" },
   { name = "MIT 18.125 Measure and Integration", url = "https://ocw.mit.edu/courses/18-125-measure-and-integration-fall-2003/" },
   { name = "Caltech Ma 108 / Ma 110 Analysis", url = "https://pma.caltech.edu/courses" },
-  { name = "Caltech ACM 95/100 Methods of Applied Mathematics", url = "https://www.cms.caltech.edu/academics/courses" },
 ]
 evaluation_primary = "WE, Written exam with unseen problems and short proofs"
 evaluation_secondaries = [
   "TP, Problem sets and a proof portfolio",
+]
+
+[[course]]
+slug = "ecuaciones-en-derivadas-parciales"
+title_es = "Ecuaciones en Derivadas Parciales"
+title_en = "Partial Differential Equations"
+year = 4
+block = "A"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Resolver y analizar las ecuaciones que describen cómo evolucionan en el espacio y el tiempo los sistemas físicos, económicos y de aprendizaje. Construye sobre Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2 y sobre el rigor de Análisis Real, y provee a Física III el lenguaje de Fourier y las EDP. Es el equivalente a 18.152 del MIT y a ACM 101 de Caltech."
+objective_en = "To solve and analyze the equations that describe how physical, economic, and learning systems evolve in space and time. It builds on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos and on the rigor of Análisis Real, and gives Física III the language of Fourier and PDEs. It is the equivalent of MIT's 18.152 and Caltech's ACM 101."
+content_es = "Ecuaciones del calor, de onda y de Laplace. Separación de variables y series de Fourier. Problemas de contorno y de valores iniciales, buena posición, principios del máximo. Transformada de Fourier, funciones de Green, nociones de soluciones débiles. Aplicaciones a difusión, propagación de ondas y modelos de campo."
+content_en = "Heat, wave, and Laplace equations. Separation of variables and Fourier series. Boundary- and initial-value problems, well-posedness, maximum principles. Fourier transform, Green's functions, notions of weak solutions. Applications to diffusion, wave propagation, and field models."
+notes_html_es = "Cierra la secuencia matemática del núcleo. Se apoya en Ecuaciones Diferenciales y Sistemas Dinámicos (Año 2) y en Análisis Real, y alimenta directamente Física III, donde Fourier y las EDP son el lenguaje de las ondas y la física estadística."
+notes_html_en = "Closes the core's mathematical sequence. It builds on Ecuaciones Diferenciales y Sistemas Dinámicos (Year 2) and on Análisis Real, and feeds directly into Física III, where Fourier and PDEs are the language of waves and statistical physics."
+texts = [
+  "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007.",
+  "Evans, Lawrence C. <em>Partial Differential Equations.</em> 2nd ed. American Mathematical Society, 2010.",
+]
+references = [
+  { name = "MIT 18.152 Introduction to PDEs", url = "https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/" },
+  { name = "MIT 18.303 Linear PDEs", url = "https://ocw.mit.edu/courses/18-303-linear-partial-differential-equations-analysis-and-numerics-fall-2014/" },
+  { name = "Caltech ACM 101 / ACM 95 Methods of Applied Mathematics", url = "https://www.cms.caltech.edu/academics/courses" },
+]
+evaluation_primary = "WE, Written exam with unseen problems"
+evaluation_secondaries = [
+  "TP, Problem sets and a computational PDE project",
 ]
 
 [[course]]
@@ -715,8 +740,8 @@ objective_es = "Completar la secuencia de física del núcleo común al nivel de
 objective_en = "To complete the common core's physics sequence at the level of Caltech's Ph sequence. Quantum mechanics and statistical physics are the two pillars under modern computation, materials, and much of machine learning: entropy, sampling, and energy-based models come from statistical physics, and the physical limits of computation come from quantum mechanics. Física II gave the introduction, this course treats it seriously."
 content_es = "Ondas y análisis de Fourier de señales físicas. Mecánica cuántica: ecuación de Schrödinger, operadores y observables, espín, entrelazamiento, qubits, límites físicos del cómputo y nociones de computación cuántica. Física estadística: ensambles, funciones de partición, entropía, transiciones de fase, y el puente entre la mecánica estadística y la inferencia, el muestreo y los modelos basados en energía del machine learning."
 content_en = "Waves and Fourier analysis of physical signals. Quantum mechanics: the Schrödinger equation, operators and observables, spin, entanglement, qubits, the physical limits of computation, and notions of quantum computing. Statistical physics: ensembles, partition functions, entropy, phase transitions, and the bridge between statistical mechanics and inference, sampling, and the energy-based models of machine learning."
-notes_html_es = "Cierra la secuencia Ph I–II–III del núcleo común. Se apoya en Análisis Avanzado y Ecuaciones en Derivadas Parciales (que provee Fourier y las EDP) y en Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2, y conecta hacia adelante con Deep Learning (modelos basados en energía, muestreo), Seguridad y Criptografía (límites del cómputo) y Sistemas Complejos (transiciones de fase). La física estadística es, además, el lenguaje natural para entender por qué ciertos sistemas de aprendizaje funcionan."
-notes_html_en = "Closes the common core's Ph I–II–III sequence. It builds on Análisis Avanzado y Ecuaciones en Derivadas Parciales (which provides Fourier and PDEs) and on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos, and connects forward to Deep Learning (energy-based models, sampling), Seguridad y Criptografía (limits of computation), and Sistemas Complejos (phase transitions). Statistical physics is also the natural language for understanding why certain learning systems work."
+notes_html_es = "Cierra la secuencia Ph I–II–III del núcleo común. Se apoya en Ecuaciones en Derivadas Parciales (que provee Fourier y las EDP) y en Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2, y conecta hacia adelante con Deep Learning (modelos basados en energía, muestreo), Seguridad y Criptografía (límites del cómputo) y Sistemas Complejos (transiciones de fase). La física estadística es, además, el lenguaje natural para entender por qué ciertos sistemas de aprendizaje funcionan."
+notes_html_en = "Closes the common core's Ph I–II–III sequence. It builds on Ecuaciones en Derivadas Parciales (which provides Fourier and PDEs) and on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos, and connects forward to Deep Learning (energy-based models, sampling), Seguridad y Criptografía (limits of computation), and Sistemas Complejos (phase transitions). Statistical physics is also the natural language for understanding why certain learning systems work."
 texts = [
   "Feynman, Richard P., Robert B. Leighton, and Matthew Sands. <em>The Feynman Lectures on Physics.</em> Vol. III. Caltech, 2013. feynmanlectures.caltech.edu.",
   "Griffiths, David J., and Darrell F. Schroeter. <em>Introduction to Quantum Mechanics.</em> 3rd ed. Cambridge University Press, 2018.",
