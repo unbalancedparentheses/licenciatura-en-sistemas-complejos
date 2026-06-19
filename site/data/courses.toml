@@ -724,48 +724,19 @@ evaluation_secondaries = [
 ]
 
 [[course]]
-slug = "analisis-real-y-teoria-de-la-medida"
-title_es = "Análisis Real y Teoría de la Medida"
-title_en = "Real Analysis and Measure Theory"
-year = 4
-block = "A"
-position = 1
-audiences = ["students", "faculty", "authorities"]
-objective_es = "Llevar el análisis al nivel de madurez que exige el posgrado: análisis real hecho en serio y probabilidad con base en teoría de la medida. Lo que Cálculo y Análisis abre con rigor de ε–δ, este curso lo reconstruye desde los cimientos. Es el equivalente a 18.100 del MIT y al tramo superior de la secuencia Ma de Caltech."
-objective_en = "To take analysis to the maturity graduate study demands: real analysis done seriously and measure-theoretic probability. What Cálculo y Análisis opens with ε–δ rigor, this course rebuilds from the foundations. It is the equivalent of MIT's 18.100 and the upper tier of Caltech's Ma sequence."
-content_es = "Análisis real en profundidad: espacios métricos y normados, completitud, sucesiones y series de funciones, convergencia uniforme, teoría de la medida e integral de Lebesgue. Probabilidad con base en teoría de la medida: σ-álgebras, medidas, esperanza como integral, modos de convergencia, leyes de los grandes números. Da fundamento riguroso a Procesos Estocásticos y la madurez analítica con la que el egresado compite por maestrías y doctorados de primer nivel."
-content_en = "Real analysis in depth: metric and normed spaces, completeness, sequences and series of functions, uniform convergence, measure theory and the Lebesgue integral. Measure-theoretic probability: σ-algebras, measures, expectation as an integral, modes of convergence, laws of large numbers. It puts Procesos Estocásticos on rigorous footing and is the analytical maturity graduates carry into top masters and doctoral programs."
-notes_html_es = "Forma, junto con Ecuaciones en Derivadas Parciales, el tramo terminal de la secuencia matemática. Separarlos en dos materias de ocho semanas, en lugar de comprimirlos en una sola, es lo que permite tratar cada uno con la profundidad de un curso de posgrado."
-notes_html_en = "Together with Ecuaciones en Derivadas Parciales it forms the terminal tier of the mathematical sequence. Splitting them into two eight-week courses, rather than compressing both into one, is what lets each be treated at graduate-course depth."
-texts = [
-  "Rudin, Walter. <em>Principles of Mathematical Analysis.</em> 3rd ed. McGraw-Hill, 1976.",
-  "Apostol, Tom M. <em>Mathematical Analysis.</em> 2nd ed. Addison-Wesley, 1974.",
-  "Williams, David. <em>Probability with Martingales.</em> Cambridge University Press, 1991.",
-]
-references = [
-  { name = "MIT 18.100B Real Analysis", url = "https://ocw.mit.edu/courses/18-100b-analysis-i-fall-2010/" },
-  { name = "MIT 18.125 Measure and Integration", url = "https://ocw.mit.edu/courses/18-125-measure-and-integration-fall-2003/" },
-  { name = "Caltech Ma 108 / Ma 110 Analysis", url = "https://pma.caltech.edu/courses" },
-]
-evaluation_primary = "WE, Written exam with unseen problems and short proofs"
-evaluation_secondaries = [
-  "TP, Problem sets and a proof portfolio",
-]
-
-[[course]]
 slug = "ecuaciones-en-derivadas-parciales"
 title_es = "Ecuaciones en Derivadas Parciales"
 title_en = "Partial Differential Equations"
 year = 4
 block = "A"
-position = 2
+position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Resolver y analizar las ecuaciones que describen cómo evolucionan en el espacio y el tiempo los sistemas físicos, económicos y de aprendizaje. Construye sobre Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2 y sobre el rigor de Análisis Real, y provee a Física III el lenguaje de Fourier y las EDP. Es el equivalente a 18.152 del MIT y a ACM 101 de Caltech."
-objective_en = "To solve and analyze the equations that describe how physical, economic, and learning systems evolve in space and time. It builds on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos and on the rigor of Análisis Real, and gives Física III the language of Fourier and PDEs. It is the equivalent of MIT's 18.152 and Caltech's ACM 101."
+objective_es = "Resolver y analizar las ecuaciones que describen cómo evolucionan en el espacio y el tiempo los sistemas físicos, económicos y de aprendizaje. Construye sobre Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2 y sobre el cálculo en varias variables, y provee a Física III el lenguaje de Fourier y las EDP. Es el equivalente a 18.152 del MIT y a ACM 101 de Caltech, y el tramo terminal de la secuencia matemática del núcleo."
+objective_en = "To solve and analyze the equations that describe how physical, economic, and learning systems evolve in space and time. It builds on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos and on multivariable calculus, and gives Física III the language of Fourier and PDEs. It is the equivalent of MIT's 18.152 and Caltech's ACM 101, and the terminal tier of the core's mathematical sequence."
 content_es = "Ecuaciones del calor, de onda y de Laplace. Separación de variables y series de Fourier. Problemas de contorno y de valores iniciales, buena posición, principios del máximo. Transformada de Fourier, funciones de Green, nociones de soluciones débiles. Aplicaciones a difusión, propagación de ondas y modelos de campo."
 content_en = "Heat, wave, and Laplace equations. Separation of variables and Fourier series. Boundary- and initial-value problems, well-posedness, maximum principles. Fourier transform, Green's functions, notions of weak solutions. Applications to diffusion, wave propagation, and field models."
-notes_html_es = "Cierra la secuencia matemática del núcleo. Se apoya en Ecuaciones Diferenciales y Sistemas Dinámicos (Año 2) y en Análisis Real, y alimenta directamente Física III, donde Fourier y las EDP son el lenguaje de las ondas y la física estadística."
-notes_html_en = "Closes the core's mathematical sequence. It builds on Ecuaciones Diferenciales y Sistemas Dinámicos (Year 2) and on Análisis Real, and feeds directly into Física III, where Fourier and PDEs are the language of waves and statistical physics."
+notes_html_es = "Cierra la secuencia matemática del núcleo. Se apoya en Ecuaciones Diferenciales y Sistemas Dinámicos (Año 2) y en Cálculo y Análisis II, y alimenta directamente Física III, donde Fourier y las EDP son el lenguaje de las ondas y la física estadística."
+notes_html_en = "Closes the core's mathematical sequence. It builds on Ecuaciones Diferenciales y Sistemas Dinámicos (Year 2) and Cálculo y Análisis II, and feeds directly into Física III, where Fourier and PDEs are the language of waves and statistical physics."
 texts = [
   "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007.",
   "Evans, Lawrence C. <em>Partial Differential Equations.</em> 2nd ed. American Mathematical Society, 2010.",
@@ -1251,7 +1222,7 @@ title_es = "Métodos de Investigación, Medición y Diseño Experimental"
 title_en = "Research Methods, Measurement and Experimental Design"
 year = 4
 block = "A"
-position = 3
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir, medir y defender afirmaciones con evidencia. La materia que vuelve operativa la pregunta '¿cómo sé que esto es verdad?' Esencial cuando la IA puede generar texto convincente pero no puede generar evidencia."
 objective_en = "To build, measure, and defend claims with evidence. The course that operationalizes the question 'how do I know this is true?' Essential when AI can generate convincing text but cannot generate evidence."
