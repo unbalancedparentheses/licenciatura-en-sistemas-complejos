@@ -58,7 +58,7 @@ slug = "razonamiento-formal-y-demostracion"
 title_es = "Razonamiento Formal y Demostración"
 title_en = "Formal Reasoning and Proof"
 year = 1
-block = "A"
+block = "B"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entrenar el razonamiento preciso y la disciplina de la falsificación. Construir la capacidad de trabajar con rigor en territorio desconocido."
@@ -87,20 +87,19 @@ title_es = "Cálculo y Análisis"
 title_en = "Calculus and Analysis"
 year = 1
 block = "A"
-position = 3
+position = 2
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Construir el cálculo y el análisis matemático que el resto del programa asume en silencio. Desde límites y continuidad hasta cálculo en varias variables y elementos de análisis real, con el rigor suficiente para que probabilidad, optimización, física, machine learning y procesos estocásticos puedan apoyarse en él en lugar de evitarlo."
-objective_en = "To build the calculus and mathematical analysis that the rest of the program silently assumes. From limits and continuity to multivariable calculus and elements of real analysis, with enough rigor that probability, optimization, physics, machine learning, and stochastic processes can rely on it rather than work around it."
-content_es = "Límites, continuidad, derivadas y aproximación de Taylor. Integración de Riemann. Sucesiones y series, criterios de convergencia. Cálculo en varias variables: gradientes, jacobianos, hessianos, integrales múltiples. Optimización con restricciones, multiplicadores de Lagrange. Ecuaciones diferenciales ordinarias elementales. Unidad final de análisis real y topología: espacios métricos, compacidad, convergencia uniforme, continuidad como preservación de estructura, teoremas de punto fijo."
-content_en = "Limits, continuity, derivatives, and Taylor approximation. Riemann integration. Sequences and series, convergence criteria. Multivariable calculus: gradients, Jacobians, Hessians, multiple integrals. Constrained optimization, Lagrange multipliers. Elementary ordinary differential equations. Closing unit on real analysis and topology: metric spaces, compactness, uniform convergence, continuity as structure preservation, fixed-point theorems."
-notes_html_es = "El curso es deliberadamente denso para una sola materia: ocho semanas para material que muchos programas distribuyen en un año entero. La compresión es posible porque corre en paralelo con Razonamiento Formal y Demostración, donde se construye la disciplina de prueba que el cálculo riguroso requiere, y con Álgebra Lineal y Computación I, que provee el lenguaje vectorial. La meta no es agotar a Tao, es que Probabilidad, Procesos Estocásticos, Física, Machine Learning y los cursos de optimización puedan asumir el cálculo en lugar de trabajar a su alrededor."
-notes_html_en = "The course is deliberately dense for a single block: eight weeks for material many programs spread over a full year. The compression is possible because it runs in parallel with Razonamiento Formal y Demostración, where the proof discipline rigorous calculus requires is built, and with Álgebra Lineal y Computación I, which provides the vector language. The goal is not to exhaust Tao, it is for Probabilidad, Procesos Estocásticos, Física, Machine Learning, and the optimization courses to be able to assume calculus rather than work around it."
+objective_es = "Construir el cálculo riguroso que el resto del programa asume en silencio. Desde límites y continuidad hasta cálculo en varias variables, con el rigor de ε–δ suficiente para que probabilidad, optimización, física, machine learning y procesos estocásticos puedan apoyarse en él en lugar de evitarlo. El análisis real abstracto y las ecuaciones diferenciales se construyen después, en sus propios cursos."
+objective_en = "To build the rigorous calculus that the rest of the program silently assumes. From limits and continuity to multivariable calculus, with enough ε–δ rigor that probability, optimization, physics, machine learning, and stochastic processes can rely on it rather than work around it. Abstract real analysis and differential equations are built later, in their own courses."
+content_es = "Límites, continuidad, derivadas y aproximación de Taylor, tratados con rigor de ε–δ. Integración de Riemann. Sucesiones y series, criterios de convergencia. Cálculo en varias variables: gradientes, jacobianos, hessianos, integrales múltiples. Optimización con restricciones y multiplicadores de Lagrange."
+content_en = "Limits, continuity, derivatives, and Taylor approximation, treated with ε–δ rigor. Riemann integration. Sequences and series, convergence criteria. Multivariable calculus: gradients, Jacobians, Hessians, multiple integrals. Constrained optimization and Lagrange multipliers."
+notes_html_es = "Con la estructura de cuatro años el curso ya no comprime un año entero de material en ocho semanas: las ecuaciones diferenciales y los sistemas dinámicos pasan a su propio curso en el Año 2, y el análisis real abstracto y la topología (espacios métricos, compacidad, convergencia uniforme, teoremas de punto fijo) al curso de Análisis Avanzado del Año 4. Lo que queda es un cálculo riguroso y enfocado, que corre en paralelo con Razonamiento Formal y Demostración y con Álgebra Lineal y Computación I, de modo que Probabilidad, Física, Machine Learning y los cursos de optimización puedan asumir el cálculo en lugar de trabajar a su alrededor."
+notes_html_en = "With the four-year structure the course no longer compresses a full year of material into eight weeks: differential equations and dynamical systems move to their own course in Year 2, and abstract real analysis and topology (metric spaces, compactness, uniform convergence, fixed-point theorems) to the Advanced Analysis course in Year 4. What remains is a focused, rigorous calculus, running in parallel with Razonamiento Formal y Demostración and Álgebra Lineal y Computación I, so that Probabilidad, Física, Machine Learning, and the optimization courses can assume calculus rather than work around it."
 texts = [
+  { citation = "Apostol, Tom M. <em>Calculus.</em> Vols. I–II. 2nd ed. Wiley, 1967.", note_es = "El texto canónico del núcleo de matemática de Caltech: cálculo construido con rigor, del que parte la madurez analítica del programa.", note_en = "The canonical text of Caltech's mathematics core: calculus built rigorously, the starting point for the program's analytical maturity." },
   { citation = "Spivak, Michael. <em>Calculus.</em> 4th ed. Publish or Perish, 2008.", note_es = "Cálculo de una variable tratado con rigor, escrito como introducción al análisis real.", note_en = "Single-variable calculus treated rigorously, written as an introduction to real analysis." },
   { citation = "Tao, Terence. <em>Analysis I.</em> Hindustan Book Agency, 2016.", note_es = "Análisis real construido desde los axiomas de los reales, autocontenido y riguroso.", note_en = "Real analysis built from the axioms of the reals, self-contained and rigorous." },
   { citation = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms.</em> 5th ed. Matrix Editions, 2015.", note_es = "Cálculo en varias variables con álgebra lineal y formas diferenciales, el puente natural hacia ML, optimización y física.", note_en = "Multivariable calculus with linear algebra and differential forms, the natural bridge into ML, optimization, and physics." },
-  { citation = "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos.</em> 2nd ed. CRC Press, 2014.", note_es = "Capítulos seleccionados sobre EDO y comportamiento cualitativo, conexión temprana con Sistemas Complejos.", note_en = "Selected chapters on ODEs and qualitative behavior, an early bridge to Sistemas Complejos." },
-  { citation = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000.", note_es = "Capítulos seleccionados de topología de conjuntos de puntos para la unidad final: espacios métricos, compacidad, continuidad.", note_en = "Selected chapters of point-set topology for the closing unit: metric spaces, compactness, continuity." },
 ]
 references = [
   { name = "MIT 18.01 Single Variable Calculus", url = "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" },
@@ -119,7 +118,7 @@ slug = "microeconomia-y-logica-de-decision"
 title_es = "Microeconomía y Lógica de Decisión"
 title_en = "Microeconomics and Decision Logic"
 year = 1
-block = "B"
+block = "D"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonar sobre escasez, incentivos y tradeoffs antes de tocar un modelo de negocio. Desarrollar intuición económica antes de que el programa exija modelado formal."
@@ -228,7 +227,7 @@ slug = "fisica-i"
 title_es = "Física I: Mecánica, Energía y Termodinámica"
 title_en = "Physics I: Mechanics, Energy and Thermodynamics"
 year = 1
-block = "C"
+block = "A"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Física para constructores, no para físicos. Entender el mundo físico lo suficiente para construir cosas que interactúen con él, y reconocer cuándo tus abstracciones ignoran restricciones reales."
@@ -255,7 +254,7 @@ slug = "fisica-ii"
 title_es = "Física II: Electromagnetismo, Señales y Computación Física"
 title_en = "Physics II: Electromagnetism, Signals and Physical Computation"
 year = 1
-block = "D"
+block = "C"
 position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Electromagnetismo y física de señales para constructores. Suficiente mecánica cuántica para entender semiconductores y los límites físicos de la computación."
@@ -313,7 +312,7 @@ title_es = "Historia de las Instituciones, la Tecnología y el Poder"
 title_en = "History of Institutions, Technology and Power"
 year = 2
 block = "D"
-position = 2
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo las organizaciones, los estados, los mercados y las tecnologías transformadoras realmente funcionan, y cómo fallan. Casos históricos como tests de estrés de modelos de gobernanza, junto al estudio de cómo cada gran transición tecnológica reorganizó el poder, la economía y las formas de vida."
 objective_en = "To understand how organizations, states, markets, and transformative technologies actually work, and how they fail. Historical cases as stress tests of governance models, together with the study of how each major technological transition reorganized power, economy, and forms of life."
@@ -379,8 +378,8 @@ slug = "econometria-e-inferencia-causal"
 title_es = "Econometría e Inferencia Causal"
 title_en = "Econometrics and Causal Inference"
 year = 2
-block = "A"
-position = 2
+block = "C"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Pasar de correlación a causalidad. La pregunta central: bajo qué condiciones se puede afirmar que X causa Y, y qué estrategia de identificación lo garantiza."
 objective_en = "To move from correlation to causality. The central question: under what conditions can one claim that X causes Y, and what identification strategy guarantees it."
@@ -406,8 +405,8 @@ slug = "deep-learning-y-modelos-fundacionales"
 title_es = "Deep Learning y Modelos Fundacionales"
 title_en = "Deep Learning and Foundation Models"
 year = 2
-block = "A"
-position = 3
+block = "B"
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender en profundidad las arquitecturas, mecanismos y leyes de escala de los sistemas de IA que definen esta era, no como usuarios, sino como ingenieros y críticos."
 objective_en = "To understand in depth the architectures, mechanisms, and scaling laws of the AI systems that define this era, not as users, but as engineers and critics."
@@ -437,7 +436,7 @@ slug = "teoria-de-juegos-y-diseno-de-mecanismos"
 title_es = "Teoría de Juegos y Diseño de Mecanismos"
 title_en = "Game Theory and Mechanism Design"
 year = 2
-block = "B"
+block = "D"
 position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "De la optimización individual a la interacción estratégica. Diseñar sistemas donde agentes racionales interactúan y los incentivos producen los resultados deseados."
@@ -493,12 +492,42 @@ evaluation_secondaries = [
 ]
 
 [[course]]
+slug = "ecuaciones-diferenciales-y-sistemas-dinamicos"
+title_es = "Ecuaciones Diferenciales y Sistemas Dinámicos"
+title_en = "Differential Equations and Dynamical Systems"
+year = 2
+block = "A"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Dar el lenguaje de los sistemas que evolucionan en el tiempo: ecuaciones diferenciales, estabilidad y comportamiento cualitativo. Es la materia bisagra del núcleo, el equivalente a Ma 2 de Caltech y a 18.03 del MIT, y la base sobre la que se apoyan Control, Sistemas Complejos y el modelado físico del Año 3. Razonar sobre dinámica antes de intentar controlarla o simularla."
+objective_en = "To provide the language of systems that evolve in time: differential equations, stability, and qualitative behavior. It is the hinge course of the core, the equivalent of Caltech's Ma 2 and MIT's 18.03, and the foundation on which Control, Sistemas Complejos, and the physical modeling of Year 3 rest. To reason about dynamics before trying to control or simulate it."
+content_es = "Ecuaciones diferenciales ordinarias: ecuaciones y sistemas lineales de primer orden, existencia y unicidad, coeficientes constantes, transformada de Laplace, métodos no lineales. Sistemas dinámicos: espacio de fases, equilibrios, linealización y estabilidad, bifurcaciones, ciclos límite, atractores y caos. El curso entrega la intuición y las herramientas que Control, Observabilidad y Medición y Sistemas Complejos asumen en el Año 3."
+content_en = "Ordinary differential equations: first-order linear equations and systems, existence and uniqueness, constant coefficients, the Laplace transform, nonlinear methods. Dynamical systems: phase space, equilibria, linearization and stability, bifurcations, limit cycles, attractors, and chaos. The course delivers the intuition and tools that Control, Observabilidad y Medición and Sistemas Complejos assume in Year 3."
+notes_html_es = "Es deliberadamente una materia de segundo año, no de cuarto: la dinámica es prerrequisito de todo lo aplicado que viene después. Caltech la coloca en el segundo año (Ma 2) y el MIT como gate temprano (18.03) precisamente porque Control, los sistemas complejos y los métodos numéricos no se pueden enseñar con honestidad sin ella. Se apoya en Cálculo y Análisis (Año 1) y alimenta directamente Control, Sistemas Complejos y Optimización Aplicada y Métodos Numéricos (Año 3)."
+notes_html_en = "It is deliberately a second-year course, not a fourth-year one: dynamics is a prerequisite for everything applied that comes later. Caltech places it in the second year (Ma 2) and MIT as an early gate (18.03) precisely because Control, complex systems, and numerical methods cannot be taught honestly without it. It builds on Cálculo y Análisis (Year 1) and feeds directly into Control, Sistemas Complejos, and Optimización Aplicada y Métodos Numéricos (Year 3)."
+texts = [
+  "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos.</em> 2nd ed. CRC Press, 2014.",
+  "Hirsch, Morris W., Stephen Smale, and Robert L. Devaney. <em>Differential Equations, Dynamical Systems, and an Introduction to Chaos.</em> 3rd ed. Academic Press, 2012.",
+  "Boyce, William E., and Richard C. DiPrima. <em>Elementary Differential Equations and Boundary Value Problems.</em> 12th ed. Wiley, 2021.",
+]
+references = [
+  { name = "MIT 18.03 Differential Equations", url = "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/" },
+  { name = "Caltech Ma 2 / Ma 102 Differential Equations", url = "https://pma.caltech.edu/courses" },
+  { name = "MIT 18.353 Nonlinear Dynamics and Chaos", url = "https://ocw.mit.edu/courses/18-353j-nonlinear-dynamics-i-chaos-fall-2012/" },
+  { name = "Steven Strogatz: Nonlinear Dynamics and Chaos lectures, YouTube", url = "https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V" },
+]
+evaluation_primary = "WE, Written exam with unseen problems"
+evaluation_secondaries = [
+  "TP, Problem sets and a phase-portrait modeling project",
+]
+
+[[course]]
 slug = "metodos-formales-y-verificacion"
 title_es = "Métodos Formales y Verificación"
 title_en = "Formal Methods and Verification"
 year = 2
-block = "B"
-position = 3
+block = "C"
+position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Demostrar matemáticamente que un sistema hace lo que dice hacer. Si AGI genera código, la verificación formal se vuelve más importante, no menos."
 objective_en = "To prove mathematically that a system does what it says it does. If AI generates code, formal verification becomes more important, not less."
@@ -527,8 +556,8 @@ slug = "redes-y-sistemas-distribuidos"
 title_es = "Redes y Sistemas Distribuidos"
 title_en = "Networks and Distributed Systems"
 year = 2
-block = "C"
-position = 1
+block = "B"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar protocolos que funcionen bajo pérdida, delay y condiciones adversariales. Construir sistemas que sobrevivan fallas parciales."
 objective_en = "To design protocols that work under loss, delay, and adversarial conditions. To build systems that survive partial failures."
@@ -587,7 +616,7 @@ title_es = "Seguridad, Criptografía y Confianza"
 title_en = "Security, Cryptography and Trust"
 year = 2
 block = "C"
-position = 3
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo se construye la confianza técnicamente y dónde se rompe."
 objective_en = "To understand how trust is constructed technically and where it breaks."
@@ -615,7 +644,7 @@ title_es = "Economía Política, Derecho y Regulación"
 title_en = "Political Economy, Law and Regulation"
 year = 2
 block = "D"
-position = 1
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender cómo la regulación, la tributación, la responsabilidad legal y las políticas públicas determinan lo que se puede construir."
 objective_en = "To understand how regulation, taxation, legal liability, and public policy determine what can be built."
@@ -643,10 +672,73 @@ evaluation_secondaries = [
 ]
 
 [[course]]
+slug = "analisis-avanzado-y-ecuaciones-en-derivadas-parciales"
+title_es = "Análisis Avanzado y Ecuaciones en Derivadas Parciales"
+title_en = "Advanced Analysis and Partial Differential Equations"
+year = 4
+block = "A"
+position = 1
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Cerrar la secuencia matemática del núcleo en el nivel de madurez que exige el posgrado: análisis real hecho en serio, probabilidad con base en teoría de la medida y ecuaciones en derivadas parciales. Lo que Cálculo y Análisis abre y Ecuaciones Diferenciales y Sistemas Dinámicos consolida, este curso lo lleva a la profundidad del tramo superior de la secuencia Ma de Caltech y de 18.100/18.152 del MIT."
+objective_en = "To close the core's mathematical sequence at the level of maturity graduate study demands: real analysis taken seriously, measure-theoretic probability, and partial differential equations. What Cálculo y Análisis opens and Ecuaciones Diferenciales y Sistemas Dinámicos consolidates, this course takes to the depth of the upper tier of Caltech's Ma sequence and of MIT's 18.100/18.152."
+content_es = "Análisis real en profundidad: espacios métricos y normados, completitud, sucesiones y series de funciones, convergencia uniforme, introducción a la teoría de la medida y la integral de Lebesgue. Probabilidad con base en teoría de la medida: σ-álgebras, medidas, esperanza como integral, modos de convergencia, leyes de los grandes números. Ecuaciones en derivadas parciales: ecuaciones del calor, de onda y de Laplace, separación de variables, métodos de Fourier, buena posición. Conecta hacia atrás con Ecuaciones Diferenciales y Sistemas Dinámicos y hacia adelante con Física III y con Procesos Estocásticos, que aquí queda formalizado."
+content_en = "Real analysis in depth: metric and normed spaces, completeness, sequences and series of functions, uniform convergence, an introduction to measure theory and the Lebesgue integral. Measure-theoretic probability: σ-algebras, measures, expectation as an integral, modes of convergence, laws of large numbers. Partial differential equations: heat, wave, and Laplace equations, separation of variables, Fourier methods, well-posedness. It connects back to Ecuaciones Diferenciales y Sistemas Dinámicos and forward to Física III and to Procesos Estocásticos, which is here put on rigorous footing."
+notes_html_es = "Es el tramo terminal de la secuencia matemática: el cuarto año permite tratar el análisis real, la probabilidad medible y las EDP como un cuerpo riguroso, en lugar de repartir fragmentos. Provee a Física III el lenguaje de Fourier y EDP, da fundamento de teoría de la medida a Procesos Estocásticos y es la madurez analítica con la que el egresado compite por maestrías y doctorados de primer nivel."
+notes_html_en = "It is the terminal tier of the mathematical sequence: the fourth year makes it possible to treat real analysis, measure-theoretic probability, and PDEs as a single rigorous body rather than scattering fragments. It gives Física III the language of Fourier and PDEs, puts Procesos Estocásticos on measure-theoretic footing, and is the analytical maturity graduates carry into top masters and doctoral programs."
+texts = [
+  "Rudin, Walter. <em>Principles of Mathematical Analysis.</em> 3rd ed. McGraw-Hill, 1976.",
+  "Apostol, Tom M. <em>Mathematical Analysis.</em> 2nd ed. Addison-Wesley, 1974.",
+  "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007.",
+  "Williams, David. <em>Probability with Martingales.</em> Cambridge University Press, 1991.",
+]
+references = [
+  { name = "MIT 18.100B Real Analysis", url = "https://ocw.mit.edu/courses/18-100b-analysis-i-fall-2010/" },
+  { name = "MIT 18.152 Introduction to PDEs", url = "https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/" },
+  { name = "MIT 18.125 Measure and Integration", url = "https://ocw.mit.edu/courses/18-125-measure-and-integration-fall-2003/" },
+  { name = "Caltech Ma 108 / Ma 110 Analysis", url = "https://pma.caltech.edu/courses" },
+  { name = "Caltech ACM 95/100 Methods of Applied Mathematics", url = "https://www.cms.caltech.edu/academics/courses" },
+]
+evaluation_primary = "WE, Written exam with unseen problems and short proofs"
+evaluation_secondaries = [
+  "TP, Problem sets and a proof portfolio",
+]
+
+[[course]]
+slug = "fisica-iii"
+title_es = "Física III: Mecánica Cuántica, Física Estadística y Ondas"
+title_en = "Physics III: Quantum Mechanics, Statistical Physics and Waves"
+year = 4
+block = "B"
+position = 1
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Completar la secuencia de física del núcleo común al nivel de la secuencia Ph de Caltech. Mecánica cuántica y física estadística son los dos pilares que sostienen la computación moderna, los materiales y buena parte del machine learning: la entropía, el muestreo y los modelos basados en energía vienen de la física estadística, y los límites físicos del cómputo vienen de la cuántica. Física II daba la introducción, este curso la trata en serio."
+objective_en = "To complete the common core's physics sequence at the level of Caltech's Ph sequence. Quantum mechanics and statistical physics are the two pillars under modern computation, materials, and much of machine learning: entropy, sampling, and energy-based models come from statistical physics, and the physical limits of computation come from quantum mechanics. Física II gave the introduction, this course treats it seriously."
+content_es = "Ondas y análisis de Fourier de señales físicas. Mecánica cuántica: ecuación de Schrödinger, operadores y observables, espín, entrelazamiento, qubits, límites físicos del cómputo y nociones de computación cuántica. Física estadística: ensambles, funciones de partición, entropía, transiciones de fase, y el puente entre la mecánica estadística y la inferencia, el muestreo y los modelos basados en energía del machine learning."
+content_en = "Waves and Fourier analysis of physical signals. Quantum mechanics: the Schrödinger equation, operators and observables, spin, entanglement, qubits, the physical limits of computation, and notions of quantum computing. Statistical physics: ensembles, partition functions, entropy, phase transitions, and the bridge between statistical mechanics and inference, sampling, and the energy-based models of machine learning."
+notes_html_es = "Cierra la secuencia Ph I–II–III del núcleo común. Se apoya en Análisis Avanzado y Ecuaciones en Derivadas Parciales (que provee Fourier y las EDP) y en Ecuaciones Diferenciales y Sistemas Dinámicos del Año 2, y conecta hacia adelante con Deep Learning (modelos basados en energía, muestreo), Seguridad y Criptografía (límites del cómputo) y Sistemas Complejos (transiciones de fase). La física estadística es, además, el lenguaje natural para entender por qué ciertos sistemas de aprendizaje funcionan."
+notes_html_en = "Closes the common core's Ph I–II–III sequence. It builds on Análisis Avanzado y Ecuaciones en Derivadas Parciales (which provides Fourier and PDEs) and on Year 2's Ecuaciones Diferenciales y Sistemas Dinámicos, and connects forward to Deep Learning (energy-based models, sampling), Seguridad y Criptografía (limits of computation), and Sistemas Complejos (phase transitions). Statistical physics is also the natural language for understanding why certain learning systems work."
+texts = [
+  "Feynman, Richard P., Robert B. Leighton, and Matthew Sands. <em>The Feynman Lectures on Physics.</em> Vol. III. Caltech, 2013. feynmanlectures.caltech.edu.",
+  "Griffiths, David J., and Darrell F. Schroeter. <em>Introduction to Quantum Mechanics.</em> 3rd ed. Cambridge University Press, 2018.",
+  "Schroeder, Daniel V. <em>An Introduction to Thermal Physics.</em> Oxford University Press, 2021.",
+  "Kardar, Mehran. <em>Statistical Physics of Particles.</em> Cambridge University Press, 2007.",
+]
+references = [
+  { name = "MIT 8.04 Quantum Physics I", url = "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" },
+  { name = "MIT 8.044 Statistical Physics I", url = "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/" },
+  { name = "Caltech Ph 12 / Ph 2 Waves, Quantum Mechanics and Statistical Physics", url = "https://pma.caltech.edu/courses" },
+  { name = "Caltech Ph 125 Quantum Mechanics", url = "https://pma.caltech.edu/courses" },
+]
+evaluation_primary = "WE, Written exam with unseen problems"
+evaluation_secondaries = [
+  "TP, Problem sets and computational simulations",
+]
+
+[[course]]
 slug = "cultura-legitimidad-y-normas"
 title_es = "Cultura, Legitimidad y Normas"
 title_en = "Culture, Legitimacy and Norms"
-year = 3.5
+year = 4
 block = "A"
 position = 2
 audiences = ["students", "faculty", "authorities"]
@@ -727,9 +819,9 @@ html_en = """
 slug = "epistemologia-ciencia-y-los-limites-de-la-ia"
 title_es = "Epistemología, Ciencia y los Límites de la IA"
 title_en = "Epistemology, Science and the Limits of AI"
-year = 2
-block = "D"
-position = 3
+year = 4
+block = "B"
+position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Entender qué cuenta como conocimiento, qué hace válido a un modelo y qué pueden y no pueden hacer las máquinas. La materia que examina la afirmación fundacional del programa: que la AGI aún no puede ser confiada con el juicio."
 objective_en = "To understand what counts as knowledge, what makes a model valid, and what machines can and cannot do. The course that examines the program's founding claim: that AI cannot yet be trusted with judgment."
@@ -1113,8 +1205,8 @@ slug = "sistemas-de-datos"
 title_es = "Sistemas de Datos"
 title_en = "Data Systems"
 year = 2
-block = "C"
-position = 2
+block = "A"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Diseñar sistemas donde los datos sobrevivan al uso real: almacenamiento, consulta, transacciones, recuperación, replicación, migraciones, gobernanza y operación. La materia que hace explícito el sustrato que todo venture, servicio público, sistema de ML y dashboard de monitoreo necesita."
 objective_en = "To design systems where data survives real use: storage, querying, transactions, recovery, replication, migrations, governance, and operations. The course that makes explicit the substrate every venture, public service, ML system, and monitoring dashboard needs."
@@ -1173,7 +1265,7 @@ evaluation_secondaries = [
 slug = "seminario-fundacional-ia-juicio-y-responsabilidad"
 title_es = "Seminario Fundacional: IA, Juicio y Responsabilidad"
 title_en = "Founding Seminar: AI, Judgment and Responsibility"
-year = 3.5
+year = 4
 block = "A"
 position = 1
 audiences = ["students", "faculty", "authorities"]
@@ -1199,7 +1291,7 @@ title_es = "Biología de Sistemas, Evolución y Ecología"
 title_en = "Systems Biology, Evolution and Ecology"
 year = 1
 block = "D"
-position = 2
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Estudiar sistemas vivos como sistemas adaptativos complejos: evolución, ecología, redes regulatorias, inmunidad, epidemias, robustez y fragilidad. La materia no es una introducción genérica a la biología sino una lente para entender adaptación, selección, feedback, coevolución, colapso ecológico y optimización bajo restricciones."
 objective_en = "To study living systems as complex adaptive systems: evolution, ecology, regulatory networks, immunity, epidemics, robustness, and fragility. This is not a generic introduction to biology but a lens for understanding adaptation, selection, feedback, coevolution, ecological collapse, and optimization under constraints."
@@ -1230,7 +1322,7 @@ evaluation_secondaries = [
 slug = "electiva-guiada"
 title_es = "Electiva Guiada"
 title_en = "Guided Elective"
-year = 3.5
+year = 4
 block = ""
 position = 99
 audiences = ["students", "faculty", "authorities"]

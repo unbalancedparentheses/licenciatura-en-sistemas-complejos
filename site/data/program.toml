@@ -1,5 +1,5 @@
 # Program-level metadata. Numbers come from data, not hand-typed strings.
-years = 3.5
+years = 4
 weeks_per_block = 8
 blocks_per_year = 4
 cohort_min = 30

@@ -17,9 +17,9 @@ title_es = "Año 3, Síntesis"
 title_en = "Year 3, Synthesis"
 
 [[year]]
-number = 3.5
-title_es = "Año 3.5, Salida"
-title_en = "Year 3.5, Exit"
+number = 4
+title_es = "Año 4, Profundización y Salida"
+title_en = "Year 4, Advanced Core and Exit"
 
 # Studio metadata moved to data/studios.toml so each studio has a single
 # source of truth (year/blocks live alongside the §10 description payload).

@@ -54,6 +54,14 @@ text = "Avigad, Jeremy. <em>Mathematics in Lean.</em> Lean Prover Community, 202
 url = "https://leanprover-community.github.io/mathematics_in_lean/"
 
 [[entry]]
+text = "Apostol, Tom M. <em>Calculus.</em> Vols. I–II. 2nd ed. Wiley, 1967."
+url = "https://www.wiley.com/en-us/Calculus%2C+Volume+1%2C+2nd+Edition-p-9780471000051"
+
+[[entry]]
+text = "Apostol, Tom M. <em>Mathematical Analysis.</em> 2nd ed. Addison-Wesley, 1974."
+url = "https://www.pearson.com/en-us/subject-catalog/p/mathematical-analysis/P200000006141"
+
+[[entry]]
 text = "Axler, Sheldon. <em>Linear Algebra Done Right.</em> 4th ed. Springer, 2024."
 url = "https://linear.axler.net/"
 
@@ -96,6 +104,10 @@ url = "https://global.oup.com/academic/product/superintelligence-9780198739838"
 [[entry]]
 text = "Bourdieu, Pierre. <em>The Logic of Practice.</em> Stanford University Press, 1990."
 url = "https://www.sup.org/books/title/?id=2536"
+
+[[entry]]
+text = "Boyce, William E., and Richard C. DiPrima. <em>Elementary Differential Equations and Boundary Value Problems.</em> 12th ed. Wiley, 2021."
+url = "https://www.wiley.com/en-us/Elementary+Differential+Equations+and+Boundary+Value+Problems%2C+12th+Edition-p-9781119820512"
 
 [[entry]]
 text = "Boyd, Stephen, and Lieven Vandenberghe. <em>Convex Optimization.</em> Cambridge University Press, 2004. stanford.edu/~boyd/cvxbook."
@@ -258,6 +270,10 @@ text = "Hillier, Frederick S., and Gerald J. Lieberman. <em>Introduction to Oper
 url = "https://www.mheducation.com/highered/product/introduction-operations-research-hillier-lieberman/M9781259872990.html"
 
 [[entry]]
+text = "Hirsch, Morris W., Stephen Smale, and Robert L. Devaney. <em>Differential Equations, Dynamical Systems, and an Introduction to Chaos.</em> 3rd ed. Academic Press, 2012."
+url = "https://shop.elsevier.com/books/differential-equations-dynamical-systems-and-an-introduction-to-chaos/hirsch/978-0-12-382010-5"
+
+[[entry]]
 text = "Hirschman, Albert O. <em>Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States.</em> Harvard University Press, 1970."
 url = "https://www.hup.harvard.edu/books/9780674276604"
 
@@ -308,6 +324,10 @@ url = "https://arxiv.org/abs/2001.08361"
 [[entry]]
 text = "Katz, Jonathan, and Yehuda Lindell. <em>Introduction to Modern Cryptography.</em> 3rd ed. CRC Press, 2020."
 url = "https://www.routledge.com/Introduction-to-Modern-Cryptography/Katz-Lindell/p/book/9780815354369"
+
+[[entry]]
+text = "Kardar, Mehran. <em>Statistical Physics of Particles.</em> Cambridge University Press, 2007."
+url = "https://www.cambridge.org/9780521873420"
 
 [[entry]]
 text = "Kerrisk, Michael. <em>The Linux Programming Interface: A Linux and UNIX System Programming Handbook.</em> No Starch Press, 2010."
@@ -522,6 +542,10 @@ text = "Rumelt, Richard P. <em>Good Strategy Bad Strategy: The Difference and Wh
 url = "https://www.penguinrandomhouse.com/books/307041/good-strategy-bad-strategy-by-richard-rumelt/"
 
 [[entry]]
+text = "Rudin, Walter. <em>Principles of Mathematical Analysis.</em> 3rd ed. McGraw-Hill, 1976."
+url = "https://www.mheducation.com/highered/product/principles-mathematical-analysis-rudin/M9780070542358.html"
+
+[[entry]]
 text = "Russell, Stuart. <em>Human Compatible: Artificial Intelligence and the Problem of Control.</em> Viking, 2019."
 url = "https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/"
 
@@ -532,6 +556,10 @@ url = "https://www.hup.harvard.edu/books/9780674840317"
 [[entry]]
 text = "Shadish, William R., Thomas D. Cook, and Donald T. Campbell. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference.</em> Houghton Mifflin, 2002."
 url = "https://www.cengage.com/c/experimental-and-quasi-experimental-designs-for-generalized-causal-inference-2e-shadish/9780395615560/"
+
+[[entry]]
+text = "Schroeder, Daniel V. <em>An Introduction to Thermal Physics.</em> Oxford University Press, 2021."
+url = "https://global.oup.com/academic/product/an-introduction-to-thermal-physics-9780192895547"
 
 [[entry]]
 text = "Scott, James C. <em>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed.</em> Yale University Press, 1998."
@@ -568,6 +596,10 @@ url = "https://math.mit.edu/~gs/linearalgebra/"
 [[entry]]
 text = "Strang, Gilbert. <em>Linear Algebra and Learning from Data.</em> Wellesley-Cambridge Press, 2019."
 url = "https://math.mit.edu/~gs/learningfromdata/"
+
+[[entry]]
+text = "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007."
+url = "https://www.wiley.com/en-us/Partial+Differential+Equations%3A+An+Introduction%2C+2nd+Edition-p-9780470054567"
 
 [[entry]]
 text = "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering.</em> 2nd ed. CRC Press, 2014."
@@ -616,6 +648,10 @@ url = "https://www.harpercollins.com/products/never-split-the-difference-chris-v
 [[entry]]
 text = "Wasserman, Larry. <em>All of Statistics: A Concise Course in Statistical Inference.</em> Springer, 2004."
 url = "https://link.springer.com/book/10.1007/978-0-387-21736-9"
+
+[[entry]]
+text = "Williams, David. <em>Probability with Martingales.</em> Cambridge University Press, 1991."
+url = "https://www.cambridge.org/9780521406055"
 
 [[entry]]
 text = "West, Geoffrey. <em>Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies.</em> Penguin Press, 2017."
