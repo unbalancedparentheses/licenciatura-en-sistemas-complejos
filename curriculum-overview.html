@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan de Estudios — Licenciatura en Sistemas Complejos</title>
+<style>
+  :root{
+    --bg:#f7f6f3; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e3e0d8; --card:#fff;
+    --math:#2563eb; --math-bg:#eaf0fe;
+    --sci:#0d9488;  --sci-bg:#e4f4f1;
+    --cs:#6d28d9;   --cs-bg:#f0eafe;
+    --ai:#db2777;   --ai-bg:#fce7f1;
+    --eco:#c2780a;  --eco-bg:#fbf0da;
+    --inst:#b91c1c; --inst-bg:#fbe9e9;
+    --build:#4b5563;--build-bg:#edeff2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.4;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 24px 64px}
+  header h1{font-size:clamp(22px,3.2vw,34px);margin:0 0 4px;letter-spacing:-.02em}
+  header .sub{color:var(--muted);font-size:15px;margin-bottom:22px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:10px 16px;min-width:96px}
+  .stat b{display:block;font-size:22px;letter-spacing:-.02em}
+  .stat span{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+  .legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 30px;font-size:12.5px;color:#444}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+  .year{margin:0 0 34px}
+  .year-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);
+    padding-bottom:8px;margin-bottom:16px}
+  .year-head h2{margin:0;font-size:20px;letter-spacing:-.01em}
+  .year-head .ys{color:var(--muted);font-size:14px}
+  .year-head .yn{margin-left:auto;color:var(--muted);font-size:12.5px}
+
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:820px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  .col-h{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;
+    letter-spacing:.06em;margin:0 0 8px}
+  .c{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--build);
+    border-radius:8px;padding:9px 11px;margin-bottom:9px;font-size:13px;line-height:1.32}
+  .c small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+  .math{border-left-color:var(--math);background:var(--math-bg)}
+  .sci{border-left-color:var(--sci);background:var(--sci-bg)}
+  .cs{border-left-color:var(--cs);background:var(--cs-bg)}
+  .ai{border-left-color:var(--ai);background:var(--ai-bg)}
+  .eco{border-left-color:var(--eco);background:var(--eco-bg)}
+  .inst{border-left-color:var(--inst);background:var(--inst-bg)}
+  .build{border-left-color:var(--build);background:var(--build-bg)}
+  .studios{margin-top:6px;font-size:12.5px;color:#555;background:var(--card);
+    border:1px dashed var(--line);border-radius:8px;padding:9px 12px}
+  .studios b{color:var(--ink)}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+  .dim{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Licenciatura en Sistemas Complejos</h1>
+  <div class="sub">Plan de estudios completo · núcleo científico al estilo Caltech, especialización temprana al estilo MIT</div>
+  <div class="stats">
+    <div class="stat"><b>4</b><span>Años</span></div>
+    <div class="stat"><b>45</b><span>Materias</span></div>
+    <div class="stat"><b>6</b><span>Studios</span></div>
+    <div class="stat"><b>16</b><span>Bloques</span></div>
+    <div class="stat"><b>8</b><span>Semanas/bloque</span></div>
+    <div class="stat"><b>30–40</b><span>Cohorte</span></div>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--math)"></i>Matemática</span>
+    <span><i style="background:var(--sci)"></i>Física y ciencia</span>
+    <span><i style="background:var(--cs)"></i>Computación</span>
+    <span><i style="background:var(--ai)"></i>IA / Machine Learning</span>
+    <span><i style="background:var(--eco)"></i>Economía</span>
+    <span><i style="background:var(--inst)"></i>Instituciones y sociedad</span>
+    <span><i style="background:var(--build)"></i>Construcción y síntesis</span>
+  </div>
+</header>
+
+<!-- YEAR 1 -->
+<section class="year">
+  <div class="year-head"><h2>Año 1</h2><span class="ys">Núcleo Común</span><span class="yn">núcleo científico uniforme · sin especialización</span></div>
+  <div class="grid">
+    <div class="col"><div class="col-h">Bloque A</div>
+      <div class="c math">Álgebra Lineal y Computación I</div>
+      <div class="c math">Cálculo y Análisis I<small>una variable</small></div>
+      <div class="c sci">Física I<small>mecánica, energía, termo</small></div>
+    </div>
+    <div class="col"><div class="col-h">Bloque B</div>
+      <div class="c math">Álgebra Lineal y Computación II</div>
+      <div class="c math">Cálculo y Análisis II<small>varias variables</small></div>
+      <div class="c math">Razonamiento Formal y Demostración</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque C</div>
+      <div class="c math">Probabilidad y Estadística</div>
+      <div class="c sci">Física II<small>electromagnetismo, señales</small></div>
+      <div class="c cs">Fundamentos de Programación y Datos</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque D</div>
+      <div class="c cs">Programación de Sistemas</div>
+      <div class="c sci">Química y Materiales</div>
+      <div class="c sci">Biología de Sistemas, Evolución y Ecología</div>
+    </div>
+  </div>
+  <div class="studios"><b>Studios:</b> I — Escritura y Oratoria (A+B) · II — Construir y Romper (C+D)</div>
+</section>
+
+<!-- YEAR 2 -->
+<section class="year">
+  <div class="year-head"><h2>Año 2</h2><span class="ys">Sistemas y Especialización</span><span class="yn">IA · economía · sistemas — antes que Caltech o MIT</span></div>
+  <div class="grid">
+    <div class="col"><div class="col-h">Bloque A</div>
+      <div class="c eco">Microeconomía y Lógica de Decisión</div>
+      <div class="c cs">Algoritmos, Complejidad y Optimización</div>
+      <div class="c math">Ecuaciones Diferenciales y Sistemas Dinámicos</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque B</div>
+      <div class="c ai">Machine Learning e Ingeniería de Modelos</div>
+      <div class="c math">Procesos Estocásticos y Riesgo</div>
+      <div class="c cs">Redes y Sistemas Distribuidos</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque C</div>
+      <div class="c ai">Deep Learning y Modelos Fundacionales</div>
+      <div class="c cs">Métodos Formales y Verificación</div>
+      <div class="c cs">Seguridad, Criptografía y Confianza</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque D</div>
+      <div class="c eco">Econometría e Inferencia Causal</div>
+      <div class="c ai">Sistemas de IA<small>agentes, evals, aplicaciones</small></div>
+      <div class="c cs">Sistemas de Datos</div>
+    </div>
+  </div>
+  <div class="studios"><b>Studios:</b> III — Fiabilidad Bajo Presión (A+B) · IV — Diseño de Sistemas Institucionales (C+D)</div>
+</section>
+
+<!-- YEAR 3 -->
+<section class="year">
+  <div class="year-head"><h2>Año 3</h2><span class="ys">Síntesis e Instituciones</span><span class="yn">integrar dentro de instituciones reales</span></div>
+  <div class="grid">
+    <div class="col"><div class="col-h">Bloque A</div>
+      <div class="c build">Diseño y Estrategia de Producto</div>
+      <div class="c build">Control, Observabilidad y Medición</div>
+      <div class="c inst">Historia de las Instituciones, la Tecnología y el Poder</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque B</div>
+      <div class="c inst">Laboratorio de Diseño Institucional</div>
+      <div class="c build">Liderazgo, Negociación y Coordinación</div>
+      <div class="c inst">Economía Política, Derecho y Regulación</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque C</div>
+      <div class="c sci">Sistemas Complejos</div>
+      <div class="c eco">Teoría de Juegos y Diseño de Mecanismos</div>
+      <div class="c inst">Escritura Avanzada en Español</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque D</div>
+      <div class="c eco">Finanzas, Dinero, Banca y Macroeconomía</div>
+      <div class="c math">Optimización Aplicada y Métodos Numéricos</div>
+      <div class="c cs">Sistemas Embebidos e Interacción Física</div>
+    </div>
+  </div>
+  <div class="studios"><b>Studios:</b> V — Sistema Crítico bajo Restricciones (A+B) · VI — Venture from Zero (C+D → Año 4)</div>
+</section>
+
+<!-- YEAR 4 -->
+<section class="year">
+  <div class="year-head"><h2>Año 4</h2><span class="ys">Profundización y Salida</span><span class="yn">capstone científico · juicio · creación de empresa</span></div>
+  <div class="grid">
+    <div class="col"><div class="col-h">Bloque A</div>
+      <div class="c math">Ecuaciones en Derivadas Parciales<small>capstone matemático</small></div>
+      <div class="c build">Métodos de Investigación, Medición y Diseño Experimental</div>
+      <div class="c eco">Teoría de la Decisión</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque B</div>
+      <div class="c sci">Física III<small>cuántica, física estadística, ondas</small></div>
+      <div class="c inst">Epistemología, Ciencia y los Límites de la IA</div>
+      <div class="c inst">Ética y Responsabilidad bajo Incertidumbre</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque C</div>
+      <div class="c inst">Seminario Fundacional: IA, Juicio y Responsabilidad</div>
+      <div class="c inst">Cultura, Legitimidad y Normas</div>
+      <div class="c build">Electiva Guiada</div>
+    </div>
+    <div class="col"><div class="col-h">Bloque D</div>
+      <div class="c build" style="border-style:dashed">Venture from Zero — cierre</div>
+      <div class="c build" style="border-style:dashed">Seminario de Egreso</div>
+      <div class="c build" style="border-style:dashed">Defensa Pública Final</div>
+    </div>
+  </div>
+  <div class="studios"><b>Studio:</b> VI — Venture from Zero (continúa desde Año 3) · constituir una empresa real</div>
+</section>
+
+<footer>
+  Núcleo de matemática y física común a todos · secuencia matemática: Álgebra Lineal I/II → Cálculo I/II → Probabilidad → Ecuaciones Diferenciales (Año 2) → EDP (Año 4), con Razonamiento Formal como columna de prueba · secuencia de física: Física I → II → III.
+  <span class="dim">Carga matemática calibrada al nivel de una ingeniería exigente, no a un posgrado de matemática.</span>
+</footer>
+</div>
+</body>
+</html>

@@ -355,6 +355,10 @@ text = "Hellerstein, Joseph M., and Michael Stonebraker, eds. <em>Readings in Da
 url = "https://www.redbook.io/"
 
 [[entry]]
+text = "Huyen, Chip. <em>AI Engineering: Building Applications with Foundation Models.</em> O'Reilly, 2025."
+url = "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
+
+[[entry]]
 text = "Huyen, Chip. <em>Designing Machine Learning Systems.</em> O'Reilly, 2022."
 url = "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/"
 

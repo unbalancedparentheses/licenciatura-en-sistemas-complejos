@@ -200,8 +200,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Razonar rigurosamente sobre incertidumbre, evidencia e inferencia. La base cuantitativa que sostiene ML, econometría, procesos estocásticos y toda decisión bajo incertidumbre."
 objective_en = "To reason rigorously about uncertainty, evidence, and inference. The quantitative foundation on which ML, econometrics, stochastic processes, and every decision under uncertainty rests."
-content_es = "Espacios de probabilidad, variables aleatorias, distribuciones, esperanza y varianza, teorema central del límite, inferencia bayesiana, estimación, testing de hipótesis, intervalos de confianza. Entropía, información mutua y divergencia KL como medidas de incertidumbre, evidencia y actualización."
-content_en = "Probability spaces, random variables, distributions, expectation and variance, central limit theorem, Bayesian inference, estimation, hypothesis testing, confidence intervals. Entropy, mutual information, and KL divergence as measures of uncertainty, evidence, and updating."
+content_es = "Espacios de probabilidad, variables aleatorias, distribuciones, esperanza y varianza, teorema central del límite. Inferencia bayesiana, estimación, testing de hipótesis, intervalos de confianza, regresión. La materia se concentra en probabilidad e inferencia con profundidad; la teoría de la información (entropía, divergencia KL) se trata donde se usa, en Machine Learning."
+content_en = "Probability spaces, random variables, distributions, expectation and variance, central limit theorem. Bayesian inference, estimation, hypothesis testing, confidence intervals, regression. The course concentrates on probability and inference in depth; information theory (entropy, KL divergence) is treated where it is used, in Machine Learning."
 texts = [
   "Blitzstein, Joseph K., and Jessica Hwang. <em>Introduction to Probability.</em> 2nd ed. CRC Press, 2019.",
   "Wasserman, Larry. <em>All of Statistics.</em> Springer, 2004.",
@@ -338,8 +338,8 @@ position = 1
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Construir, entrenar, evaluar, desplegar y monitorear modelos de ML, y saber cuándo no usarlos. Los fundamentos matemáticos fueron establecidos en bloques anteriores. Este bloque enseña la ingeniería."
 objective_en = "To build, train, evaluate, deploy, and monitor ML models, and to know when not to use them. The mathematical foundations were established in earlier blocks. This block teaches the engineering."
-content_es = "Pipelines de datos, feature engineering, entrenamiento, evaluación, overfitting, regularización, deployment y monitoreo. Versionado de datos y modelos, evaluation pipelines, validación offline/online, drift detection, rollback, privacidad, seguridad, fairness checks, model cards, incident response para fallas de modelo y criterios para decidir cuándo no usar ML."
-content_en = "Data pipelines, feature engineering, training pipelines, evaluation methodology, overfitting, regularization, deployment, and monitoring. Data and model versioning, evaluation pipelines, offline/online validation, drift detection, rollback, privacy, security, fairness checks, model cards, incident response for model failures, and criteria for deciding when not to use ML."
+content_es = "Teoría de la información aplicada: entropía, entropía cruzada y divergencia KL como funciones de pérdida y medidas de evidencia. Pipelines de datos, feature engineering, entrenamiento, evaluación, overfitting, regularización, deployment y monitoreo. Versionado de datos y modelos, evaluation pipelines, validación offline/online, drift detection, rollback, privacidad, seguridad, fairness checks, model cards, incident response para fallas de modelo y criterios para decidir cuándo no usar ML."
+content_en = "Applied information theory: entropy, cross-entropy, and KL divergence as loss functions and measures of evidence. Data pipelines, feature engineering, training pipelines, evaluation methodology, overfitting, regularization, deployment, and monitoring. Data and model versioning, evaluation pipelines, offline/online validation, drift detection, rollback, privacy, security, fairness checks, model cards, incident response for model failures, and criteria for deciding when not to use ML."
 texts = [
   "Bishop, Christopher M. <em>Pattern Recognition and Machine Learning.</em> Springer, 2006.",
   "Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. <em>The Elements of Statistical Learning.</em> 2nd ed. Springer, 2009.",
@@ -484,11 +484,40 @@ evaluation_secondaries = [
 ]
 
 [[course]]
+slug = "sistemas-de-ia-agentes-y-aplicaciones"
+title_es = "Sistemas de IA: Agentes y Aplicaciones de Modelos Fundacionales"
+title_en = "AI Systems: Agents and Foundation-Model Applications"
+year = 2
+block = "D"
+position = 2
+audiences = ["students", "faculty", "authorities"]
+objective_es = "Construir sistemas reales sobre modelos fundacionales. Es la contraparte aplicada de Machine Learning y Deep Learning: no entrenar modelos desde cero, sino componerlos, orquestarlos, evaluarlos y desplegarlos en productos que funcionan y en los que se puede confiar. Es la materia que la identidad del programa exige, formar constructores en la era de la IA, y la que más se usa al crear una empresa hoy."
+objective_en = "To build real systems on top of foundation models. It is the applied counterpart to Machine Learning and Deep Learning: not training models from scratch, but composing, orchestrating, evaluating, and deploying them into products that work and can be trusted. It is the course the program's identity demands, forming builders in the AI era, and the one most used when creating a company today."
+content_es = "Ingeniería de prompts y de contexto. Retrieval-augmented generation (RAG). Uso de herramientas y function calling. Agentes y orquestación multi-agente. Evaluación y evals: offline y online, LLM como juez, detección de regresiones. Fine-tuning frente a in-context learning. Inferencia, serving, latencia y costo. Guardrails, modos de falla y seguridad. Ingeniería de producto de IA. Construye sobre Machine Learning y Deep Learning."
+content_en = "Prompt and context engineering. Retrieval-augmented generation (RAG). Tool use and function calling. Agents and multi-agent orchestration. Evaluation and evals: offline and online, LLM-as-judge, regression detection. Fine-tuning versus in-context learning. Inference, serving, latency, and cost. Guardrails, failure modes, and safety. AI product engineering. Builds on Machine Learning and Deep Learning."
+notes_html_es = "Es el eslabón que faltaba entre los fundamentos de la IA (Machine Learning, Deep Learning) y la creación de empresas (Venture from Zero). La mayoría de los productos que los egresados construirán se apoyan en modelos fundacionales que no entrenan, sino que orquestan y evalúan; esta materia enseña exactamente esa capa, con la disciplina de evaluación que distingue un sistema confiable de una demo."
+notes_html_en = "It is the missing link between the foundations of AI (Machine Learning, Deep Learning) and company creation (Venture from Zero). Most of the products graduates will build rest on foundation models they do not train but orchestrate and evaluate; this course teaches exactly that layer, with the evaluation discipline that separates a trustworthy system from a demo."
+texts = [
+  "Huyen, Chip. <em>AI Engineering: Building Applications with Foundation Models.</em> O'Reilly, 2025.",
+  "Huyen, Chip. <em>Designing Machine Learning Systems.</em> O'Reilly, 2022.",
+]
+references = [
+  { name = "Stanford CS25 Transformers United", url = "https://web.stanford.edu/class/cs25/" },
+  { name = "DeepLearning.AI short courses (RAG, agents, evals)", url = "https://www.deeplearning.ai/short-courses/" },
+  { name = "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" arXiv, 2022", url = "https://arxiv.org/abs/2210.03629" },
+  { name = "Lewis et al. \"Retrieval-Augmented Generation.\" arXiv, 2020", url = "https://arxiv.org/abs/2005.11401" },
+]
+evaluation_primary = "LC, Live build session with a working agentic application"
+evaluation_secondaries = [
+  "TP, An AI application with an evaluation harness and failure analysis",
+]
+
+[[course]]
 slug = "teoria-de-juegos-y-diseno-de-mecanismos"
 title_es = "Teoría de Juegos y Diseño de Mecanismos"
 title_en = "Game Theory and Mechanism Design"
-year = 2
-block = "D"
+year = 3
+block = "C"
 position = 2
 audiences = ["students", "faculty", "authorities"]
 objective_es = "De la optimización individual a la interacción estratégica. Diseñar sistemas donde agentes racionales interactúan y los incentivos producen los resultados deseados."
@@ -633,16 +662,16 @@ evaluation_secondaries = [
 
 [[course]]
 slug = "finanzas-dinero-y-banca"
-title_es = "Finanzas, Dinero y Banca"
-title_en = "Finance, Money and Banking"
+title_es = "Finanzas, Dinero, Banca y Macroeconomía"
+title_en = "Finance, Money, Banking and Macroeconomics"
 year = 3
 block = "D"
 position = 1
 audiences = ["students", "faculty", "authorities"]
-objective_es = "Entender cómo se financian las cosas, cómo funciona el dinero, cómo se estructura el capital. Primera mitad: finanzas corporativas. Segunda mitad: sistemas monetarios, banca central, creación de crédito."
-objective_en = "To understand how things get funded, how money works, how capital is structured. First half: corporate finance. Second half: monetary systems, central banking, credit creation."
-content_es = "Estados financieros, valuación, estructura de capital, unit economics, fundraising. Sistemas monetarios, banca central, infraestructura de pagos. Bitcoin como caso de estudio de sistemas distribuidos aplicado al dinero."
-content_en = "Financial statements, valuation, capital structure, unit economics, fundraising. Monetary systems, central banking, payments infrastructure. Bitcoin as a case study of distributed systems applied to money."
+objective_es = "Entender cómo se financian las cosas, cómo funciona el dinero y en qué entorno macroeconómico opera una empresa. Finanzas corporativas, sistemas monetarios y banca, y la macroeconomía que todo fundador necesita leer: ciclos, inflación, tasas de interés, política monetaria y fiscal."
+objective_en = "To understand how things get funded, how money works, and the macroeconomic environment a company operates in. Corporate finance, monetary systems and banking, and the macroeconomics every founder needs to read: cycles, inflation, interest rates, monetary and fiscal policy."
+content_es = "Estados financieros, valuación, estructura de capital, unit economics, fundraising. Sistemas monetarios, banca central, infraestructura de pagos. Macroeconomía: crecimiento, ciclos económicos, inflación, tasas de interés, política monetaria y fiscal, y cómo leer el entorno macro al construir una empresa. Bitcoin como caso de estudio de sistemas distribuidos aplicado al dinero."
+content_en = "Financial statements, valuation, capital structure, unit economics, fundraising. Monetary systems, central banking, payments infrastructure. Macroeconomics: growth, business cycles, inflation, interest rates, monetary and fiscal policy, and how to read the macro environment when building a company. Bitcoin as a case study of distributed systems applied to money."
 texts = [
   "Brealey, Richard A., Stewart C. Myers, and Franklin Allen. <em>Principles of Corporate Finance.</em> 14th ed. McGraw-Hill, 2022.",
   "Mehrling, Perry. <em>The New Lombard Street.</em> Princeton University Press, 2011.",
@@ -1166,9 +1195,9 @@ evaluation_secondaries = [
 slug = "teoria-de-la-decision"
 title_es = "Teoría de la Decisión"
 title_en = "Decision Theory"
-year = 3
-block = "C"
-position = 2
+year = 4
+block = "A"
+position = 3
 audiences = ["students", "faculty", "authorities"]
 objective_es = "Unificar la maquinaria formal de tomar decisiones bajo incertidumbre. La materia que formaliza el juicio. AGI puede optimizar una función objetivo dada. La pregunta humana es: ¿cuál es la función objetivo correcta?"
 objective_en = "To unify the formal machinery of decision-making under uncertainty. The course that formalizes judgment. AI can optimize a given objective function. The human question is: what is the right objective function?"
