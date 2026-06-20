@@ -19,15 +19,15 @@ frame_en = "Systems, AI, computation, and economics."
 number = 3
 title_es = "Año 3, Síntesis e Instituciones"
 title_en = "Year 3, Synthesis and Institutions"
-frame_es = "Instituciones, producto, control, finanzas y restricciones reales."
-frame_en = "Institutions, product, control, finance, and real constraints."
+frame_es = "Instituciones, producto, control y el tramo superior del núcleo de matemática y física."
+frame_en = "Institutions, product, control, and the upper tier of the math and physics core."
 
 [[year]]
 number = 4
-title_es = "Año 4, Profundización y Salida"
-title_en = "Year 4, Advanced Core and Exit"
-frame_es = "Profundización científica, juicio, método y prueba final."
-frame_en = "Scientific depth, judgment, method, and final proof."
+title_es = "Año 4, Integración y Salida"
+title_en = "Year 4, Integration and Exit"
+frame_es = "Integración, juicio, método, venture y prueba final."
+frame_en = "Integration, judgment, method, venture, and final proof."
 
 # Studio metadata moved to data/studios.toml so each studio has a single
 # source of truth (year/blocks live alongside the §10 description payload).
