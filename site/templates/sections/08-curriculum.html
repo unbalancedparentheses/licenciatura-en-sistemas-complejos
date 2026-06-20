@@ -7,6 +7,18 @@
 <h2 lang="es">8.1 El arco de cuatro años</h2>
 <h2 lang="en">8.1 The Four-Year Arc</h2>
 
+<p lang="es">El programa se organiza en cuatro años, cada uno con un título y un foco claros:</p>
+<p lang="en">The program is organized into four years, each with a clear title and focus:</p>
+
+<div class="curriculum-table">
+<table>
+<tr><th lang="es">Año</th><th lang="en">Year</th><th lang="es">Qué cubre</th><th lang="en">What it covers</th></tr>
+{% for y in curriculum.year %}
+<tr><td lang="es"><strong>{{ y.title_es }}</strong></td><td lang="en"><strong>{{ y.title_en }}</strong></td><td lang="es">{{ y.frame_es }}</td><td lang="en">{{ y.frame_en }}</td></tr>
+{% endfor %}
+</table>
+</div>
+
 <p lang="es"><strong>Año 1, Núcleo Común.</strong> El Año 1 es un núcleo científico uniforme al estilo de Caltech: matemática, física, química, biología y computación que todo estudiante cursa, sin excepción y sin especialización todavía. Al final del Año 1, los estudiantes razonan formalmente, dominan el cálculo de una y varias variables y el álgebra lineal, razonan sobre algoritmos, complejidad y los límites de la computación, programan y modelan datos a nivel de sistemas, entienden las restricciones físicas, químicas y energéticas de los sistemas que construyen, estudian los sistemas vivos como sistemas adaptativos complejos y han completado dos proyectos en equipo.</p>
 <p lang="en"><strong>Año 1, Núcleo Común.</strong> Year 1 is a uniform Caltech-style scientific core: mathematics, physics, chemistry, biology, and computation that every student takes, without exception and without specialization yet. By the end of Year 1, students reason formally, command single- and multivariable calculus and linear algebra, reason about algorithms, complexity, and the limits of computation, program and model data at the systems level, understand the physical, chemical, and energetic constraints on the systems they build, study living systems as complex adaptive systems, and have completed two team projects.</p>
 

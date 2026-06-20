@@ -12,22 +12,22 @@ frame_en = "Common scientific base: mathematics, physics, chemistry, biology, an
 number = 2
 title_es = "Año 2, Sistemas y Especialización"
 title_en = "Year 2, Systems and Specialization"
-frame_es = "Sistemas, IA, computación y economía."
-frame_en = "Systems, AI, computation, and economics."
+frame_es = "Empieza la especialización: inteligencia artificial, computación, sistemas y economía."
+frame_en = "Specialization begins: artificial intelligence, computation, systems, and economics."
 
 [[year]]
 number = 3
 title_es = "Año 3, Síntesis e Instituciones"
 title_en = "Year 3, Synthesis and Institutions"
-frame_es = "Instituciones, producto, control y el tramo superior del núcleo de matemática y física."
-frame_en = "Institutions, product, control, and the upper tier of the math and physics core."
+frame_es = "Síntesis en instituciones reales; aquí cierra el núcleo científico (EDP y Física III)."
+frame_en = "Synthesis inside real institutions; here the science core closes (PDEs and Physics III)."
 
 [[year]]
 number = 4
 title_es = "Año 4, Integración y Salida"
 title_en = "Year 4, Integration and Exit"
-frame_es = "Integración, juicio, método, venture y prueba final."
-frame_en = "Integration, judgment, method, venture, and final proof."
+frame_es = "Crear la empresa, ejercer el juicio, preparar el posgrado y defender en público."
+frame_en = "Build the company, exercise judgment, prepare for graduate study, and defend in public."
 
 # Studio metadata moved to data/studios.toml so each studio has a single
 # source of truth (year/blocks live alongside the §10 description payload).
