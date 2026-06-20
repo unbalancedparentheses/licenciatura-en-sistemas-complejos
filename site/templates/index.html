@@ -83,6 +83,55 @@
 <div class="toc-entry" lang="es"><span>Apéndice D, Conversación intelectual</span></div>
 <div class="toc-entry" lang="en"><span>Appendix D, Intellectual Conversation</span></div>
 
+{# ===== Plan de estudios up front: every course, by year and block ===== #}
+<div class="page-break"></div>
+<div class="part-label" lang="es">Plan de Estudios</div>
+<div class="part-label" lang="en">Curriculum</div>
+<h1 lang="es">Plan de estudios</h1>
+<h1 lang="en">The Curriculum</h1>
+<p lang="es">Cuatro años · {{ courses_data.course | length }} materias · {{ studios_data.studio | length }} Studios · bloques intensivos de {{ program.weeks_per_block }} semanas, tres materias por bloque. Cada año tiene un foco claro; el arco completo se explica en la Sección 8 y cada materia se detalla en la Sección 9.</p>
+<p lang="en">Four years · {{ courses_data.course | length }} courses · {{ studios_data.studio | length }} Studios · intensive {{ program.weeks_per_block }}-week blocks, three courses per block. Each year has a clear focus; the full arc is explained in Section 8 and each course is detailed in Section 9.</p>
+
+<div class="curriculum-table">
+<table>
+<tr><th lang="es">Año</th><th lang="en">Year</th><th lang="es">Qué cubre</th><th lang="en">What it covers</th></tr>
+{% for y in curriculum.year %}
+<tr><td lang="es"><strong>{{ y.title_es }}</strong></td><td lang="en"><strong>{{ y.title_en }}</strong></td><td lang="es">{{ y.frame_es }}</td><td lang="en">{{ y.frame_en }}</td></tr>
+{% endfor %}
+</table>
+</div>
+
+{% set blocks_pf = ["A", "B", "C", "D"] %}
+{% for y in curriculum.year %}
+  {% if y.number != 4 %}
+<h3>{{ y.title_es }}</h3>
+<div class="curriculum-table">
+<table>
+<tr>{% for b in blocks_pf %}<th>Bloque {{ b }}</th>{% endfor %}</tr>
+{% for pos in [1, 2, 3] %}
+<tr>{% for b in blocks_pf %}{% set matches = courses_data.course | filter(attribute="year", value=y.number) | filter(attribute="block", value=b) | filter(attribute="position", value=pos) %}{% if matches | length > 0 %}<td>{{ matches | first | get(key="title_es") }}</td>{% else %}<td></td>{% endif %}{% endfor %}</tr>
+{% endfor %}
+{% set studios_pf = studios_data.studio | filter(attribute="year", value=y.number) %}
+{% if studios_pf | length > 0 %}
+<tr>{% for s in studios_pf %}<td colspan="2"><em>Studio {{ s.roman }}, {{ s.title_es }} ({{ s.blocks | join(sep="+") }})</em></td>{% endfor %}</tr>
+{% endif %}
+</table>
+</div>
+  {% endif %}
+{% endfor %}
+
+<h3>Año 4, Integración y Salida</h3>
+<div class="curriculum-table">
+<table>
+<tr><th>Bloque A</th><th>Bloque B</th><th>Bloque C</th><th>Bloque D</th></tr>
+<tr><td>Finanzas, Dinero, Banca y Macroeconomía</td><td>Escritura Avanzada en Español</td><td>Seminario Fundacional: IA, Juicio y Responsabilidad</td><td>Venture from Zero, continuación y cierre</td></tr>
+<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td>Epistemología, Ciencia y los Límites de la IA</td><td>Cultura, Legitimidad y Normas</td><td>Seminario de Egreso: El Constructor en el Mundo</td></tr>
+<tr><td>Teoría de la Decisión</td><td>Ética y Responsabilidad bajo Incertidumbre</td><td>Electiva Guiada</td><td>Defensa Pública Final</td></tr>
+<tr><td colspan="4"><em>Studio VI, Venture from Zero (continúa desde Año 3, Bloques C+D)</em></td></tr>
+</table>
+</div>
+<div class="page-break"></div>
+
 {# Section partials, preserved verbatim from legacy for content fidelity #}
 {% include "sections/preface.html" %}
 {% include "sections/executive-summary.html" %}
