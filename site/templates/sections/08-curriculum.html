@@ -58,6 +58,8 @@
 {% for y in curriculum.year %}
   {% if y.number != 4 %}
 <h3>{{ y.title_es }}</h3>
+{% if y.frame_es %}<p class="year-frame" lang="es">{{ y.frame_es }}</p>{% endif %}
+{% if y.frame_en %}<p class="year-frame" lang="en">{{ y.frame_en }}</p>{% endif %}
 <div class="curriculum-table">
 <table>
 <tr>{% for b in blocks_4 %}<th>Bloque {{ b }}</th>{% endfor %}</tr>
@@ -74,6 +76,9 @@
 {% endfor %}
 
 <h3>Año 4, Profundización y Salida</h3>
+{% set year_4 = curriculum.year | filter(attribute="number", value=4) | first %}
+{% if year_4.frame_es %}<p class="year-frame" lang="es">{{ year_4.frame_es }}</p>{% endif %}
+{% if year_4.frame_en %}<p class="year-frame" lang="en">{{ year_4.frame_en }}</p>{% endif %}
 <div class="curriculum-table">
 <table>
 <tr><th>Bloque A</th><th>Bloque B</th><th>Bloque C</th><th>Bloque D</th></tr>

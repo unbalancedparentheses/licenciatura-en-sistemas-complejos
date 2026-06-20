@@ -5,21 +5,29 @@
 number = 1
 title_es = "Año 1, Núcleo Común"
 title_en = "Year 1, Common Core"
+frame_es = "Base científica común: matemática, física, química, biología y computación."
+frame_en = "Common scientific base: mathematics, physics, chemistry, biology, and computation."
 
 [[year]]
 number = 2
 title_es = "Año 2, Sistemas y Especialización"
 title_en = "Year 2, Systems and Specialization"
+frame_es = "Sistemas, IA, computación y economía."
+frame_en = "Systems, AI, computation, and economics."
 
 [[year]]
 number = 3
 title_es = "Año 3, Síntesis e Instituciones"
 title_en = "Year 3, Synthesis and Institutions"
+frame_es = "Instituciones, producto, control, finanzas y restricciones reales."
+frame_en = "Institutions, product, control, finance, and real constraints."
 
 [[year]]
 number = 4
 title_es = "Año 4, Profundización y Salida"
 title_en = "Year 4, Advanced Core and Exit"
+frame_es = "Profundización científica, juicio, método y prueba final."
+frame_en = "Scientific depth, judgment, method, and final proof."
 
 # Studio metadata moved to data/studios.toml so each studio has a single
 # source of truth (year/blocks live alongside the §10 description payload).
