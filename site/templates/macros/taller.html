@@ -1,0 +1,75 @@
+{# §10 heading and lead paragraph, shared by every view. #}
+{% macro section_intro() %}
+<div class="page-break" data-views="students,faculty,authorities"></div>
+<div class="part-label" lang="es">Parte IV, Plan de Estudios · Sección 10</div>
+<div class="part-label" lang="en">Part IV, Curriculum · Section 10</div>
+<h1 lang="es">Descripciones de los Talleres Integradores</h1>
+<h1 lang="en">Integrative Taller Descriptions</h1>
+<p lang="es">Los Talleres Integradores son la columna vertebral del programa. Hay uno por cuatrimestre, presente durante los dos bimestres, y su peso semanal crece con la carrera: 3 h en el primero, 4 h del segundo al quinto, 5 h en Venture from Zero I y II y 6 h en el cierre. En cada taller hay que movilizar saberes de distintos campos para formular un problema, construir y poner a prueba una solución, trabajar con información incompleta y defender las decisiones tomadas. Todos culminan en una defensa ante un panel que incluye revisores externos.</p>
+<p lang="en">The Integrative Talleres are the spine of the program. There is one per cuatrimestre, present in both bimestres, and its weekly weight grows through the degree: 3 h in the first, 4 h from the second to the fifth, 5 h in Venture from Zero I and II, and 6 h in the closing one. Each taller requires drawing on knowledge from different fields to formulate a problem, build and test a solution, work with incomplete information, and defend the decisions made. All of them culminate in a defense before a panel that includes external reviewers.</p>
+{% endmacro section_intro %}
+
+{# Render a Taller description from structured TOML data. #}
+{% macro card(taller) %}
+<div class="taller" data-slug="{{ taller.slug }}">
+  <div class="taller-number"><span lang="es">Taller Integrador {{ taller.roman }} · {{ taller.cuatrimestre }}.º cuatrimestre · {{ taller.hours.0 }} h + {{ taller.hours.1 }} h semanales</span><span lang="en">Integrative Taller {{ taller.roman }} · Cuatrimestre {{ taller.cuatrimestre }} · {{ taller.hours.0 }} h + {{ taller.hours.1 }} h per week</span></div>
+  <div class="taller-title"><span lang="es">{{ taller.title_es }}</span><span lang="en">{{ taller.title_en }}</span></div>
+
+  <h4>Objetivo / Objective</h4>
+  <div class="bilingual-block">
+    <p class="lang-es">{{ taller.objective_es }}</p>
+    <p class="lang-en">{{ taller.objective_en }}</p>
+  </div>
+
+  {% if taller.content_es %}
+  <h4>Contenidos mínimos / Minimum contents</h4>
+  <p lang="es">{{ taller.content_es }}</p>
+  <p lang="en">{{ taller.content_en }}</p>
+  {% endif %}
+
+  {% if taller.concrete_example_es or taller.concrete_example_en %}
+  <div class="bilingual-block">
+    {% if taller.concrete_example_es %}<p lang="es"><strong>Ejemplo concreto.</strong> {{ taller.concrete_example_es }}</p>{% endif %}
+    {% if taller.concrete_example_en %}<p lang="en"><strong>Concrete example.</strong> {{ taller.concrete_example_en }}</p>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if taller.structure_es or taller.structure_en %}
+  <h4>Una implementación posible / One possible implementation</h4>
+  <div class="bilingual-block">
+    {% if taller.structure_es %}<p class="lang-es">{{ taller.structure_es }}</p>{% endif %}
+    {% if taller.structure_en %}<p class="lang-en">{{ taller.structure_en }}</p>{% endif %}
+  </div>
+  {% endif %}
+
+  <h4>Entregables / Deliverables</h4>
+  <ul lang="es">
+    {% for d in taller.deliverables_es %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+  <ul lang="en">
+    {% for d in taller.deliverables_en %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+
+  <h4>Evaluación / Evaluation</h4>
+  <p lang="es">
+    <span class="eval-badge">{{ taller.evaluation_primary_es }}</span>
+    {% for s in taller.evaluation_secondaries_es %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
+  </p>
+  <p lang="en">
+    <span class="eval-badge">{{ taller.evaluation_primary_en }}</span>
+    {% for s in taller.evaluation_secondaries_en %}<span class="eval-secondary">{{ s }}</span>{% endfor %}
+  </p>
+  {% if taller.evaluation_criteria_es or taller.evaluation_criteria_en %}
+  <h4>Criterios / Criteria</h4>
+  <ul lang="es">
+    {% for c in taller.evaluation_criteria_es %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+  <ul lang="en">
+    {% for c in taller.evaluation_criteria_en %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <h4>Programas de referencia / Reference programs</h4>
+  <p>{{ taller.references | join(sep=" · ") }}</p>
+</div>
+{% endmacro card %}

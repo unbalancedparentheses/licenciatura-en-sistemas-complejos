@@ -1,0 +1,10 @@
+{# Stage overview: Curso Introductorio + three stages of the cursada. #}
+{% set curriculum = load_data(path='data/curriculum.toml') %}
+<div class="curriculum-table">
+<table>
+<tr><th lang="es">Tramo</th><th lang="en">Stage</th><th lang="es">Qué cubre</th><th lang="en">What it covers</th></tr>
+{% for st in curriculum.stage %}
+<tr><td lang="es"><strong>{{ st.title_es }}</strong><br><span style="color:#888;">{{ st.label_es }}</span></td><td lang="en"><strong>{{ st.title_en }}</strong><br><span style="color:#888;">{{ st.label_en }}</span></td><td lang="es">{{ st.summary_es }}</td><td lang="en">{{ st.summary_en }}</td></tr>
+{% endfor %}
+</table>
+</div>

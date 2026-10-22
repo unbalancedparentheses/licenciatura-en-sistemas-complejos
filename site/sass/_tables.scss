@@ -25,3 +25,50 @@ td {
 }
 
 tr:nth-child(even) td { background: #f9f9f9; }
+
+// Weekly-hours tables: one per year, two cuatrimestres, B1/B2 columns.
+.hours-table {
+  td.h, th.h { text-align: right; white-space: nowrap; width: 3.5em; }
+  td.h-empty { color: #ccc; }
+  tr.cuat-head td {
+    background: #f0f0f0 !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #555;
+  }
+  tr.taller-row td { color: #b5401f; }
+  tr.subtotal td { font-weight: 600; border-top: 1px solid #1a1a1a; }
+}
+
+// Weekly load per bimestre: 16 bars, scaled to 25 h.
+.load-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 180px;
+  margin: 24px 0 8px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+.load-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5pt;
+  text-align: center;
+}
+.load-bar .bar { background: #b5401f; }
+.load-bar .val { color: #333; margin-bottom: 2px; }
+.load-labels {
+  display: flex;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 7pt;
+  color: #888;
+  margin-bottom: 24px;
+  span { flex: 1; text-align: center; }
+}

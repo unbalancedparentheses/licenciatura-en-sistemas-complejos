@@ -118,6 +118,37 @@ def validate_course_texts() -> list[str]:
     return errors
 
 
+def validate_curriculum() -> list[str]:
+    """Counts, cuatrimestres and total hours must match program.toml."""
+    errors: list[str] = []
+    data = SITE / "data"
+    program = load_toml(data / "program.toml")
+    courses = load_toml(data / "courses.toml").get("course", [])
+    talleres = load_toml(data / "talleres.toml").get("taller", [])
+
+    if len(courses) != program["expected_courses"]:
+        errors.append(f"{len(courses)} courses, program.toml expects {program['expected_courses']}")
+    if len(talleres) != program["expected_talleres"]:
+        errors.append(f"{len(talleres)} talleres, program.toml expects {program['expected_talleres']}")
+
+    weekly = 0
+    for unit in courses + talleres:
+        name = unit.get("slug", "unknown")
+        if not 1 <= unit.get("cuatrimestre", 0) <= program["cuatrimestres"]:
+            errors.append(f"{name}: cuatrimestre out of range")
+        hours = unit.get("hours", [])
+        if len(hours) != 2 or sum(hours) == 0:
+            errors.append(f"{name}: hours must be [B1, B2] with at least one non-zero")
+            continue
+        weekly += sum(hours)
+
+    total = weekly * program["weeks_per_bimestre"] + program["intro_course_hours"]
+    if total != program["total_hours"]:
+        errors.append(f"total hours {total} != program.toml total_hours {program['total_hours']}")
+
+    return errors
+
+
 def public_path_for_href(href: str, html_file: Path) -> Path | None:
     parsed = urlparse(href)
     base = urlparse(BASE_URL)
@@ -175,6 +206,7 @@ def main() -> int:
 
     errors.extend(validate_bibliography())
     errors.extend(validate_course_texts())
+    errors.extend(validate_curriculum())
     if not args.skip_pdf_links:
         errors.extend(validate_pdf_links())
 

@@ -1,11 +1,21 @@
-# Program-level metadata. Numbers come from data, not hand-typed strings.
+# Program-level metadata. Counts and total hours are computed from
+# courses.toml and talleres.toml; scripts/validate.py checks them against
+# the figures below.
 years = 4
-weeks_per_block = 8
-blocks_per_year = 4
+cuatrimestres = 8
+weeks_per_cuatrimestre = 16
+weeks_per_bimestre = 8
+# Contact hours of the Curso Introductorio Intensivo, taken before the 1st
+# cuatrimestre: 2352 h total minus 2208 h of cursada.
+intro_course_hours = 144
+total_hours = 2352
+expected_courses = 31
+expected_talleres = 8
+english_level_es = "Inglés de nivel avanzado como requisito de egreso"
+english_level_en = "Advanced English as a graduation requirement"
 cohort_min = 30
 cohort_max = 40
 written_final_exams = 0
-guided_electives = 3
 status = "draft"
 status_label_es = "Borrador"
 status_label_en = "Draft"

@@ -1,33 +1,87 @@
-# Curriculum grid: which course slugs land in which year/block.
-# Ordering within a block is determined by `position` in courses.toml.
+# Curriculum structure. Courses carry their cuatrimestre and weekly hours
+# (courses.toml); Talleres carry theirs (talleres.toml). This file holds the
+# grouping used to present them.
 
+# The four stages of the trajectory, from the Curso Introductorio to creation.
+[[stage]]
+label_es = "Antes del 1.º cuatrimestre"
+label_en = "Before the 1st cuatrimestre"
+title_es = "Curso Introductorio Intensivo"
+title_en = "Intensive Introductory Course"
+summary_es = "Modelización matemática · Pensamiento científico y computacional · Economía, instituciones y gobierno."
+summary_en = "Mathematical modeling · Scientific and computational thinking · Economics, institutions, and government."
+
+[[stage]]
+label_es = "1.º a 3.º cuatrimestre"
+label_en = "1st to 3rd cuatrimestre"
+title_es = "Fundamentos"
+title_en = "Foundations"
+summary_es = "Álgebra lineal, cálculo, física, biología de sistemas, programación, probabilidad y sistemas dinámicos."
+summary_en = "Linear algebra, calculus, physics, systems biology, programming, probability, and dynamical systems."
+
+[[stage]]
+label_es = "4.º y 5.º cuatrimestre"
+label_en = "4th and 5th cuatrimestre"
+title_es = "Modelización, IA e instituciones"
+title_en = "Modeling, AI, and Institutions"
+summary_es = "Machine learning, deep learning, sistemas distribuidos, control, econometría, derecho y regulación."
+summary_en = "Machine learning, deep learning, distributed systems, control, econometrics, law, and regulation."
+
+[[stage]]
+label_es = "6.º a 8.º cuatrimestre"
+label_en = "6th to 8th cuatrimestre"
+title_es = "Decisión, gobernanza y creación"
+title_en = "Decision, Governance, and Creation"
+summary_es = "Teoría de juegos, teoría de la decisión, finanzas, geopolítica, IA y responsabilidad."
+summary_en = "Game theory, decision theory, finance, geopolitics, AI, and responsibility."
+
+# Knowledge cores, as presented in the deck. The fifth core, integration and
+# creation, is the Talleres Integradores.
+[[nucleo]]
+key = "A"
+title_es = "Fundamentos formales, científicos y computacionales"
+title_en = "Formal, Scientific, and Computational Foundations"
+summary_es = "Matemática, probabilidad, estadística, programación, física y biología para representar dinámicas y restricciones."
+summary_en = "Mathematics, probability, statistics, programming, physics, and biology to represent dynamics and constraints."
+
+[[nucleo]]
+key = "B"
+title_es = "Sistemas tecnológicos, datos e inteligencia artificial"
+title_en = "Technological Systems, Data, and Artificial Intelligence"
+summary_es = "Sistemas de datos y distribuidos, aprendizaje automático, seguridad, control y verificación."
+summary_en = "Data and distributed systems, machine learning, security, control, and verification."
+
+[[nucleo]]
+key = "C"
+title_es = "Economía, instituciones y decisión"
+title_en = "Economics, Institutions, and Decision"
+summary_es = "Mercados, organizaciones, teoría de juegos, diseño institucional, finanzas y regulación."
+summary_en = "Markets, organizations, game theory, institutional design, finance, and regulation."
+
+[[nucleo]]
+key = "D"
+title_es = "Epistemología, ética, cultura y responsabilidad"
+title_en = "Epistemology, Ethics, Culture, and Responsibility"
+summary_es = "Cómo se valida el conocimiento, qué límites tienen los modelos y qué hace legítima una solución."
+summary_en = "How knowledge is validated, what limits models have, and what makes a solution legitimate."
+
+# Year titles, two cuatrimestres each.
 [[year]]
 number = 1
-title_es = "Año 1, Núcleo Común"
-title_en = "Year 1, Common Core"
-frame_es = "Base científica común: matemática, física, química, biología y computación."
-frame_en = "Common scientific base: mathematics, physics, chemistry, biology, and computation."
+title_es = "Primer año"
+title_en = "First Year"
 
 [[year]]
 number = 2
-title_es = "Año 2, Sistemas y Especialización"
-title_en = "Year 2, Systems and Specialization"
-frame_es = "Empieza la especialización: inteligencia artificial, computación, sistemas y economía."
-frame_en = "Specialization begins: artificial intelligence, computation, systems, and economics."
+title_es = "Segundo año"
+title_en = "Second Year"
 
 [[year]]
 number = 3
-title_es = "Año 3, Síntesis e Instituciones"
-title_en = "Year 3, Synthesis and Institutions"
-frame_es = "Síntesis en instituciones reales; aquí cierra el núcleo científico (EDP y Física III)."
-frame_en = "Synthesis inside real institutions; here the science core closes (PDEs and Physics III)."
+title_es = "Tercer año"
+title_en = "Third Year"
 
 [[year]]
 number = 4
-title_es = "Año 4, Integración y Salida"
-title_en = "Year 4, Integration and Exit"
-frame_es = "Crear la empresa, ejercer el juicio, preparar el posgrado y defender en público."
-frame_en = "Build the company, exercise judgment, prepare for graduate study, and defend in public."
-
-# Studio metadata moved to data/studios.toml so each studio has a single
-# source of truth (year/blocks live alongside the §10 description payload).
+title_es = "Cuarto año"
+title_en = "Fourth Year"

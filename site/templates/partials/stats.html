@@ -1,0 +1,29 @@
+{# Program statistics, computed from data. #}
+{% set program = load_data(path='data/program.toml') %}
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
+{% set_global weekly = 0 %}
+{% for c in courses_data.course %}{% set_global weekly = weekly + c.hours.0 + c.hours.1 %}{% endfor %}
+{% for t in talleres_data.taller %}{% set_global weekly = weekly + t.hours.0 + t.hours.1 %}{% endfor %}
+{% set cursada = weekly * program.weeks_per_bimestre %}
+{% set total = cursada + program.intro_course_hours %}
+{% set bimestres = program.cuatrimestres * 2 %}
+{% set avg = weekly / bimestres %}
+{% set thousands = total / 1000 | int %}{% set rest = total - thousands * 1000 %}
+{% set total_es = thousands ~ "." ~ rest %}{% if rest < 100 %}{% set total_es = thousands ~ ".0" ~ rest %}{% endif %}{% if rest < 10 %}{% set total_es = thousands ~ ".00" ~ rest %}{% endif %}
+<div class="stats-grid" lang="es">
+  <div class="stat-box"><span class="stat-number">{{ program.years }} años</span><span class="stat-label">{{ program.cuatrimestres }} cuatrimestres</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length + talleres_data.taller | length }}</span><span class="stat-label">Espacios: {{ courses_data.course | length }} asignaturas y {{ talleres_data.taller | length }} talleres</span></div>
+  <div class="stat-box"><span class="stat-number">{{ total_es }} h</span><span class="stat-label">De formación, incluido el curso introductorio</span></div>
+  <div class="stat-box"><span class="stat-number">{{ avg | round(precision=2) | as_str | replace(from=".", to=",") }} h</span><span class="stat-label">Promedio semanal de cursada</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Estudiantes por cohorte</span></div>
+  <div class="stat-box"><span class="stat-number">Inglés</span><span class="stat-label">Nivel avanzado como requisito de egreso</span></div>
+</div>
+<div class="stats-grid" lang="en">
+  <div class="stat-box"><span class="stat-number">{{ program.years }} years</span><span class="stat-label">{{ program.cuatrimestres }} cuatrimestres</span></div>
+  <div class="stat-box"><span class="stat-number">{{ courses_data.course | length + talleres_data.taller | length }}</span><span class="stat-label">Units: {{ courses_data.course | length }} courses and {{ talleres_data.taller | length }} talleres</span></div>
+  <div class="stat-box"><span class="stat-number">{{ total_es | replace(from=".", to=",") }} h</span><span class="stat-label">Of instruction, including the introductory course</span></div>
+  <div class="stat-box"><span class="stat-number">{{ avg | round(precision=2) }} h</span><span class="stat-label">Average weekly contact hours</span></div>
+  <div class="stat-box"><span class="stat-number">{{ program.cohort_min }}–{{ program.cohort_max }}</span><span class="stat-label">Students per cohort</span></div>
+  <div class="stat-box"><span class="stat-number">English</span><span class="stat-label">Advanced level required to graduate</span></div>
+</div>

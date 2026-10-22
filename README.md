@@ -52,33 +52,38 @@ Makefile             Conventional commands (dev, build, pdf, validate, ...)
 scripts/
   extract.py         One-shot extraction from the legacy index.html (no longer needed for steady-state work)
   build_pdfs.py      Runs headless Chrome against each audience+language URL
-  validate.py        Data/link/PDF validators
+  validate.py        Data/link/PDF validators; also checks that course/taller counts and total hours match program.toml
 site/
   config.toml        Zola config + program-level metadata
   data/
-    program.toml     Years, blocks, cohort size, status
+    program.toml     Years, cuatrimestres, weeks per bimestre, Curso Introductorio hours,
+                     expected counts and total hours, cohort size, status
     audiences.toml   Audience labels (ES/EN)
-    courses.toml     All course descriptions, references, evaluations
-    curriculum.toml  Year metadata
-    studios.toml     Six Studios: metadata + §10 description payload
+    courses.toml     31 courses: cuatrimestre, position, weekly hours per bimestre
+                     (`hours = [B1, B2]`), núcleo, descriptions, references, evaluations
+    talleres.toml    8 Talleres Integradores: cuatrimestre, weekly hours per bimestre,
+                     §10 description fields, references, evaluations
+    curriculum.toml  Stages, núcleos and year grouping used to present the plan
     bibliography.toml  Appendix C entries with canonical URLs
   content/           Section index pages (front-matter-only stubs)
   templates/
     index.html       Full document (all sections)
     audience.html    Per-audience views (filters which sections render)
+    partials/        Plan views generated from data: stages, hours tables, load chart, stats
     macros/
       course.html    Course-card macro
+      taller.html    Taller-card macro (§10)
       layout.html    Cover, top-nav, footer macros (shared by both top-level templates)
-    sections/        14 narrative-section partials (raw HTML, bilingual)
+    sections/        15 narrative-section partials (bilingual HTML/Tera; appendices A and B are generated from courses.toml and talleres.toml)
   sass/              SCSS partials, compiled to public/style.css by Zola
   static/            JS, additional static assets
 ```
 
 ## Contributing
 
-- **Add or change a course** → edit `site/data/courses.toml`. Year/block/position determines where it appears in the §8.2 curriculum table; details in §9 are rendered from the same entry.
-- **Add or change a Studio** → edit `site/data/studios.toml`. Year/blocks determine where it appears in §8.2; the `raw_html` field is the §10 description.
-- **Change a program-level stat** (years, cohort size) → edit `site/data/program.toml`. Stat boxes throughout are derived.
+- **Add or change a course** → edit `site/data/courses.toml`. `cuatrimestre` and `position` determine where it appears in the plan tables; `hours = [B1, B2]` gives its weekly contact hours in each of the two 8-week bimestres of the cuatrimestre (0 if it does not run in that bimestre). The hours tables, load chart, totals, §9 details and appendices A and B are all rendered from the same entry.
+- **Add or change a Taller Integrador** → edit `site/data/talleres.toml`. `cuatrimestre` and `hours` place it in the plan; the remaining fields are the §10 description.
+- **Change a program-level stat** (years, cohort size, Curso Introductorio hours) → edit `site/data/program.toml`. Counts and total hours are computed from the course and taller data; `validate.py` also checks that course/taller counts and total hours match `program.toml`.
 - **Edit narrative prose** → edit the matching `site/templates/sections/NN-*.html`. Each prose element has bilingual ES/EN siblings, keep both in sync.
 - **Add a bibliography entry** → append to `site/data/bibliography.toml`. Every entry should have a canonical `url` (publisher page, DOI, arXiv, or open-access copy).
 - **Run before pushing**: `make build && make validate` (without `--skip-pdf-links` if Chrome is available).

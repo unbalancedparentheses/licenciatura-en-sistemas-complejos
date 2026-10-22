@@ -37,17 +37,19 @@
   <div class="proposal-badge" lang="en">{{ program.status_label_en }}</div>
   <div class="cover-title">Licenciatura en<br>Sistemas Complejos</div>
   <div class="cover-subtitle">Bachelor of Systems and Decision Science</div>
+  <div class="cover-tagline" lang="es">Una formación para comprender, modelizar, construir e intervenir en problemas que ninguna disciplina puede resolver por sí sola.</div>
+  <div class="cover-tagline" lang="en">An education to understand, model, build, and intervene in problems that no single discipline can solve on its own.</div>
   <div class="cover-institution">Universidad de Buenos Aires</div>
   <div class="cover-institution" style="margin-top:4px; color:#888;">{{ config.extra.faculties }}</div>
   <div class="cover-meta" lang="es">
-    <span>Duración: {{ program.years }} años</span>
+    <span>{{ program.years }} años · {{ program.cuatrimestres }} cuatrimestres</span>
     <span>Cohorte: {{ program.cohort_min }}–{{ program.cohort_max }} estudiantes</span>
-    <span>Bloques de {{ program.weeks_per_block }} semanas</span>
+    <span>Modalidad presencial</span>
   </div>
   <div class="cover-meta" lang="en">
-    <span>Duration: {{ program.years }} years</span>
+    <span>{{ program.years }} years · {{ program.cuatrimestres }} cuatrimestres</span>
     <span>Cohort: {{ program.cohort_min }}–{{ program.cohort_max }} students</span>
-    <span>{{ program.weeks_per_block }}-week blocks</span>
+    <span>In person</span>
   </div>
   {% if audience and audience != "full" %}
   <div class="cover-audience" style="margin-top:24px; font-family:'Inter',sans-serif; font-size:9pt; letter-spacing:0.15em; text-transform:uppercase; color:#888;">
@@ -63,7 +65,7 @@
 {% macro footer() %}
 <div style="margin-top:80px; padding-top:32px; border-top:1px solid #ddd; font-family:'Inter',sans-serif; font-size:8pt; color:#888; text-align:center;">
   Licenciatura en Sistemas Complejos · Bachelor of Systems and Decision Science<br>
-  Universidad de Buenos Aires · Facultad de Ciencias Económicas · Facultad de Ingeniería<br>
+  Universidad de Buenos Aires · {{ config.extra.faculties }}<br>
   <span lang="es">Propuesta · Borrador · {{ config.extra.year }}</span><span lang="en">Proposal · Draft · {{ config.extra.year }}</span>
 </div>
 {% endmacro footer %}

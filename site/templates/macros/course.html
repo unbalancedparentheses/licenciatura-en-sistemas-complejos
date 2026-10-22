@@ -3,6 +3,10 @@
 <div class="course" data-slug="{{ course.slug }}" data-audiences="{{ course.audiences | join(sep=',') }}">
   <div class="course-title-es">{{ course.title_es }}</div>
   <div class="course-title-en">{{ course.title_en }}</div>
+  <div class="course-meta">
+    <span lang="es">{{ course.cuatrimestre }}.º cuatrimestre · {% if course.hours.0 > 0 and course.hours.1 > 0 %}{{ course.hours.0 }} h semanales en ambos bimestres{% elif course.hours.0 > 0 %}{{ course.hours.0 }} h semanales en el primer bimestre{% else %}{{ course.hours.1 }} h semanales en el segundo bimestre{% endif %} · {{ (course.hours.0 + course.hours.1) * 8 }} h</span>
+    <span lang="en">Cuatrimestre {{ course.cuatrimestre }} · {% if course.hours.0 > 0 and course.hours.1 > 0 %}{{ course.hours.0 }} h per week in both bimestres{% elif course.hours.0 > 0 %}{{ course.hours.0 }} h per week in the first bimestre{% else %}{{ course.hours.1 }} h per week in the second bimestre{% endif %} · {{ (course.hours.0 + course.hours.1) * 8 }} h</span>
+  </div>
 
   {% if course.objective_es or course.objective_en %}
   <div class="course-section-label">Objetivo / Objective</div>
@@ -11,7 +15,7 @@
   {% endif %}
 
   {% if course.content_es or course.content_en %}
-  <div class="course-section-label">Contenido / Content</div>
+  <div class="course-section-label">Contenidos mínimos / Minimum contents</div>
   <p lang="es">{{ course.content_es }}</p>
   <p lang="en">{{ course.content_en }}</p>
   {% endif %}

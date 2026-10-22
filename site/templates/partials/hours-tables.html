@@ -1,0 +1,29 @@
+{# One table per year: both cuatrimestres, weekly hours per bimestre,
+   Taller row and weekly subtotal. #}
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
+{% set curriculum = load_data(path='data/curriculum.toml') %}
+{% for y in curriculum.year %}
+<h3 lang="es">{{ y.title_es }}</h3>
+<h3 lang="en">{{ y.title_en }}</h3>
+<div class="hours-table">
+<table>
+<tr><th><span lang="es">Asignatura</span><span lang="en">Course</span></th><th class="h">B1</th><th class="h">B2</th><th class="h">Total</th></tr>
+{% for cn in [y.number * 2 - 1, y.number * 2] %}
+<tr class="cuat-head"><td colspan="4"><span lang="es">{{ cn }}.º cuatrimestre</span><span lang="en">Cuatrimestre {{ cn }}</span></td></tr>
+{% set_global b1 = 0 %}{% set_global b2 = 0 %}
+{% for c in courses_data.course | filter(attribute="cuatrimestre", value=cn) | sort(attribute="position") %}
+{% set_global b1 = b1 + c.hours.0 %}{% set_global b2 = b2 + c.hours.1 %}
+<tr><td><span lang="es">{{ c.title_es }}</span><span lang="en">{{ c.title_en }}</span></td>{% for h in c.hours %}<td class="h{% if h == 0 %} h-empty{% endif %}">{% if h > 0 %}{{ h }} h{% else %}·{% endif %}</td>{% endfor %}<td class="h">{{ (c.hours.0 + c.hours.1) * 8 }} h</td></tr>
+{% endfor %}
+{% for t in talleres_data.taller | filter(attribute="cuatrimestre", value=cn) %}
+{% set_global b1 = b1 + t.hours.0 %}{% set_global b2 = b2 + t.hours.1 %}
+<tr class="taller-row"><td><span lang="es">Taller Integrador {{ t.roman }} · {{ t.title_es }}</span><span lang="en">Integrative Taller {{ t.roman }} · {{ t.title_en }}</span></td><td class="h">{{ t.hours.0 }} h</td><td class="h">{{ t.hours.1 }} h</td><td class="h">{{ (t.hours.0 + t.hours.1) * 8 }} h</td></tr>
+{% endfor %}
+<tr class="subtotal"><td><span lang="es">Subtotal semanal</span><span lang="en">Weekly subtotal</span></td><td class="h">{{ b1 }} h</td><td class="h">{{ b2 }} h</td><td class="h">{{ (b1 + b2) * 8 }} h</td></tr>
+{% endfor %}
+</table>
+</div>
+{% endfor %}
+<p lang="es" style="font-size:9pt; color:#666;">B1 y B2: primer y segundo bimestre de cada cuatrimestre, de ocho semanas cada uno. Horas semanales de cursada; el total es por asignatura en el cuatrimestre. En color, los Talleres Integradores.</p>
+<p lang="en" style="font-size:9pt; color:#666;">B1 and B2: first and second bimestre of each cuatrimestre, eight weeks each. Weekly contact hours; the total is per course over the cuatrimestre. Highlighted, the Integrative Talleres.</p>

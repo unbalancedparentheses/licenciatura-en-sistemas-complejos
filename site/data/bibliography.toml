@@ -14,10 +14,6 @@ text = "Acemoglu, Daron, and James A. Robinson. <em>Why Nations Fail: The Origin
 url = "https://www.penguinrandomhouse.com/books/311171/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/"
 
 [[entry]]
-text = "Aleksandrov, A. D., A. N. Kolmogorov, and M. A. Lavrent'ev. <em>Mathematics: Its Content, Methods and Meaning.</em> Dover, 1999."
-url = "https://store.doverpublications.com/products/9780486409160"
-
-[[entry]]
 text = "Alberts, Bruce, et al. <em>Essential Cell Biology.</em> 5th ed. W. W. Norton, 2019."
 url = "https://wwnorton.com/books/9780393680362"
 
@@ -34,24 +30,32 @@ text = "Anderson, Ross J. <em>Security Engineering: A Guide to Building Dependab
 url = "https://www.cl.cam.ac.uk/~rja14/book.html"
 
 [[entry]]
-text = "Artin, Michael. <em>Algebra.</em> 2nd ed. Pearson, 2010."
-url = "https://www.pearson.com/en-us/subject-catalog/p/algebra/P200000006236"
-
-[[entry]]
 text = "Angrist, Joshua D., and Jörn-Steffen Pischke. <em>Mostly Harmless Econometrics: An Empiricist's Companion.</em> Princeton University Press, 2009."
 url = "https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics"
 
 [[entry]]
-text = "Arpaci-Dusseau, Remzi H., and Andrea C. Arpaci-Dusseau. <em>Operating Systems: Three Easy Pieces.</em> Arpaci-Dusseau Books, 2018. ostep.org."
-url = "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+text = "Bradford, Anu. <em>Digital Empires: The Global Battle to Regulate Technology.</em> Oxford University Press, 2023."
+url = "https://global.oup.com/academic/product/digital-empires-9780197649268"
+
+[[entry]]
+text = "Farrell, Henry, and Abraham Newman. <em>Underground Empire: How America Weaponized the World Economy.</em> Henry Holt, 2023."
+url = "https://us.macmillan.com/books/9781250840554/undergroundempire"
+
+[[entry]]
+text = "Haraway, Donna. \"A Cyborg Manifesto.\" <em>Socialist Review</em>, 1985."
+url = "https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fictionnownarrativemediaandtheoryinthe21stcentury/manifestly_haraway_----_a_cyborg_manifesto_science_technology_and_socialist-feminism_in_the_....pdf"
+
+[[entry]]
+text = "Kissinger, Henry. <em>World Order.</em> Penguin Press, 2014."
+url = "https://www.penguinrandomhouse.com/books/316669/world-order-by-henry-kissinger/"
+
+[[entry]]
+text = "Miller, Chris. <em>Chip War: The Fight for the World's Most Critical Technology.</em> Scribner, 2022."
+url = "https://www.simonandschuster.com/books/Chip-War/Chris-Miller/9781982172008"
 
 [[entry]]
 text = "Åström, Karl J., and Richard M. Murray. <em>Feedback Systems: An Introduction for Scientists and Engineers.</em> Princeton University Press, 2008."
 url = "https://fbswiki.org/wiki/index.php/FBS"
-
-[[entry]]
-text = "Atkins, Peter, and Julio de Paula. <em>Atkins' Physical Chemistry.</em> 11th ed. Oxford University Press, 2018."
-url = "https://global.oup.com/academic/product/atkins-physical-chemistry-9780198769866"
 
 [[entry]]
 text = "Avigad, Jeremy. <em>Mathematics in Lean.</em> Lean Prover Community, 2023. leanprover-community.github.io."
@@ -83,16 +87,8 @@ text = "Boneh, Dan, and Victor Shoup. <em>A Graduate Course in Applied Cryptogra
 url = "https://toc.cryptobook.us/"
 
 [[entry]]
-text = "Banzi, Massimo, and Michael Shiloh. <em>Getting Started with Arduino.</em> 3rd ed. Maker Media, 2014."
-url = "https://www.oreilly.com/library/view/getting-started-with/9781457185378/"
-
-[[entry]]
 text = "Bergstrom, Carl T., and Jevin D. West. <em>Calling Bullshit: The Art of Skepticism in a Data-Driven World.</em> Random House, 2020."
 url = "https://callingbullshit.org/"
-
-[[entry]]
-text = "Bertsimas, Dimitris, and John N. Tsitsiklis. <em>Introduction to Linear Optimization.</em> Athena Scientific, 1997."
-url = "http://athenasc.com/linoptbook.html"
 
 [[entry]]
 text = "Booth, Wayne C., Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald. <em>The Craft of Research.</em> 4th ed. University of Chicago Press, 2016."
@@ -119,24 +115,12 @@ text = "Brealey, Richard A., Stewart C. Myers, and Franklin Allen. <em>Principle
 url = "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781265074159.html"
 
 [[entry]]
-text = "Brown, Theodore L., et al. <em>Chemistry: The Central Science.</em> 15th ed. Pearson, 2022."
-url = "https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000005539"
-
-[[entry]]
-text = "Bryant, Randal E., and David R. O'Hallaron. <em>Computer Systems: A Programmer's Perspective.</em> 3rd ed. Pearson, 2015."
-url = "https://csapp.cs.cmu.edu/"
-
-[[entry]]
 text = "Bryar, Colin, and Bill Carr. <em>Working Backwards: Insights, Stories, and Secrets from Inside Amazon.</em> St. Martin's Press, 2021."
 url = "https://www.workingbackwards.com/"
 
 [[entry]]
 text = "Brynjolfsson, Erik, and Andrew McAfee. <em>The Second Machine Age.</em> W. W. Norton, 2014."
 url = "https://wwnorton.com/books/the-second-machine-age"
-
-[[entry]]
-text = "Callister, William D., and David G. Rethwisch. <em>Materials Science and Engineering: An Introduction.</em> 10th ed. Wiley, 2018."
-url = "https://www.wiley.com/en-us/Materials+Science+and+Engineering%3A+An+Introduction%2C+10th+Edition-p-9781119405498"
 
 [[entry]]
 text = "Carroll, Sean B. <em>The Serengeti Rules.</em> Princeton University Press, 2016."
@@ -163,20 +147,12 @@ text = "Christian, Brian. <em>The Alignment Problem: Machine Learning and Human 
 url = "https://wwnorton.com/books/9780393635829"
 
 [[entry]]
-text = "Cialdini, Robert B. <em>Influence: The Psychology of Persuasion.</em> Harper Business, 2006."
-url = "https://www.harpercollins.com/products/influence-new-and-expanded-robert-b-cialdini"
-
-[[entry]]
 text = "Cooper, Alan, Robert Reimann, and David Cronin. <em>About Face: The Essentials of Interaction Design.</em> 4th ed. Wiley, 2014."
 url = "https://www.wiley.com/en-us/About+Face%3A+The+Essentials+of+Interaction+Design%2C+4th+Edition-p-9781118766576"
 
 [[entry]]
 text = "Cormen, Thomas H., Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. <em>Introduction to Algorithms.</em> 4th ed. MIT Press, 2022."
 url = "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/"
-
-[[entry]]
-text = "Cover, Thomas M., and Joy A. Thomas. <em>Elements of Information Theory.</em> 2nd ed. Wiley, 2006."
-url = "https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959"
 
 [[entry]]
 text = "Cunningham, Scott. <em>Causal Inference: The Mixtape.</em> Yale University Press, 2021. mixtape.scunning.com."
@@ -205,14 +181,6 @@ url = "https://lccn.loc.gov/86012188"
 [[entry]]
 text = "Dreyfus, Hubert L. <em>What Computers Can't Do: A Critique of Artificial Reason.</em> Harper & Row, 1972."
 url = "https://archive.org/details/whatcomputerscan0000drey"
-
-[[entry]]
-text = "Enderton, Herbert B. <em>A Mathematical Introduction to Logic.</em> 2nd ed. Academic Press, 2001."
-url = "https://shop.elsevier.com/books/a-mathematical-introduction-to-logic/enderton/978-0-12-238452-3"
-
-[[entry]]
-text = "Evans, Lawrence C. <em>Partial Differential Equations.</em> 2nd ed. American Mathematical Society, 2010."
-url = "https://bookstore.ams.org/gsm-19-r"
 
 [[entry]]
 text = "Feynman, Richard P., Robert B. Leighton, and Matthew Sands. <em>The Feynman Lectures on Physics.</em> Vols. I–II. Caltech, 2013. feynmanlectures.caltech.edu."
@@ -247,16 +215,8 @@ text = "Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. <em>Deep Learning.<
 url = "https://www.deeplearningbook.org/"
 
 [[entry]]
-text = "Graham, Ronald L., Donald E. Knuth, and Oren Patashnik. <em>Concrete Mathematics: A Foundation for Computer Science.</em> 2nd ed. Addison-Wesley, 1994."
-url = "https://www-cs-faculty.stanford.edu/~knuth/gkp.html"
-
-[[entry]]
 text = "Griffiths, David J. <em>Introduction to Electrodynamics.</em> 4th ed. Cambridge University Press, 2017."
 url = "https://www.cambridge.org/9781108420419"
-
-[[entry]]
-text = "Griffiths, David J. <em>Introduction to Quantum Mechanics.</em> 3rd ed. Cambridge University Press, 2018."
-url = "https://www.cambridge.org/9781107189638"
 
 [[entry]]
 text = "Grove, Andrew S. <em>High Output Management.</em> Random House, 1983."
@@ -279,10 +239,6 @@ text = "Henrich, Joseph. <em>The WEIRDest People in the World.</em> Farrar, Stra
 url = "https://us.macmillan.com/books/9780374173227/theweirdestpeopleintheworld"
 
 [[entry]]
-text = "Hillier, Frederick S., and Gerald J. Lieberman. <em>Introduction to Operations Research.</em> 11th ed. McGraw-Hill, 2021."
-url = "https://www.mheducation.com/highered/product/introduction-operations-research-hillier-lieberman/M9781259872990.html"
-
-[[entry]]
 text = "Hirsch, Morris W., Stephen Smale, and Robert L. Devaney. <em>Differential Equations, Dynamical Systems, and an Introduction to Chaos.</em> 3rd ed. Academic Press, 2012."
 url = "https://shop.elsevier.com/books/differential-equations-dynamical-systems-and-an-introduction-to-chaos/hirsch/978-0-12-382010-5"
 
@@ -299,10 +255,6 @@ text = "Hobsbawm, Eric. <em>The Age of Revolution: 1789–1848.</em> Vintage, 19
 url = "https://www.penguinrandomhouse.com/authors/13437/eric-hobsbawm/"
 
 [[entry]]
-text = "Horowitz, Paul, and Winfield Hill. <em>The Art of Electronics.</em> 3rd ed. Cambridge University Press, 2015."
-url = "https://artofelectronics.net/"
-
-[[entry]]
 text = "Hubbard, John H., and Barbara Burke Hubbard. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach.</em> 5th ed. Matrix Editions, 2015."
 url = "https://matrixeditions.com/5thUnifiedApproach.html"
 
@@ -311,20 +263,12 @@ text = "Horowitz, Ben. <em>The Hard Thing About Hard Things: Building a Business
 url = "https://www.harpercollins.com/products/the-hard-thing-about-hard-things-ben-horowitz"
 
 [[entry]]
-text = "Imbens, Guido W., and Donald B. Rubin. <em>Causal Inference for Statistics, Social, and Biomedical Sciences.</em> Cambridge University Press, 2015."
-url = "https://www.cambridge.org/9780521885881"
-
-[[entry]]
 text = "Jaynes, Edwin T. <em>Probability Theory: The Logic of Science.</em> Cambridge University Press, 2003."
 url = "https://www.cambridge.org/9780521592710"
 
 [[entry]]
 text = "Jonas, Hans. <em>The Imperative of Responsibility: In Search of an Ethics for the Technological Age.</em> University of Chicago Press, 1984."
 url = "https://press.uchicago.edu/ucp/books/book/chicago/I/bo3633568.html"
-
-[[entry]]
-text = "Jurafsky, Daniel, and James H. Martin. <em>Speech and Language Processing.</em> 3rd ed. draft. web.stanford.edu/~jurafsky/slp3."
-url = "https://web.stanford.edu/~jurafsky/slp3/"
 
 [[entry]]
 text = "Kahneman, Daniel. <em>Thinking, Fast and Slow.</em> Farrar, Straus and Giroux, 2011."
@@ -339,20 +283,8 @@ text = "Katz, Jonathan, and Yehuda Lindell. <em>Introduction to Modern Cryptogra
 url = "https://www.routledge.com/Introduction-to-Modern-Cryptography/Katz-Lindell/p/book/9780815354369"
 
 [[entry]]
-text = "Kardar, Mehran. <em>Statistical Physics of Particles.</em> Cambridge University Press, 2007."
-url = "https://www.cambridge.org/9780521873420"
-
-[[entry]]
-text = "Kerrisk, Michael. <em>The Linux Programming Interface: A Linux and UNIX System Programming Handbook.</em> No Starch Press, 2010."
-url = "https://nostarch.com/tlpi"
-
-[[entry]]
 text = "Kleppmann, Martin. <em>Designing Data-Intensive Applications.</em> O'Reilly, 2017."
 url = "https://dataintensive.net/"
-
-[[entry]]
-text = "Hellerstein, Joseph M., and Michael Stonebraker, eds. <em>Readings in Database Systems.</em> 5th ed., 2015."
-url = "https://www.redbook.io/"
 
 [[entry]]
 text = "Huyen, Chip. <em>AI Engineering: Building Applications with Foundation Models.</em> O'Reilly, 2025."
@@ -363,20 +295,12 @@ text = "Huyen, Chip. <em>Designing Machine Learning Systems.</em> O'Reilly, 2022
 url = "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/"
 
 [[entry]]
-text = "Krug, Steve. <em>Don't Make Me Think, Revisited.</em> 3rd ed. New Riders, 2014."
-url = "https://sensible.com/dont-make-me-think/"
-
-[[entry]]
 text = "Kuhn, Thomas S. <em>The Structure of Scientific Revolutions.</em> 4th ed. University of Chicago Press, 2012."
 url = "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
 
 [[entry]]
 text = "Kurose, James F., and Keith W. Ross. <em>Computer Networking: A Top-Down Approach.</em> 8th ed. Pearson, 2021."
 url = "https://gaia.cs.umass.edu/kurose_ross/index.php"
-
-[[entry]]
-text = "Lencioni, Patrick. <em>The Five Dysfunctions of a Team.</em> Jossey-Bass, 2002."
-url = "https://www.wiley.com/en-us/The+Five+Dysfunctions+of+a+Team%3A+A+Leadership+Fable-p-9780787960759"
 
 [[entry]]
 text = "Lessig, Lawrence. <em>Code: And Other Laws of Cyberspace.</em> Basic Books, 1999."
@@ -391,16 +315,8 @@ text = "MacIntyre, Alasdair. <em>After Virtue: A Study in Moral Theory.</em> 3rd
 url = "https://undpress.nd.edu/9780268035044/after-virtue/"
 
 [[entry]]
-text = "MacKay, David J. C. <em>Information Theory, Inference, and Learning Algorithms.</em> Cambridge University Press, 2003. inference.org.uk."
-url = "https://www.inference.org.uk/itila/"
-
-[[entry]]
 text = "Mahajan, Sanjoy. <em>The Art of Insight in Science and Engineering: Mastering Complexity.</em> MIT Press, 2014."
 url = "https://mitpress.mit.edu/9780262526548/the-art-of-insight-in-science-and-engineering/"
-
-[[entry]]
-text = "March, James G. <em>A Primer on Decision Making: How Decisions Happen.</em> Free Press, 1994."
-url = "https://www.simonandschuster.com/books/A-Primer-on-Decision-Making/James-G-March/9781439135884"
 
 [[entry]]
 text = "Mas-Colell, Andreu, Michael D. Whinston, and Jerry R. Green. <em>Microeconomic Theory.</em> Oxford University Press, 1995."
@@ -431,10 +347,6 @@ text = "Mehrling, Perry. <em>The New Lombard Street: How the Fed Became the Deal
 url = "https://press.princeton.edu/books/paperback/9780691155241/the-new-lombard-street"
 
 [[entry]]
-text = "Milgrom, Paul, and John Roberts. <em>Economics, Organization and Management.</em> Prentice Hall, 1992."
-url = "https://www.gsb.stanford.edu/faculty-research/books/economics-organization-management"
-
-[[entry]]
 text = "Miller, John H., and Scott E. Page. <em>Complex Adaptive Systems: An Introduction to Computational Models of Social Life.</em> Princeton University Press, 2007."
 url = "https://press.princeton.edu/books/paperback/9780691127026/complex-adaptive-systems"
 
@@ -459,20 +371,8 @@ text = "Muller, Jerry Z. <em>The Tyranny of Metrics.</em> Princeton University P
 url = "https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics"
 
 [[entry]]
-text = "Munkres, James R. <em>Topology.</em> 2nd ed. Pearson, 2000."
-url = "https://www.pearson.com/en-us/subject-catalog/p/topology-classic-version/P200000006299"
-
-[[entry]]
-text = "Ramakrishnan, Raghu, and Johannes Gehrke. <em>Database Management Systems.</em> 3rd ed. McGraw-Hill, 2003."
-url = "https://pages.cs.wisc.edu/~dbbook/"
-
-[[entry]]
 text = "Nisan, Noam, et al. <em>Algorithmic Game Theory.</em> Cambridge University Press, 2007."
 url = "https://www.cambridge.org/9780521872829"
-
-[[entry]]
-text = "Nocedal, Jorge, and Stephen J. Wright. <em>Numerical Optimization.</em> 2nd ed. Springer, 2006."
-url = "https://link.springer.com/book/10.1007/978-0-387-40065-5"
 
 [[entry]]
 text = "Norman, Donald A. <em>The Design of Everyday Things.</em> Revised and Expanded ed. Basic Books, 2013."
@@ -495,24 +395,12 @@ text = "Ostrom, Elinor. <em>Governing the Commons: The Evolution of Institutions
 url = "https://www.cambridge.org/9780521405997"
 
 [[entry]]
-text = "Ouyang, Long, et al. \"Training Language Models to Follow Instructions with Human Feedback.\" NeurIPS, 2022."
-url = "https://arxiv.org/abs/2203.02155"
-
-[[entry]]
-text = "Parfit, Derek. <em>Reasons and Persons.</em> Oxford University Press, 1984."
-url = "https://global.oup.com/academic/product/reasons-and-persons-9780198249085"
-
-[[entry]]
 text = "Pearl, Judea, and Dana Mackenzie. <em>The Book of Why: The New Science of Cause and Effect.</em> Basic Books, 2018."
 url = "https://www.hachettebookgroup.com/titles/judea-pearl/the-book-of-why/9780465097609/"
 
 [[entry]]
 text = "Perez, Carlota. <em>Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages.</em> Edward Elgar, 2002."
 url = "https://www.e-elgar.com/shop/usd/technological-revolutions-and-financial-capital-9781843763314.html"
-
-[[entry]]
-text = "Peters, Ole. \"The Ergodicity Problem in Economics.\" <em>Nature Physics</em> 15 (2019): 1216–1221."
-url = "https://doi.org/10.1038/s41567-019-0732-0"
 
 [[entry]]
 text = "Pierce, Benjamin C., et al. <em>Software Foundations.</em> Electronic textbook, 2023. softwarefoundations.cis.upenn.edu."
@@ -572,10 +460,6 @@ text = "Shadish, William R., Thomas D. Cook, and Donald T. Campbell. <em>Experim
 url = "https://www.cengage.com/c/experimental-and-quasi-experimental-designs-for-generalized-causal-inference-2e-shadish/9780395615560/"
 
 [[entry]]
-text = "Schroeder, Daniel V. <em>An Introduction to Thermal Physics.</em> Oxford University Press, 2021."
-url = "https://global.oup.com/academic/product/an-introduction-to-thermal-physics-9780192895547"
-
-[[entry]]
 text = "Scott, James C. <em>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed.</em> Yale University Press, 1998."
 url = "https://yalebooks.yale.edu/book/9780300246759/seeing-like-a-state/"
 
@@ -592,10 +476,6 @@ text = "Simon, Herbert A. <em>The Sciences of the Artificial.</em> 3rd ed. MIT P
 url = "https://mitpress.mit.edu/9780262691918/the-sciences-of-the-artificial/"
 
 [[entry]]
-text = "Silberschatz, Abraham, Henry F. Korth, and S. Sudarshan. <em>Database System Concepts.</em> 7th ed. McGraw-Hill, 2019."
-url = "https://www.db-book.com/"
-
-[[entry]]
 text = "Sipser, Michael. <em>Introduction to the Theory of Computation.</em> 3rd ed. Cengage, 2012."
 url = "https://math.mit.edu/~sipser/book.html"
 
@@ -610,10 +490,6 @@ url = "https://math.mit.edu/~gs/linearalgebra/"
 [[entry]]
 text = "Strang, Gilbert. <em>Linear Algebra and Learning from Data.</em> Wellesley-Cambridge Press, 2019."
 url = "https://math.mit.edu/~gs/learningfromdata/"
-
-[[entry]]
-text = "Strauss, Walter A. <em>Partial Differential Equations: An Introduction.</em> 2nd ed. Wiley, 2007."
-url = "https://www.wiley.com/en-us/Partial+Differential+Equations%3A+An+Introduction%2C+2nd+Edition-p-9780470054567"
 
 [[entry]]
 text = "Strogatz, Steven H. <em>Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering.</em> 2nd ed. CRC Press, 2014."
@@ -636,24 +512,12 @@ text = "Tirole, Jean. <em>Economics for the Common Good.</em> Princeton Universi
 url = "https://press.princeton.edu/books/hardcover/9780691175164/economics-for-the-common-good"
 
 [[entry]]
-text = "Trefethen, Lloyd N., and David Bau III. <em>Numerical Linear Algebra.</em> SIAM, 1997."
-url = "https://people.maths.ox.ac.uk/trefethen/text.html"
-
-[[entry]]
 text = "Van Steen, Maarten, and Andrew S. Tanenbaum. <em>Distributed Systems.</em> 4th ed. distributed-systems.net, 2023."
 url = "https://www.distributed-systems.net/index.php/books/ds4/"
 
 [[entry]]
-text = "Varian, Hal R. <em>Intermediate Microeconomics: A Modern Approach.</em> 9th ed. W. W. Norton, 2014."
-url = "https://wwnorton.com/books/9780393123968"
-
-[[entry]]
 text = "Vaswani, Ashish, et al. \"Attention Is All You Need.\" NeurIPS, 2017."
 url = "https://arxiv.org/abs/1706.03762"
-
-[[entry]]
-text = "Velleman, Daniel J. <em>How to Prove It: A Structured Approach.</em> 3rd ed. Cambridge University Press, 2019."
-url = "https://www.cambridge.org/9781108439534"
 
 [[entry]]
 text = "Voss, Chris. <em>Never Split the Difference: Negotiating As If Your Life Depended On It.</em> Harper Business, 2016."
@@ -685,16 +549,8 @@ text = "Brown, Wendy. <em>Undoing the Demos: Neoliberalism's Stealth Revolution.
 url = "https://mitpressbookstore.mit.edu/book/9781935408543"
 
 [[entry]]
-text = "Cirillo, Pasquale, and Nassim Nicholas Taleb. <em>The Logic of Risk Taking.</em> arXiv, 2015."
-url = "https://arxiv.org/abs/1509.06845"
-
-[[entry]]
 text = "Davidson, James Dale, and William Rees-Mogg. <em>The Sovereign Individual: Mastering the Transition to the Information Age.</em> Touchstone, 1997."
 url = "https://www.simonandschuster.com/books/The-Sovereign-Individual/James-Dale-Davidson/9780684832722"
-
-[[entry]]
-text = "Epictetus. <em>The Discourses</em> and <em>Enchiridion.</em> Loeb Classical Library, Harvard University Press."
-url = "https://www.hup.harvard.edu/books/9780674991453"
 
 [[entry]]
 text = "Espeland, Wendy Nelson, and Mitchell L. Stevens. \"Commensuration as a Social Process.\" <em>Annual Review of Sociology</em> 24 (1998): 313-343."
@@ -707,10 +563,6 @@ url = "https://www.rba.gov.au/publications/confs/1975/"
 [[entry]]
 text = "Hacking, Ian. <em>Representing and Intervening: Introductory Topics in the Philosophy of Natural Science.</em> Cambridge University Press, 1983."
 url = "https://www.cambridge.org/core/books/representing-and-intervening/F6506B708BB5A8B6A5D884BDCF28E7B7"
-
-[[entry]]
-text = "Haraway, Donna. \"A Cyborg Manifesto.\" <em>Socialist Review</em>, 1985."
-url = "https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fictionnownarrativemediaandtheoryinthe21stcentury/manifestly_haraway_----_a_cyborg_manifesto_science_technology_and_socialist-feminism_in_the_....pdf"
 
 [[entry]]
 text = "Hayek, Friedrich A. <em>Denationalisation of Money: The Argument Refined.</em> Institute of Economic Affairs, 1976."
@@ -739,10 +591,6 @@ url = "https://www.urbanomic.com/book/fanged-noumena/"
 [[entry]]
 text = "Latour, Bruno. <em>Science in Action: How to Follow Scientists and Engineers Through Society.</em> Harvard University Press, 1987."
 url = "https://www.hup.harvard.edu/books/9780674792913"
-
-[[entry]]
-text = "Lee, Edward A., and Sanjit A. Seshia. <em>Introduction to Embedded Systems: A Cyber-Physical Systems Approach.</em> 2nd ed. MIT Press, 2017."
-url = "https://leeseshia.org/"
 
 [[entry]]
 text = "Martínez Estrada, Ezequiel. <em>Radiografía de la Pampa.</em> Babel, 1933."
@@ -775,15 +623,3 @@ url = "https://www.versobooks.com/products/148-inventing-the-future"
 [[entry]]
 text = "Weber, Max. <em>The Protestant Ethic and the Spirit of Capitalism.</em> 1905."
 url = "https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism"
-
-[[entry]]
-text = "Weil, Simone. <em>La gravedad y la gracia</em> / <em>Gravity and Grace.</em> 1947."
-url = "https://www.trotta.es/libros/la-gravedad-y-la-gracia/9788413642574/"
-
-[[entry]]
-text = "Warden, Pete, and Daniel Situnayake. <em>TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers.</em> O'Reilly, 2019."
-url = "https://www.oreilly.com/library/view/tinyml/9781492052036/"
-
-[[entry]]
-text = "Warren, Henry S. <em>Hacker's Delight.</em> 2nd ed. Addison-Wesley, 2012."
-url = "https://www.oreilly.com/library/view/hackers-delight-second/9780133084993/"

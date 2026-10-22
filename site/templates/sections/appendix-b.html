@@ -1,63 +1,88 @@
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
+{# Spanish wording of the course evaluation strings, which courses.toml keeps
+   in English ("EN|ES"). A string missing here falls back to the English. #}
+{% set eval_es = [
+  "WE, Written Exam|WE, Examen escrito",
+  "WE, Written exam|WE, Examen escrito",
+  "WE, Written exam with unseen problems|WE, Examen escrito con problemas inéditos",
+  "WE, Written exam with unseen problems and short proofs|WE, Examen escrito con problemas inéditos y demostraciones cortas",
+  "TP, Weekly problem sets|TP, Guías de problemas semanales",
+  "TP, Weekly problem sets and proof exercises|TP, Guías de problemas y ejercicios de demostración",
+  "TP, Weekly problem sets and a vector-calculus project|TP, Guías de problemas y un proyecto de cálculo vectorial",
+  "TP, Problem sets and estimation exercises|TP, Guías de problemas y ejercicios de estimación",
+  "TP, Problem sets and physical system analysis|TP, Guías de problemas y análisis de sistemas físicos",
+  "TP, Problem sets and a phase-portrait modeling project|TP, Guías de problemas y un proyecto de modelado con retratos de fase",
+  "TP, Computational project|TP, Proyecto computacional",
+  "OD, Defense of analysis of a biological system|OD, Defensa de un análisis de un sistema biológico",
+  "TP, Quantitative analysis with estimates and models|TP, Análisis cuantitativo con estimaciones y modelos",
+  "OD, Adversarial oral defense of comparative essay|OD, Defensa oral adversarial de un ensayo comparativo",
+  "TP, Essay with revision history|TP, Ensayo con historia de revisiones",
+  "TP, Essay with full revision history|TP, Ensayo con historia completa de revisiones",
+  "LC, Live coding session|LC, Sesión de programación en vivo",
+  "TP, Weekly coding assignments|TP, Trabajos de programación semanales",
+  "OD, Defense of philosophical analysis of a real AI system|OD, Defensa de un análisis filosófico de un sistema real de IA",
+  "TP, Written analysis|TP, Análisis escrito",
+  "LC, Live ML pipeline session|LC, Sesión en vivo de pipeline de ML",
+  "TP, End-to-end ML project|TP, Proyecto de ML end-to-end",
+  "LC, Live architecture and failure analysis|LC, Análisis en vivo de arquitectura y fallas",
+  "TP, Architecture document and protocol specification|TP, Documento de arquitectura y especificación de protocolo",
+  "OD, Defense of empirical study|OD, Defensa de un estudio empírico",
+  "TP, Empirical study with real data|TP, Estudio empírico con datos reales",
+  "OD, Defense of risk analysis|OD, Defensa de un análisis de riesgo",
+  "OD, Defense of agent-based model|OD, Defensa de un modelo basado en agentes",
+  "TP, Agent-based model of a real complex system|TP, Modelo basado en agentes de un sistema complejo real",
+  "LC, Live architecture session|LC, Sesión en vivo de arquitectura",
+  "TP, Replication at reduced scale|TP, Replicación a escala reducida",
+  "TP, An AI application with an evaluation harness and failure analysis|TP, Aplicación de IA con harness de evaluación y análisis de fallas",
+  "PD, Public defense of strategy and product with usability evidence|PD, Defensa pública de estrategia y producto con evidencia de uso",
+  "TP, Strategic and design portfolio built with AI|TP, Portfolio estratégico y de diseño construido con IA",
+  "OD, Defense of system stability analysis|OD, Defensa de un análisis de estabilidad del sistema",
+  "OD, Adversarial defense of policy analysis|OD, Defensa adversarial de un análisis de política",
+  "TP, Policy analysis with stakeholder map|TP, Análisis de política con mapa de actores",
+  "PD, Public defense before external panel with practitioners|PD, Defensa pública ante panel externo con practicantes",
+  "TP, Institutional design document|TP, Documento de diseño institucional",
+  "TP, Lean 4 proof portfolio|TP, Portfolio de demostraciones en Lean 4",
+  "OD, Defense of formal verification project|OD, Defensa de un proyecto de verificación formal",
+  "OD, Defense of mechanism design project|OD, Defensa de un proyecto de diseño de mecanismos",
+  "OD, Defense of a strategic scenario analysis|OD, Defensa de un análisis de escenarios estratégicos",
+  "TP, Technology-dependency briefing for a country or sector|TP, Informe de dependencias tecnológicas de un país o sector",
+  "OD, Defense of financial model and investment memo|OD, Defensa de un modelo financiero y un memo de inversión",
+  "TP, Financial model built with AI|TP, Modelo financiero construido con IA",
+  "OD, Defense of a research design proposal with measurement plan and pre-analysis|OD, Defensa de un diseño de investigación con plan de medición y pre-análisis",
+  "TP, Replication audit of a published study|TP, Auditoría de replicación de un estudio publicado",
+  "OD, Defense of decision analysis of a real multi-criteria problem|OD, Defensa de un análisis de decisión sobre un problema real multicriterio",
+  "TP, Decision analysis built with AI|TP, Análisis de decisión construido con IA",
+  "LC, Live negotiation exercise with real stakes|LC, Ejercicio de negociación en vivo con consecuencias reales",
+  "OD, Defense of organizational diagnosis|OD, Defensa de un diagnóstico organizacional",
+  "OD, Oral defense of position paper|OD, Defensa oral de un position paper",
+  "TP, Position paper on what AI changes and what it does not|TP, Position paper sobre lo que la IA cambia y lo que no",
+  "PD, Public presentation of portfolio and trajectory|PD, Presentación pública del portfolio y la trayectoria",
+  "WP, Written portfolio with full revision history|WP, Portfolio escrito con historia completa de revisiones",
+  "OD, Defense of critical essay connecting cultural artifact to institutional problem|OD, Defensa de un ensayo crítico que conecta un artefacto cultural con un problema institucional"
+] %}
 <div class="page-break" data-views="faculty,authorities"></div>
 <div class="part-label" lang="es">Apéndice B</div>
 <div class="part-label" lang="en">Appendix B</div>
 <h1 lang="es">Marco de evaluación por materia</h1>
 <h1 lang="en">Evaluation Framework by Course</h1>
 
+<p lang="es">Evaluación primaria y secundaria de cada asignatura y de cada Taller Integrador, ordenadas por cuatrimestre. WE: examen escrito presencial con problemas inéditos. LC: sesión en vivo con preguntas en tiempo real. OD: defensa oral. PD: defensa pública ante panel. TP: trabajo práctico o proyecto. WP: portfolio escrito con historia de revisiones. La tabla se genera a partir de los mismos datos que las fichas de las materias.</p>
+<p lang="en">Primary and secondary evaluation for each course and each Integrative Taller, ordered by cuatrimestre. WE: in-person written exam with unseen problems. LC: live session with real-time questioning. OD: oral defense. PD: public defense before a panel. TP: practical work or project. WP: written portfolio with revision history. The table is generated from the same data as the course descriptions.</p>
+
 <table>
-<tr><th lang="es">Materia</th><th lang="en">Course</th><th lang="es">Evaluación Primaria</th><th lang="en">Primary Evaluation</th><th lang="es">Evaluación Secundaria</th><th lang="en">Secondary Evaluation</th></tr>
-<tr><td>Álgebra Lineal y Computación I</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">TP, Guías de problemas semanales</td><td lang="en">TP, Weekly problem sets</td></tr>
-<tr><td>Álgebra Lineal y Computación II</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">TP, Proyecto computacional</td><td lang="en">TP, Computational project</td></tr>
-<tr><td>Razonamiento Formal y Demostración</td><td lang="es">WE, Examen escrito de demostraciones</td><td lang="en">WE, Written proof exam</td><td lang="es">OD, Defensa oral del portfolio de demostraciones</td><td lang="en">OD, Oral defense of proof portfolio</td></tr>
-<tr><td>Cálculo y Análisis I</td><td lang="es">WE, Examen escrito con problemas inéditos y demostraciones cortas</td><td lang="en">WE, Written exam with unseen problems and short proofs</td><td lang="es">TP, Guías de problemas y ejercicios de demostración</td><td lang="en">TP, Weekly problem sets and proof exercises</td></tr>
-<tr><td>Cálculo y Análisis II</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written exam with unseen problems</td><td lang="es">TP, Guías de problemas y un proyecto de cálculo vectorial</td><td lang="en">TP, Problem sets and a vector-calculus project</td></tr>
-<tr><td>Química y Materiales</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written exam with unseen problems</td><td lang="es">TP, Guías de problemas y un proyecto de análisis de materiales/energía</td><td lang="en">TP, Problem sets and a materials/energy analysis project</td></tr>
-<tr><td>Microeconomía y Lógica de Decisión</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">OD, Defensa de un proyecto de análisis de mercado</td><td lang="en">OD, Defense of market analysis project</td></tr>
-<tr><td>Fundamentos de Programación y Datos</td><td lang="es">LC, Sesión de programación en vivo</td><td lang="en">LC, Live coding session</td><td lang="es">TP, Trabajos de programación semanales</td><td lang="en">TP, Weekly coding assignments</td></tr>
-<tr><td>Probabilidad y Estadística</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">TP, Guías de problemas semanales</td><td lang="en">TP, Weekly problem sets</td></tr>
-<tr><td>Programación de Sistemas</td><td lang="es">LC, Análisis de sistemas en vivo</td><td lang="en">LC, Live systems analysis</td><td lang="es">TP, Portfolio de depuración y laboratorios</td><td lang="en">TP, Debugging portfolio and labs</td></tr>
-<tr><td>Física I: Mecánica, Energía y Termodinámica</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written Exam with unseen problems</td><td lang="es">TP, Guías de problemas y ejercicios de estimación</td><td lang="en">TP, Problem sets and estimation exercises</td></tr>
-<tr><td>Física II: Electromagnetismo, Señales y Computación Física</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">TP, Guías de problemas y análisis de sistemas</td><td lang="en">TP, Problem sets and system analysis</td></tr>
-<tr><td>Machine Learning e Ingeniería de Modelos</td><td lang="es">LC, Sesión en vivo de pipeline de ML</td><td lang="en">LC, Live ML pipeline session</td><td lang="es">TP, Proyecto de ML end-to-end</td><td lang="en">TP, End-to-end ML project</td></tr>
-<tr><td>Biología de Sistemas, Evolución y Ecología</td><td lang="es">OD, Defensa de un análisis de un sistema biológico</td><td lang="en">OD, Defense of analysis of a biological system</td><td lang="es">TP, Análisis cuantitativo con estimaciones y modelos</td><td lang="en">TP, Quantitative analysis with estimates and models</td></tr>
-<tr><td>Algoritmos, Complejidad y Optimización</td><td lang="es">WE, Examen escrito con problemas de diseño de algoritmos</td><td lang="en">WE, Written Exam with algorithm design problems</td><td lang="es">TP, Portfolio de algoritmos con demostraciones formales</td><td lang="en">TP, Algorithm portfolio with formal proofs</td></tr>
-<tr><td>Econometría e Inferencia Causal</td><td lang="es">OD, Defensa de un estudio empírico</td><td lang="en">OD, Defense of empirical study</td><td lang="es">TP, Estudio empírico con datos reales</td><td lang="en">TP, Empirical study with real data</td></tr>
-<tr><td>Deep Learning y Modelos Fundacionales</td><td lang="es">LC, Sesión en vivo de arquitectura</td><td lang="en">LC, Live architecture session</td><td lang="es">OD + TP, Defensa de un proyecto de replicación</td><td lang="en">OD + TP, Defense of replication project</td></tr>
-<tr><td>Sistemas de IA: Agentes y Aplicaciones de Modelos Fundacionales</td><td lang="es">LC, Sesión en vivo de construcción de una aplicación con agentes</td><td lang="en">LC, Live build session with an agentic application</td><td lang="es">TP, Aplicación de IA con harness de evaluación y análisis de fallas</td><td lang="en">TP, AI application with an evaluation harness and failure analysis</td></tr>
-<tr><td>Teoría de Juegos y Diseño de Mecanismos</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">OD, Defensa de un proyecto de diseño de mecanismos</td><td lang="en">OD, Defense of mechanism design project</td></tr>
-<tr><td>Procesos Estocásticos y Riesgo</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">OD, Defensa de un análisis de riesgo</td><td lang="en">OD, Defense of risk analysis</td></tr>
-<tr><td>Ecuaciones Diferenciales y Sistemas Dinámicos</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written exam with unseen problems</td><td lang="es">TP, Guías de problemas y un proyecto de modelado con retratos de fase</td><td lang="en">TP, Problem sets and a phase-portrait modeling project</td></tr>
-<tr><td>Métodos Formales y Verificación</td><td lang="es">TP, Portfolio de demostraciones en Lean 4</td><td lang="en">TP, Lean 4 proof portfolio</td><td lang="es">OD, Defensa de un proyecto de verificación formal</td><td lang="en">OD, Defense of formal verification project</td></tr>
-<tr><td>Redes y Sistemas Distribuidos</td><td lang="es">LC, Análisis en vivo de arquitectura y fallos</td><td lang="en">LC, Live architecture and failure analysis</td><td lang="es">TP, Documento de arquitectura y especificación de protocolo</td><td lang="en">TP, Architecture document and protocol spec</td></tr>
-<tr><td>Finanzas, Dinero, Banca y Macroeconomía</td><td lang="es">OD, Defensa de un modelo financiero y memo</td><td lang="en">OD, Defense of financial model and memo</td><td lang="es">TP, Modelo financiero construido con IA</td><td lang="en">TP, Financial model built with AI</td></tr>
-<tr><td>Seguridad, Criptografía y Confianza</td><td lang="es">LC, Sesión en vivo de modelado de amenazas</td><td lang="en">LC, Live threat modeling session</td><td lang="es">TP, Modelo de amenazas y arquitectura de seguridad</td><td lang="en">TP, Threat model and security architecture</td></tr>
-<tr><td>Economía Política, Derecho y Regulación</td><td lang="es">OD, Defensa adversarial de un análisis de política</td><td lang="en">OD, Adversarial defense of policy analysis</td><td lang="es">TP, Análisis de política con mapa de actores</td><td lang="en">TP, Policy analysis with stakeholder map</td></tr>
-<tr><td>Historia de las Instituciones, la Tecnología y el Poder</td><td lang="es">OD, Defensa adversarial de ensayo comparativo</td><td lang="en">OD, Adversarial defense of comparative essay</td><td lang="es">TP, Ensayo con historia de revisiones</td><td lang="en">TP, Essay with revision history</td></tr>
-<tr><td>Epistemología, Ciencia y los Límites de la IA</td><td lang="es">OD, Defensa de un análisis filosófico de un sistema real de IA</td><td lang="en">OD, Defense of philosophical analysis of real AI system</td><td lang="es">TP, Análisis escrito</td><td lang="en">TP, Written analysis</td></tr>
-<tr><td>Diseño y Estrategia de Producto</td><td lang="es">PD, Defensa pública de estrategia y producto con evidencia de uso</td><td lang="en">PD, Public defense of strategy and product with usability evidence</td><td lang="es">TP, Portfolio estratégico y de diseño construido con IA</td><td lang="en">TP, Strategic and design portfolio built with AI</td></tr>
-<tr><td>Control, Observabilidad y Medición</td><td lang="es">WE, Examen escrito</td><td lang="en">WE, Written Exam</td><td lang="es">OD, Defensa de la estabilidad del sistema y crítica de la medición</td><td lang="en">OD, Defense of system stability and measurement critique</td></tr>
-<tr><td>Ética y Responsabilidad bajo Incertidumbre</td><td lang="es">OD, Defensa de un análisis ético de un caso difícil</td><td lang="en">OD, Defense of ethical analysis of a hard case</td><td lang="es">TP, Análisis escrito del caso</td><td lang="en">TP, Written case analysis</td></tr>
-<tr><td>Laboratorio de Diseño Institucional</td><td lang="es">PD, Defensa pública ante panel externo con practicantes</td><td lang="en">PD, Public defense before external panel with practitioners</td><td lang="es">TP, Documento de diseño institucional</td><td lang="en">TP, Institutional design document</td></tr>
-<tr><td>Liderazgo, Negociación y Coordinación</td><td lang="es">LC, Ejercicio de negociación en vivo con consecuencias reales</td><td lang="en">LC, Live negotiation exercise with real stakes</td><td lang="es">OD, Defensa de un diagnóstico organizacional</td><td lang="en">OD, Defense of organizational diagnosis</td></tr>
-<tr><td>Sistemas Embebidos e Interacción Física</td><td lang="es">PD, Defensa pública de un sistema embebido funcional con decisiones de diseño documentadas</td><td lang="en">PD, Public defense of a working embedded system with documented design decisions</td><td lang="es">TP, Prototipo funcional con hardware, firmware y plan de medición</td><td lang="en">TP, Functional prototype with hardware, firmware, and measurement plan</td></tr>
-<tr><td>Sistemas Complejos</td><td lang="es">OD, Defensa de un modelo basado en agentes</td><td lang="en">OD, Defense of agent-based model</td><td lang="es">TP, Modelo basado en agentes de un sistema complejo real</td><td lang="en">TP, Agent-based model of real complex system</td></tr>
-<tr><td>Teoría de la Decisión</td><td lang="es">OD, Defensa de un análisis de decisión sobre un problema multi-criterio</td><td lang="en">OD, Defense of decision analysis of multi-criteria problem</td><td lang="es">TP, Análisis de decisión construido con IA</td><td lang="en">TP, Decision analysis built with AI</td></tr>
-<tr><td>Escritura Avanzada en Español</td><td lang="es">WP, Portfolio escrito con historia completa de revisiones</td><td lang="en">WP, Written portfolio with full revision history</td><td></td></tr>
-<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td lang="es">OD, Defensa de un diseño de investigación con plan de medición y pre-análisis</td><td lang="en">OD, Defense of a research design proposal with measurement plan and pre-analysis</td><td lang="es">TP, Auditoría de replicación de un estudio publicado</td><td lang="en">TP, Replication audit of a published study</td></tr>
-<tr><td>Sistemas de Datos</td><td lang="es">LC, Sesión en vivo de diseño y debugging de sistemas de datos</td><td lang="en">LC, Live data-system design and debugging session</td><td lang="es">TP, Proyecto de esquema, migración y fiabilidad</td><td lang="en">TP, Schema, migration, and reliability project</td></tr>
-<tr><td>Optimización Aplicada y Métodos Numéricos</td><td lang="es">WE, Examen escrito con problemas de modelado y análisis numérico</td><td lang="en">WE, Written exam with modeling problems and numerical analysis</td><td lang="es">LC, Sesión en vivo de diseño y debugging sobre un problema real de optimización</td><td lang="en">LC, Live design and debugging session on a real optimization problem</td></tr>
-<tr><td>Ecuaciones en Derivadas Parciales</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written exam with unseen problems</td><td lang="es">TP, Guías de problemas y un proyecto computacional de EDP</td><td lang="en">TP, Problem sets and a computational PDE project</td></tr>
-<tr><td>Física III: Mecánica Cuántica, Física Estadística y Ondas</td><td lang="es">WE, Examen escrito con problemas inéditos</td><td lang="en">WE, Written exam with unseen problems</td><td lang="es">TP, Guías de problemas y simulaciones computacionales</td><td lang="en">TP, Problem sets and computational simulations</td></tr>
-<tr><td>Seminario Fundacional: IA, Juicio y Responsabilidad</td><td lang="es">OD, Defensa oral de un position paper</td><td lang="en">OD, Oral defense of position paper</td><td lang="es">TP, Position paper sobre lo que la IA cambia</td><td lang="en">TP, Position paper on what AI changes</td></tr>
-<tr><td>Cultura, Legitimidad y Normas</td><td lang="es">OD, Defensa de un ensayo crítico</td><td lang="en">OD, Defense of critical essay</td><td lang="es">TP, Ensayo con historia completa de revisiones</td><td lang="en">TP, Essay with full revision history</td></tr>
-<tr><td>Electiva Guiada</td><td lang="es">Definida por el docente supervisor</td><td lang="en">Defined by supervising faculty</td><td></td></tr>
-<tr><td>Seminario de Egreso</td><td lang="es">OD, Reflexión oral final (sin nota)</td><td lang="en">OD, Final oral reflection (ungraded)</td><td></td></tr>
-<tr><td>Studio I, Escritura y Oratoria</td><td lang="es">WP, Portfolio escrito con historia de revisiones</td><td lang="en">WP, Written portfolio with revision history</td><td lang="es">Presentaciones grabadas con autoevaluación</td><td lang="en">Recorded presentations with self-evaluation</td></tr>
-<tr><td>Studio II, Construir y Romper</td><td lang="es">PD, Defensa pública de un sistema funcional</td><td lang="en">PD, Public defense of functional system</td><td></td></tr>
-<tr><td>Studio III, Fiabilidad Bajo Presión</td><td lang="es">PD, Defensa simulando una revisión post-incidente</td><td lang="en">PD, Defense simulating post-incident review</td><td></td></tr>
-<tr><td>Studio IV, Diseño de Sistemas Institucionales</td><td lang="es">PD, Defensa pública ante practicantes</td><td lang="en">PD, Public defense before practitioners</td><td></td></tr>
-<tr><td>Studio V, Sistema Crítico bajo Restricciones</td><td lang="es">PD, Defensa pública con hallazgos del red team</td><td lang="en">PD, Public defense with red team findings</td><td></td></tr>
-<tr><td>Studio VI, Venture from Zero</td><td lang="es">PD, Defensa pública final ante inversores</td><td lang="en">PD, Final public defense before investors</td><td></td></tr>
+<tr><th lang="es">Asignatura</th><th lang="en">Course</th><th lang="es">Evaluación primaria</th><th lang="en">Primary Evaluation</th><th lang="es">Evaluación secundaria</th><th lang="en">Secondary Evaluation</th></tr>
+{% for cn in range(start=1, end=9) %}
+<tr class="cuat-head"><td colspan="3" lang="es"><strong>{{ cn }}.º cuatrimestre</strong></td><td colspan="3" lang="en"><strong>Cuatrimestre {{ cn }}</strong></td></tr>
+{% for c in courses_data.course | filter(attribute="cuatrimestre", value=cn) | sort(attribute="position") %}
+{% set_global p_es = c.evaluation_primary %}
+{% for pair in eval_es %}{% set kv = pair | split(pat="|") %}{% if kv | first == c.evaluation_primary %}{% set_global p_es = kv | last %}{% endif %}{% endfor %}
+<tr><td><span lang="es">{{ c.title_es }}</span><span lang="en">{{ c.title_en }}</span></td><td lang="es">{{ p_es }}</td><td lang="en">{{ c.evaluation_primary }}</td><td lang="es">{% for s in c.evaluation_secondaries %}{% set_global s_es = s %}{% for pair in eval_es %}{% set kv = pair | split(pat="|") %}{% if kv | first == s %}{% set_global s_es = kv | last %}{% endif %}{% endfor %}{{ s_es }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td><td lang="en">{{ c.evaluation_secondaries | join(sep="<br>") | safe }}</td></tr>
+{% endfor %}
+{% for t in talleres_data.taller | filter(attribute="cuatrimestre", value=cn) %}
+<tr><td><span lang="es">Taller Integrador {{ t.roman }}: {{ t.title_es }}</span><span lang="en">Integrative Taller {{ t.roman }}: {{ t.title_en }}</span></td><td lang="es">{{ t.evaluation_primary_es }}</td><td lang="en">{{ t.evaluation_primary_en }}</td><td lang="es">{{ t.evaluation_secondaries_es | join(sep="<br>") | safe }}</td><td lang="en">{{ t.evaluation_secondaries_en | join(sep="<br>") | safe }}</td></tr>
+{% endfor %}
+{% endfor %}
 </table>
 
 <!-- APPENDIX C -->

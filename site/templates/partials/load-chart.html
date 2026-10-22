@@ -1,0 +1,14 @@
+{# Weekly load per bimestre, 16 bars. #}
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
+<div class="load-chart" role="img" aria-label="Horas semanales por bimestre / Weekly hours per bimestre">
+{% for cn in range(start=1, end=9) %}{% for i in [0, 1] %}
+{% set_global w = 0 %}
+{% for c in courses_data.course | filter(attribute="cuatrimestre", value=cn) %}{% set v = c.hours | nth(n=i) %}{% set_global w = w + v %}{% endfor %}
+{% for t in talleres_data.taller | filter(attribute="cuatrimestre", value=cn) %}{% set v = t.hours | nth(n=i) %}{% set_global w = w + v %}{% endfor %}
+<div class="load-bar"><span class="val">{{ w }}</span><div class="bar" style="height: {{ w * 4 }}%;"></div></div>
+{% endfor %}{% endfor %}
+</div>
+<div class="load-labels">
+{% for cn in range(start=1, end=9) %}<span>{{ cn }}.º B1</span><span>{{ cn }}.º B2</span>{% endfor %}
+</div>

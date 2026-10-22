@@ -1,119 +1,25 @@
+{% set courses_data = load_data(path='data/courses.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
 <div class="page-break" data-views="faculty,authorities"></div>
 <div class="part-label" lang="es">Apéndice A</div>
 <div class="part-label" lang="en">Appendix A</div>
 <h1 lang="es">Referencias por materia e institución</h1>
 <h1 lang="en">References by Course and Institution</h1>
 
+<p lang="es">Cursos y programas de referencia de cada asignatura y de cada Taller Integrador, ordenados por cuatrimestre. La tabla se genera a partir de los mismos datos que las fichas de las materias, de modo que ambas coinciden siempre.</p>
+<p lang="en">Reference courses and programs for each course and each Integrative Taller, ordered by cuatrimestre. The table is generated from the same data as the course descriptions, so the two always match.</p>
+
 <table>
-<tr><th lang="es">Materia</th><th lang="en">Course</th><th lang="es">Institución de Referencia</th><th lang="en">Reference Institution</th><th lang="es">Materia / Programa de Referencia</th><th lang="en">Reference Course / Program</th></tr>
-<tr><td>Álgebra Lineal I y II</td><td>MIT</td><td>18.06, 18.065 Linear Algebra</td></tr>
-<tr><td>Álgebra Lineal I y II</td><td>Stanford</td><td>EE364A Convex Optimization</td></tr>
-<tr><td>Álgebra Lineal I y II</td><td>Imperial College London</td><td>Mathematics for Machine Learning (Coursera)</td></tr>
-<tr><td>Razonamiento Formal</td><td>MIT</td><td>6.1200 Mathematics for Computer Science</td></tr>
-<tr><td>Razonamiento Formal</td><td>Stanford</td><td>Phil 151 Metalogic, CS 103</td></tr>
-<tr><td>Cálculo y Análisis I y II</td><td>MIT</td><td>18.01 Single Variable + 18.02 Multivariable Calculus</td></tr>
-<tr><td>Cálculo y Análisis I y II</td><td>Caltech</td><td>Ma 1abc Mathematics</td></tr>
-<tr><td>Cálculo y Análisis I y II</td><td>École Polytechnique</td><td>Tronc commun (modules de mathématiques)</td></tr>
-<tr><td>Cálculo y Análisis I y II</td><td>Cambridge</td><td>Mathematical Tripos, Part IA Analysis</td></tr>
-<tr><td>Ecuaciones Diferenciales y Sistemas Dinámicos</td><td>MIT</td><td>18.03 Differential Equations, 18.353 Nonlinear Dynamics</td></tr>
-<tr><td>Ecuaciones Diferenciales y Sistemas Dinámicos</td><td>Caltech</td><td>Ma 2 Differential Equations</td></tr>
-<tr><td>Ecuaciones en Derivadas Parciales</td><td>MIT</td><td>18.152 Introduction to PDEs, 18.303</td></tr>
-<tr><td>Ecuaciones en Derivadas Parciales</td><td>Caltech</td><td>ACM 95/101 Methods of Applied Mathematics</td></tr>
-<tr><td>Historia de las Instituciones, la Tecnología y el Poder</td><td>MIT</td><td>17.S914 Political Development; 15.137</td></tr>
-<tr><td>Historia de las Instituciones, la Tecnología y el Poder</td><td>Oxford</td><td>PPE Politics; History of Science and Technology</td></tr>
-<tr><td>Historia de las Instituciones, la Tecnología y el Poder</td><td>Harvard</td><td>Kennedy School Governance and Institutions</td></tr>
-<tr><td>Historia de las Instituciones, la Tecnología y el Poder</td><td>Stanford</td><td>HSST Program</td></tr>
-<tr><td>Microeconomía</td><td>MIT</td><td>14.01 Principles of Microeconomics</td></tr>
-<tr><td>Microeconomía</td><td>Yale</td><td>ECON 159 Game Theory</td></tr>
-<tr><td>Fundamentos de Programación y Datos</td><td>MIT</td><td>6.100A, Missing Semester</td></tr>
-<tr><td>Fundamentos de Programación y Datos</td><td>Stanford</td><td>CS 106B</td></tr>
-<tr><td>Probabilidad y Estadística</td><td>MIT</td><td>6.3700, 18.650</td></tr>
-<tr><td>Probabilidad y Estadística</td><td>Stanford</td><td>CS 109</td></tr>
-<tr><td>Probabilidad y Estadística</td><td>Caltech</td><td>Ma 3</td></tr>
-<tr><td>Programación de Sistemas</td><td>MIT</td><td>6.1800, 6.1810</td></tr>
-<tr><td>Programación de Sistemas</td><td>Stanford</td><td>CS 110</td></tr>
-<tr><td>Física I/II</td><td>MIT</td><td>8.01, 8.02, 8.04</td></tr>
-<tr><td>Física I/II</td><td>Caltech</td><td>Ph 1a, Ph 1b</td></tr>
-<tr><td>Física I/II</td><td>École Polytechnique</td><td>Tronc commun Physique</td></tr>
-<tr><td>Física III: Mecánica Cuántica, Física Estadística y Ondas</td><td>MIT</td><td>8.04 Quantum Physics, 8.044 Statistical Mechanics</td></tr>
-<tr><td>Física III: Mecánica Cuántica, Física Estadística y Ondas</td><td>Caltech</td><td>Ph 2/Ph 12 Waves, Quantum and Statistical Physics</td></tr>
-<tr><td>Química y Materiales</td><td>MIT</td><td>5.111 Principles of Chemical Science, 3.091 Solid-State Chemistry</td></tr>
-<tr><td>Química y Materiales</td><td>Caltech</td><td>Ch 1 General Chemistry</td></tr>
-<tr><td>Machine Learning</td><td>MIT</td><td>6.3900</td></tr>
-<tr><td>Machine Learning</td><td>Stanford</td><td>CS 229</td></tr>
-<tr><td>Machine Learning</td><td>Caltech</td><td>CMS 155</td></tr>
-<tr><td>Algoritmos y Optimización</td><td>MIT</td><td>6.1210, 6.C571</td></tr>
-<tr><td>Algoritmos y Optimización</td><td>Stanford</td><td>CS 161, MS&E 211</td></tr>
-<tr><td>Econometría</td><td>MIT</td><td>14.32</td></tr>
-<tr><td>Econometría</td><td>Stanford</td><td>MS&E 226</td></tr>
-<tr><td>Econometría</td><td>Caltech</td><td>IDS 126</td></tr>
-<tr><td>Deep Learning</td><td>Stanford</td><td>CS 224N, CS 236</td></tr>
-<tr><td>Deep Learning</td><td>MIT</td><td>6.S898</td></tr>
-<tr><td>Deep Learning</td><td>UC Berkeley</td><td>CS 285</td></tr>
-<tr><td>Sistemas de IA: Agentes y Aplicaciones de Modelos Fundacionales</td><td>Stanford</td><td>CS25 Transformers United</td></tr>
-<tr><td>Sistemas de IA: Agentes y Aplicaciones de Modelos Fundacionales</td><td>UC Berkeley</td><td>CS294 Large Language Model Agents</td></tr>
-<tr><td>Teoría de Juegos</td><td>Stanford</td><td>MS&E 232</td></tr>
-<tr><td>Teoría de Juegos</td><td>MIT</td><td>14.126</td></tr>
-<tr><td>Teoría de Juegos</td><td>Yale</td><td>ECON 159</td></tr>
-<tr><td>Teoría de Juegos</td><td>Harvard</td><td>CS 1360</td></tr>
-<tr><td>Procesos Estocásticos</td><td>Stanford</td><td>MS&E 221</td></tr>
-<tr><td>Procesos Estocásticos</td><td>MIT</td><td>6.7700</td></tr>
-<tr><td>Procesos Estocásticos</td><td>London Mathematical Laboratory</td><td>Ergodicity Economics</td></tr>
-<tr><td>Métodos Formales</td><td>Carnegie Mellon</td><td>15-815</td></tr>
-<tr><td>Métodos Formales</td><td>MIT</td><td>6.820</td></tr>
-<tr><td>Redes y Distribuidos</td><td>MIT</td><td>6.5820, 6.5840</td></tr>
-<tr><td>Redes y Distribuidos</td><td>Stanford</td><td>CS 144, CS 244B</td></tr>
-<tr><td>Redes y Distribuidos</td><td>Cambridge</td><td>Distributed Systems</td></tr>
-<tr><td>Finanzas, Dinero, Banca y Macroeconomía</td><td>MIT</td><td>15.401</td></tr>
-<tr><td>Finanzas, Dinero, Banca y Macroeconomía</td><td>Yale</td><td>ECON 252</td></tr>
-<tr><td>Finanzas, Dinero, Banca y Macroeconomía</td><td>Stanford</td><td>MS&E 246</td></tr>
-<tr><td>Seguridad y Criptografía</td><td>Stanford</td><td>CS 255</td></tr>
-<tr><td>Seguridad y Criptografía</td><td>MIT</td><td>6.5620</td></tr>
-<tr><td>Economía Política</td><td>MIT</td><td>14.42</td></tr>
-<tr><td>Economía Política</td><td>Stanford</td><td>Law and Technology</td></tr>
-<tr><td>Economía Política</td><td>Oxford</td><td>PPE Politics and Philosophy</td></tr>
-<tr><td>Cultura y Legitimidad</td><td>Stanford</td><td>Anthropology</td></tr>
-<tr><td>Cultura y Legitimidad</td><td>MIT</td><td>Comparative Media Studies</td></tr>
-<tr><td>Cultura y Legitimidad</td><td>École Polytechnique</td><td>HSS</td></tr>
-<tr><td>Epistemología</td><td>Stanford</td><td>Symbolic Systems, Phil 80</td></tr>
-<tr><td>Epistemología</td><td>MIT</td><td>24.09 Minds and Machines</td></tr>
-<tr><td>Epistemología</td><td>Oxford</td><td>Philosophy of Mind</td></tr>
-<tr><td>Epistemología</td><td>Cambridge</td><td>Philosophy of Science</td></tr>
-<tr><td>Diseño y Estrategia de Producto</td><td>Stanford</td><td>CS 183, d.school Design Thinking</td></tr>
-<tr><td>Diseño y Estrategia de Producto</td><td>MIT</td><td>15.835 Entrepreneurial Marketing, Integrated Design and Management</td></tr>
-<tr><td>Diseño y Estrategia de Producto</td><td>Carnegie Mellon</td><td>Human-Computer Interaction</td></tr>
-<tr><td>Control, Observabilidad y Medición</td><td>Stanford</td><td>EE 263</td></tr>
-<tr><td>Control, Observabilidad y Medición</td><td>MIT</td><td>6.3100</td></tr>
-<tr><td>Control, Observabilidad y Medición</td><td>Caltech</td><td>CDS 110</td></tr>
-<tr><td>Ética y Responsabilidad</td><td>Oxford</td><td>Practical Ethics, PPE Philosophy</td></tr>
-<tr><td>Ética y Responsabilidad</td><td>Harvard Kennedy School</td><td>Ethics and Public Policy</td></tr>
-<tr><td>Lab. Diseño Institucional</td><td>Indiana University</td><td>Ostrom Workshop</td></tr>
-<tr><td>Lab. Diseño Institucional</td><td>Santa Fe Institute</td><td>Complexity and Governance</td></tr>
-<tr><td>Lab. Diseño Institucional</td><td>Oxford</td><td>Blavatnik School of Government</td></tr>
-<tr><td>Liderazgo, Negociación y Coordinación</td><td>Harvard</td><td>Program on Negotiation</td></tr>
-<tr><td>Liderazgo, Negociación y Coordinación</td><td>MIT Sloan</td><td>15.665 Power and Negotiation</td></tr>
-<tr><td>Liderazgo, Negociación y Coordinación</td><td>Stanford</td><td>MS&E 280 Organizational Behavior</td></tr>
-<tr><td>Liderazgo, Negociación y Coordinación</td><td>INSEAD</td><td>Organisational Behaviour</td></tr>
-<tr><td>Sistemas Complejos</td><td>Santa Fe Institute</td><td>Complexity Explorer</td></tr>
-<tr><td>Sistemas Complejos</td><td>MIT</td><td>18.354</td></tr>
-<tr><td>Sistemas Complejos</td><td>Oxford</td><td>Complex Systems</td></tr>
-<tr><td>Teoría de la Decisión</td><td>Stanford</td><td>MS&E 250</td></tr>
-<tr><td>Teoría de la Decisión</td><td>Harvard Kennedy School</td><td>Decision Science</td></tr>
-<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td>Stanford</td><td>GSB Methodology of Empirical Research</td></tr>
-<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td>MIT</td><td>14.310x Data Analysis for Social Scientists</td></tr>
-<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td>Berkeley</td><td>D-Lab Computational Social Science</td></tr>
-<tr><td>Métodos de Investigación, Medición y Diseño Experimental</td><td>Center for Open Science</td><td>Open Science training</td></tr>
-<tr><td>Sistemas de Datos</td><td>CMU</td><td>15-445/645 Database Systems</td></tr>
-<tr><td>Sistemas de Datos</td><td>MIT</td><td>6.5830 Database Systems</td></tr>
-<tr><td>Sistemas de Datos</td><td>Stanford</td><td>CS 145 Data Management and Data Systems</td></tr>
-<tr><td>Sistemas de Datos</td><td>Berkeley</td><td>CS 186 Introduction to Database Systems</td></tr>
-<tr><td>Optimización Aplicada y Métodos Numéricos</td><td>MIT</td><td>15.053 Optimization Methods in Management Science</td></tr>
-<tr><td>Optimización Aplicada y Métodos Numéricos</td><td>Stanford</td><td>EE364B Convex Optimization II</td></tr>
-<tr><td>Optimización Aplicada y Métodos Numéricos</td><td>Carnegie Mellon</td><td>10-725 Convex Optimization</td></tr>
-<tr><td>Optimización Aplicada y Métodos Numéricos</td><td>Caltech</td><td>ACM 113 Mathematical Optimization</td></tr>
-<tr><td>Biología de Sistemas, Evolución y Ecología</td><td>MIT</td><td>7.013; 7.91J</td></tr>
-<tr><td>Biología de Sistemas, Evolución y Ecología</td><td>Caltech</td><td>Bi 1</td></tr>
-<tr><td>Biología de Sistemas, Evolución y Ecología</td><td>École Polytechnique</td><td>Tronc commun Biologie</td></tr>
+<tr><th lang="es">Asignatura</th><th lang="en">Course</th><th lang="es">Cursos y programas de referencia</th><th lang="en">Reference courses and programs</th></tr>
+{% for cn in range(start=1, end=9) %}
+<tr class="cuat-head"><td colspan="2" lang="es"><strong>{{ cn }}.º cuatrimestre</strong></td><td colspan="2" lang="en"><strong>Cuatrimestre {{ cn }}</strong></td></tr>
+{% for c in courses_data.course | filter(attribute="cuatrimestre", value=cn) | sort(attribute="position") %}
+<tr><td><span lang="es">{{ c.title_es }}</span><span lang="en">{{ c.title_en }}</span></td><td>{% if c.references %}{% for r in c.references %}{% if r.url %}<a href="{{ r.url }}">{{ r.name }}</a>{% else %}{{ r.name }}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}{% else %}—{% endif %}</td></tr>
+{% endfor %}
+{% for t in talleres_data.taller | filter(attribute="cuatrimestre", value=cn) %}
+<tr><td><span lang="es">Taller Integrador {{ t.roman }}: {{ t.title_es }}</span><span lang="en">Integrative Taller {{ t.roman }}: {{ t.title_en }}</span></td><td>{% if t.references %}{{ t.references | join(sep=" · ") }}{% else %}—{% endif %}</td></tr>
+{% endfor %}
+{% endfor %}
 </table>
 
 <!-- APPENDIX B -->

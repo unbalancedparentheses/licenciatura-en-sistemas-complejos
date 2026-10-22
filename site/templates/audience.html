@@ -1,5 +1,5 @@
 {% import 'macros/course.html' as course_m %}
-{% import 'macros/studio.html' as studio_m %}
+{% import 'macros/taller.html' as taller_m %}
 {% import 'macros/layout.html' as layout %}
 {% set audience = section.extra.audience %}
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 {% set program = load_data(path='data/program.toml') %}
 {% set courses_data = load_data(path='data/courses.toml') %}
 {% set curriculum = load_data(path='data/curriculum.toml') %}
-{% set studios_data = load_data(path='data/studios.toml') %}
+{% set talleres_data = load_data(path='data/talleres.toml') %}
 {% set bibliography = load_data(path='data/bibliography.toml') %}
 
 {{ layout::top_nav(audience=audience, audiences_data=audiences_data, pdf_slug=audience) }}
@@ -35,30 +35,23 @@
 {# Course descriptions, only for faculty + authorities #}
 {% if audience in ["faculty", "authorities"] %}
 <div class="page-break"></div>
-<div class="part-label">Part IV, Curriculum · Section 9</div>
+<div class="part-label" lang="es">Parte IV, Plan de Estudios · Sección 9</div>
+<div class="part-label" lang="en">Part IV, Curriculum · Section 9</div>
 <h1 lang="es">Descripciones de las materias</h1>
 <h1 lang="en">Course Descriptions</h1>
-{% set years = curriculum.year %}
-{% for y in years %}
-  {% set year_courses = courses_data.course | filter(attribute='year', value=y.number) %}
-  {% if year_courses | length > 0 %}
-    <h2>{{ y.title_es }}</h2>
-    {% for c in year_courses %}
-      {{ course_m::card(course=c) }}
-    {% endfor %}
-  {% endif %}
+{% for cn in range(start=1, end=program.cuatrimestres + 1) %}
+  <h2 lang="es">{{ cn }}.º cuatrimestre</h2>
+  <h2 lang="en">Cuatrimestre {{ cn }}</h2>
+  {% for c in courses_data.course | filter(attribute='cuatrimestre', value=cn) | sort(attribute='position') %}
+    {{ course_m::card(course=c) }}
+  {% endfor %}
 {% endfor %}
 {% endif %}
 
-{# Studio Descriptions, visible to all audiences #}
-<div class="page-break"></div>
-<div class="part-label">Part IV, Curriculum · Section 10</div>
-<h1 lang="es">Descripciones de los Studios</h1>
-<h1 lang="en">Studio Descriptions</h1>
-<p lang="es">Los Studios son la columna vertebral del programa. No son materias. Son proyectos de dieciséis semanas con entregables reales, equipos reales, restricciones reales y rendición de cuentas real. Todos los Studios culminan en una defensa pública ante un panel que incluye revisores externos.</p>
-<p lang="en">Studios are the spine of the program. They are not courses. They are sixteen-week projects with real deliverables, real teams, real constraints, and real accountability. All Studios culminate in a public defense before a panel that includes external reviewers.</p>
-{% for s in studios_data.studio %}
-  {{ studio_m::card(studio=s) }}
+{# Taller descriptions, visible to all audiences #}
+{{ taller_m::section_intro() }}
+{% for t in talleres_data.taller %}
+  {{ taller_m::card(taller=t) }}
 {% endfor %}
 
 {# Admissions and graduate profile #}
